@@ -1,0 +1,4563 @@
+*
+.SUBCKT 1PS10SB82 1 2 
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 2 3E+7 
+D1 1 2 1PS10SB82
+*
+.MODEL 1PS10SB82 D 
++ IS = 1.042E-8 
++ N = 1.029 
++ BV = 17 
++ IBV = 0.001 
++ RS = 5.567 
++ CJO = 9.779E-13 
++ VJ = 0.2925 
++ M = 0.194 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS*
+.SUBCKT 1PS66SB17 1 2 3 4 5 6
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+*
+R1 1 6 6E+07
+D1 1 6 1PS66SB17
+R2 2 5 6E+07
+D2 2 5 1PS66SB17
+R3 3 4 6E+07
+D3 3 4 1PS66SB17
+*
+.MODEL 1PS66SB17 D 
++ IS = 1.419E-09 
++ N = 1.022 
++ BV = 6 
++ IBV = 2.45E-06 
++ RS = 5.112 
++ CJO = 7.662E-13
++ VJ = 0.1681 
++ M = 0.1995
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT 1PS66SB82 1 2 3 4 5 6
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+*
+R1 1 6 3E+7
+D1 1 6 1PS66SB82
+R2 2 5 3E+7
+D2 2 5 1PS66SB82
+R3 3 4 3E+7
+D3 3 4 1PS66SB82
+*
+.MODEL 1PS66SB82 D 
++ IS = 1.042E-8 
++ N = 1.029 
++ BV = 17 
++ IBV = 0.001 
++ RS = 5.567 
++ CJO = 9.779E-13 
++ VJ = 0.2925 
++ M = 0.194 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT 1ps70sb10 1 3 
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 3.6E+07 
+D1 1 3 1ps70sb10  
+*
+.MODEL 1ps70sb10 D( 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 0 
++    EG = 0.69 
++    XTI = 2) 
+*
+*
+.SUBCKT 1ps70sb14 1 2 3
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 3.6E+07 
+D1 1 3 1ps70sb14
+R2 3 2 3.6E+07
+D2 3 2 1ps70sb14 
+*
+.MODEL 1ps70sb14 D( 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 0 
++    EG = 0.69 
++    XTI = 2) 
+*
+*
+.SUBCKT 1ps70sb15 1 2 3
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 3.6E+07 
+D1 1 3 1ps70sb15
+R2 2 3 3.6E+07
+D2 2 3 1ps70sb15 
+*
+.MODEL 1ps70sb15 D( 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 0 
++    EG = 0.69 
++    XTI = 2) 
+**
+.SUBCKT 1ps70sb16 1 2 3
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 3.6E+07 
+D1 3 1 1ps70sb16
+R2 3 2 3.6E+07
+D2 3 2 1ps70sb16 
+*
+.MODEL 1ps70sb16 D( 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 0 
++    EG = 0.69 
++    XTI = 2) 
+**
+.SUBCKT 1PS70SB20 1 2
+* The Resistor R1 does not reflect
+* a physical device. Instead it 
+* improves modeling in the reverse
+* mode of operation.
+*
+R1 1 2 4.018E+06
+D1 1 2 1PS70SB20
+*
+.MODEL 1PS70SB20 D(
++ IS = 4.291E-06
++ N = 1.002
++ BV = 44
++ IBV = 3.0E-05
++ RS = 0.3772
++ CJO = 7.8E-11
++ VJ = 0.4015
++ M = 0.508
++ FC = 0.1
++ TT = 0
++ EG = 0.69
++ XTI = 2)
+.ENDS
+**
+.SUBCKT 1PS70SB40 1 3
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it 
+* improves modeling in the reverse
+* mode of operation.
+R1 1 3 6.659E+08 
+D1 1 3 1PS70SB40
+*
+.MODEL 1PS70SB40 D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT 1PS70SB44 1 2 3
+* The Resistors do not reflect
+* physical devices.  Instead they 
+* improve modeling in the reverse
+* mode of operation.
+R1 1 3 6.659E+08 
+D1 1 3 1PS70SB44
+R2 3 2 6.659E+08
+D2 3 2 1PS70SB44
+*
+.MODEL 1PS70SB44 D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT 1PS70SB45 1 2 3
+* The Resistors do not reflect
+* physical devices.  Instead they 
+* improve modeling in the reverse
+* mode of operation.
+R1 1 3 6.659E+08 
+D1 1 3 1PS70SB45
+R2 2 3 6.659E+08
+D2 2 3 1PS70SB45
+*
+.MODEL 1PS70SB45 D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT 1PS70SB46 1 2 3
+* The Resistors do not reflect
+* physical devices.  Instead they 
+* improve modeling in the reverse
+* mode of operation.
+R1 3 1 6.659E+08 
+D1 3 1 1PS70SB46
+R2 3 2 6.659E+08
+D2 3 2 1PS70SB46
+*
+.MODEL 1PS70SB46 D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT 1PS70SB82 1 2 3
+*
+R1 1 3 3E+07
+D1 1 3 1PS70SB82
+*
+* The resistors do not reflect 
+* physical devices. Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+.MODEL 1PS70SB82 D
++ IS = 1.042E-08
++ N = 1.029
++ BV = 20
++ IBV = 0.001
++ RS = 5.567
++ CJO = 1.029E-12
++ VJ = 0.2159
++ M = 0.1731
++ FC = 0
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+
+
+*
+.SUBCKT 1PS70SB84 1 2 3
+*
+R1 1 3 3E+07
+D1 1 3 1PS70SB84
+R2 3 2 3E+07
+D2 3 2 1PS70SB84  
+*
+* The resistors do not reflect 
+* physical devices. Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+.MODEL 1PS70SB84 D
++ IS = 1.042E-08
++ N = 1.029
++ BV = 20
++ IBV = 0.001
++ RS = 5.567
++ CJO = 1.029E-12
++ VJ = 0.2159
++ M = 0.1731
++ FC = 0
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+
+
+*
+.SUBCKT 1PS70SB85 1 2 3
+*
+R1 1 3 3E+07
+D1 1 3 1PS70SB85
+R2 2 3 3E+07
+D2 2 3 1PS70SB85
+*
+* The resistors do not reflect 
+* physical devices. Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+.MODEL 1PS70SB85 D
++ IS = 1.042E-08
++ N = 1.029
++ BV = 20
++ IBV = 0.001
++ RS = 5.567
++ CJO = 1.029E-12
++ VJ = 0.2159
++ M = 0.1731
++ FC = 0
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+
+
+*
+.SUBCKT 1PS70SB86 1 2 3
+*
+R1 3 1 3E+07
+D1 3 1 1PS70SB86
+R2 3 2 3E+07
+D2 3 2 1PS70SB86
+*
+* The resistors do not reflect 
+* physical devices. Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+.MODEL 1PS70SB86 D
++ IS = 1.042E-08
++ N = 1.029
++ BV = 20
++ IBV = 0.001
++ RS = 5.567
++ CJO = 1.029E-12
++ VJ = 0.2159
++ M = 0.1731
++ FC = 0
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+
+
+*
+.SUBCKT 1PS74SB23 1 2 
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse
+* mode of operation.
+R1 1 2 2.56E+05 
+D1 1 2 1PS74SB23
+.MODEL 1PS74SB23 D 
++ IS = 6.984E-06 
++ N = 1.023 
++ BV = 30 
++ IBV = 0.0002402 
++ RS = 0.1574 
++ CJO = 3.075E-10 
++ VJ = 0.6615 
++ M = 0.6098 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT 1PS75SB45 1 2 3
+*
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse
+* mode of operation.
+*
+R1 1 3 8E+08 
+D1 1 3 1PS75SB45
+R2 2 3 8E+08
+D2 2 3 1PS75SB45 
+.MODEL 1PS75SB45 D( 
++ IS = 9.114E-09 
++ N = 1.006 
++ BV = 45 
++ IBV = 7.8E-05 
++ RS = 4.563 
++ CJO = 3.895E-12 
++ VJ = 0.3192 
++ M = 0.4008 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT 1PS76SB10 1 2 
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse
+* mode of operation.
+R1 1 2 2.9E+07 
+D1 1 2 1PS76SB10 
+.MODEL 1PS76SB10 D( 
++ IS = 2.548E-07 
++ N = 1.02 
++ BV = 33 
++ IBV = 1.251E-06 
++ RS = 2.582 
++ CJO = 9.92E-12 
++ VJ = 0.317 
++ M = 0.4411 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+*.SUBCKT 1PS76SB17 1 2 
+* The Resistor R1 does not reflect
+* a physical device.  Instead it
+* improves modeling in the reverse
+* mode of operation.
+R1 1 2 6E+07 
+D1 1 2 1PS76SB17 
+.MODEL 1PS76SB17 D( 
++ IS = 1.419E-09 
++ N = 1.022 
++ BV = 6 
++ IBV = 2.45E-06 
++ RS = 5.112 
++ CJO = 7.867E-13 
++ VJ = 0.1043 
++ M = 0.1439 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+*
+**
+.SUBCKT 1PS76SB21 1 2 
+* The Resistor R1 does not reflect
+* a physical device.  Instead it 
+* improves modeling in the 
+* reverse mode of operation.
+R1 1 2 5.9E+06 
+D1 1 2 1PS76SB21 
+.MODEL 1PS76SB21 D (
++ IS = 1.009E-06 
++ N = 1.017 
++ BV = 44 
++ IBV = 0.001611 
++ RS = 0.6578 
++ CJO = 3.76E-11 
++ VJ = 0.274 
++ M = 0.4381 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 )
+.ENDS
+**
+.SUBCKT 1PS76SB40 1 2 
+* The Resistor R1 does not 
+* reflect a physical device. 
+* Instead it improves modeling
+* in the reverse mode of 
+* operation.
+R1 2 1 6.659E+08 
+D1 2 1 1PS76SB40
+*
+.MODEL 1PS76SB40 D
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2
+.ENDS
+**
+.SUBCKT 1PS76SB70 1 2 
+* The Resistor R1 does not reflect a
+* physical device.  Instead it improves
+* modeling in the reverse mode of
+* operation.
+R1 1 2 1.409E+09 
+D1 1 2 1PS76SB70  
+.MODEL 1PS76SB70 D( 
++ IS = 3.22E-09 
++ N = 1.018 
++ BV = 77
++ IBV = 1.67E-07 
++ RS = 20.89 
++ CJO = 1.655E-12 
++ VJ = 0.349
++ M = 0.3583
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT 1PS79SB10 1 2 
+* The Resistor R1 does not reflect a
+* physical device.  Instead it improves
+* modeling in the reverse mode of
+* operation.
+R1 1 2 3.5E+07 
+D1 1 2 1PS79SB10 
+* 
+.MODEL 1PS79SB10 D( 
++ IS = 2.36E-07 
++ N = 1.009 
++ BV = 33 
++ IBV = 0.001 
++ RS = 2.633 
++ CJO = 9.53E-12 
++ VJ = 0.2034 
++ M = 0.3811 
++ FC = 0.6435 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT 1PS79SB17 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 6E+07
+D1 3 1 1PS79SB17
+*
+.MODEL 1PS79SB17 D
++ IS = 1.419E-9
++ N = 1.022
++ BV = 6
++ IBV = 2.45E-6 
++ RS = 5.112
++ CJO = 7.662E-13
++ VJ = 0.1681
++ M = 0.1995
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT 1PS79SB30 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 2 9.5E+07
+D1 1 2 1PS79SB30
+*
+.MODEL 1PS79SB30 D
++ IS = 8E-08
++ N = 1.012
++ BV = 45
++ IBV = 0.0001
++ RS = 0.8243
++ CJO = 2.515E-11
++ VJ = 0.4182
++ M = 0.4941
++ FC = 0.5
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+*
+*
+.SUBCKT 1PS79SB31 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 2 4.771E+06
+D1 1 2 1PS79SB31
+*
+.MODEL 1PS79SB31 D
++ IS = 9.539E-07
++ N = 1.007
++ BV = 35
++ IBV = 4E-05
++ RS = 0.4678
++ CJO = 3.518E-11
++ VJ = 0.3193
++ M = 0.4687
++ FC = 0.5
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS*
+.SUBCKT 1PS79SB40 1 2
+*
+* The resistor does not reflect a
+* physical devices.  Instead it improves
+* modeling in the reverse mode of
+* operation.
+*
+R1 2 1 8E+08
+D1 2 1 1PS79SB40
+.MODEL 1PS79SB40 D
++ IS = 8.361E-09
++ N = 1.003
++ BV = 44
++ IBV = 8E-07
++ RS = 5.031
++ CJO = 3.8E-12
++ VJ = 0.1119
++ M = 0.2915
++ FC = 1
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+* 1PS88SB48
+* The resistors do not reflect 
+* physical devices.  Instead 
+* they improve modeling in the
+* reverse mode of operation.
+*
+.SUBCKT 1PS88SB48 1 2 3 4 5 6
+R1 1 6 8.961E+08 
+D1 1 6 1PS88SB48 
+R2 2 6 8.961E+08
+D2 2 6 1PS88SB48
+R3 4 3 8.961E+08
+D3 4 3 1PS88SB48
+R4 5 3 8.961E+08
+D4 5 3 1PS88SB48
+.MODEL 1PS88SB48 D 
++ IS = 9.649E-09 
++ N = 1.013 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 4.999 
++ CJO = 3.928E-12 
++ VJ = 0.2057 
++ M = 0.3426 
++ FC = 4.441E-16 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 
+.ENDS*
+.SUBCKT 1PS88SB82 1 2 3 4 5 6
+*
+R1 1 6 3E+07
+D1 1 6 1PS88SB82
+R2 2 5 3E+07
+D2 2 5 1PS88SB82
+R3 3 4 3E+07
+D3 3 4 1PS88SB82
+*
+* The resistors do not reflect 
+* physical devices. Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+.MODEL 1PS88SB82 D
++ IS = 1.042E-08
++ N = 1.029
++ BV = 20
++ IBV = 0.001
++ RS = 5.567
++ CJO = 1.029E-12
++ VJ = 0.2159
++ M = 0.1731
++ FC = 0
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+
+
+*
+.SUBCKT BAS40-04 1 2 3 
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 1 3 6.659E+08 
+D1 1 3 BAS40-04
+R2 3 2 6.659E+08
+D2 3 2 BAS40-04 
+*
+.MODEL BAS40-04 D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS40-04W 1 2 3
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 1 3 6.659E+08 
+D1 1 3 BAS40-04W 
+R2 3 2 6.659E+08
+D2 3 2 BAS40-04W 
+*
+.MODEL BAS40-04W D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS40-05 1 2 3
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 1 3 6.659E+08 
+D1 1 3 BAS40-05 
+R2 2 3 6.659E+08
+D2 2 3 BAS40-05 
+*
+.MODEL BAS40-05 D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS40-05V 1 2 3 4 5 6
+*
+* The resistors do not 
+* reflect a physical devices. Instead they
+* improve modelling in the reverse
+* mode of operation.
+*
+R1 1 6 8E+08
+D1 1 6 BAS40-05V 
+R2 2 6 8E+08
+D2 2 6 BAS40-05V
+R3 4 3 8E+08
+D3 4 3 BAS40-05V
+R4 5 3 8E+08
+D4 5 3 BAS40-05V
+*
+.MODEL BAS40-05V D( 
++ IS = 9.114E-09 
++ N = 1.006 
++ BV = 45 
++ IBV = 7.8E-05 
++ RS = 4.563 
++ CJO = 3.895E-12 
++ VJ = 0.3192 
++ M = 0.4008 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS40-05W 1 2 3
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 1 3 6.659E+08 
+D1 1 3 BAS40-05W 
+R2 2 3 6.659E+08
+D2 2 3 BAS40-05W 
+*
+.MODEL BAS40-05W D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS40-06 1 2 3
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 3 1 6.659E+08 
+D1 3 1 BAS40-06
+R2 3 2 6.659E+08
+D2 3 2 BAS40-06
+*
+.MODEL BAS40-06 D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS40-06W 1 2 3
+* The resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 3 1 6.659E+08 
+D1 3 1 BAS40-06W 
+R2 3 2 6.659E+08
+D2 3 2 BAS40-06W 
+*
+.MODEL BAS40-06W D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS40-07 1 2 3 4
+*
+* The resistor does not reflect a
+* physical devices.  Instead it improves
+* modeling in the reverse mode of
+* operation.
+*
+R1 4 1 8E+08
+D1 4 1 BAS40-07
+R2 3 2 8E+08
+D2 3 2 BAS40-07
+*
+.MODEL BAS40-07 D
++ IS = 8.361E-09
++ N = 1.003
++ BV = 44
++ IBV = 8E-07
++ RS = 5.031
++ CJO = 3.8E-12
++ VJ = 0.1119
++ M = 0.2915
++ FC = 1
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT BAS40-07V 1 3 4 6
+*
+* The resistor does not reflect a
+* physical devices.  Instead it improves
+* modeling in the reverse mode of
+* operation.
+*
+R1 1 6 8E+08
+D1 1 6 BAS40-07V
+R2 4 3 8E+08
+D2 4 3 BAS40-07V
+
+*
+.MODEL BAS40-07V D
++ IS = 8.361E-09
++ N = 1.003
++ BV = 44
++ IBV = 8E-07
++ RS = 5.031
++ CJO = 3.8E-12
++ VJ = 0.1119
++ M = 0.2915
++ FC = 1
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT BAS40H 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 2 8E+08
+D1 1 2 BAS40H
+*
+.MODEL BAS40H D
++ IS = 8.361E-09
++ N = 1.003
++ BV = 44
++ IBV = 8E-07
++ RS = 5.031
++ CJO = 3.8E-12
++ VJ = 0.1119
++ M = 0.2915
++ FC = 1
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT BAS40L 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 8E+08
+D1 2 1 BAS40L
+*
+.MODEL BAS40L D 
++ IS = 9.114E-9 
++ N = 1.006 
++ BV = 45 
++ IBV = 7.8E-5 
++ RS = 4.563 
++ CJO = 3.895E-12 
++ VJ = 0.3192 
++ M = 0.4008 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT BAS40 1 3 
+* The Resistor R1 does not 
+* reflect a physical device. 
+* Instead it improves modeling
+* in the reverse mode of 
+* operation.
+R1 1 3 6.659E+08 
+D1 1 3 BAS40 
+*
+.MODEL BAS40 D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS40W 1 3 
+* The Resistor R1 does not 
+* reflect a physical device. 
+* Instead it improves modeling
+* in the reverse mode of 
+* operation.
+R1 1 3 6.659E+08 
+D1 1 3 BAS40W 
+*
+.MODEL BAS40W D( 
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS40XY 1 2 3 4 5 6
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+*
+R1 1 6 8E+08
+D1 1 6 BAS40XY
+R2 6 2 8E+08
+D2 6 2 BAS40XY
+R3 3 5 8E+08
+D3 3 5 BAS40XY
+R4 4 3 8E+08
+D4 4 3 BAS40XY
+*
+.MODEL BAS40XY D
++ IS = 8.361E-09
++ N = 1.003
++ BV = 44
++ IBV = 8E-07
++ RS = 5.031
++ CJO = 3.8E-12
++ VJ = 0.1119
++ M = 0.2915
++ FC = 1
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT BAS70-04 1 2 3
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 1 3 1.409E+09 
+D1 1 3 BAS70
+R2 3 2 1.409E+09 
+D2 3 2 BAS70
+.MODEL BAS70 D( 
++ IS = 3.22E-09 
++ N = 1.018 
++ BV = 77
++ IBV = 1.67E-07 
++ RS = 20.89 
++ CJO = 1.655E-12 
++ VJ = 0.349
++ M = 0.3583
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS70-04W 1 2 3
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 1 3 1.409E+09 
+D1 1 3 BAS70W
+R2 3 2 1.409E+09 
+D2 3 2 BAS70W
+*
+.MODEL BAS70W D( 
++ IS = 3.22E-09 
++ N = 1.018 
++ BV = 77
++ IBV = 1.67E-07 
++ RS = 20.89 
++ CJO = 1.655E-12 
++ VJ = 0.349
++ M = 0.3583
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS70-05 1 2 3
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 1 3 1.409E+09 
+D1 1 3 BAS70
+R2 2 3 1.409E+09 
+D2 2 3 BAS70
+.MODEL BAS70 D( 
++ IS = 3.22E-09 
++ N = 1.018 
++ BV = 77
++ IBV = 1.67E-07 
++ RS = 20.89 
++ CJO = 1.655E-12 
++ VJ = 0.349
++ M = 0.3583
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS70-05W 1 2 3
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 1 3 1.409E+09 
+D1 1 3 BAS70W
+R2 2 3 1.409E+09 
+D2 2 3 BAS70W
+.MODEL BAS70W D( 
++ IS = 3.22E-09 
++ N = 1.018 
++ BV = 77
++ IBV = 1.67E-07 
++ RS = 20.89 
++ CJO = 1.655E-12 
++ VJ = 0.349
++ M = 0.3583
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS70-06 1 2 3
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 3 1 1.409E+09 
+D1 3 1 BAS70
+R2 3 2 1.409E+09 
+D2 3 2 BAS70
+.MODEL BAS70 D( 
++ IS = 3.22E-09 
++ N = 1.018 
++ BV = 77
++ IBV = 1.67E-07 
++ RS = 20.89 
++ CJO = 1.655E-12 
++ VJ = 0.349
++ M = 0.3583
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS70-06W 1 2 3
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 3 1 1.409E+09 
+D1 3 1 BAS70W
+R2 3 2 1.409E+09 
+D2 3 2 BAS70W
+.MODEL BAS70 D( 
++ IS = 3.22E-09 
++ N = 1.018 
++ BV = 77
++ IBV = 1.67E-07 
++ RS = 20.89 
++ CJO = 1.655E-12 
++ VJ = 0.349
++ M = 0.3583
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS70-07 1 2 3 4
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+R1 4 1 1.409E+09 
+D1 4 1 BAS70
+R2 3 2 1.409E+09 
+D2 3 2 BAS70
+.MODEL BAS70 D( 
++ IS = 3.22E-09 
++ N = 1.018 
++ BV = 77
++ IBV = 1.67E-07 
++ RS = 20.89 
++ CJO = 1.655E-12 
++ VJ = 0.349
++ M = 0.3583
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS70-07V 1 3 4 6
+*
+R1 1 6 1.409E+09
+D1 1 6 BAS70-07V
+R2 4 3 1.409E+09
+D2 4 3 BAS70-07V
+*
+.MODEL BAS70-07V D
++ IS = 3.22E-09 
++ N = 1.018     
++ BV = 77       
++ IBV = 1.67E-07
++ RS = 20.89    
++ CJO = 1.655E-12
++ VJ = 0.349    
++ M = 0.3583    
++ FC = 0.5      
++ TT = 0
++ EG = 0.69     
++ XTI = 2       
+.ENDS*
+.SUBCKT BAS70H 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 2 1.409E+09
+D1 1 2 BAS70H
+*
+.MODEL BAS70H D
++ IS = 3.22E-09 
++ N = 1.018     
++ BV = 77       
++ IBV = 1.67E-07
++ RS = 20.89    
++ CJO = 1.655E-12
++ VJ = 0.349    
++ M = 0.3583    
++ FC = 0.5      
++ EG = 0.69     
++ XTI = 2       
+.ENDS
+**
+.SUBCKT BAS70L 1 2 
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 2 1.409E+9 
+D1 1 2 BAS70L 
+*
+.MODEL BAS70L D 
++ IS = 3.22E-9 
++ N = 1.018 
++ BV = 77 
++ IBV = 1.67E-7 
++ RS = 20.89 
++ CJO = 1.608E-12 
++ VJ = 0.3891 
++ M = 0.3683 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT BAS70 1 3 
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it 
+* improves modeling in the reverse
+* mode of operation.
+R1 1 3 1.409E+09 
+D1 1 3 BAS70 
+.MODEL BAS70 D( 
++ IS = 3.22E-09 
++ N = 1.018 
++ BV = 77
++ IBV = 1.67E-07 
++ RS = 20.89 
++ CJO = 1.655E-12 
++ VJ = 0.349
++ M = 0.3583
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS70VV 1 2 3 4 5 6
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+*
+R1 1 6 1.409E+09
+D1 1 6 BAS70VV
+R2 2 5 1.409E+09
+D2 2 5 BAS70VV
+R3 3 4 1.409E+09
+D3 3 4 BAS70VV
+*
+.MODEL BAS70VV D
++ IS = 3.22E-09
++ N = 1.018
++ BV = 77 
++ IBV = 1.67E-07
++ RS = 20.89 
++ CJO = 1.655E-12
++ VJ = 0.349 
++ M = 0.3583 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT BAS70W 1 3 
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it 
+* improves modeling in the reverse
+* mode of operation.
+R1 1 3 1.409E+09 
+D1 1 3 BAS70W  
+.MODEL BAS70W D( 
++ IS = 3.22E-09 
++ N = 1.018 
++ BV = 77
++ IBV = 1.67E-07 
++ RS = 20.89 
++ CJO = 1.655E-12 
++ VJ = 0.349
++ M = 0.3583
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAS70XY 1 2 3 4 5 6
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+*
+R1 1 6 1.409E+9
+D1 1 6 BAS70XY
+R2 6 2 1.409E+9
+D2 6 2 BAS70XY
+R3 3 5 1.409E+9
+D3 3 5 BAS70XY
+R4 4 3 1.409E+9
+D4 4 3 BAS70XY
+*
+.MODEL BAS70XY D
++ IS = 3.22E-9 
++ N = 1.018     
++ BV = 77       
++ IBV = 1.67E-7
++ RS = 20.89    
++ CJO = 1.655E-12
++ VJ = 0.349    
++ M = 0.3583    
++ FC = 0.5      
++ EG = 0.69     
++ XTI = 2       
+.ENDS
+**
+.SUBCKT BAT120A 1 3 4
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse
+* mode of operation.
+R1 4 1 2.56E+05 
+D1 4 1 BAT120A
+R2 4 3 2.56E+05 
+D2 4 3 BAT120A
+.MODEL BAT120A (D 
++ IS = 6.984E-06 
++ N = 1.023 
++ BV = 30 
++ IBV = 0.0002402 
++ RS = 0.1574 
++ CJO = 3.075E-10 
++ VJ = 0.6615 
++ M = 0.6098 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 )
+.ENDS
+**
+.SUBCKT BAT120C 1 3 4
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse
+* mode of operation.
+R1 1 4 2.56E+05 
+D1 1 4 BAT120C
+R2 3 4 2.56E+05 
+D2 3 4 BAT120C
+.MODEL BAT120C (D 
++ IS = 6.984E-06 
++ N = 1.023 
++ BV = 30 
++ IBV = 0.0002402 
++ RS = 0.1574 
++ CJO = 3.075E-10 
++ VJ = 0.6615 
++ M = 0.6098 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 )
+.ENDS
+**
+.SUBCKT BAT120S 1 3 4
+* The resistor do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse
+* mode of operation.
+R1 1 4 2.56E+05 
+D1 1 4 BAT120S
+R2 4 3 2.56E+05 
+D2 4 3 BAT120S
+.MODEL BAT120S (D 
++ IS = 6.984E-06 
++ N = 1.023 
++ BV = 30 
++ IBV = 0.0002402 
++ RS = 0.1574 
++ CJO = 3.075E-10 
++ VJ = 0.6615 
++ M = 0.6098 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 )
+.ENDS
+**
+.SUBCKT BAT160A 1 2 3 4
+*
+* The resistors do not reflect 
+* physical devices. Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 4 1 1E+7
+D1 4 1 BAT160A
+R1 4 3 1E+7
+D1 4 3 BAT160A
+*
+.MODEL BAT160A D
++ IS = 5E-7
++ N = 0.9751
++ BV = 66
++ IBV = 0.0004
++ RS = 0.3422
++ CJO = 1.75E-10
++ VJ = 0.3761
++ M = 0.4725
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT BAT160C 1 2 3 4
+*
+* The resistors do not reflect 
+* physical devices. Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 1 4 1E+7
+D1 1 4 BAT160C
+R1 3 4 1E+7
+D1 3 4 BAT160C
+*
+.MODEL BAT160C D
++ IS = 5E-7
++ N = 0.9751
++ BV = 66
++ IBV = 0.0004
++ RS = 0.3422
++ CJO = 1.75E-10
++ VJ = 0.3761
++ M = 0.4725
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT BAT160S 1 2 3 4
+*
+* The resistors do not reflect 
+* physical devices. Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 1 4 1E+7
+D1 1 4 BAT160S
+R1 4 3 1E+7
+D1 4 3 BAT160S
+*
+.MODEL BAT160S D
++ IS = 5E-7
++ N = 0.9751
++ BV = 66
++ IBV = 0.0004
++ RS = 0.3422
++ CJO = 1.75E-10
++ VJ = 0.3761
++ M = 0.4725
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT BAT17 1 2 3
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 6E+07
+D1 1 3 BAT17
+*
+.MODEL BAT17 D 
++ IS = 1.419E-09 
++ N = 1.022 
++ BV = 6 
++ IBV = 2.45E-06 
++ RS = 5.112 
++ CJO = 7.867E-13 
++ VJ = 0.1043 
++ M = 0.1439 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT BAT54A 1 2 3
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 3.6E+07 
+D1 3 1 BAT54A
+R2 3 2 3.6E+07
+D2 3 2 BAT54A 
+*
+.MODEL BAT54A D(
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 0 
++    EG = 0.69 
++    XTI = 2)
+**
+.SUBCKT BAT54AW 1 2 3
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 3.6E+07 
+D1 3 1 BAT54AW
+R2 3 2 3.6E+07
+D2 3 2 BAT54AW 
+*
+.MODEL BAT54AW D( 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 7E-9 
++    EG = 0.69 
++    XTI = 2) 
+**
+.SUBCKT BAT54CM 1 2 3
+*
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 3.6E+07 
+D1 1 3 BAT54CM
+R2 2 3 3.6E+07
+D2 2 3 BAT54CM
+*
+.MODEL BAT54CM D 
++ IS = 2.117E-07 
++ N = 1.016 
++ BV = 36 
++ IBV = 1.196E-06 
++ RS = 2.637 
++ CJO = 1.114E-11 
++ VJ = 0.2013 
++ M = 0.3868 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2
+.ENDS
+**
+.SUBCKT BAT54C 1 2 3
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 3.6E+07 
+D1 1 3 BAT54C
+R2 2 3 3.6E+07
+D2 2 3 BAT54C
+*
+.MODEL BAT54C D( 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 0 
++    EG = 0.69 
++    XTI = 2) 
+**
+.SUBCKT BAT54CV 1 2 3 4 5 6
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.*
+*
+R1 1 6 3.6E+7 
+D1 1 6 BAT54CV
+R2 2 6 3.6E+7 
+D2 2 6 BAT54CV
+R3 4 3 3.6E+7 
+D3 4 3 BAT54CV
+R4 5 3 3.6E+7 
+D4 5 3 BAT54CV
+*
+.MODEL BAT54CV D 
++ IS = 2.117E-7 
++ N = 1.016 
++ BV = 36 
++ IBV = 1.196E-6 
++ RS = 2.637 
++ CJO = 1.114E-11 
++ VJ = 0.2013 
++ M = 0.3868 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2
+.ENDS
+**
+.SUBCKT BAT54CW 1 2 3
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 3.6E+07 
+D1 1 3 BAT54CW
+R2 2 3 3.6E+07
+D2 2 3 BAT54CW 
+*
+.MODEL BAT54CW D( 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 7E-9 
++    EG = 0.69 
++    XTI = 2) 
+**
+.SUBCKT BAT54H 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 3.5E+07
+D1 2 1 BAT54H
+*
+.MODEL BAT54H D 
++ IS = 2.36E-07 
++ N = 1.009 
++ BV = 33 
++ IBV = 0.001 
++ RS = 2.633 
++ CJO = 9.53E-12 
++ VJ = 0.2034 
++ M = 0.3811 
++ FC = 0.6435 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT BAT54J 1 2
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+D1 2 1 BAT54J
+R1 2 1 3.5E+07 
+* 
+.MODEL BAT54J D 
++ IS = 2.36E-07 
++ N = 1.009 
++ BV = 33 
++ IBV = 0.001 
++ RS = 2.633 
++ CJO = 9.53E-12 
++ VJ = 0.2034 
++ M = 0.3811 
++ FC = 0.6435 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT BAT54L 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 3.6E+7 
+D1 2 1 BAT54L
+*
+.MODEL BAT54L D 
++ IS = 2.117E-7 
++ N = 1.016 
++ BV = 36 
++ IBV = 1.196E-6 
++ RS = 2.637 
++ CJO = 1.114E-11 
++ VJ = 0.2013 
++ M = 0.3868 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2
+.ENDS
+**
+.SUBCKT BAT54 1 3 
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 3.6E+07 
+D1 1 3 BAT54  
+*
+.MODEL BAT54 D( 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 0 
++    EG = 0.69 
++    XTI = 2) 
+**
+.SUBCKT BAT54S 1 2 3
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 3.6E+07 
+D1 1 3 BAT54S
+R2 3 2 3.6E+07
+D2 3 2 BAT54S 
+*
+.MODEL BAT54S D( 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 0 
++    EG = 0.69 
++    XTI = 2) 
+**
+.SUBCKT BAT54SW 1 2 3
+* The resistors do not reflect 
+* physical devices.  Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 3.6E+07 
+D1 1 3 BAT54SW
+R2 3 2 3.6E+07
+D2 3 2 BAT54SW 
+*
+.MODEL BAT54SW D( 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 7E-9 
++    EG = 0.69 
++    XTI = 2) 
+**
+.SUBCKT BAT54VV 1 2 3 4 5 6
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+*
+D1 1 6 BAT54VV 
+R1 1 6 3.5E+07 
+D2 2 5 BAT54VV 
+R2 2 5 3.5E+07
+D3 3 4 BAT54VV 
+R3 3 4 3.5E+07
+* 
+.MODEL BAT54VV D 
++ IS = 2.36E-07 
++ N = 1.009 
++ BV = 33 
++ IBV = 0.001 
++ RS = 2.633 
++ CJO = 9.53E-12 
++ VJ = 0.2034 
++ M = 0.3811 
++ FC = 0.6435 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT BAT54W 1 2 3 
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 3.6E+07 
+D1 1 3 BAT54W  
+*
+.MODEL BAT54W D( 
++    IS = 2.117E-07 
++    N = 1.016 
++    BV = 36 
++    IBV = 1.196E-06 
++    RS = 2.637 
++    CJO = 1.114E-11 
++    VJ = 0.2013 
++    M = 0.3868 
++    FC = 0 
++    TT = 7E-9 
++    EG = 0.69 
++    XTI = 2) 
+**
+.SUBCKT BAT54XY 1 2 3 4 5 6
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+*
+R1 1 6 4.795E+7
+D1 1 6 BAT54XY
+R2 6 2 4.795E+7
+D2 6 2 BAT54XY
+R3 4 3 4.795E+7
+D3 4 3 BAT54XY
+R4 3 5 4.795E+7
+D4 3 5 BAT54XY
+*
+.MODEL BAT54XY D
++ IS = 2.019E-007
++ N = 1.003
++ BV = 33
++ IBV = 1.5E-006
++ RS = 2.759
++ CJO = 7.258E-012
++ VJ = 0.2049
++ M = 0.3577
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT BAT720 1 2 
+R1 1 2 2.8E+06 
+D1 1 2 DBAT720 
+*
+* The Resistor R1 does not reflect
+* a physical device.  Instead it
+* improves modeling in the reverse
+* mode of operation 
+*
+.MODEL DBAT720 D 
++ IS = 1.281E-06 
++ N = 1.009 
++ BV = 44 
++ IBV = 2.21E-05 
++ RS = 0.3093 
++ CJO = 8.133E-11 
++ VJ = 0.4519 
++ M = 0.5304 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT BAT721A 1 2 3
+* The resistors do not reflect
+* physical devices. Instead they 
+* improve modeling in the reverse
+* mode of operation. 
+R1 3 1 5.9E+06 
+D1 3 1 BAT721A
+R2 3 2 5.9E+06 
+D2 3 2 BAT721A
+* 
+.MODEL BAT721A D( 
++ IS = 1.009E-06 
++ N = 1.017 
++ BV = 44 
++ IBV = 0.001611 
++ RS = 0.6578 
++ CJO = 3.76E-11 
++ VJ = 0.274 
++ M = 0.4381 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAT721C 1 2 3
+* The resistors do not reflect
+* physical devices. Instead they 
+* improve modeling in the reverse
+* mode of operation. 
+R1 1 3 5.9E+06 
+D1 1 3 BAT721C
+R2 2 3 5.9E+06 
+D2 2 3 BAT721C
+* 
+.MODEL BAT721C D( 
++ IS = 1.009E-06 
++ N = 1.017 
++ BV = 44 
++ IBV = 0.001611 
++ RS = 0.6578 
++ CJO = 3.76E-11 
++ VJ = 0.274 
++ M = 0.4381 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS 
+**
+.SUBCKT BAT721 1 3
+* The resistor R1 does not reflect
+* a physical device. Instead it 
+* improves modeling in the reverse
+* mode of operation. 
+R1 1 3 5.9E+06 
+D1 1 3 BAT721
+* 
+.MODEL BAT721 D( 
++ IS = 1.009E-06 
++ N = 1.017 
++ BV = 44 
++ IBV = 0.001611 
++ RS = 0.6578 
++ CJO = 3.76E-11 
++ VJ = 0.274 
++ M = 0.4381 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS 
+**
+.SUBCKT BAT721S 1 2 3
+* The resistors do not reflect
+* physical devices. Instead they 
+* improve modeling in the reverse
+* mode of operation. 
+R1 1 3 5.9E+06 
+D1 1 3 BAT721S
+R2 3 2 5.9E+06 
+D2 3 2 BAT721S
+* 
+.MODEL BAT721S D( 
++ IS = 1.009E-06 
++ N = 1.017 
++ BV = 44 
++ IBV = 0.001611 
++ RS = 0.6578 
++ CJO = 3.76E-11 
++ VJ = 0.274 
++ M = 0.4381 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAT74 1 2 3 4
+* The resistors do not reflect
+* physical devices.  Instead they
+* improve modeling in the reverse
+* mode of operation.
+R1 4 1 2.9E+07 
+D1 4 1 BAT74 
+R2 3 2 2.9E+07
+D2 3 2 BAT74
+*
+.MODEL BAT74 D( 
++ IS = 2.548E-07 
++ N = 1.02 
++ BV = 33 
++ IBV = 1.251E-06 
++ RS = 2.582 
++ CJO = 9.92E-12 
++ VJ = 0.317 
++ M = 0.4411 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2) 
+.ENDS
+**
+.SUBCKT BAT74V 1 3 4 6 
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+*
+D1 1 6 BAT74V 
+R1 1 6 3.5E+07 
+D2 4 3 BAT74V 
+R2 4 3 3.5E+07
+* 
+.MODEL BAT74V D 
++ IS = 2.36E-07 
++ N = 1.009 
++ BV = 33 
++ IBV = 0.001 
++ RS = 2.633 
++ CJO = 9.53E-12 
++ VJ = 0.2034 
++ M = 0.3811 
++ FC = 0.6435 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT BAT754L 1 2 3 4 5 6
+*
+* The resistors do not reflect 
+* physical devices. Instead they
+* improve modeling in the reverse 
+* mode of operation.
+*
+R1 1 6 3.558E+07
+D1 1 6 BAT754L
+R2 2 5 3.558E+07
+D2 2 5 BAT754L
+R3 3 4 3.558E+07
+D3 3 4 BAT754L
+*
+.MODEL BAT754L D
++ IS = 2.993E-07
++ N = 1.01
++ BV = 30
++ IBV = 1.5E-06
++ RS = 2.734
++ CJO = 9.228E-12
++ VJ = 0.3033
++ M = 0.4131
++ FC = 0.5178
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+*
+*
+.SUBCKT BAT760 1 2
+*
+* The resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+R1 1 2 2E+06
+D1 1 2 DBAT760
+*
+.MODEL DBAT760 D (
++ IS = 1.686E-06
++ N = 1.015
++ BV = 21
++ IBV = 1E-06
++ RS = 0.1249
++ CJO = 9.086E-11
++ VJ = 0.1939
++ M = 0.4542
++ FC = 1
++ TT = 0
++ EG = 0.69
++ XTI = 2 )
+.ENDS*
+.SUBCKT BAT854AW 1 2 3
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 9.5E+07
+D1 3 1 BAT854AW
+R2 3 2 9.5E+07
+D2 3 2 BAT854AW
+*
+.MODEL BAT854AW D
++ IS = 8E-08
++ N = 1.012
++ BV = 45
++ IBV = 0.0001
++ RS = 0.8243
++ CJO = 2.515E-11
++ VJ = 0.4182
++ M = 0.4941
++ FC = 0.5
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+*
+*
+.SUBCKT BAT854CW 1 2 3
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 9.5E+07
+D1 1 3 BAT854CW
+R2 2 3 9.5E+07
+D2 2 3 BAT854CW
+*
+.MODEL BAT854CW D
++ IS = 8E-08
++ N = 1.012
++ BV = 45
++ IBV = 0.0001
++ RS = 0.8243
++ CJO = 2.515E-11
++ VJ = 0.4182
++ M = 0.4941
++ FC = 0.5
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+*
+*
+.SUBCKT BAT854SW 1 2 3
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 9.5E+07
+D1 1 3 BAT854SW
+R2 3 2 9.5E+07
+D2 3 2 BAT854SW
+*
+.MODEL BAT854SW D
++ IS = 8E-08
++ N = 1.012
++ BV = 45
++ IBV = 0.0001
++ RS = 0.8243
++ CJO = 2.515E-11
++ VJ = 0.4182
++ M = 0.4941
++ FC = 0.5
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+*
+*
+.SUBCKT BAT854W 1 3
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 9.5E+07
+D1 1 3 BAT854W
+*
+.MODEL BAT854W D
++ IS = 8E-08
++ N = 1.012
++ BV = 45
++ IBV = 0.0001
++ RS = 0.8243
++ CJO = 2.515E-11
++ VJ = 0.4182
++ M = 0.4941
++ FC = 0.5
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+*
+*
+.SUBCKT BAT85 1 2
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+D1 1 2 BAT85
+R1 1 2 5.416E+7 
+* 
+.MODEL BAT85 D 
++ IS = 2.076E-7 
++ N = 1.023 
++ BV = 33 
++ IBV = 10E-6 
++ RS = 2.326 
++ CJO = 1.21E-11 
++ VJ = 0.1319 
++ M = 0.2904 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT BAT960 1 2 3 4 5 6
+*
+* The resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+R1 3 1 2E+06
+D1 3 1 BAT960
+*
+* The resistors R2...R5 are only for 
+* pinning of the device
+*
+R2 1 2 0
+R3 3 4 0
+R4 1 5 0
+R5 1 6 0
+*
+.MODEL BAT960 D (
++ IS = 1.686E-06
++ N = 1.015
++ BV = 21
++ IBV = 1E-06
++ RS = 0.1249
++ CJO = 9.086E-11
++ VJ = 0.1939
++ M = 0.4542
++ FC = 1
++ TT = 0
++ EG = 0.69
++ XTI = 2 )
+.ENDS*
+.SUBCKT PMBD354 1 2 3
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+*
+R1 3 1 6E+07
+D1 3 1 PMBD354
+R2 2 3 6E+07
+D2 2 3 PMBD354
+*
+.MODEL PMBD354 D 
++ IS = 1.419E-09 
++ N = 1.022 
++ BV = 6 
++ IBV = 2.45E-06 
++ RS = 5.112 
++ CJO = 7.867E-13 
++ VJ = 0.1043 
++ M = 0.1439 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT PMEG1020EA 1 2
+D1 2 1 PMEG1020EA
+R1 2 1 1.2E+4
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+.MODEL PMEG1020EA D
++ IS = 0.000259
++ N = 1.014
++ RS = 0.0635
++ BV = 12
++ IBV = 0.01
++ CJO = 2.553E-10
++ VJ = 0.0331
++ M = 0.3788
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG1020EH 1 2
+D1 2 1 PMEG1020EH
+R1 2 1 1.2E+4
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+.MODEL PMEG1020EH D
++ IS = 0.000259
++ N = 1.014
++ RS = 0.0635
++ BV = 12
++ IBV = 0.01
++ CJO = 2.553E-10
++ VJ = 0.0331
++ M = 0.3788
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG1020EJ 1 2
+D1 2 1 PMEG1020EJ
+R1 2 1 1.2E+4
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+.MODEL PMEG1020EJ D
++ IS = 0.000259
++ N = 1.014
++ RS = 0.0635
++ BV = 12
++ IBV = 0.01
++ CJO = 2.553E-10
++ VJ = 0.0331
++ M = 0.3788
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG1020EV 1 2 3 4 5 6
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+D1 1 2 PMEG1020EV
+R1 1 2 1.2E+4
+*
+* The resistors R1...R4 are only for
+* pinning of the device
+*
+R1 3 4 0
+R2 1 2 0
+R3 1 5 0
+R4 1 6 0
+*
+.MODEL PMEG1020EV D
++ IS = 0.000259
++ N = 1.014
++ RS = 0.0635
++ BV = 12
++ IBV = 0.01
++ CJO = 2.553E-10
++ VJ = 0.0331
++ M = 0.3788
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG1030EH 1 2
+*
+D1 2 1 PMEG1030EH
+R1 2 1 1.2E+4
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+.MODEL PMEG1030EH D
++ IS = 0.000259
++ N = 1.014
++ RS = 0.0635
++ BV = 12
++ IBV = 0.01
++ CJO = 2.553E-10
++ VJ = 0.0331
++ M = 0.3788
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG1030EJ 1 2
+*
+D1 2 1 PMEG1030EJ
+R1 2 1 1.2E+4
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+.MODEL PMEG1030EJ D
++ IS = 0.000259
++ N = 1.014
++ RS = 0.0635
++ BV = 12
++ IBV = 0.01
++ CJO = 2.553E-10
++ VJ = 0.0331
++ M = 0.3788
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2005AEA 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1E+6
+D1 2 1 PMEG2005AEA
+*
+.MODEL PMEG2005AEA D
++ IS = 3.334E-6
++ N = 0.9791
++ BV = 22
++ IBV = 0.0001
++ RS = 0.08222
++ CJO = 1.266E-10
++ VJ = 0.3619
++ M = 0.5
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2005AEL 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1E+5
+D1 2 1 PMEG2005AEL
+*
+.MODEL PMEG2005AEL D
++ IS = 8.724E-5
++ N = 0.9699
++ BV = 22
++ IBV = 0.0004
++ RS = 0.2728
++ CJO = 2.999E-11
++ VJ = 0.2604
++ M = 0.3755
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2005AEV 1 2 3 4 5 6
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 1E+6
+D1 3 1 PMEG2005AEV
+*
+* The resistors R2...R5 are only for
+* pinning of the device
+*
+R2 3 4 0
+R31 2 0
+R4 1 5 0
+R5 1 6 0
+*
+.MODEL PMEG2005AEV D
++ IS = 3.334E-6
++ N = 0.9791
++ BV = 22
++ IBV = 0.0001
++ RS = 0.08222
++ CJO = 1.266E-10
++ VJ = 0.3619
++ M = 0.5
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2005EB 1 2 
+*
+* The resistor R1 does not 
+* reflect a physical device. Instead it
+* improves modelling in the reverse
+* mode of operation.
+*
+D1 2 1 PMEG2005EB
+R1 2 1 3E+6 
+* 
+.MODEL PMEG2005EB D 
++ IS = 9.985E-7 
++ N = 0.9283 
++ BV = 32 
++ IBV = 0.001 
++ RS = 0.2146 
++ CJO = 6.105E-11 
++ VJ = 0.1 
++ M = 0.4159 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS*
+.SUBCKT PMEG2005EH 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1E+6
+D1 2 1 PMEG2005EH
+*
+.MODEL PMEG2005EH D
++ IS = 3.334E-6
++ N = 0.9791
++ BV = 22
++ IBV = 0.0001
++ RS = 0.08222
++ CJO = 1.266E-10
++ VJ = 0.3619
++ M = 0.5
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS*
+.SUBCKT PMEG2005EJ 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1E+6
+D1 2 1 PMEG2005EJ
+*
+.MODEL PMEG2005EJ D
++ IS = 3.334E-6
++ N = 0.9791
++ BV = 22
++ IBV = 0.0001
++ RS = 0.08222
++ CJO = 1.266E-10
++ VJ = 0.3619
++ M = 0.5
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2005EL 1 2 
+*
+* The resistor R1 does not 
+* reflect a physical device. Instead it
+* improves modelling in the reverse
+* mode of operation.
+*
+D1 2 1 PMEG2005EL
+R1 2 1 3E+6 
+* 
+.MODEL PMEG2005EL D 
++ IS = 9.985E-7 
++ N = 0.9283 
++ BV = 32 
++ IBV = 0.001 
++ RS = 0.2146 
++ CJO = 6.105E-11 
++ VJ = 0.1 
++ M = 0.4159 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS*
+.SUBCKT PMEG2005ET 1 2 3
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 1E+6
+D1 1 3 PMEG2005ET
+*
+.MODEL PMEG2005ET D
++ IS = 3.334E-6
++ N = 0.9791
++ BV = 22
++ IBV = 0.0001
++ RS = 0.08222
++ CJO = 1.266E-10
++ VJ = 0.3619
++ M = 0.5
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2010AEB 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1E+5
+D1 2 1 PMEG2010AEB
+*
+.MODEL PMEG2010AEB D
++ IS = 8.724E-5
++ N = 0.9699
++ BV = 22
++ IBV = 0.0004
++ RS = 0.2728
++ CJO = 2.999E-11
++ VJ = 0.2604
++ M = 0.3755
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2010AEH 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1E+6
+D1 2 1 PMEG2010AEH
+*
+.MODEL PMEG2010AEH D
++ IS = 5.409E-6
++ N = 1.02
++ BV = 22
++ IBV = 5E-5
++ RS = 0.05676
++ CJO = 1.908E-10
++ VJ = 0.3408
++ M = 0.4863
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2010AEJ 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.5E+6
+D1 2 1 PMEG2010AEJ
+*
+.MODEL PMEG2010AEJ D
++ IS = 1.686E-06
++ N = 1.015
++ BV = 24
++ IBV = 0.001
++ RS = 0.1249
++ CJO = 6.969E-11
++ VJ = 0.4003
++ M = 0.4944
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2010AET 1 2 3
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 1E+6
+D1 1 3 PMEG2010AET
+*
+.MODEL PMEG2010AET D
++ IS = 5.409E-6
++ N = 1.02
++ BV = 22
++ IBV = 5E-5
++ RS = 0.05676
++ CJO = 1.908E-10
++ VJ = 0.3408
++ M = 0.4863
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2010BEA 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1E+6
+D1 2 1 PMEG2010BEA
+*
+.MODEL PMEG2010BEA D
++ IS = 3.334E-6
++ N = 0.9791
++ BV = 22
++ IBV = 0.0001
++ RS = 0.08222
++ CJO = 1.266E-10
++ VJ = 0.3619
++ M = 0.5
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2010BEV 1 2 3 4 5 6
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 1E+6
+D1 3 1 PMEG2010BEV
+*
+* The resistors R2...R5 are only for
+* pinning of the device
+*
+R2 3 4 0
+R3 1 2 0
+R4 1 5 0
+R5 1 6 0
+*
+.MODEL PMEG2010BEV D
++ IS = 3.334E-6
++ N = 0.9791
++ BV = 22
++ IBV = 0.0001
++ RS = 0.08222
++ CJO = 1.266E-10
++ VJ = 0.3619
++ M = 0.5
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2010EA 1 2
+*
+* The resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+R1 2 1 2E+06
+D1 2 1 PMEG2010EA
+*
+.MODEL PMEG2010EA D (
++ IS = 1.686E-06
++ N = 1.015
++ BV = 21
++ IBV = 1E-06
++ RS = 0.1249
++ CJO = 9.086E-11
++ VJ = 0.1939
++ M = 0.4542
++ FC = 1
++ EG = 0.69
++ XTI = 2 )
+.ENDS*
+.SUBCKT PMEG2010EH 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1E+6
+D1 2 1 PMEG2010EH
+*
+.MODEL PMEG2010EH D
++ IS = 3.334E-6
++ N = 0.9791
++ BV = 22
++ IBV = 0.0001
++ RS = 0.08222
++ CJO = 1.266E-10
++ VJ = 0.3619
++ M = 0.5
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2010EJ 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1E+6
+D1 2 1 PMEG2010EJ
+*
+.MODEL PMEG2010EJ D
++ IS = 3.334E-6
++ N = 0.9791
++ BV = 22
++ IBV = 0.0001
++ RS = 0.08222
++ CJO = 1.266E-10
++ VJ = 0.3619
++ M = 0.5
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2010ER 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 9E+4 
+D1 2 1 PMEG2010ER
+* 
+.MODEL PMEG2010ER D 
++ IS = 3.228E-5 
++ N = 1.019 
++ BV = 22 
++ IBV = 0.005 
++ RS = 0.02675 
++ CJO = 3.379E-10 
++ VJ = 0.3862 
++ M = 0.5113
++ FC = 0.5
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT PMEG2010ET 1 2 3
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 1E+6
+D1 1 3 PMEG2010ET
+*
+.MODEL PMEG2010ET D
++ IS = 3.334E-6
++ N = 0.9791
++ BV = 22
++ IBV = 0.0001
++ RS = 0.08222
++ CJO = 1.266E-10
++ VJ = 0.3619
++ M = 0.5
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2015EA 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.5E+6
+D1 2 1 PMEG2015EA
+*
+.MODEL PMEG2015EA D
++ IS = 1.686E-06
++ N = 1.015
++ BV = 24
++ IBV = 0.001
++ RS = 0.1249
++ CJO = 6.969E-11
++ VJ = 0.4003
++ M = 0.4944
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2015EH 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.5E+6
+D1 2 1 PMEG2015EH
+*
+.MODEL PMEG2015EH D
++ IS = 1.686E-06
++ N = 1.015
++ BV = 24
++ IBV = 0.001
++ RS = 0.1249
++ CJO = 6.969E-11
++ VJ = 0.4003
++ M = 0.4944
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2015EJ 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.5E+6
+D1 2 1 PMEG2015EJ
+*
+.MODEL PMEG2015EJ D
++ IS = 1.686E-06
++ N = 1.015
++ BV = 24
++ IBV = 0.001
++ RS = 0.1249
++ CJO = 6.969E-11
++ VJ = 0.4003
++ M = 0.4944
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2015EV 1 2 3 4 5 6
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 2E+6
+D1 3 1 PMEG2015EV
+*
+* The resistors R2...R5 are only for
+* pinning of the device
+*
+R2 3 4 0
+R3 1 2 0
+R4 1 5 0
+R5 1 6 0
+*
+.MODEL PMEG2015EV D 
++ IS = 1.175E-6
++ N = 0.9841
++ BV = 24
++ IBV = 0.001
++ RS = 0.1476
++ CJO = 7.035E-11
++ VJ = 0.3891
++ M = 0.4845
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2020AEA 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1E+006
+D1 2 1 PMEG2020AEA
+*
+.MODEL PMEG2020AEA D
++ IS = 5.409E-6
++ N = 1.02
++ BV = 22
++ IBV = 5E-5
++ RS = 0.05676
++ CJO = 1.908E-10
++ VJ = 0.3408
++ M = 0.4863
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG2020EJ 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1E+6
+D1 2 1 PMEG2020EJ
+*
+.MODEL PMEG2020EJ D
++ IS = 5.409E-6
++ N = 1.02
++ BV = 22
++ IBV = 5E-5
++ RS = 0.05676
++ CJO = 1.908E-10
++ VJ = 0.3408
++ M = 0.4863
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3002AEB 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 4.771E+06
+D1 2 1 PMEG3002AEB
+*
+.MODEL PMEG3002AEB D
++ IS = 9.539E-07
++ N = 1.007
++ BV = 35
++ IBV = 4E-05
++ RS = 0.4678
++ CJO = 3.518E-11
++ VJ = 0.3193
++ M = 0.4687
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS*
+.SUBCKT PMEG3002AEL 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 4.771E+06
+D1 2 1 PMEG3002AEL
+*
+.MODEL PMEG3002AEL D
++ IS = 9.539E-07
++ N = 1.007
++ BV = 35
++ IBV = 4E-05
++ RS = 0.4678
++ CJO = 3.518E-11
++ VJ = 0.3193
++ M = 0.4687
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3005AEA 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.3E+6
+D1 2 1 PMEG3005AEA
+*
+.MODEL PMEG3005AEA D
++ IS = 2.936E-6
++ N = 0.9839
++ BV = 33
++ IBV = 7.5E-5
++ RS = 0.1166
++ CJO = 1.068E-10
++ VJ = 0.3459
++ M = 0.4948
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3005AEV 1 2 3 4 5 6
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 1.3E+6
+D1 3 1 PMEG3005AEV
+*
+* The resistors R2...R5 are only for
+* pinning of the device
+*
+R2 3 4 0
+R31 2 0
+R4 1 5 0
+R5 1 6 0
+*
+.MODEL PMEG3005AEV D
++ IS = 2.936E-6
++ N = 0.9839
++ BV = 33
++ IBV = 7.5E-5
++ RS = 0.1166
++ CJO = 1.068E-10
++ VJ = 0.3459
++ M = 0.4948
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3005EB 1 2
+R1 2 1 1E+6
+D1 2 1 PMEG3005EB
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+.MODEL PMEG3005EB D
++ IS = 1.028E-5
++ N = 0.9172
++ BV = 33
++ IBV = 0.001
++ RS = 0.3489
++ CJO = 3.874E-11
++ VJ = 0.3188
++ M = 0.4641
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3005EH 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.3E+6
+D1 2 1 PMEG3005EH
+*
+.MODEL PMEG3005EH D
++ IS = 2.936E-6
++ N = 0.9839
++ BV = 33
++ IBV = 7.5E-5
++ RS = 0.1166
++ CJO = 1.068E-10
++ VJ = 0.3459
++ M = 0.4948
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3005EJ 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.3E+6
+D1 2 1 PMEG3005EJ
+*
+.MODEL PMEG3005EJ D
++ IS = 2.936E-6
++ N = 0.9839
++ BV = 33
++ IBV = 7.5E-5
++ RS = 0.1166
++ CJO = 1.068E-10
++ VJ = 0.3459
++ M = 0.4948
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3005EL 1 2
+R1 2 1 1E+6
+D1 2 1 PMEG3005EL
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+.MODEL PMEG3005EL D
++ IS = 1.028E-5
++ N = 0.9172
++ BV = 33
++ IBV = 0.001
++ RS = 0.3489
++ CJO = 3.874E-11
++ VJ = 0.3188
++ M = 0.4641
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3005ET 1 2 3
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 1.3E+6
+D1 1 3 PMEG3005ET
+*
+.MODEL PMEG3005ET D
++ IS = 2.936E-6
++ N = 0.9839
++ BV = 33
++ IBV = 7.5E-5
++ RS = 0.1166
++ CJO = 1.068E-10
++ VJ = 0.3459
++ M = 0.4948
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3010BEA 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.3E+6
+D1 2 1 PMEG3010BEA
+*
+.MODEL PMEG3010BEA D
++ IS = 2.936E-6
++ N = 0.9839
++ BV = 33
++ IBV = 7.5E-5
++ RS = 0.1166
++ CJO = 1.068E-10
++ VJ = 0.3459
++ M = 0.4948
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3010BEV 1 2 3 4 5 6
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 1.3E+6
+D1 3 1 PMEG3010BEV
+*
+* The resistors R2...R5 are only for
+* pinning of the device
+*
+R2 3 4 0
+R3 1 2 0
+R4 1 5 0
+R5 1 6 0
+*
+.MODEL PMEG3010BEV D
++ IS = 2.936E-6
++ N = 0.9839
++ BV = 33
++ IBV = 7.5E-5
++ RS = 0.1166
++ CJO = 1.068E-10
++ VJ = 0.3459
++ M = 0.4948
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+*
+*
+.SUBCKT PMEG3010CEH 1 2
+*
+D1 2 1 PMEG3010CEH
+R1 2 1 5E+6
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+.MODEL DIODE D 
++ IS = 3.735E-007
++ N = 0.994
++ BV = 33
++ IBV = 1E-005
++ RS = 0.07992
++ CJO = 1.645E-10
++ VJ = 0.4041
++ M = 0.4946
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3010CEJ 1 2
+*
+D1 2 1 PMEG3010CEJ
+R1 2 1 5E+6
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+.MODEL PMEG3010CEJ D 
++ IS = 3.735E-007
++ N = 0.994
++ BV = 33
++ IBV = 1E-005
++ RS = 0.07992
++ CJO = 1.645E-010
++ VJ = 0.4041
++ M = 0.4946
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3010EB 1 2
+R1 2 1 1E+6
+D1 2 1 PMEG3010EB
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+.MODEL PMEG3010EB D
++ IS = 1.028E-5
++ N = 0.9172
++ BV = 33
++ IBV = 0.001
++ RS = 0.3489
++ CJO = 3.874E-11
++ VJ = 0.3188
++ M = 0.4641
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3010EH 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.3E+6
+D1 2 1 PMEG3010EH
+*
+.MODEL PMEG3010EH D
++ IS = 2.936E-6
++ N = 0.9839
++ BV = 33
++ IBV = 7.5E-5
++ RS = 0.1166
++ CJO = 1.068E-10
++ VJ = 0.3459
++ M = 0.4948
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3010EJ 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.3E+6
+D1 2 1 PMEG3010EJ
+*
+.MODEL PMEG3010EJ D
++ IS = 2.936E-6
++ N = 0.9839
++ BV = 33
++ IBV = 7.5E-5
++ RS = 0.1166
++ CJO = 1.068E-10
++ VJ = 0.3459
++ M = 0.4948
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3010EP 1 2  
+*
+* The resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.015E+5 
+D1 2 1 PMEG3010EP 
+*
+.MODEL PMEG3010EP D
++ IS = 2.464E-5 
++ N = 1.003 
++ BV = 33 
++ IBV = 0.005
++ RS = 0.02955 
++ CJO = 3.288E-10 
++ VJ = 0.3778 
++ M = 0.5149 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT PMEG3010ER 1 2  
+*
+* The resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.015E+5 
+D1 2 1 PMEG3010ER 
+*
+.MODEL PMEG3010ER D
++ IS = 2.464E-5 
++ N = 1.003 
++ BV = 33 
++ IBV = 0.005
++ RS = 0.02955 
++ CJO = 3.288E-10 
++ VJ = 0.3778 
++ M = 0.5149 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT PMEG3010ET 1 2 3
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 1.3E+6
+D1 1 3 PMEG3010ET
+*
+.MODEL PMEG3010ET D
++ IS = 2.936E-6
++ N = 0.9839
++ BV = 33
++ IBV = 7.5E-5
++ RS = 0.1166
++ CJO = 1.068E-10
++ VJ = 0.3459
++ M = 0.4948
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3015EH 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 2E+5
+D1 2 1 PMEG3015EH
+*
+.MODEL PMEG3015EH D
++ IS = 1.05E-5
++ N = 0.998
++ BV = 33
++ IBV = 0.0004
++ RS = 0.08651
++ CJO = 1.189E-10
++ VJ = 0.3379
++ M = 0.4795
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3015EJ 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 2E+5
+D1 2 1 PMEG3015EJ
+*
+.MODEL PMEG3015EJ D
++ IS = 1.05E-5
++ N = 0.998
++ BV = 33
++ IBV = 0.0004
++ RS = 0.08651
++ CJO = 1.189E-10
++ VJ = 0.3379
++ M = 0.4795
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3015EV 1 2 3 4 5 6
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 2E+5
+D1 3 1 PMEG3015EV
+*
+* The resistors R2...R5 are only for
+* pinning of the device
+*
+R2 3 4 0
+R31 2 0
+R4 1 5 0
+R5 1 6 0
+*
+.MODEL PMEG3015EV D
++ IS = 1.05E-5
++ N = 0.998
++ BV = 33
++ IBV = 0.0004
++ RS = 0.08651
++ CJO = 1.189E-10
++ VJ = 0.3379
++ M = 0.4795
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3020CEP 1 2  
+*
+* The resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.015E+5 
+D1 2 1 PMEG3020CEP 
+*
+.MODEL PMEG3020CEP D
++ IS = 2.464E-5 
++ N = 1.003 
++ BV = 33 
++ IBV = 0.005
++ RS = 0.02955 
++ CJO = 3.288E-10 
++ VJ = 0.3778 
++ M = 0.5149 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT PMEG3020EH 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 2E+5
+D1 2 1 PMEG3020EH
+*
+.MODEL PMEG3020EH D
++ IS = 1.05E-5
++ N = 0.998
++ BV = 33
++ IBV = 0.0004
++ RS = 0.08651
++ CJO = 1.189E-10
++ VJ = 0.3379
++ M = 0.4795
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3020EJ 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 2E+5
+D1 2 1 PMEG3020EJ
+*
+.MODEL PMEG3020EJ D
++ IS = 1.05E-5
++ N = 0.998
++ BV = 33
++ IBV = 0.0004
++ RS = 0.08651
++ CJO = 1.189E-10
++ VJ = 0.3379
++ M = 0.4795
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG3020ER 1 2  
+*
+* The resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 1.015E+5 
+D1 2 1 PMEG3020ER 
+*
+.MODEL PMEG3020ER D
++ IS = 2.464E-5 
++ N = 1.003 
++ BV = 33 
++ IBV = 0.005
++ RS = 0.02955 
++ CJO = 3.288E-10 
++ VJ = 0.3778 
++ M = 0.5149 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT PMEG4002EB 1 2 
+*
+D1 2 1 PMEG4002EB
+R1 2 1 1.26E+8 
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+.MODEL PMEG4002EB D 
++ IS = 7.409E-8 
++ N = 1.01 
++ BV = 44 
++ IBV = 1E-5 
++ RS = 0.6919 
++ CJO = 2.402E-11 
++ VJ = 0.3356 
++ M = 0.4335 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT PMEG4002EL 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 9.5E+07
+D1 2 1 PMEG4002EL
+*
+.MODEL PMEG4002EL D
++ IS = 8E-08
++ N = 1.012
++ BV = 45
++ IBV = 0.0001
++ RS = 0.8243
++ CJO = 2.515E-11
++ VJ = 0.4182
++ M = 0.4941
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG4005AEA 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 2.5E+6
+D1 2 1 PMEG4005AEA
+*
+.MODEL PMEG4005AEA D
++ IS = 2.831E-6
++ N = 0.9816
++ BV = 44
++ IBV = 5E-5
++ RS = 0.1975
++ CJO = 8.437E-11
++ VJ = 0.3116
++ M = 0.4789
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG4005AEV 1 2 3 4 5 6
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 2.5E+6
+D1 3 1 PMEG4005AEV
+*
+* The resistors R2...R5 are only for
+* pinning of the device
+*
+R2 3 4 0
+R31 2 0
+R4 1 5 0
+R5 1 6 0
+*
+.MODEL PMEG4005AEV D
++ IS = 2.831E-6
++ N = 0.9816
++ BV = 44
++ IBV = 5E-5
++ RS = 0.1975
++ CJO = 8.437E-11
++ VJ = 0.3116
++ M = 0.4789
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG4005EH 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 2.5E+6
+D1 2 1 PMEG4005EH
+*
+.MODEL PMEG4005EH D
++ IS = 2.831E-6
++ N = 0.9816
++ BV = 44
++ IBV = 5E-5
++ RS = 0.1975
++ CJO = 8.437E-11
++ VJ = 0.3116
++ M = 0.4789
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG4005EJ 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 2.5E+6
+D1 2 1 PMEG4005EJ
+*
+.MODEL PMEG4005EJ D
++ IS = 2.831E-6
++ N = 0.9816
++ BV = 44
++ IBV = 5E-5
++ RS = 0.1975
++ CJO = 8.437E-11
++ VJ = 0.3116
++ M = 0.4789
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG4005ET 1 2 3
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 2.5E+6
+D1 1 3 PMEG4005ET
+*
+.MODEL PMEG4005ET D
++ IS = 2.831E-6
++ N = 0.9816
++ BV = 44
++ IBV = 5E-5
++ RS = 0.1975
++ CJO = 8.437E-11
++ VJ = 0.3116
++ M = 0.4789
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG4010BEA 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 2.5E+6
+D1 2 1 PMEG4010BEA
+*
+.MODEL PMEG4010BEA D
++ IS = 2.831E-6
++ N = 0.9816
++ BV = 44
++ IBV = 5E-5
++ RS = 0.1975
++ CJO = 8.437E-11
++ VJ = 0.3116
++ M = 0.4789
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG4010BEV 1 2 3 4 5 6
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 3 1 2.5E+6
+D1 3 1 PMEG4010BEV
+*
+* The resistors R2...R5 are only for
+* pinning of the device
+*
+R2 3 4 0
+R3 1 2 0
+R4 1 5 0
+R5 1 6 0
+*
+.MODEL PMEG4010BEV D
++ IS = 2.831E-6
++ N = 0.9816
++ BV = 44
++ IBV = 5E-5
++ RS = 0.1975
++ CJO = 8.437E-11
++ VJ = 0.3116
++ M = 0.4789
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+*
+*
+.SUBCKT PMEG4010CEH 1 2
+*
+D1 2 1 PMEG4010CEH
+R1 2 1 1E+7
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+.MODEL PMEG4010CEH D
++ IS = 2.802E-7
++ N = 0.9521
++ BV = 44
++ IBV = 6E-6
++ RS = 0.1201
++ CJO = 1.288E-10
++ VJ = 0.3855
++ M = 0.4889
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG4010CEJ 1 2
+*
+D1 2 1 PMEG4010CEJ
+R1 2 1 1E+7
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+.MODEL PMEG4010CEJ D
++ IS = 2.802E-7
++ N = 0.9521
++ BV = 44
++ IBV = 6E-6
++ RS = 0.1201
++ CJO = 1.288E-10
++ VJ = 0.3855
++ M = 0.4889
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG4010EH 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 2.5E+6
+D1 2 1 PMEG4010EH
+*
+.MODEL PMEG4010EH D
++ IS = 2.831E-6
++ N = 0.9816
++ BV = 44
++ IBV = 5E-5
++ RS = 0.1975
++ CJO = 8.437E-11
++ VJ = 0.3116
++ M = 0.4789
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG4010EJ 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 2.5E+6
+D1 2 1 PMEG4010EJ
+*
+.MODEL PMEG4010EJ D
++ IS = 2.831E-6
++ N = 0.9816
++ BV = 44
++ IBV = 5E-5
++ RS = 0.1975
++ CJO = 8.437E-11
++ VJ = 0.3116
++ M = 0.4789
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+*.SUBCKT PMEG4010EP 1 2
+*
+R1 2 1 4.936E+7 
+D1 2 1  PMEG4010EP 
+*
+.MODEL PMEG4010EP 
++ IS = 7.219E-7 
++ N = 1.01 
++ BV = 42 
++ IBV = 1E-3 
++ RS = 0.04694 
++ CJO = 2.383E-10 
++ VJ = 0.3188 
++ M = 0.4641 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+*.SUBCKT PMEG4010ER 1 2 
+*
+R1 2 1 4.936E+7 
+D1 2 1 PMEG4010ER 
+*
+.MODEL PMEG4010ER 
++ IS = 7.036E-7 
++ N = 0.9946 
++ BV = 42 
++ IBV = 1E-3 
++ RS = 0.05644 
++ CJO = 2.391E-10 
++ VJ = 0.3188 
++ M = 0.4641 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT PMEG4010ET 1 2 3
+*
+* The Resistor R1 does not reflect 
+* a physical device.  Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 1 3 2.5E+6
+D1 1 3 PMEG4010ET
+*
+.MODEL PMEG4010ET D
++ IS = 2.831E-6
++ N = 0.9816
++ BV = 44
++ IBV = 5E-5
++ RS = 0.1975
++ CJO = 8.437E-11
++ VJ = 0.3116
++ M = 0.4789
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG6002EB 1 2
+*
+D1 2 1 PMEG6002EB
+R1 2 1 5E+006
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+.MODEL PMEG6002EB D
++ IS = 7.716E-7
++ N = 0.981
++ BV = 66
++ IBV = 0.001
++ RS = 1.099
++ CJO = 2.586E-11
++ VJ = 0.3612
++ M = 0.4686
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG6002TV 1 2 3 4 5 6
+*
+D1 1 6 PMEG6002TV
+R1 1 6 5E+006
+D2 4 3 PMEG6002TV
+R2 4 3 5E+006
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+*
+.MODEL PMEG6002TV D
++ IS = 7.716E-7
++ N = 0.981
++ BV = 66
++ IBV = 0.001
++ RS = 1.099
++ CJO = 2.586E-11
++ VJ = 0.3612
++ M = 0.4686
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG6010AED 1 2 3 4 5 6
+*
+* The resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+R1 3 1 1E+7
+D1 3 1 PMEG6010AED
+*
+* The resistors R2...R5 are only for 
+* pinning of the device
+*
+R2 1 2 0
+R3 3 4 0
+R4 1 5 0
+R5 1 6 0
+*
+.MODEL PMEG6010AED D
++ IS = 5E-7
++ N = 0.9751
++ BV = 66
++ IBV = 0.0004
++ RS = 0.3422
++ CJO = 1.75E-10
++ VJ = 0.3761
++ M = 0.4725
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+*
+.SUBCKT PMEG6010CEH 1 2
+*
+D1 2 1 PMEG6010CEH
+R1 2 1 1E+7
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+.MODEL PMEG6010CEH D
++ IS = 3.962E-7
++ N = 0.9774
++ BV = 66
++ IBV = 1.1E-5
++ RS = 0.2033 
++ CJO = 1.103E-10
++ VJ = 0.3756
++ M = 0.4916
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PMEG6010CEJ 1 2
+*
+D1 2 1 PMEG6010CEJ
+R1 2 1 1E+7
+*
+* The Resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+.MODEL PMEG6010CEJ D
++ IS = 3.962E-7
++ N = 0.9774
++ BV = 66
++ IBV = 1.1E-5
++ RS = 0.2033 
++ CJO = 1.103E-10
++ VJ = 0.3756
++ M = 0.4916
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT PRLL5817 1 2 
+*
+* The resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+R1 1 2 7.5E+5
+D1 1 2  PRLL5817 
+*
+.MODEL PRLL5817 
++ IS = 5.559E-006 
++ N = 1.013 
++ BV = 22 
++ IBV = 0.01 
++ RS = 0.04246 
++ CJO = 2.653E-010 
++ VJ = 0.4107 
++ M = 0.4828 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2
+.ENDS
+**
+.SUBCKT PRLL5818 1 2 
+*
+*The resistor R1 does not reflect
+*a physical device. Instead it
+*improves modeling in the reverse
+*mode of operation.
+*
+R1 1 2 1.249E+7 
+D1 1 2 PRLL5818
+*
+.MODEL PRLL5818
++ IS = 7.403E-6 
++ N = 1.031 
++ BV = 33
++ IBV = 0.01
++ RS = 0.2209 
++ CJO = 1.889E-10 
++ VJ = 0.3661 
++ M = 0.4864 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT PRLL5819 1 2
+*
+*The resistor R1 does not reflect
+*a physical device. Instead it
+*improves modeling in the reverse
+*mode of operation.
+*
+R1 1 2 2E+6 
+D1 1 2 PRLL5819
+*
+.MODEL PRLL5819  
++ IS = 6.678E-6 
++ N = 1.04 
++ BV = 44 
++ IBV = 0.01
++ RS = 0.1936 
++ CJO = 1.83E-10 
++ VJ = 0.3235 
++ M = 0.4694 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT RB751CS40 1 2
+*
+* The Resistor R1 does not reflect 
+* a physical device. Instead it
+* improves modeling in the reverse 
+* mode of operation.
+*
+R1 2 1 8E+08
+D1 2 1 RB751CS40
+*
+.MODEL RB751CS40 D 
++ IS = 9.114E-9 
++ N = 1.006 
++ BV = 45 
++ IBV = 7.8E-5 
++ RS = 4.563 
++ CJO = 3.895E-12 
++ VJ = 0.3192 
++ M = 0.4008 
++ FC = 0.5 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+**
+.SUBCKT RB751S40 1 2
+*
+* The resistor does not reflect a
+* physical devices.  Instead it improves
+* modeling in the reverse mode of
+* operation.
+*
+R1 2 1 8E+08
+D1 2 1 RB751S40
+*
+.MODEL RB751S40 D
++ IS = 8.361E-09
++ N = 1.003
++ BV = 44
++ IBV = 8E-07
++ RS = 5.031
++ CJO = 3.8E-12
++ VJ = 0.1119
++ M = 0.2915
++ FC = 0.5
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS
+**
+.SUBCKT RB751V40 1 2
+*
+* The Resistor R1 does not 
+* reflect a physical device. 
+* Instead it improves modeling
+* in the reverse mode of 
+* operation.
+*
+R1 2 1 6.659E+08 
+D1 2 1 RB751V40
+*
+.MODEL RB751V40 D
++ IS = 1.419E-08 
++ N = 1.025 
++ BV = 44 
++ IBV = 1.255E-07 
++ RS = 4.942 
++ CJO = 4.046E-12 
++ VJ = 0.323 
++ M = 0.4154 
++ FC = 0.5 
++ TT = 0 
++ EG = 0.69 
++ XTI = 2
+.ENDS
+**
+.SUBCKT SBD PMEG3002TV 1 2 3 4 5 6 
+*
+* The Resistors do not 
+* reflect physical devices. 
+* Instead they improve modeling
+* in the reverse mode of 
+* operation.
+*
+R1 1 6 4.771E+06
+D1 1 6 PMEG3002TV
+R1 4 3 4.771E+06
+D1 4 3 PMEG3002TV
+*
+.MODEL PMEG3002TV D
++ IS = 9.539E-07
++ N = 1.007
++ BV = 35
++ IBV = 4E-05
++ RS = 0.4678
++ CJO = 3.518E-11
++ VJ = 0.3193
++ M = 0.4687
++ FC = 0.5
++ EG = 0.69
++ XTI = 2
+.ENDS
+*

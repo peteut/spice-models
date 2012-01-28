@@ -1,0 +1,10188 @@
+*
+.SUBCKT BCM61B 1 2 3 4
+*
+* NPN current mirror in SOT143
+*
+Q1 2 1 3 TR1
+Q2 1 1 4 TR1
+*
+.MODEL TR1 NPN
++     IS = 1.822E-14 
++     NF = 0.9932 
++     ISE = 2.894E-16 
++     NE = 1.4 
++     BF = 324.4 
++     IKF = 0.109 
++     VAF = 82 
++     NR = 0.9931 
++     ISC = 9.982E-12 
++     NC = 1.763 
++     BR = 8.29 
++     IKR = 0.09 
++     VAR = 17.9 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5 
++     RE = 0.649 
++     RC = 0.7014 
++     CJE = 1.244E-11 
++     VJE = 0.7579 
++     MJE = 0.3656 
++     TF = 4.908E-10 
++     XTF = 9.51 
++     VTF = 2.927 
++     ITF = 0.3131 
++     PTF = 0 
++     CJC = 3.347E-12 
++     VJC = 0.5463 
++     MJC = 0.391 
++     XCJC = 0.6193 
++     TR = 9E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333 
++     XTB = 0 
++     XTI = 3 
++     EG = 1.11 
++     FC = 0.979
+.ENDS
+**
+.SUBCKT BCM62B 1 2 3 4
+*
+* PNP current mirror in SOT143
+*
+Q1 2 1 3 TR1
+Q2 1 1 4 TR1
+*
+.MODEL TR1 PNP
++     IS = 2.014E-14 
++     NF = 0.9974 
+     ISE = 6.578E-15 
++     NE = 1.45 
++     BF = 315.3 
++     IKF = 0.079 
++     VAF = 39.15 
++     NR = 0.9952 
++     ISC = 1.633E-14 
++     NC = 1.15 
++     BR = 8.68 
++     IKR = 0.09 
++     VAR = 9.5 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5E-06 
++     RE = 0.663 
++     RC = 0.718 
++     XTB = 0 
++     EG = 1.11 
++     XTI = 3 
++     CJE = 1.135E-11 
++     VJE = 0.7071 
++     MJE = 0.3808 
++     TF = 6.546E-10 
++     XTF = 5.387 
++     VTF = 6.245 
++     ITF = 0.2108 
++     PTF = 0 
++     CJC = 6.395E-12 
++     VJC = 0.4951 
++     MJC = 0.44 
++     XCJC = 0.6288 
++     TR = 5.5E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333  
++     FC = 0.9059
+.ENDS
+**
+.SUBCKT BCM847BS 1 2 3 4 5 6
+*
+* 2 matched NPN Transistors in SC-88
+*
+Q1 6 2 1 TR1
+Q2 3 5 4 TR1
+*
+.MODEL TR1 NPN
++     IS = 1.822E-14 
++     NF = 0.9932 
++     ISE= 2.894E-16 
++     NE = 1.4 
++     BF = 324.4 
++     IKF = 0.109 
++     VAF = 82 
++     NR = 0.9931 
++     ISC = 9.982E-12 
++     NC = 1.763 
++     BR = 8.29 
++     IKR = 0.09 
++     VAR = 17.9 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5 
++     RE = 0.649 
++     RC = 0.7014 
++     CJE = 1.244E-11 
++     VJE = 0.7579 
++     MJE = 0.3656 
++     TF = 4.908E-10 
++     XTF = 9.51 
++     VTF = 2.927 
++     ITF = 0.3131 
++     PTF = 0 
++     CJC = 3.347E-12 
++     VJC = 0.5463 
++     MJC = 0.391 
++     XCJC = 0.6193 
++     TR = 9E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333 
++     XTB = 0 
++     XTI = 3 
++     EG = 1.11 
++     FC = 0.979
+.ENDS
+**
+.SUBCKT BCM847BV 1 2 3 4 5 6
+*
+* 2 matched NPN Transistors in SOT666
+*
+Q1 6 2 1 TR1
+Q2 3 5 4 TR1
+*
+.MODEL TR1 NPN
++     IS = 1.822E-14 
++     NF = 0.9932 
++     ISE = 2.894E-16 
++     NE = 1.4 
++     BF = 324.4 
++     IKF = 0.109 
++     VAF = 82 
++     NR = 0.9931 
++     ISC = 9.982E-12 
++     NC = 1.763 
++     BR = 8.29 
++     IKR = 0.09 
++     VAR = 17.9 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5 
++     RE = 0.649 
++     RC = 0.7014 
++     CJE = 1.244E-11 
++     VJE = 0.7579 
++     MJE = 0.3656 
++     TF = 4.908E-10 
++     XTF = 9.51 
++     VTF = 2.927 
++     ITF = 0.3131 
++     PTF = 0 
++     CJC = 3.347E-12 
++     VJC = 0.5463 
++     MJC = 0.391 
++     XCJC = 0.6193 
++     TR = 9E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333 
++     XTB = 0 
++     XTI = 3 
++     EG = 1.11 
++     FC = 0.979
+.ENDS
+**
+.SUBCKT BCM847DS 1 2 3 4 5 6
+*
+* 2 matched NPN Transistors in SC-74
+*
+Q1 6 2 1 TR1
+Q2 3 5 4 TR1
+*
+.MODEL TR1 NPN
++     IS = 1.822E-14 
++     NF = 0.9932 
++     ISE = 2.894E-16 
++     NE = 1.4 
++     BF = 324.4 
++     IKF = 0.109 
++     VAF = 82 
++     NR = 0.9931 
++     ISC = 9.982E-12 
++     NC = 1.763 
++     BR = 8.29 
++     IKR = 0.09 
++     VAR = 17.9 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5 
++     RE = 0.649 
++     RC = 0.7014 
++     CJE = 1.244E-11 
++     VJE = 0.7579 
++     MJE = 0.3656 
++     TF = 4.908E-10 
++     XTF = 9.51 
++     VTF = 2.927 
++     ITF = 0.3131 
++     PTF = 0 
++     CJC = 3.347E-12 
++     VJC = 0.5463 
++     MJC = 0.391 
++     XCJC = 0.6193 
++     TR = 9E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333 
++     XTB = 0 
++     XTI = 3 
++     EG = 1.11 
++     FC = 0.979
+.ENDS
+**
+.SUBCKT BCM856BS 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconductors
+*
+* PNP Matched pairs double transistors 
+* Ic    = 100mA
+* Vceo  = 65  V 
+* hFE   = 290  @ VCE = -5 V; IC = 2 mA (typical)
+* 
+* Extraction date (week/year): 47/2005 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+*
+* Diodes D1/D2, transistors Q3/Q4 and resistors RQ1/RQ2 
+* are dedicated to improve modeling of quasi
+* saturation area and reverse mode operation
+* and do not reflect physical devices.
+*
+***************************************************************
+*
+Q1 6 2 1 MAIN AREA = 0.9196  
+Q3 66 2 1 MAIN AREA = 0.08035
+D1 6 2 DIODE 
+RQ1 6 66 111.9
+*
+Q2 3 5 4 MAIN AREA = 0.9196 
+Q4 33 5 4 MAIN AREA = 0.08035
+RQ2 3 33 111.9 
+D2 3 5 DIODE
+*
+.MODEL MAIN PNP 
++ IS = 1.619E-014 
++ NF = 0.9835 
++ ISE = 7.218E-015 
++ NE = 1.521 
++ BF = 266.9 
++ IKF = 0.08202 
++ VAF = 12.88 
++ NR = 0.977 
++ ISC = 3.672E-015 
++ NC = 1.122 
++ BR = 10.73 
++ IKR = 0.03072 
++ VAR = 24.01 
++ RB = 39.4 
++ IRB = 0.0001272 
++ RBM = 1.321 
++ RE = 0.3 
++ RC = 0.5566 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.14E-011 
++ VJE = 0.7923 
++ MJE = 0.4031 
++ TF = 9E-010 
++ XTF = 20 
++ VTF = 5 
++ ITF = 0.52 
++ PTF = 0 
++ CJC = 5.839E-012 
++ VJC = 1 
++ MJC = 0.5758 
++ XCJC = 1 
++ TR = 1E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.79
+*
+.MODEL DIODE D 
++ IS = 5.409E-017 
++ N = 0.9852 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 2.939 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+.ENDS*
+.SUBCKT BCM856DS 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconductors
+*
+* PNP Matched pairs double transistors 
+* Ic    = 100mA
+* Vceo  = 65  V 
+* hFE   = 290  @ VCE = -5 V;IC = -2 mA (typical)
+* 
+* Extraction date (week/year): 47/2005 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+*
+* Diodes D1/D2, transistors Q3/Q4 and resistors RQ1/RQ2 
+* are dedicated to improve modeling of quasi
+* saturation area and reverse mode operation
+* and do not reflect physical devices.
+*
+***************************************************************
+*
+Q1 6 2 1 MAIN AREA = 0.9196 
+Q3 66 2 1 MAIN AREA = 0.08035
+D1 6 2 DIODE 
+RQ1 6 66 111.9
+*
+Q2 3 5 4 MAIN AREA = 0.9196 
+Q4 33 5 4 MAIN AREA = 0.08035
+RQ2 3 33 111.9 
+D2 3 5 DIODE
+*
+.MODEL MAIN PNP 
++ IS = 1.619E-014 
++ NF = 0.9835 
++ ISE = 7.218E-015 
++ NE = 1.521 
++ BF = 266.9 
++ IKF = 0.08202 
++ VAF = 12.88 
++ NR = 0.977 
++ ISC = 3.672E-015 
++ NC = 1.122 
++ BR = 10.73 
++ IKR = 0.03072 
++ VAR = 24.01 
++ RB = 39.4 
++ IRB = 0.0001272 
++ RBM = 1.321 
++ RE = 0.3 
++ RC = 0.5566 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.14E-011 
++ VJE = 0.7923 
++ MJE = 0.4031 
++ TF = 9E-010 
++ XTF = 20 
++ VTF = 5 
++ ITF = 0.52 
++ PTF = 0 
++ CJC = 5.839E-012 
++ VJC = 1 
++ MJC = 0.5758 
++ XCJC = 1 
++ TR = 1E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.79
+*
+.MODEL DIODE D 
++ IS = 5.409E-017 
++ N = 0.9852 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 2.939 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+.ENDS*
+.SUBCKT BCM857BS 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconductors
+*
+* PNP Matched pairs double transistors 
+* Ic    = 100mA
+* Vceo  = 45  V 
+* hFE   = 290  @ VCE = -5 V; IC = 2 mA (typical)
+* 
+* Extraction date (week/year): 47/2005 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+*
+* Diodes D1/D2, transistors Q3/Q4 and resistors RQ1/RQ2 
+* are dedicated to improve modeling of quasi
+* saturation area and reverse mode operation
+* and do not reflect physical devices.
+*
+***************************************************************
+*
+Q1 6 2 1 MAIN AREA = 0.9196 
+Q3 66 2 1 MAIN AREA = 0.08035
+D1 6 2 DIODE 
+RQ1 6 66 111.9
+*
+Q2 3 5 4 MAIN AREA = 0.9196 
+Q4 33 5 4 MAIN AREA = 0.08035
+RQ2 3 33 111.9 
+D2 3 5 DIODE
+*
+.MODEL MAIN PNP 
++ IS = 1.619E-014 
++ NF = 0.9835 
++ ISE = 7.218E-015 
++ NE = 1.521 
++ BF = 266.9 
++ IKF = 0.08202 
++ VAF = 12.88 
++ NR = 0.977 
++ ISC = 3.672E-015 
++ NC = 1.122 
++ BR = 10.73 
++ IKR = 0.03072 
++ VAR = 24.01 
++ RB = 39.4 
++ IRB = 0.0001272 
++ RBM = 1.321 
++ RE = 0.3 
++ RC = 0.5566 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.14E-011 
++ VJE = 0.7923 
++ MJE = 0.4031 
++ TF = 9E-010 
++ XTF = 20 
++ VTF = 5 
++ ITF = 0.52 
++ PTF = 0 
++ CJC = 5.839E-012 
++ VJC = 1 
++ MJC = 0.5758 
++ XCJC = 1 
++ TR = 1E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.79
+*
+.MODEL DIODE D 
++ IS = 5.409E-017 
++ N = 0.9852 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 2.939 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+.ENDS*
+.SUBCKT BCM857BV 1 2 3 4 5 6
+*
+* 2 PNP Transistors in SOT666
+*
+Q1 6 2 1 TR1
+Q2 3 5 4 TR1
+*
+.MODEL TR1 PNP
++ IS = 2.014E-14 
++ NF = 0.9974 
++ E = 6.578E-15 
++ NE = 1.45 
++ BF = 315.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.633E-14 
++ NC = 1.15 
++ BR = 8.68 
++ IKR = 0.09 
++ VAR = 9.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.663 
++ RC = 0.718 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.135E-11 
++ VJE = 0.7071 
++ MJE = 0.3808 
++ TF = 6.546E-10 
++ XTF = 5.387 
++ VTF = 6.245 
++ ITF = 0.2108 
++ PTF = 0 
++ CJC = 6.395E-12 
++ VJC = 0.4951 
++ MJC = 0.44 
++ XCJC = 0.6288 
++ TR = 5.5E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333  
++ FC = 0.9059
+.ENDS
+**
+.SUBCKT BCM857DS 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconductors
+*
+* PNP Matched pairs double transistors 
+* Ic    = 100mA
+* Vceo  = 45  V 
+* hFE   = 290  @ VCE = -5 V;IC = -2 mA (typical)
+* 
+* Extraction date (week/year): 47/2005 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+*
+* Diodes D1/D2, transistors Q3/Q4 and resistors RQ1/RQ2 
+* are dedicated to improve modeling of quasi
+* saturation area and reverse mode operation
+* and do not reflect physical devices.
+*
+***************************************************************
+*
+Q1 6 2 1 MAIN AREA = 0.9196 
+Q3 66 2 1 MAIN AREA = 0.08035
+D1 6 2 DIODE 
+RQ1 6 66 111.9
+*
+Q2 3 5 4 MAIN AREA = 0.9196 
+Q4 33 5 4 MAIN AREA = 0.08035
+RQ2 3 33 111.9 
+D2 3 5 DIODE
+*
+.MODEL MAIN PNP 
++ IS = 1.619E-014 
++ NF = 0.9835 
++ ISE = 7.218E-015 
++ NE = 1.521 
++ BF = 266.9 
++ IKF = 0.08202 
++ VAF = 12.88 
++ NR = 0.977 
++ ISC = 3.672E-015 
++ NC = 1.122 
++ BR = 10.73 
++ IKR = 0.03072 
++ VAR = 24.01 
++ RB = 39.4 
++ IRB = 0.0001272 
++ RBM = 1.321 
++ RE = 0.3 
++ RC = 0.5566 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.14E-011 
++ VJE = 0.7923 
++ MJE = 0.4031 
++ TF = 9E-010 
++ XTF = 20 
++ VTF = 5 
++ ITF = 0.52 
++ PTF = 0 
++ CJC = 5.839E-012 
++ VJC = 1 
++ MJC = 0.5758 
++ XCJC = 1 
++ TR = 1E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.79
+*
+.MODEL DIODE D 
++ IS = 5.409E-017 
++ N = 0.9852 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 2.939 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+.ENDS*
+.SUBCKT PBLS1501V 1 2 3 4 5 6
+*
+R1 5 55 2.2E+03
+Cres1 5 3 4.8E-13 
+R21 55 44 1.1E+03 
+R22 44 4 1.1E+03
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 PBSS3515VS
+Q2 3 55 4 PDTC123EM
+*
+.MODEL PBSS3515VS PNP
++ IS = 6.93E-14
++ NF = 1.002
++ ISE = 1.892E-14
++ NE = 1.457
++ BF = 250
++ IKF = 0.49
++ VAF = 13.72
++ NR = 1.002
++ ISC = 1.738E-14
++ NC = 1.164
++ BR = 90
++ IKR = 0.14
++ VAR = 13.24
++ RB = 27
++ IRB = 0.0005
++ RBM = 0.5
++ RE = 0.12
++ RC = 0.13
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.814E-11
++ VJE = 0.55
++ MJE = 0.3388
++ TF = 5.2E-10
++ XTF = 25
++ VTF = 0.5
++ ITF = 1.5
++ PTF = 0
++ CJC = 1.763E-11
++ VJC = 0.3595
++ MJC = 0.3692
++ XCJC = 1
++ TR = 1E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.MODEL PDTC123EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS1501Y 1 2 3 4 5 6
+*
+R1 5 55 2.2E+03
+Cres1 5 3 4.8E-13 
+R21 55 44 1.1E+03 
+R22 44 4 1.1E+03
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 PBSS3515VS
+Q2 3 55 4 PDTC123EM
+*
+.MODEL PBSS3515VS PNP
++ IS = 6.93E-14
++ NF = 1.002
++ ISE = 1.892E-14
++ NE = 1.457
++ BF = 250
++ IKF = 0.49
++ VAF = 13.72
++ NR = 1.002
++ ISC = 1.738E-14
++ NC = 1.164
++ BR = 90
++ IKR = 0.14
++ VAR = 13.24
++ RB = 27
++ IRB = 0.0005
++ RBM = 0.5
++ RE = 0.12
++ RC = 0.13
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.814E-11
++ VJE = 0.55
++ MJE = 0.3388
++ TF = 5.2E-10
++ XTF = 25
++ VTF = 0.5
++ ITF = 1.5
++ PTF = 0
++ CJC = 1.763E-11
++ VJC = 0.3595
++ MJC = 0.3692
++ XCJC = 1
++ TR = 1E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.MODEL PDTC123EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS1502V 1 2 3 4 5 6
+*
+R1 5 55 4.7E+03
+Cres1 5 3 4.3E-13 
+R21 55 44 2.35E+03 
+R22 44 4 2.35E+03
+Cres2 44 3 1.4E-13
+*
+Q1 6 2 1 PBSS3515VS
+Q2 3 55 4 PDTC143EE
+*
+.MODEL PBSS3515VS PNP
++ IS = 6.93E-14
++ NF = 1.002
++ ISE = 1.892E-14
++ NE = 1.457
++ BF = 250
++ IKF = 0.49
++ VAF = 13.72
++ NR = 1.002
++ ISC = 1.738E-14
++ NC = 1.164
++ BR = 90
++ IKR = 0.14
++ VAR = 13.24
++ RB = 27
++ IRB = 0.0005
++ RBM = 0.5
++ RE = 0.12
++ RC = 0.13
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.814E-11
++ VJE = 0.55
++ MJE = 0.3388
++ TF = 5.2E-10
++ XTF = 25
++ VTF = 0.5
++ ITF = 1.5
++ PTF = 0
++ CJC = 1.763E-11
++ VJC = 0.3595
++ MJC = 0.3692
++ XCJC = 1
++ TR = 1E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.MODEL PDTC143EE NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS1502Y 1 2 3 4 5 6
+*
+R1 5 55 4.7E+03
+Cres1 5 3 4.3E-13 
+R21 55 44 2.35E+03 
+R22 44 4 2.35E+03
+Cres2 44 3 1.4E-13
+*
+Q1 6 2 1 PBSS3515VS
+Q2 3 55 4 PDTC143EE
+*
+.MODEL PBSS3515VS PNP
++ IS = 6.93E-14
++ NF = 1.002
++ ISE = 1.892E-14
++ NE = 1.457
++ BF = 250
++ IKF = 0.49
++ VAF = 13.72
++ NR = 1.002
++ ISC = 1.738E-14
++ NC = 1.164
++ BR = 90
++ IKR = 0.14
++ VAR = 13.24
++ RB = 27
++ IRB = 0.0005
++ RBM = 0.5
++ RE = 0.12
++ RC = 0.13
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.814E-11
++ VJE = 0.55
++ MJE = 0.3388
++ TF = 5.2E-10
++ XTF = 25
++ VTF = 0.5
++ ITF = 1.5
++ PTF = 0
++ CJC = 1.763E-11
++ VJC = 0.3595
++ MJC = 0.3692
++ XCJC = 1
++ TR = 1E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.MODEL PDTC143EE NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS1503V 1 2 3 4 5 6
+*
+R1 5 55 1.0E+04
+Cres1 5 3 4.4E-13 
+R21 55 44 5.0E+03 
+R22 44 4 5.0E+03
+Cres2 44 3 1.3E-13
+*
+Q1 6 2 1 PBSS3515VS
+Q2 3 55 4 PDTC114EM
+*
+.MODEL PBSS3515VS PNP
++ IS = 6.93E-14
++ NF = 1.002
++ ISE = 1.892E-14
++ NE = 1.457
++ BF = 250
++ IKF = 0.49
++ VAF = 13.72
++ NR = 1.002
++ ISC = 1.738E-14
++ NC = 1.164
++ BR = 90
++ IKR = 0.14
++ VAR = 13.24
++ RB = 27
++ IRB = 0.0005
++ RBM = 0.5
++ RE = 0.12
++ RC = 0.13
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.814E-11
++ VJE = 0.55
++ MJE = 0.3388
++ TF = 5.2E-10
++ XTF = 25
++ VTF = 0.5
++ ITF = 1.5
++ PTF = 0
++ CJC = 1.763E-11
++ VJC = 0.3595
++ MJC = 0.3692
++ XCJC = 1
++ TR = 1E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.MODEL PDTC114EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS1503Y 1 2 3 4 5 6
+*
+R1 5 55 1.0E+04
+Cres1 5 3 4.4E-13 
+R21 55 44 5.0E+03 
+R22 44 4 5.0E+03
+Cres2 44 3 1.3E-13
+*
+Q1 6 2 1 PBSS3515VS
+Q2 3 55 4 PDTC114EM
+*
+.MODEL PBSS3515VS PNP
++ IS = 6.93E-14
++ NF = 1.002
++ ISE = 1.892E-14
++ NE = 1.457
++ BF = 250
++ IKF = 0.49
++ VAF = 13.72
++ NR = 1.002
++ ISC = 1.738E-14
++ NC = 1.164
++ BR = 90
++ IKR = 0.14
++ VAR = 13.24
++ RB = 27
++ IRB = 0.0005
++ RBM = 0.5
++ RE = 0.12
++ RC = 0.13
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.814E-11
++ VJE = 0.55
++ MJE = 0.3388
++ TF = 5.2E-10
++ XTF = 25
++ VTF = 0.5
++ ITF = 1.5
++ PTF = 0
++ CJC = 1.763E-11
++ VJC = 0.3595
++ MJC = 0.3692
++ XCJC = 1
++ TR = 1E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.MODEL PDTC114EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS1504V 1 2 3 4 5 6
+*
+R1 5 55 2.2E+04
+Cres1 5 3 4.3E-13 
+R21 55 44 1.1E+04 
+R22 44 4 1.1E+04
+Cres2 44 3 1.1E-13
+*
+Q1 6 2 1 PBSS3515VS
+Q2 3 55 4 PDTC124EE
+*
+.MODEL PBSS3515VS PNP
++ IS = 6.93E-14
++ NF = 1.002
++ ISE = 1.892E-14
++ NE = 1.457
++ BF = 250
++ IKF = 0.49
++ VAF = 13.72
++ NR = 1.002
++ ISC = 1.738E-14
++ NC = 1.164
++ BR = 90
++ IKR = 0.14
++ VAR = 13.24
++ RB = 27
++ IRB = 0.0005
++ RBM = 0.5
++ RE = 0.12
++ RC = 0.13
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.814E-11
++ VJE = 0.55
++ MJE = 0.3388
++ TF = 5.2E-10
++ XTF = 25
++ VTF = 0.5
++ ITF = 1.5
++ PTF = 0
++ CJC = 1.763E-11
++ VJC = 0.3595
++ MJC = 0.3692
++ XCJC = 1
++ TR = 1E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.MODEL PDTC124EE NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS1504Y 1 2 3 4 5 6
+*
+R1 5 55 2.2E+04
+Cres1 5 3 4.3E-13 
+R21 55 44 1.1E+04 
+R22 44 4 1.1E+04
+Cres2 44 3 1.1E-13
+*
+Q1 6 2 1 PBSS3515VS
+Q2 3 55 4 PDTC124EE
+*
+.MODEL PBSS3515VS PNP
++ IS = 6.93E-14
++ NF = 1.002
++ ISE = 1.892E-14
++ NE = 1.457
++ BF = 250
++ IKF = 0.49
++ VAF = 13.72
++ NR = 1.002
++ ISC = 1.738E-14
++ NC = 1.164
++ BR = 90
++ IKR = 0.14
++ VAR = 13.24
++ RB = 27
++ IRB = 0.0005
++ RBM = 0.5
++ RE = 0.12
++ RC = 0.13
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.814E-11
++ VJE = 0.55
++ MJE = 0.3388
++ TF = 5.2E-10
++ XTF = 25
++ VTF = 0.5
++ ITF = 1.5
++ PTF = 0
++ CJC = 1.763E-11
++ VJC = 0.3595
++ MJC = 0.3692
++ XCJC = 1
++ TR = 1E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.MODEL PDTC124EE NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS2001D 1 2 3 4 5 6
+*
+R1 5 55 2.2E+03
+Cres1 5 3 4.8E-13 
+R21 55 44 1.1E+03 
+R22 44 4 1.1E+03
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 PB5220
+Q2 3 55 4 PDTC123EM
+*
+.MODEL PB5220 PNP
++ IS = 2.37E-013 
++ NF = 0.988 
++ ISE = 2.328E-014 
++ NE = 1.419 
++ BF = 510 
++ IKF = 0.7 
++ VAF = 20 
++ NR = 0.985 
++ ISC = 5E-014 
++ NC = 1.155 
++ BR = 170 
++ IKR = 0.3 
++ VAR = 10.4 
++ RB = 30 
++ IRB = 6E-005 
++ RBM = 0.0737 
++ RE = 0.085 
++ RC = 0.065 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.28E-011 
++ VJE = 0.8642 
++ MJE = 0.4234 
++ TF = 1.12E-009 
++ XTF = 5 
++ VTF = 2.2 
++ ITF = 1 
++ PTF = 0 
++ CJC = 4.66E-011 
++ VJC = 0.4 
++ MJC = 0.366 
++ XCJC = 1 
++ TR = 4E-010 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.99 
+*
+.MODEL PDTC123EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS2001S 1 2 3 4 5 6 7 8
+*
+R1 1 11 2.2E+03
+Cres1 1 7 4.8E-13 
+R21 11 22 1.1E+03 
+R22 22 2 1.1E+03
+Cres2 22 7 1.5E-13
+R3 5 6 0
+R4 7 8 0
+*
+Q1 5 3 4 TR1
+Q2 7 11 2 TR2
+*
+.MODEL TR1 PNP 
++ IS = 9.07E-13 
++ NF = 0.9965 
++ ISE = 1.41E-14 
++ NE = 1.329 
++ BF = 412 
++ IKF = 2.8 
++ VAF = 20 
++ NR = 0.9963 
++ ISC = 2.47E-14 
++ NC = 1.168 
++ BR = 250 
++ IKR = 0.53 
++ VAR = 11 
++ RB = 12 
++ IRB = 0.001 
++ RBM = 4.6 
++ RE = 0.035 
++ RC = 0.026 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.793E-10 
++ VJE = 0.9448 
++ MJE = 0.4405 
++ TF = 1.15E-09 
++ XTF = 30 
++ VTF = 0.6 
++ ITF = 1.7 
++ PTF = 0 
++ CJC = 1.258E-10 
++ VJC = 0.5079 
++ MJC = 0.349 
++ XCJC = 1 
++ TR = 1.3E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78
+*
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS2002D 1 2 3 4 5 6
+*
+R1 5 55 4.7E+03
+Cres1 5 3 4.3E-13 
+R21 55 44 2.35E+03 
+R22 44 4 2.35E+03
+Cres2 44 3 1.4E-13
+*
+Q1 6 2 1 PB5220
+Q2 3 55 4 PDTC143EM
+*
+.MODEL PB5220 PNP
++ IS = 2.37E-013 
++ NF = 0.988 
++ ISE = 2.328E-014 
++ NE = 1.419 
++ BF = 510 
++ IKF = 0.7 
++ VAF = 20 
++ NR = 0.985 
++ ISC = 5E-014 
++ NC = 1.155 
++ BR = 170 
++ IKR = 0.3 
++ VAR = 10.4 
++ RB = 30 
++ IRB = 6E-005 
++ RBM = 0.0737 
++ RE = 0.085 
++ RC = 0.065 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.28E-011 
++ VJE = 0.8642 
++ MJE = 0.4234 
++ TF = 1.12E-009 
++ XTF = 5 
++ VTF = 2.2 
++ ITF = 1 
++ PTF = 0 
++ CJC = 4.66E-011 
++ VJC = 0.4 
++ MJC = 0.366 
++ XCJC = 1 
++ TR = 4E-010 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.99 
+*
+.MODEL PDTC143EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS2002S 1 2 3 4 5 6 7 8
+*
+R1 1 11 4.7E+03
+Cres1 1 7 4.3E-13 
+R21 11 22 2.35E+03 
+R22 22 2 2.35E+03
+Cres2 22 7 1.4E-13
+R3 5 6 0
+R4 7 8 0
+*
+Q1 5 3 4 TR1
+Q2 7 11 2 TR2
+*
+.MODEL TR1 PNP 
++ IS = 9.07E-13 
++ NF = 0.9965 
++ ISE = 1.41E-14 
++ NE = 1.329 
++ BF = 412 
++ IKF = 2.8 
++ VAF = 20 
++ NR = 0.9963 
++ ISC = 2.47E-14 
++ NC = 1.168 
++ BR = 250 
++ IKR = 0.53 
++ VAR = 11 
++ RB = 12 
++ IRB = 0.001 
++ RBM = 4.6 
++ RE = 0.035 
++ RC = 0.026 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.793E-10 
++ VJE = 0.9448 
++ MJE = 0.4405 
++ TF = 1.15E-09 
++ XTF = 30 
++ VTF = 0.6 
++ ITF = 1.7 
++ PTF = 0 
++ CJC = 1.258E-10 
++ VJC = 0.5079 
++ MJC = 0.349 
++ XCJC = 1 
++ TR = 1.3E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78
+*
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS2003D 1 2 3 4 5 6
+*
+R1 5 55 1.0E+04
+Cres1 5 3 4.4E-13 
+R21 55 44 5E+03 
+R22 44 4 5E+03
+Cres2 44 3 1.3E-13
+*
+Q1 6 2 1 PB5220
+Q2 3 55 4 PDTC114EM
+*
+.MODEL PB5220 PNP
++ IS = 2.37E-013 
++ NF = 0.988 
++ ISE = 2.328E-014 
++ NE = 1.419 
++ BF = 510 
++ IKF = 0.7 
++ VAF = 20 
++ NR = 0.985 
++ ISC = 5E-014 
++ NC = 1.155 
++ BR = 170 
++ IKR = 0.3 
++ VAR = 10.4 
++ RB = 30 
++ IRB = 6E-005 
++ RBM = 0.0737 
++ RE = 0.085 
++ RC = 0.065 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.28E-011 
++ VJE = 0.8642 
++ MJE = 0.4234 
++ TF = 1.12E-009 
++ XTF = 5 
++ VTF = 2.2 
++ ITF = 1 
++ PTF = 0 
++ CJC = 4.66E-011 
++ VJC = 0.4 
++ MJC = 0.366 
++ XCJC = 1 
++ TR = 4E-010 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.99 
+*
+.MODEL PDTC114EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS2003S 1 2 3 4 5 6 7 8
+*
+R1 1 11 1.0E+03
+Cres1 1 7 4.4E-13 
+R21 11 22 5.0E+03 
+R22 22 2 5.0E+03
+Cres2 22 7 1.3E-13
+R3 5 6 0
+R4 7 8 0
+*
+Q1 5 3 4 TR1
+Q2 7 11 2 TR2
+*
+.MODEL TR1 PNP 
++ IS = 9.07E-13 
++ NF = 0.9965 
++ ISE = 1.41E-14 
++ NE = 1.329 
++ BF = 412 
++ IKF = 2.8 
++ VAF = 20 
++ NR = 0.9963 
++ ISC = 2.47E-14 
++ NC = 1.168 
++ BR = 250 
++ IKR = 0.53 
++ VAR = 11 
++ RB = 12 
++ IRB = 0.001 
++ RBM = 4.6 
++ RE = 0.035 
++ RC = 0.026 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.793E-10 
++ VJE = 0.9448 
++ MJE = 0.4405 
++ TF = 1.15E-09 
++ XTF = 30 
++ VTF = 0.6 
++ ITF = 1.7 
++ PTF = 0 
++ CJC = 1.258E-10 
++ VJC = 0.5079 
++ MJC = 0.349 
++ XCJC = 1 
++ TR = 1.3E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78
+*
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS2004D 1 2 3 4 5 6
+*
+R1 5 55 2.2E+04
+Cres1 5 3 4.3E-13 
+R21 55 44 1.1E+04 
+R22 44 4 1.1E+04
+Cres2 44 3 1.1E-13
+*
+Q1 6 2 1 PB5220
+Q2 3 55 4 PDTC124EM
+*
+.MODEL PB5220 PNP
++ IS = 2.37E-013 
++ NF = 0.988 
++ ISE = 2.328E-014 
++ NE = 1.419 
++ BF = 510 
++ IKF = 0.7 
++ VAF = 20 
++ NR = 0.985 
++ ISC = 5E-014 
++ NC = 1.155 
++ BR = 170 
++ IKR = 0.3 
++ VAR = 10.4 
++ RB = 30 
++ IRB = 6E-005 
++ RBM = 0.0737 
++ RE = 0.085 
++ RC = 0.065 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.28E-011 
++ VJE = 0.8642 
++ MJE = 0.4234 
++ TF = 1.12E-009 
++ XTF = 5 
++ VTF = 2.2 
++ ITF = 1 
++ PTF = 0 
++ CJC = 4.66E-011 
++ VJC = 0.4 
++ MJC = 0.366 
++ XCJC = 1 
++ TR = 4E-010 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.99 
+*
+.MODEL PDTC124EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS2021D 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconducters
+*
+* 1 Low VCEsat (BISS) Transistor / 1 Resistor-Equipped  
+* Transistor in SOT 457 package
+*
+* TR1       = Low VCEsat Transistor 
+* Polarity  = PNP    
+* Ic        = 1,8 A
+* Vceo      = 20V
+* hFE	    = typical 420 @VCE = -2 V;IC = -100 mA
+* 
+* TR2       = Resistor Equipped Transistor (RET)
+* Polarity  = NPN
+* Resistors = 2,2kO / 2,2 kO
+* Ic        = 100mA 
+* Vceo      = 50V
+* hFE	    = min 30 @VCE = 5 V;IC = 20 mA
+* 
+* Extraction date (week/year): 03/09 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      E1  C1  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      B1  B2  C2
+*
+***************************************************************
+R1 2 22 2.2E+03
+Cres1 2 3 4.8E-13 
+R21 22 44 1.1E+03
+R22 44 4 1.1E+03
+Cres2 44 3 1.5E-13
+*
+Q1 5 1 6 TR1
+Q2 3 22 4 TR2 
+*
+.MODEL TR1 PNP 
++ IS = 5.893E-013 
++ NF = 0.9861 
++ ISE = 1.33E-013 
++ NE = 1.422 
++ BF = 440 
++ IKF = 2.2 
++ VAF = 17.2 
++ NR = 0.9865 
++ ISC = 1.119E-013 
++ NC = 1.166 
++ BR = 290.4 
++ IKR = 0.45 
++ VAR = 11.93 
++ RB = 16 
++ IRB = 0.0004 
++ RBM = 0.3 
++ RE = 0.04 
++ RC = 0.018 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.943E-010 
++ VJE = 0.8511 
++ MJE = 0.4203 
++ TF = 1.95E-009 
++ XTF = 3 
++ VTF = 1.5 
++ ITF = 1.5 
++ PTF = 0 
++ CJC = 1.346E-010 
++ VJC = 0.4578 
++ MJC = 0.3404 
++ XCJC = 1 
++ TR = 1E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.75 
+*
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS2022D 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconducters
+*
+* 1 Low VCEsat (BISS) Transistor / 1 Resistor-Equipped  
+* Transistor in SOT 457 package
+*
+* TR1       = Low VCEsat Transistor 
+* Polarity  = PNP    
+* Ic        = 1,8 A
+* Vceo      = 20V
+* hFE	    = typical 420 @VCE = -2 V;IC = -100 mA
+* 
+* TR2       = Resistor Equipped Transistor (RET)
+* Polarity  = NPN
+* Resistors = 4,7kO / 4,7 kO
+* Ic        = 100mA
+* Vceo      = 50V				
+* hFE	    = min 30 @VCE = 5 V;IC = 10 mA
+* 
+* Extraction date (week/year): 03/09 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      E1  C1  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      B1  B2  C2
+*
+***************************************************************
+R1 2 22 4.7E+03
+Cres1 2 3 4.3E-13 
+R21 22 44 2.35E+03
+R22 44 4 2.35E+03
+Cres2 44 3 1.4E-13
+*
+Q1 5 1 6 TR1
+Q2 3 22 4 TR2 
+*
+.MODEL TR1 PNP 
++ IS = 5.893E-013 
++ NF = 0.9861 
++ ISE = 1.33E-013 
++ NE = 1.422 
++ BF = 440 
++ IKF = 2.2 
++ VAF = 17.2 
++ NR = 0.9865 
++ ISC = 1.119E-013 
++ NC = 1.166 
++ BR = 290.4 
++ IKR = 0.45 
++ VAR = 11.93 
++ RB = 16 
++ IRB = 0.0004 
++ RBM = 0.3 
++ RE = 0.04 
++ RC = 0.018 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.943E-010 
++ VJE = 0.8511 
++ MJE = 0.4203 
++ TF = 1.95E-009 
++ XTF = 3 
++ VTF = 1.5 
++ ITF = 1.5 
++ PTF = 0 
++ CJC = 1.346E-010 
++ VJC = 0.4578 
++ MJC = 0.3404 
++ XCJC = 1 
++ TR = 1E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.75 
+*
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS2023D 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconducters
+*
+* 1 Low VCEsat (BISS) Transistor / 1 Resistor-Equipped 
+* Transistor in SOT 457 package
+*
+* TR1       = Low VCEsat Transistor 
+* Polarity  = PNP    
+* Ic        = 1,8 A
+* Vceo      = 20V
+* hFE	    = typical 420 @VCE = -2 V;IC = -100 mA
+* 
+* TR2       = Resistor Equipped Transistor (RET)
+* Polarity  = NPN
+* Resistors = 10kO / 10 kO
+* Ic        = 100mA
+* Vceo      = 50V
+* hFE	    = min 30 @VCE = 5 V;IC = 5 mA
+* 
+* Extraction date (week/year): 03/09 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      E1  C1  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      B1  B2  C2
+*
+***************************************************************
+R1 2 22 1E+04
+Cres1 2 3 4.4E-13 
+R21 22 44 5E+03
+R22 44 4 5E+03
+Cres2 44 3 1.3E-13
+*
+Q1 5 1 6 TR1
+Q2 3 22 4 TR2 
+*
+.MODEL TR1 PNP 
++ IS = 5.893E-013 
++ NF = 0.9861 
++ ISE = 1.33E-013 
++ NE = 1.422 
++ BF = 440 
++ IKF = 2.2 
++ VAF = 17.2 
++ NR = 0.9865 
++ ISC = 1.119E-013 
++ NC = 1.166 
++ BR = 290.4 
++ IKR = 0.45 
++ VAR = 11.93 
++ RB = 16 
++ IRB = 0.0004 
++ RBM = 0.3 
++ RE = 0.04 
++ RC = 0.018 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.943E-010 
++ VJE = 0.8511 
++ MJE = 0.4203 
++ TF = 1.95E-009 
++ XTF = 3 
++ VTF = 1.5 
++ ITF = 1.5 
++ PTF = 0 
++ CJC = 1.346E-010 
++ VJC = 0.4578 
++ MJC = 0.3404 
++ XCJC = 1 
++ TR = 1E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.75 
+*
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS2024D 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconducters
+*
+* 1 Low VCEsat (BISS) Transistor / 1 Resistor-Equipped
+* Transistor in SOT 457 package
+*
+* TR1       = Low VCEsat Transistor 
+* Polarity  = PNP    
+* Ic        = 1,8 A
+* Vceo      = 20V
+* hFE	    = typical 420 @VCE = -2 V;IC = -100 mA
+* 
+* TR2       = Resistor Equipped Transistor (RET)
+* Polarity  = NPN
+* Resistors = 22kO / 22 kO
+* Ic        = 100mA
+* Vceo      = 50V
+* hFE	    = min 60 @VCE = 5 V;IC = 5 mA
+* 
+* Extraction date (week/year): 03/09 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      E1  C1  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      B1  B2  C2
+*
+***************************************************************
+R1 2 22 2.2E+04
+Cres1 2 3 4.3E-13 
+R21 22 44 1.1E+04
+R22 44 4 1.1E+04
+Cres2 44 3 1.1E-13
+*
+Q1 5 1 6 TR1
+Q2 3 22 4 TR2 
+*
+.MODEL TR1 PNP 
++ IS = 5.893E-013 
++ NF = 0.9861 
++ ISE = 1.33E-013 
++ NE = 1.422 
++ BF = 440 
++ IKF = 2.2 
++ VAF = 17.2 
++ NR = 0.9865 
++ ISC = 1.119E-013 
++ NC = 1.166 
++ BR = 290.4 
++ IKR = 0.45 
++ VAR = 11.93 
++ RB = 16 
++ IRB = 0.0004 
++ RBM = 0.3 
++ RE = 0.04 
++ RC = 0.018 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.943E-010 
++ VJE = 0.8511 
++ MJE = 0.4203 
++ TF = 1.95E-009 
++ XTF = 3 
++ VTF = 1.5 
++ ITF = 1.5 
++ PTF = 0 
++ CJC = 1.346E-010 
++ VJC = 0.4578 
++ MJC = 0.3404 
++ XCJC = 1 
++ TR = 1E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.75 
+*
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4001D 1 2 3 4 5 6
+*
+R1 5 55 2.2E+03
+Cres1 5 3 4.8E-13 
+R21 55 44 1.1E+03 
+R22 44 4 1.1E+03
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 PB51403
+Q2 3 55 4 PDTC123EM
+*
+.MODEL PB51403 PNP 
++ IS = 2.526E-013 
++ NF = 0.9959 
++ ISE = 1.056E-013 
++ NE = 1.763 
++ BF = 480 
++ IKF = 0.49 
++ VAF = 40 
++ NR = 0.994 
++ ISC = 5.238E-014 
++ NC = 1.128 
++ BR = 75 
++ IKR = 0.3 
++ VAR = 10 
++ RB = 21 
++ IRB = 0.00019 
++ RBM = 0.2 
++ RE = 0.085 
++ RC = 0.095 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.2E-011 
++ VJE = 0.8407 
++ MJE = 0.4065 
++ TF = 5.6E-010 
++ XTF = 10 
++ VTF = 1 
++ ITF = 0.4 
++ PTF = 0 
++ CJC = 3.212E-011 
++ VJC = 0.5149 
++ MJC = 0.3901 
++ XCJC = 1 
++ TR = 6E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333*
+.SUBCKT PBLS4001V 1 2 3 4 5 6
+*
+R1 5 55 2.2E+03
+Cres1 5 3 4.8E-13 
+R21 55 44 1.1E+03 
+R22 44 4 1.1E+03
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 PBSS3540E
+Q2 3 55 4 PDTC123EM
+*
+.MODEL PBSS3540E PNP
++ IS = 6.269E-014 
++ NF = 0.9897 
++ ISE = 1.859E-014 
++ NE = 1.487 
++ BF = 400 
++ IKF = 0.081 
++ VAF = 2.5 
++ NR = 0.9902 
++ ISC = 3.909E-014 
++ NC = 1.193 
++ BR = 26 
++ IKR = 0.2 
++ VAR = 5.9 
++ RB = 50 
++ IRB = 0.0004 
++ RBM = 0.1 
++ RE = 0.123 
++ RC = 0.184 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.805E-011 
++ VJE = 0.55 
++ MJE = 0.3288 
++ TF = 7.9E-010 
++ XTF = 3.8 
++ VTF = 1000 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 1.164E-011 
++ VJC = 0.5414 
++ MJC = 0.3995 
++ XCJC = 1 
++ TR = 2.7E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+*
+.MODEL PDTC123EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4001Y 1 2 3 4 5 6
+*
+R1 5 55 2.2E+03
+Cres1 5 3 4.8E-13 
+R21 55 44 1.1E+03 
+R22 44 4 1.1E+03
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 PBSS3540E
+Q2 3 55 4 PDTC123EM
+*
+.MODEL PBSS3540E PNP
++ IS = 6.269E-014 
++ NF = 0.9897 
++ ISE = 1.859E-014 
++ NE = 1.487 
++ BF = 400 
++ IKF = 0.081 
++ VAF = 2.5 
++ NR = 0.9902 
++ ISC = 3.909E-014 
++ NC = 1.193 
++ BR = 26 
++ IKR = 0.2 
++ VAR = 5.9 
++ RB = 50 
++ IRB = 0.0004 
++ RBM = 0.1 
++ RE = 0.123 
++ RC = 0.184 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.805E-011 
++ VJE = 0.55 
++ MJE = 0.3288 
++ TF = 7.9E-010 
++ XTF = 3.8 
++ VTF = 1000 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 1.164E-011 
++ VJC = 0.5414 
++ MJC = 0.3995 
++ XCJC = 1 
++ TR = 2.7E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+*
+.MODEL PDTC123EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4002D 1 2 3 4 5 6
+*
+R1 5 55 4.7E+03
+Cres1 5 3 4.3E-13 
+R21 55 44 2.35E+03 
+R22 44 4 2.35E+03
+Cres2 44 3 1.4E-13
+*
+Q1 6 2 1 PB51403
+Q2 3 55 4 PDTC143EM
+*
+.MODEL PB51403 PNP 
++ IS = 2.526E-013 
++ NF = 0.9959 
++ ISE = 1.056E-013 
++ NE = 1.763 
++ BF = 480 
++ IKF = 0.49 
++ VAF = 40 
++ NR = 0.994 
++ ISC = 5.238E-014 
++ NC = 1.128 
++ BR = 75 
++ IKR = 0.3 
++ VAR = 10 
++ RB = 21 
++ IRB = 0.00019 
++ RBM = 0.2 
++ RE = 0.085 
++ RC = 0.095 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.2E-011 
++ VJE = 0.8407 
++ MJE = 0.4065 
++ TF = 5.6E-010 
++ XTF = 10 
++ VTF = 1 
++ ITF = 0.4 
++ PTF = 0 
++ CJC = 3.212E-011 
++ VJC = 0.5149 
++ MJC = 0.3901 
++ XCJC = 1 
++ TR = 6E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78 
+*
+.MODEL PDTC143EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4002V 1 2 3 4 5 6
+*
+R1 5 55 4.7E+03
+Cres1 5 3 4.3E-13 
+R21 55 44 2.35E+03 
+R22 44 4 2.35E+03
+Cres2 44 3 1.4E-13
+*
+Q1 6 2 1 PBSS3540E
+Q2 3 55 4 PDTC143EM
+*
+.MODEL PBSS3540E PNP
++ IS = 6.269E-014 
++ NF = 0.9897 
++ ISE = 1.859E-014 
++ NE = 1.487 
++ BF = 400 
++ IKF = 0.081 
++ VAF = 2.5 
++ NR = 0.9902 
++ ISC = 3.909E-014 
++ NC = 1.193 
++ BR = 26 
++ IKR = 0.2 
++ VAR = 5.9 
++ RB = 50 
++ IRB = 0.0004 
++ RBM = 0.1 
++ RE = 0.123 
++ RC = 0.184 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.805E-011 
++ VJE = 0.55 
++ MJE = 0.3288 
++ TF = 7.9E-010 
++ XTF = 3.8 
++ VTF = 1000 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 1.164E-011 
++ VJC = 0.5414 
++ MJC = 0.3995 
++ XCJC = 1 
++ TR = 2.7E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+*
+.MODEL PDTC143EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4002Y 1 2 3 4 5 6
+*
+R1 5 55 4.7E+03
+Cres1 5 3 4.3E-13 
+R21 55 44 2.35E+03 
+R22 44 4 2.35E+03
+Cres2 44 3 1.4E-13
+*
+Q1 6 2 1 PBSS3540E
+Q2 3 55 4 PDTC143EM
+*
+.MODEL PBSS3540E PNP
++ IS = 6.269E-014 
++ NF = 0.9897 
++ ISE = 1.859E-014 
++ NE = 1.487 
++ BF = 400 
++ IKF = 0.081 
++ VAF = 2.5 
++ NR = 0.9902 
++ ISC = 3.909E-014 
++ NC = 1.193 
++ BR = 26 
++ IKR = 0.2 
++ VAR = 5.9 
++ RB = 50 
++ IRB = 0.0004 
++ RBM = 0.1 
++ RE = 0.123 
++ RC = 0.184 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.805E-011 
++ VJE = 0.55 
++ MJE = 0.3288 
++ TF = 7.9E-010 
++ XTF = 3.8 
++ VTF = 1000 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 1.164E-011 
++ VJC = 0.5414 
++ MJC = 0.3995 
++ XCJC = 1 
++ TR = 2.7E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+*
+.MODEL PDTC143EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4003D 1 2 3 4 5 6
+*
+R1 5 55 1.0E+04
+Cres1 5 3 4.4E-13 
+R21 55 44 5E+03 
+R22 44 4 5E+03
+Cres2 44 3 1.3E-13
+*
+Q1 6 2 1 PB51403
+Q2 3 55 4 PDTC114EM
+*
+.MODEL PB51403 PNP 
++ IS = 2.526E-013 
++ NF = 0.9959 
++ ISE = 1.056E-013 
++ NE = 1.763 
++ BF = 480 
++ IKF = 0.49 
++ VAF = 40 
++ NR = 0.994 
++ ISC = 5.238E-014 
++ NC = 1.128 
++ BR = 75 
++ IKR = 0.3 
++ VAR = 10 
++ RB = 21 
++ IRB = 0.00019 
++ RBM = 0.2 
++ RE = 0.085 
++ RC = 0.095 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.2E-011 
++ VJE = 0.8407 
++ MJE = 0.4065 
++ TF = 5.6E-010 
++ XTF = 10 
++ VTF = 1 
++ ITF = 0.4 
++ PTF = 0 
++ CJC = 3.212E-011 
++ VJC = 0.5149 
++ MJC = 0.3901 
++ XCJC = 1 
++ TR = 6E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78 
+*
+.MODEL PDTC114EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4003V 1 2 3 4 5 6
+*
+R1 5 55 1.0E+04
+Cres1 5 3 4.4E-13 
+R21 55 44 5E+03 
+R22 44 4 5E+03
+Cres2 44 3 1.3E-13
+*
+Q1 6 2 1 PBSS3540E
+Q2 3 55 4 PDTC114EM
+*
+.MODEL PBSS3540E PNP
++ IS = 6.269E-014 
++ NF = 0.9897 
++ ISE = 1.859E-014 
++ NE = 1.487 
++ BF = 400 
++ IKF = 0.081 
++ VAF = 2.5 
++ NR = 0.9902 
++ ISC = 3.909E-014 
++ NC = 1.193 
++ BR = 26 
++ IKR = 0.2 
++ VAR = 5.9 
++ RB = 50 
++ IRB = 0.0004 
++ RBM = 0.1 
++ RE = 0.123 
++ RC = 0.184 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.805E-011 
++ VJE = 0.55 
++ MJE = 0.3288 
++ TF = 7.9E-010 
++ XTF = 3.8 
++ VTF = 1000 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 1.164E-011 
++ VJC = 0.5414 
++ MJC = 0.3995 
++ XCJC = 1 
++ TR = 2.7E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+*
+.MODEL PDTC114EM NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4003Y 1 2 3 4 5 6
+*
+R1 5 55 1.0E+04
+Cres1 5 3 4.4E-13 
+R21 55 44 5E+03 
+R22 44 4 5E+03
+Cres2 44 3 1.3E-13
+*
+Q1 6 2 1 PBSS3540E
+Q2 3 55 4 PDTC114EM
+*
+.MODEL PBSS3540E PNP
++ IS = 6.269E-014 
++ NF = 0.9897 
++ ISE = 1.859E-014 
++ NE = 1.487 
++ BF = 400 
++ IKF = 0.081 
++ VAF = 2.5 
++ NR = 0.9902 
++ ISC = 3.909E-014 
++ NC = 1.193 
++ BR = 26 
++ IKR = 0.2 
++ VAR = 5.9 
++ RB = 50 
++ IRB = 0.0004 
++ RBM = 0.1 
++ RE = 0.123 
++ RC = 0.184 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.805E-011 
++ VJE = 0.55 
++ MJE = 0.3288 
++ TF = 7.9E-010 
++ XTF = 3.8 
++ VTF = 1000 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 1.164E-011 
++ VJC = 0.5414 
++ MJC = 0.3995 
++ XCJC = 1 
++ TR = 2.7E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+*
+.MODEL PDTC114EM NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4004D 1 2 3 4 5 6
+*
+R1 5 55 2.2E+04
+Cres1 5 3 4.3E-13 
+R21 55 44 1.1E+04 
+R22 44 4 1.1E+04
+Cres2 44 3 1.1E-13
+*
+Q1 6 2 1 PB51403
+Q2 3 55 4 PDTC124EM
+*
+.MODEL PB51403 PNP 
++ IS = 2.526E-013 
++ NF = 0.9959 
++ ISE = 1.056E-013 
++ NE = 1.763 
++ BF = 480 
++ IKF = 0.49 
++ VAF = 40 
++ NR = 0.994 
++ ISC = 5.238E-014 
++ NC = 1.128 
++ BR = 75 
++ IKR = 0.3 
++ VAR = 10 
++ RB = 21 
++ IRB = 0.00019 
++ RBM = 0.2 
++ RE = 0.085 
++ RC = 0.095 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.2E-011 
++ VJE = 0.8407 
++ MJE = 0.4065 
++ TF = 5.6E-010 
++ XTF = 10 
++ VTF = 1 
++ ITF = 0.4 
++ PTF = 0 
++ CJC = 3.212E-011 
++ VJC = 0.5149 
++ MJC = 0.3901 
++ XCJC = 1 
++ TR = 6E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78 
+*
+.MODEL PDTC124EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4004V 1 2 3 4 5 6
+*
+R1 5 55 2.2E+04
+Cres1 5 3 4.3E-13 
+R21 55 44 1.1E+04 
+R22 44 4 1.1E+04
+Cres2 44 3 1.1E-13
+*
+Q1 6 2 1 PBSS3540E
+Q2 3 55 4 PDTC124EM
+*
+.MODEL PBSS3540E PNP
++ IS = 6.269E-014 
++ NF = 0.9897 
++ ISE = 1.859E-014 
++ NE = 1.487 
++ BF = 400 
++ IKF = 0.081 
++ VAF = 2.5 
++ NR = 0.9902 
++ ISC = 3.909E-014 
++ NC = 1.193 
++ BR = 26 
++ IKR = 0.2 
++ VAR = 5.9 
++ RB = 50 
++ IRB = 0.0004 
++ RBM = 0.1 
++ RE = 0.123 
++ RC = 0.184 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.805E-011 
++ VJE = 0.55 
++ MJE = 0.3288 
++ TF = 7.9E-010 
++ XTF = 3.8 
++ VTF = 1000 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 1.164E-011 
++ VJC = 0.5414 
++ MJC = 0.3995 
++ XCJC = 1 
++ TR = 2.7E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+*
+.MODEL PDTC124EM NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4004Y 1 2 3 4 5 6
+*
+R1 5 55 2.2E+04
+Cres1 5 3 4.3E-13 
+R21 55 44 1.1E+04 
+R22 44 4 1.1E+04
+Cres2 44 3 1.1E-13
+*
+Q1 6 2 1 PBSS3540E
+Q2 3 55 4 PDTC124EM
+*
+.MODEL PBSS3540E PNP
++ IS = 6.269E-014 
++ NF = 0.9897 
++ ISE = 1.859E-014 
++ NE = 1.487 
++ BF = 400 
++ IKF = 0.081 
++ VAF = 2.5 
++ NR = 0.9902 
++ ISC = 3.909E-014 
++ NC = 1.193 
++ BR = 26 
++ IKR = 0.2 
++ VAR = 5.9 
++ RB = 50 
++ IRB = 0.0004 
++ RBM = 0.1 
++ RE = 0.123 
++ RC = 0.184 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.805E-011 
++ VJE = 0.55 
++ MJE = 0.3288 
++ TF = 7.9E-010 
++ XTF = 3.8 
++ VTF = 1000 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 1.164E-011 
++ VJC = 0.5414 
++ MJC = 0.3995 
++ XCJC = 1 
++ TR = 2.7E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+*
+.MODEL PDTC124EM NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4005D 1 2 3 4 5 6
+*
+R1 5 55 4.7E+04
+Cres1 5 3 4.8E-13 
+R21 55 44 2.35E+04 
+R22 44 4 2.35E+04
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 PB51403
+Q2 3 55 4 PDTC144EM
+*
+.MODEL PB51403 PNP 
++ IS = 2.526E-013 
++ NF = 0.9959 
++ ISE = 1.056E-013 
++ NE = 1.763 
++ BF = 480 
++ IKF = 0.49 
++ VAF = 40 
++ NR = 0.994 
++ ISC = 5.238E-014 
++ NC = 1.128 
++ BR = 75 
++ IKR = 0.3 
++ VAR = 10 
++ RB = 21 
++ IRB = 0.00019 
++ RBM = 0.2 
++ RE = 0.085 
++ RC = 0.095 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.2E-011 
++ VJE = 0.8407 
++ MJE = 0.4065 
++ TF = 5.6E-010 
++ XTF = 10 
++ VTF = 1 
++ ITF = 0.4 
++ PTF = 0 
++ CJC = 3.212E-011 
++ VJC = 0.5149 
++ MJC = 0.3901 
++ XCJC = 1 
++ TR = 6E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78 
+*
+.MODEL PDTC144EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4005V 1 2 3 4 5 6
+*
+R1 5 55 4.7E+04
+Cres1 5 3 4.8E-13 
+R21 55 44 2.35E+04 
+R22 44 4 2.35E+04
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 PBSS3540E
+Q2 3 55 4 PDTC144EM
+*
+.MODEL PBSS3540E PNP
++ IS = 6.269E-014 
++ NF = 0.9897 
++ ISE = 1.859E-014 
++ NE = 1.487 
++ BF = 400 
++ IKF = 0.081 
++ VAF = 2.5 
++ NR = 0.9902 
++ ISC = 3.909E-014 
++ NC = 1.193 
++ BR = 26 
++ IKR = 0.2 
++ VAR = 5.9 
++ RB = 50 
++ IRB = 0.0004 
++ RBM = 0.1 
++ RE = 0.123 
++ RC = 0.184 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.805E-011 
++ VJE = 0.55 
++ MJE = 0.3288 
++ TF = 7.9E-010 
++ XTF = 3.8 
++ VTF = 1000 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 1.164E-011 
++ VJC = 0.5414 
++ MJC = 0.3995 
++ XCJC = 1 
++ TR = 2.7E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+*
+.MODEL PDTC144EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS4005Y 1 2 3 4 5 6
+*
+R1 5 55 4.7E+04
+Cres1 5 3 4.8E-13 
+R21 55 44 2.35E+04 
+R22 44 4 2.35E+04
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 PBSS3540E
+Q2 3 55 4 PDTC144EM
+*
+.MODEL PBSS3540E PNP
++ IS = 6.269E-014 
++ NF = 0.9897 
++ ISE = 1.859E-014 
++ NE = 1.487 
++ BF = 400 
++ IKF = 0.081 
++ VAF = 2.5 
++ NR = 0.9902 
++ ISC = 3.909E-014 
++ NC = 1.193 
++ BR = 26 
++ IKR = 0.2 
++ VAR = 5.9 
++ RB = 50 
++ IRB = 0.0004 
++ RBM = 0.1 
++ RE = 0.123 
++ RC = 0.184 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.805E-011 
++ VJE = 0.55 
++ MJE = 0.3288 
++ TF = 7.9E-010 
++ XTF = 3.8 
++ VTF = 1000 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 1.164E-011 
++ VJC = 0.5414 
++ MJC = 0.3995 
++ XCJC = 1 
++ TR = 2.7E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+*
+.MODEL PDTC144EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS6001D 1 2 3 4 5 6
+*
+* The diode does not reflect a 
+* physical device but improves 
+* only modeling in the reverse
+* mode of operation.
+*
+R1 5 55 2.2E+03
+Cres1 5 3 4.8E-13 
+R21 55 44 1.1E+03 
+R22 44 4 1.1E+03
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 PBSS5160U
+D1 6 2 DIODE
+Q2 3 55 4 PDTC123EM
+*
+.MODEL PBSS5160U PNP 
++ IS = 1.695E-013 
++ NF = 0.9919 
++ ISE = 1.5E-014 
++ NE = 1.348 
++ BF = 370 
++ IKF = 0.4 
++ VAF = 40 
++ NR = 0.9912 
++ ISC = 1.541E-013 
++ NC = 1.821 
++ BR = 30 
++ IKR = 0.4 
++ VAR = 18 
++ RB = 12 
++ IRB = 0.001 
++ RBM = 1.12 
++ RE = 0.105 
++ RC = 0.105 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.466E-011 
++ VJE = 0.8044 
++ MJE = 0.3919 
++ TF = 9E-010 
++ XTF = 20 
++ VTF = 1.1 
++ ITF = 1.35 
++ PTF = 0 
++ CJC = 3.162E-011 
++ VJC = 0.7543 
++ MJC = 0.4479 
++ XCJC = 1 
++ TR = 3.2E-008 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.8
+*
+.MODEL DIODE D 
++ IS = 1.651E-014 
++ N = 1.079 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 1000 
++ CJO = 0 
++ VJ = 1 
++ M = 0.7 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+*
+.MODEL PDTC123EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS6002D 1 2 3 4 5 6
+*
+* The diode does not reflect a 
+* physical device but improves 
+* only modeling in the reverse
+* mode of operation.
+*
+R1 5 55 4.7E+03
+Cres1 5 3 4.3E-13 
+R21 55 44 2.35E+03 
+R22 44 4 2.35E+03
+Cres2 44 3 1.4E-13
+*
+Q1 6 2 1 PBSS5160U
+D1 6 2 DIODE
+Q2 3 55 4 PDTC143EM
+*
+.MODEL PBSS5160U PNP 
++ IS = 1.695E-013 
++ NF = 0.9919 
++ ISE = 1.5E-014 
++ NE = 1.348 
++ BF = 370 
++ IKF = 0.4 
++ VAF = 40 
++ NR = 0.9912 
++ ISC = 1.541E-013 
++ NC = 1.821 
++ BR = 30 
++ IKR = 0.4 
++ VAR = 18 
++ RB = 12 
++ IRB = 0.001 
++ RBM = 1.12 
++ RE = 0.105 
++ RC = 0.105 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.466E-011 
++ VJE = 0.8044 
++ MJE = 0.3919 
++ TF = 9E-010 
++ XTF = 20 
++ VTF = 1.1 
++ ITF = 1.35 
++ PTF = 0 
++ CJC = 3.162E-011 
++ VJC = 0.7543 
++ MJC = 0.4479 
++ XCJC = 1 
++ TR = 3.2E-008 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.8
+*
+.MODEL DIODE D 
++ IS = 1.651E-014 
++ N = 1.079 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 1000 
++ CJO = 0 
++ VJ = 1 
++ M = 0.7 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+*
+.MODEL PDTC143EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS6003D 1 2 3 4 5 6
+*
+* The diode does not reflect a 
+* physical device but improves 
+* only modeling in the reverse
+* mode of operation.
+*
+R1 5 55 1.0E+04
+Cres1 5 3 4.4E-13 
+R21 55 44 5E+03 
+R22 44 4 5E+03
+Cres2 44 3 1.3E-13
+*
+Q1 6 2 1 PBSS5160U
+D1 6 2 DIODE
+Q2 3 55 4 PDTC114EM
+*
+.MODEL PBSS5160U PNP 
++ IS = 1.695E-013 
++ NF = 0.9919 
++ ISE = 1.5E-014 
++ NE = 1.348 
++ BF = 370 
++ IKF = 0.4 
++ VAF = 40 
++ NR = 0.9912 
++ ISC = 1.541E-013 
++ NC = 1.821 
++ BR = 30 
++ IKR = 0.4 
++ VAR = 18 
++ RB = 12 
++ IRB = 0.001 
++ RBM = 1.12 
++ RE = 0.105 
++ RC = 0.105 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.466E-011 
++ VJE = 0.8044 
++ MJE = 0.3919 
++ TF = 9E-010 
++ XTF = 20 
++ VTF = 1.1 
++ ITF = 1.35 
++ PTF = 0 
++ CJC = 3.162E-011 
++ VJC = 0.7543 
++ MJC = 0.4479 
++ XCJC = 1 
++ TR = 3.2E-008 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.8
+*
+.MODEL DIODE D 
++ IS = 1.651E-014 
++ N = 1.079 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 1000 
++ CJO = 0 
++ VJ = 1 
++ M = 0.7 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+*
+.MODEL PDTC114EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS6004D 1 2 3 4 5 6
+*
+* The diode does not reflect a 
+* physical device but improves 
+* only modeling in the reverse
+* mode of operation.
+*
+R1 5 55 2.2E+04
+Cres1 5 3 4.3E-13 
+R21 55 44 1.1E+04 
+R22 44 4 1.1E+04
+Cres2 44 3 1.1E-13
+*
+Q1 6 2 1 PBSS5160U
+D1 6 2 DIODE
+Q2 3 55 4 PDTC124EM
+*
+.MODEL PBSS5160U PNP 
++ IS = 1.695E-013 
++ NF = 0.9919 
++ ISE = 1.5E-014 
++ NE = 1.348 
++ BF = 370 
++ IKF = 0.4 
++ VAF = 40 
++ NR = 0.9912 
++ ISC = 1.541E-013 
++ NC = 1.821 
++ BR = 30 
++ IKR = 0.4 
++ VAR = 18 
++ RB = 12 
++ IRB = 0.001 
++ RBM = 1.12 
++ RE = 0.105 
++ RC = 0.105 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.466E-011 
++ VJE = 0.8044 
++ MJE = 0.3919 
++ TF = 9E-010 
++ XTF = 20 
++ VTF = 1.1 
++ ITF = 1.35 
++ PTF = 0 
++ CJC = 3.162E-011 
++ VJC = 0.7543 
++ MJC = 0.4479 
++ XCJC = 1 
++ TR = 3.2E-008 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.8
+*
+.MODEL DIODE D 
++ IS = 1.651E-014 
++ N = 1.079 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 1000 
++ CJO = 0 
++ VJ = 1 
++ M = 0.7 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+*
+.MODEL PDTC124EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS6005D 1 2 3 4 5 6
+*
+* The diode does not reflect a 
+* physical device but improves 
+* only modeling in the reverse
+* mode of operation.
+*
+R1 5 55 4.7E+04
+Cres1 5 3 4.8E-13 
+R21 55 44 2.35E+04 
+R22 44 4 2.35E+04
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 PBSS5160U
+D1 6 2 DIODE
+Q2 3 55 4 PDTC144EM
+*
+.MODEL PBSS5160U PNP 
++ IS = 1.695E-013 
++ NF = 0.9919 
++ ISE = 1.5E-014 
++ NE = 1.348 
++ BF = 370 
++ IKF = 0.4 
++ VAF = 40 
++ NR = 0.9912 
++ ISC = 1.541E-013 
++ NC = 1.821 
++ BR = 30 
++ IKR = 0.4 
++ VAR = 18 
++ RB = 12 
++ IRB = 0.001 
++ RBM = 1.12 
++ RE = 0.105 
++ RC = 0.105 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.466E-011 
++ VJE = 0.8044 
++ MJE = 0.3919 
++ TF = 9E-010 
++ XTF = 20 
++ VTF = 1.1 
++ ITF = 1.35 
++ PTF = 0 
++ CJC = 3.162E-011 
++ VJC = 0.7543 
++ MJC = 0.4479 
++ XCJC = 1 
++ TR = 3.2E-008 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.8
+*
+.MODEL DIODE D 
++ IS = 1.651E-014 
++ N = 1.079 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 1000 
++ CJO = 0 
++ VJ = 1 
++ M = 0.7 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+*
+.MODEL PDTC144EM NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS6021D 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconducters
+*
+* 1 Low VCEsat (BISS) Transistor / 1 Resistor-Equipped 
+* Transistor in SOT 457 package
+*
+* TR1       = Low VCEsat Transistor 
+* Polarity  = PNP    
+* Ic        = -1,5 A
+* Vceo      = -60V
+* hFE	    = typical 285 @VCE = -2 V;IC = -100 mA
+* 
+* TR2       = Resistor Equipped Transistor (RET)
+* Polarity  = NPN
+* Resistors = 2,2kO / 2,2 kO
+* Ic        = 100mA
+* Vceo      = 50V
+* hFE	    = min 30 @VCE = 5 V;IC = 20 mA
+* 
+* Extraction date (week/year): 03/09 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      E1  C1  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      B1  B2  C2
+*
+***************************************************************
+*
+R1 2 22 2.2E+03
+Cres1 2 3 4.8E-13 
+R21 22 44 1.1E+03
+R22 44 4 1.1E+03
+Cres2 44 3 1.5E-13
+*
+Q1 5 1 6 TR1
+Q2 3 22 4 TR2 
+D1 5 1 DIODE 
+*
+.MODEL TR1 PNP 
++ IS = 4.317E-013 
++ NF = 0.9862 
++ ISE = 1.138E-013 
++ NE = 1.441 
++ BF = 305 
++ IKF = 1.6 
++ VAF = 2.1 
++ NR = 0.9865 
++ ISC = 1.118E-012 
++ NC = 1.297 
++ BR = 50 
++ IKR = 1.9 
++ VAR = 10 
++ RB = 13.5 
++ IRB = 0.0008 
++ RBM = 0.75 
++ RE = 0.038 
++ RC = 0.035 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 3.11E-010 
++ VJE = 0.8442 
++ MJE = 0.4135 
++ TF = 1.5E-009 
++ XTF = 5 
++ VTF = 1 
++ ITF = 1.2 
++ PTF = 0 
++ CJC = 9.25E-011 
++ VJC = 0.7292 
++ MJC = 0.4313 
++ XCJC = 1 
++ TR = 5E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.8 
+*
+.MODEL DIODE D 
++ IS = 1.159E-015 
++ N = 0.8542 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 444.2 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+*
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS6022D 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconducters
+*
+* 1 Low VCEsat (BISS) Transistor / 1 Resistor-Equipped 
+* Transistor in SOT 457 package
+*
+* TR1       = Low VCEsat Transistor 
+* Polarity  = PNP    
+* Ic        = -1,5 A
+* Vceo      = -60V
+* hFE	    = typical 285 @VCE = -2 V;IC = -100 mA
+* 
+* TR2       = Resistor Equipped Transistor (RET)
+* Polarity  = NPN
+* Resistors = 4,7kO / 4,7 kO
+* Ic        = 100mA
+* Vceo      = 50V
+* hFE	    = min 30 @VCE = 5 V;IC = 10 mA
+* 
+* Extraction date (week/year): 03/09 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      E1  C1  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      B1  B2  C2
+*
+***************************************************************
+*
+R1 2 22 4.7E+03
+Cres1 2 3 4.3E-13 
+R21 22 44 2.35E+03
+R22 44 4 2.35E+03
+Cres2 44 3 1.4E-13
+*
+Q1 5 1 6 TR1
+Q2 3 22 4 TR2 
+D1 5 1 DIODE 
+*
+.MODEL TR1 PNP 
++ IS = 4.317E-013 
++ NF = 0.9862 
++ ISE = 1.138E-013 
++ NE = 1.441 
++ BF = 305 
++ IKF = 1.6 
++ VAF = 2.1 
++ NR = 0.9865 
++ ISC = 1.118E-012 
++ NC = 1.297 
++ BR = 50 
++ IKR = 1.9 
++ VAR = 10 
++ RB = 13.5 
++ IRB = 0.0008 
++ RBM = 0.75 
++ RE = 0.038 
++ RC = 0.035 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 3.11E-010 
++ VJE = 0.8442 
++ MJE = 0.4135 
++ TF = 1.5E-009 
++ XTF = 5 
++ VTF = 1 
++ ITF = 1.2 
++ PTF = 0 
++ CJC = 9.25E-011 
++ VJC = 0.7292 
++ MJC = 0.4313 
++ XCJC = 1 
++ TR = 5E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.8 
+*
+.MODEL DIODE D 
++ IS = 1.159E-015 
++ N = 0.8542 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 444.2 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+*
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS6023D 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconducters
+*
+* 1 Low VCEsat (BISS) Transistor / 1 Resistor-Equipped 
+* Transistor in SOT 457 package
+*
+* TR1       = Low VCEsat Transistor 
+* Polarity  = PNP    
+* Ic        = -1,5 A
+* Vceo      = -60V
+* hFE	    = typical 285 @VCE = -2 V;IC = -100 mA
+* 
+* TR2       = Resistor Equipped Transistor (RET)
+* Polarity  = NPN
+* Resistors = 10kO / 10kO
+* Ic        = 100mA
+* Vceo      = 50V
+* hFE	    = min 30 @VCE = 5 V;IC = 5 mA
+* 
+* Extraction date (week/year): 03/09 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      E1  C1  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      B1  B2  C2
+*
+***************************************************************
+*
+R1 2 22 1E+04
+Cres1 2 3 4.4E-13 
+R21 22 44 5E+03
+R22 44 4 5E+03
+Cres2 44 3 1.3E-13
+*
+Q1 5 1 6 TR1
+Q2 3 22 4 TR2 
+D1 5 1 DIODE 
+*
+.MODEL TR1 PNP 
++ IS = 4.317E-013 
++ NF = 0.9862 
++ ISE = 1.138E-013 
++ NE = 1.441 
++ BF = 305 
++ IKF = 1.6 
++ VAF = 2.1 
++ NR = 0.9865 
++ ISC = 1.118E-012 
++ NC = 1.297 
++ BR = 50 
++ IKR = 1.9 
++ VAR = 10 
++ RB = 13.5 
++ IRB = 0.0008 
++ RBM = 0.75 
++ RE = 0.038 
++ RC = 0.035 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 3.11E-010 
++ VJE = 0.8442 
++ MJE = 0.4135 
++ TF = 1.5E-009 
++ XTF = 5 
++ VTF = 1 
++ ITF = 1.2 
++ PTF = 0 
++ CJC = 9.25E-011 
++ VJC = 0.7292 
++ MJC = 0.4313 
++ XCJC = 1 
++ TR = 5E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.8 
+*
+.MODEL DIODE D 
++ IS = 1.159E-015 
++ N = 0.8542 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 444.2 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+*
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PBLS6024D 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconducters
+*
+* 1 Low VCEsat (BISS) Transistor / 1 Resistor-Equipped 
+* Transistor in SOT 457 package
+*
+* TR1       = Low VCEsat Transistor 
+* Polarity  = PNP    
+* Ic        = -1,5 A
+* Vceo      = -60V
+* hFE	    = typical 285 @VCE = -2 V;IC = -100 mA
+* 
+* TR2       = Resistor Equipped Transistor (RET)
+* Polarity  = NPN
+* Resistors = 22kO / 22kO
+* Ic        = 100mA
+* Vceo      = 50V
+* hFE	    = min 60 @VCE = 5 V;IC = 5 mA
+* 
+* Extraction date (week/year): 03/09 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      E1  C1  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      B1  B2  C2
+*
+***************************************************************
+*
+R1 2 22 2.2E+04
+Cres1 2 3 4.3E-13 
+R21 22 44 1.1E+04
+R22 44 4 1.1E+04
+Cres2 44 3 1.1E-13
+*
+Q1 5 1 6 TR1
+Q2 3 22 4 TR2 
+D1 5 1 DIODE 
+*
+.MODEL TR1 PNP 
++ IS = 4.317E-013 
++ NF = 0.9862 
++ ISE = 1.138E-013 
++ NE = 1.441 
++ BF = 305 
++ IKF = 1.6 
++ VAF = 2.1 
++ NR = 0.9865 
++ ISC = 1.118E-012 
++ NC = 1.297 
++ BR = 50 
++ IKR = 1.9 
++ VAR = 10 
++ RB = 13.5 
++ IRB = 0.0008 
++ RBM = 0.75 
++ RE = 0.038 
++ RC = 0.035 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 3.11E-010 
++ VJE = 0.8442 
++ MJE = 0.4135 
++ TF = 1.5E-009 
++ XTF = 5 
++ VTF = 1 
++ ITF = 1.2 
++ PTF = 0 
++ CJC = 9.25E-011 
++ VJC = 0.7292 
++ MJC = 0.4313 
++ XCJC = 1 
++ TR = 5E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.8 
+*
+.MODEL DIODE D 
++ IS = 1.159E-015 
++ N = 0.8542 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 444.2 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+*
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+* PBSS4350SPN
+* 2 BISS NPN/PNPin SOT96-1
+*
+.SUBCKT PBSS4350SPN 1 2 3 4 5 6 7 8
+*
+R1 5 6 1f 
+R2 7 8 1f
+*
+Q1 8 2 1 T1
+Q2 5 4 3 T2
+*
+.MODEL T1 NPN 
++ IS = 1.146E-12 
++ NF = 0.9958 
++ ISE = 2.959E-15 
++ NE = 1.188 
++ BF = 610 
++ IKF = 5 
++ VAF = 83 
++ NR = 0.995 
++ ISC = 1.991E-15 
++ NC = 1.283 
++ BR = 100 
++ IKR = 4.2 
++ VAR = 54 
++ RB = 14 
++ IRB = 0.0007 
++ RBM = 0.998 
++ RE = 0.044 
++ RC = 0.046 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 3.185E-10 
++ VJE = 0.6753 
++ MJE = 0.3597 
++ TF = 7E-10 
++ XTF = 20 
++ VTF = 0.6 
++ ITF = 2 
++ PTF = 0 
++ CJC = 6.25E-11 
++ VJC = 0.5659 
++ MJC = 0.4359 
++ XCJC = 1 
++ TR = 3E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78 
+*
+.MODEL T2 PNP 
++ IS = 7.26E-13 
++ NF = 0.9959 
++ ISE = 2.347E-14 
++ NE = 1.301 
++ BF = 400 
++ IKF = 1.9 
++ VAF = 35 
++ NR = 0.9955 
++ ISC = 1.092E-13 
++ NC = 1.199 
++ BR = 80 
++ IKR = 0.95 
++ VAR = 10 
++ RB = 9.9 
++ IRB = 0.00075 
++ RBM = 4.026 
++ RE = 0.035 
++ RC = 0.035 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.613E-10 
++ VJE = 0.916 
++ MJE = 0.4323 
++ TF = 1.1E-09 
++ XTF = 23 
++ VTF = 0.8 
++ ITF = 1.3 
++ PTF = 0 
++ CJC = 8.272E-11 
++ VJC = 0.8025 
++ MJC = 0.4363 
++ XCJC = 1 
++ TR = 1.9E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78 
+.ENDS*
+* PBSS4350SS
+* 2 BISS in SOT96-1
+*
+.SUBCKT PBSS4350SS 1 2 3 4 5 6 7 8
+*
+R1 5 6 1f 
+R2 7 8 1f
+*
+Q1 8 2 1 T1
+Q2 5 4 3 T1
+*
+.MODEL T1 NPN 
++ IS = 1.146E-12 
++ NF = 0.9958 
++ ISE = 2.959E-15 
++ NE = 1.188 
++ BF = 610 
++ IKF = 5 
++ VAF = 83 
++ NR = 0.995 
++ ISC = 1.991E-15 
++ NC = 1.283 
++ BR = 100 
++ IKR = 4.2 
++ VAR = 54 
++ RB = 14 
++ IRB = 0.0007 
++ RBM = 0.998 
++ RE = 0.044 
++ RC = 0.046 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 3.185E-10 
++ VJE = 0.6753 
++ MJE = 0.3597 
++ TF = 7E-10 
++ XTF = 20 
++ VTF = 0.6 
++ ITF = 2 
++ PTF = 0 
++ CJC = 6.25E-11 
++ VJC = 0.5659 
++ MJC = 0.4359 
++ XCJC = 1 
++ TR = 3E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78 
+.ENDS*
+* PBSS5350SS
+* 2 BISS in SOT96-1
+*
+.SUBCKT PBSS5350SS 1 2 3 4 5 6 7 8
+*
+R1 5 6 1f 
+R2 7 8 1f
+*
+Q1 8 2 1 T1
+Q2 5 4 3 T1
+*
+.MODEL T1 PNP 
++ IS = 7.26E-13 
++ NF = 0.9959 
++ ISE = 2.347E-14 
++ NE = 1.301 
++ BF = 400 
++ IKF = 1.9 
++ VAF = 35 
++ NR = 0.9955 
++ ISC = 1.092E-13 
++ NC = 1.199 
++ BR = 80 
++ IKR = 0.95 
++ VAR = 10 
++ RB = 9.9 
++ IRB = 0.00075 
++ RBM = 4.026 
++ RE = 0.035 
++ RC = 0.035 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 2.613E-10 
++ VJE = 0.916 
++ MJE = 0.4323 
++ TF = 1.1E-09 
++ XTF = 23 
++ VTF = 0.8 
++ ITF = 1.3 
++ PTF = 0 
++ CJC = 8.272E-11 
++ VJC = 0.8025 
++ MJC = 0.4363 
++ XCJC = 1 
++ TR = 1.9E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78 
+.ENDS*
+.SUBCKT PEMF21 1 2 3 4 5 6
+* 
+* mn *******************************************************
+*
+* NXP Semiconductors
+*
+* PNP loadswitch:
+* TR1 PNP low VCEsat transistor
+* Ic    = 500  mA
+* Vceo  = 12 V
+* RCEsat= 500 mOhm
+* 
+* TR2 NPN resistor-equipped transistor
+* Ic    = 100  mA
+* Vceo  = 50 V 
+* R1/R2 = 10 kOhm / 10 kOhm
+* 
+*
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT666
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+***************************************************************
+R1 5 55 4.7E+03
+Cres1 5 3 4.3E-13 
+R21 55 44 2.35E+03 
+R22 44 4 2.35E+03
+Cres2 44 3 1.4E-13
+*
+Q1 6 2 1 TR1
+Q2 3 55 4 TR2
+*
+.MODEL TR1 PNP
++ IS = 6.93E-14
++ NF = 1.002
++ ISE = 1.892E-14
++ NE = 1.457
++ BF = 250
++ IKF = 0.49
++ VAF = 13.72
++ NR = 1.002
++ ISC = 1.738E-14
++ NC = 1.164
++ BR = 90
++ IKR = 0.14
++ VAR = 13.24
++ RB = 27
++ IRB = 0.0005
++ RBM = 0.5
++ RE = 0.12
++ RC = 0.13
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.814E-11
++ VJE = 0.55
++ MJE = 0.3388
++ TF = 5.2E-10
++ XTF = 25
++ VTF = 0.5
++ ITF = 1.5
++ PTF = 0
++ CJC = 1.763E-11
++ VJC = 0.3595
++ MJC = 0.3692
++ XCJC = 1
++ TR = 1E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.MODEL TR2 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PIMC31 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconducters
+*
+* Two resistor equipped transistors (NPN/PNP)
+* Ic    = 500 mA
+* Vceo  = 50   V 
+* R1/R2 = 1 kOhm / 10 kOhm
+* 
+* Extraction date (week/year): 47/2005 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+*
+* Diodes D1 and D2 are dedicated to improve modeling in reverse
+* mode of operation and do not reflect physical devices.
+*
+***************************************************************
+*
+R1 1 22 1000
+Cres1 2 6 8E-014 
+R21 11 22 5000 
+R22 11 1 5000 
+Cres2 11 6 3.76E-013 
+R3 5 55 1000
+Cres3 5 3 8E-014 
+R41 55 44 5000 
+R42 44 4 5000 
+Cres4 44 3 3.76E-013 
+* 
+Q1 6 22 1 RET1 
+Q2 3 55 4 RET2 
+D1 22 6 DIODE1
+D2 3 55 DIODE2 
+*
+.MODEL RET1 NPN 
++ IS = 1.451E-013 
++ NF = 0.9728 
++ ISE = 1.154E-014 
++ NE = 1.587 
++ BF = 390 
++ IKF = 2.8 
++ VAF = 90 
++ NR = 0.972 
++ ISC = 1E-019 
++ NC = 2 
++ BR = 62 
++ IKR = 1000 
++ VAR = 26 
++ RB = 15 
++ IRB = 0.0008 
++ RBM = 3.14 
++ RE = 0.085 
++ RC = 0.13 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.077E-010 
++ VJE = 0.7015 
++ MJE = 0.3508 
++ TF = 5.4E-010 
++ XTF = 3.7 
++ VTF = 1.3 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 2.211E-011 
++ VJC = 0.5555 
++ MJC = 0.3983 
++ XCJC = 1 
++ TR = 3.45E-008 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+.MODEL DIODE1 D 
++ IS = 8.285E-015 
++ N = 1.03 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 500 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+.MODEL RET2 PNP 
++ IS = 1.451E-013 
++ NF = 0.9728 
++ ISE = 1.154E-014 
++ NE = 1.587 
++ BF = 390 
++ IKF = 2.8 
++ VAF = 90 
++ NR = 0.972 
++ ISC = 1E-019 
++ NC = 2 
++ BR = 62 
++ IKR = 1000 
++ VAR = 26 
++ RB = 15 
++ IRB = 0.0008 
++ RBM = 3.14 
++ RE = 0.085 
++ RC = 0.13 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.077E-010 
++ VJE = 0.7015 
++ MJE = 0.3508 
++ TF = 5.4E-010 
++ XTF = 3.7 
++ VTF = 1.3 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 2.211E-011 
++ VJC = 0.5555 
++ MJC = 0.3983 
++ XCJC = 1 
++ TR = 3.45E-008 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+.MODEL DIODE2 D 
++ IS = 8.285E-015 
++ N = 1.03 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 500 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+.ENDS*
+.SUBCKT PIMD3 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (TR1 NPN/TR2 PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 10 kOhm / 10 kOhm
+*
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+***************************************************************
+R1 2 22 10000 
+Cres1 2 6 4.3E-13  
+R21 22 11 5000
+R22 11 1 5000
+Cres2 11 6 1.3E-13
+*
+R3 5 55 10000
+Cres3 5 3 4.3E-13  
+R41 55 44 5000 
+R42 44 4 5000
+Cres4 44 3 1.3E-13
+*
+Q1 6 22 1 TR1 
+Q2 3 55 4 TR2
+*
+.MODEL TR1 NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+*
+.MODEL TR2 PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 339.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.948E-12 
++ NC = 1.55 
++ BR = 12.01 
++ IKR = 0.015 
++ VAR = 16.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.673 
++ RC = 0.718 
++ CJE = 1.104E-11 
++ VJE = 0.9 
++ MJE = 0.2748 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 6.4E-12 
++ VJC = 0.499 
++ MJC = 0.4435 
++ XCJC = 1 
++ TR = 1E-32 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ XTB = 0 
++ XTI = 3 
++ EG = 1.11 
++ FC = 0.5 
+.ENDS
+**
+.SUBCKT PIMN31 1 2 3 4 5 6
+*
+R1 2 22 1000 
+Cres1 2 6 8E-14 
+R21 22 11 5000 
+R22 11 1 5000 
+Cres2 11 6 3.76E-13 
+*
+R3 5 55 1000 
+Cres3 5 3 87E-14 
+R41 55 44 5000 
+R42 44 4 5000 
+Cres4 44 3 3.76E-13 
+*
+Q1 6 22 1 TD113Z
+Q2 3 55 4 TD113Z
+D1 22 6 Diode
+D2 55 3 Diode
+*
+*The diodes do not reflect a 
+*physical device but improve 
+*only modeling in the reverse 
+*mode of operation.
+*
+.MODEL TD113Z NPN 
++ IS = 1.451E-013 
++ NF = 0.9728 
++ ISE = 1.154E-014 
++ NE = 1.587 
++ BF = 390 
++ IKF = 2.8 
++ VAF = 90 
++ NR = 0.972 
++ ISC = 1E-019 
++ NC = 2 
++ BR = 62 
++ IKR = 1000 
++ VAR = 26 
++ RB = 15 
++ IRB = 0.0008 
++ RBM = 3.14 
++ RE = 0.085 
++ RC = 0.13 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.077E-010 
++ VJE = 0.7015 
++ MJE = 0.3508 
++ TF = 5.4E-010 
++ XTF = 3.7 
++ VTF = 1.3 
++ ITF = 0.65 
++ PTF = 0 
++ CJC = 2.211E-011 
++ VJC = 0.5555 
++ MJC = 0.3983 
++ XCJC = 1 
++ TR = 3.45E-008 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.85 
+.MODEL DIODE D 
++ IS = 8.285E-015 
++ N = 1.03 
++ BV = 1000 
++ IBV = 0.001 
++ RS = 500 
++ CJO = 0 
++ VJ = 1 
++ M = 0.5 
++ FC = 0 
++ TT = 0 
++ EG = 1.11 
++ XTI = 3 
+.ENDS
+**
+.SUBCKT PMD2001D 1 2 3 4 5 6
+*
+R1 2 3 0
+R2 5 6 0
+Q1 6 1 4 TR1
+Q2 3 1 4 TR2
+*
+.MODEL TR1 NPN
++ IS=29.13E-15 
++ NF=992.6E-3 
++ ISE=9.652E-15 
++ NE=1.516  
++ BF=256.7  
++ IKF = 489.9E-3 
++ VAF = 80.99  
++ NR = 984.4E-3 
++ ISC = 320.3E-12 
++ NC = 1.608  
++ BR = 6.590  
++ IKR = 192.9E-3 
++ VAR = 101.2  
++ RB = 1.000  
++ IRB = 1.000E-3 
++ RBM = 1.000  
++ RE = 193.4E-3 
++ RC = 224.8E-3 
++ XTB = 0.000  
++ EG = 1.110  
++ XTI = 3.000  
++ CJE = 25.89E-12 
++ VJE = 689.1E-3 
++ MJE = 366.8E-3 
++ TF = 293.9E-12 
++ XTF = 71.78  
++ VTF = 20.00  
++ ITF = 4.797  
++ PTF = 0.000  
++ CJC = 10.11E-12 
++ VJC = 662.2E-3 
++ MJC = 416.0E-3 
++ XCJC = 0.5946  
++ TR = 320.0E-9 
++ CJS = 0.000  
++ VJS = 750.0E-3 
++ MJS = 333.0E-3 
++ FC = 938.8E-3 
+*
+.MODEL TR2 PNP 
++ IS = 4.43E-14 
++ NF = 0.9912 
++ ISE = 1.088E-14 
++ NE = 1.778 
++ BF = 247 
++ IKF = 0.505 
++ VAF = 46.5 
++ NR = 0.9921 
++ ISC = 7.13E-15 
++ NC = 1.08 
++ BR = 17.69 
++ IKR = 0.06 
++ VAR = 14 
++ RB = 34 
++ IRB = 0.00015 
++ RBM = 2.5 
++ RE = 0.1092 
++ RC = 0.25 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 3.37E-11 
++ VJE = 0.8967 
++ MJE = 0.4354 
++ TF = 4.9E-10 
++ XTF = 4 
++ VTF = 10 
++ ITF = 0.7 
++ PTF = 0 
++ CJC = 2.203E-11 
++ VJC = 0.9 
++ MJC = 0.4495 
++ XCJC = 0.6 
++ TR = 8E-09 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.999
+*
+.ENDS
+**
+.SUBCKT PMD3001D 1 2 3 4 5 6
+*
+R1 2 3 0
+R2 5 6 0
+Q1 6 1 4 TR1
+Q2 3 1 4 TR2
+*
+.MODEL TR1 NPN
++ IS = 1.967E-13
++ NF = 0.9876
++ ISE = 1.999E-13
++ NE = 2.5
++ BF = 480
++ IKF = 1
++ VAF = 85
++ NR = 0.9878
++ ISC = 1E-18
++ NC = 2.563
++ BR = 65
++ IKR = 5.5
++ VAR = 12
++ RB = 80
++ IRB = 3E-05
++ RBM = 0.6
++ RE = 0.053
++ RC = 0.073
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 1.158E-10
++ VJE = 0.5499
++ MJE = 0.3105
++ TF = 4.5E-10
++ XTF = 9
++ VTF = 3
++ ITF = 0.8
++ PTF = 0
++ CJC = 2.146E-11
++ VJC = 0.739
++ MJC = 0.4495
++ XCJC = 1
++ TR = 1.5E-08
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.5
+*
+.MODEL TR2 PNP 
++ IS = 2.526E-013 
++ NF = 0.9959 
++ ISE = 1.056E-013 
++ NE = 1.763 
++ BF = 480 
++ IKF = 0.49 
++ VAF = 40 
++ NR = 0.994 
++ ISC = 5.238E-014 
++ NC = 1.128 
++ BR = 75 
++ IKR = 0.3 
++ VAR = 10 
++ RB = 21 
++ IRB = 0.00019 
++ RBM = 0.2 
++ RE = 0.085 
++ RC = 0.095 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.2E-011 
++ VJE = 0.8407 
++ MJE = 0.4065 
++ TF = 5.6E-010 
++ XTF = 10 
++ VTF = 1 
++ ITF = 0.4 
++ PTF = 0 
++ CJC = 3.212E-011 
++ VJC = 0.5149 
++ MJC = 0.3901 
++ XCJC = 1 
++ TR = 6E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78 
+.ENDS
+**
+.SUBCKT PMD4001K 1 2 3
+* 
+Q1 3 1 2 TR1
+D1 2 1 D1
+*
+.MODEL TR1 NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 324.4 
++ IKF = 0.109 
++ VAF = 82 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 8.29 
++ IKR = 0.09 
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 0.7014 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.244E-11 
++ VJE = 0.7579 
++ MJE = 0.3656 
++ TF = 4.908E-10 
++ XTF = 9.51 
++ VTF = 2.927 
++ ITF = 0.3131 
++ PTF = 0 
++ CJC = 3.347E-12 
++ VJC = 0.5463 
++ MJC = 0.391 
++ XCJC = 0.6193 
++ TR = 9E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.979
+*
+.MODEL D1 D
++ IS=10.825E-9
++ N=1.9301
++ RS=.49924
++ IKF=1.4135
++ CJO=994.44E-15
++ M=.10001
++ VJ=.69196
++ ISR=1.0704E-9
++ BV=113.15
++ IBV=15.676E-3
++ TT=5.7708E-9
+.ENDS
+**
+.SUBCKT PMD4002K 1 2 3
+* 
+Q1 3 1 2 TR1
+D1 2 1 D1
+*
+.MODEL TR1 NPN
++ IS=29.13E-15 
++ NF=992.6E-3 
++ ISE=9.652E-15 
++ NE=1.516  
++ BF=256.7  
++ IKF = 489.9E-3 
++ VAF = 80.99  
++ NR = 984.4E-3 
++ ISC = 320.3E-12 
++ NC = 1.608  
++ BR = 6.590  
++ IKR = 192.9E-3 
++ VAR = 101.2  
++ RB = 1.000  
++ IRB = 1.000E-3 
++ RBM = 1.000  
++ RE = 193.4E-3 
++ RC = 224.8E-3 
++ XTB = 0.000  
++ EG = 1.110  
++ XTI = 3.000  
++ CJE = 25.89E-12 
++ VJE = 689.1E-3 
++ MJE = 366.8E-3 
++ TF = 293.9E-12 
++ XTF = 71.78  
++ VTF = 20.00  
++ ITF = 4.797  
++ PTF = 0.000  
++ CJC = 10.11E-12 
++ VJC = 662.2E-3 
++ MJC = 416.0E-3 
++ XCJC = 0.5946  
++ TR = 320.0E-9 
++ CJS = 0.000  
++ VJS = 750.0E-3 
++ MJS = 333.0E-3 
++ FC = 938.8E-3
+*
+.MODEL D1 D
++ IS=10.825E-9
++ N=1.9301
++ RS=.49924
++ IKF=1.4135
++ CJO=994.44E-15
++ M=.10001
++ VJ=.69196
++ ISR=1.0704E-9
++ BV=113.15
++ IBV=15.676E-3
++ TT=5.7708E-9
+.ENDS
+**
+.SUBCKT PMD4003K 1 2 3
+* 
+Q1 3 1 2 TR1
+D1 2 1 D1
+*
+.MODEL TR1 NPN
++ IS = 1.967E-13
++ NF = 0.9876
++ ISE = 1.999E-13
++ NE = 2.5
++ BF = 480
++ IKF = 1
++ VAF = 85
++ NR = 0.9878
++ ISC = 1E-18
++ NC = 2.563
++ BR = 65
++ IKR = 5.5
++ VAR = 12
++ RB = 80
++ IRB = 3E-05
++ RBM = 0.6
++ RE = 0.053
++ RC = 0.073
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 1.158E-10
++ VJE = 0.5499
++ MJE = 0.3105
++ TF = 4.5E-10
++ XTF = 9
++ VTF = 3
++ ITF = 0.8
++ PTF = 0
++ CJC = 2.146E-11
++ VJC = 0.739
++ MJC = 0.4495
++ XCJC = 1
++ TR = 1.5E-08
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.5
+*
+.MODEL D1 D
++ IS=10.825E-9
++ N=1.9301
++ RS=.49924
++ IKF=1.4135
++ CJO=994.44E-15
++ M=.10001
++ VJ=.69196
++ ISR=1.0704E-9
++ BV=113.15
++ IBV=15.676E-3
++ TT=5.7708E-9
+.ENDS
+**
+.SUBCKT PMD5001K 1 2 3
+* 
+Q1 3 1 2 TR1
+D1 1 2 D1
+*
+.MODEL TR1 PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 315.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.633E-14 
++ NC = 1.15 
++ BR = 8.68 
++ IKR = 0.09 
++ VAR = 9.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.663 
++ RC = 0.718 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.135E-11 
++ VJE = 0.7071 
++ MJE = 0.3808 
++ TF = 6.546E-10 
++ XTF = 5.387 
++ VTF = 6.245 
++ ITF = 0.2108 
++ PTF = 0 
++ CJC = 6.395E-12 
++ VJC = 0.4951 
++ MJC = 0.44 
++ XCJC = 0.6288 
++ TR = 5.5E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333  
++ FC = 0.9059
+*
+.MODEL D1 D
++ IS=10.825E-9
++ N=1.9301
++ RS=.49924
++ IKF=1.4135
++ CJO=994.44E-15
++ M=.10001
++ VJ=.69196
++ ISR=1.0704E-9
++ BV=113.15
++ IBV=15.676E-3
++ TT=5.7708E-9
+.ENDS
+**
+.SUBCKT PMD5002K 1 2 3
+*
+Q1 3 1 2 TR1
+D1 1 2 D1
+*
+.MODEL TR1 PNP 
++ IS = 4.43E-14 
++ NF = 0.9912 
++ ISE = 1.088E-14 
++ NE = 1.778 
++ BF = 247 
++ IKF = 0.505 
++ VAF = 46.5 
++ NR = 0.9921 
++ ISC = 7.13E-15 
++ NC = 1.08 
++ BR = 17.69 
++ IKR = 0.06 
++ VAR = 14 
++ RB = 34 
++ IRB = 0.00015 
++ RBM = 2.5 
++ RE = 0.1092 
++ RC = 0.25 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 3.37E-11 
++ VJE = 0.8967 
++ MJE = 0.4354 
++ TF = 4.9E-10 
++ XTF = 4 
++ VTF = 10 
++ ITF = 0.7 
++ PTF = 0 
++ CJC = 2.203E-11 
++ VJC = 0.9 
++ MJC = 0.4495 
++ XCJC = 0.6 
++ TR = 8E-09 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.999
+*
+.MODEL D1 D
++ IS=10.825E-9
++ N=1.9301
++ RS=.49924
++ IKF=1.4135
++ CJO=994.44E-15
++ M=.10001
++ VJ=.69196
++ ISR=1.0704E-9
++ BV=113.15
++ IBV=15.676E-3
++ TT=5.7708E-9
+.ENDS
+**
+.SUBCKT PMD5003K 1 2 3
+*
+Q1 3 1 2 TR1
+D1 1 2 D1
+*
+.MODEL TR1 PNP 
++ IS = 2.526E-013 
++ NF = 0.9959 
++ ISE = 1.056E-013 
++ NE = 1.763 
++ BF = 480 
++ IKF = 0.49 
++ VAF = 40 
++ NR = 0.994 
++ ISC = 5.238E-014 
++ NC = 1.128 
++ BR = 75 
++ IKR = 0.3 
++ VAR = 10 
++ RB = 21 
++ IRB = 0.00019 
++ RBM = 0.2 
++ RE = 0.085 
++ RC = 0.095 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 9.2E-011 
++ VJE = 0.8407 
++ MJE = 0.4065 
++ TF = 5.6E-010 
++ XTF = 10 
++ VTF = 1 
++ ITF = 0.4 
++ PTF = 0 
++ CJC = 3.212E-011 
++ VJC = 0.5149 
++ MJC = 0.3901 
++ XCJC = 1 
++ TR = 6E-009 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.78 
+ *
+.MODEL D1 D
++ IS=10.825E-9
++ N=1.9301
++ RS=.49924
++ IKF=1.4135
++ CJO=994.44E-15
++ M=.10001
++ VJ=.69196
++ ISR=1.0704E-9
++ BV=113.15
++ IBV=15.676E-3
++ TT=5.7708E-9
+.ENDS
+**
+.SUBCKT PMD9001D 1 2 3 4 5 6
+*
+R1 3 33 2.2E+03
+R21 2 22 1.1E+03 
+R22 22 33 1.1E+03
+R3 4 5 0
+Cres1 3 4 4.8E-13
+Cres2 22 4 1.5E-13
+*
+Q1 5 33 2 RET1
+Q2 6 5 1 TR1
+D1 1 5 D1
+*
+.MODEL RET1 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+*
+.MODEL TR1 NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 324.4 
++ IKF = 0.109 
++ VAF = 82
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 8.29 
++ IKR = 0.09 
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 0.7014 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.244E-11 
++ VJE = 0.7579 
++ MJE = 0.3656 
++ TF = 4.908E-10 
++ XTF = 9.51 
++ VTF = 2.927 
++ ITF = 0.3131 
++ PTF = 0 
++ CJC = 3.347E-12 
++ VJC = 0.5463 
++ MJC = 0.391 
++ XCJC = 0.6193 
++ TR = 9E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.979
+*
+.MODEL D1 D
++ IS=10.825E-9
++ N=1.9301
++ RS=.49924
++ IKF=1.4135
++ CJO=994.44E-15
++ M=.10001
++ VJ=.69196
++ ISR=1.0704E-9
++ BV=113.15
++ IBV=15.676E-3
++ TT=5.7708E-9
+.ENDS
+**
+.SUBCKT PMD9002D 1 2 3 4 5 6
+*
+R1 3 33 4.7E+03
+R21 2 22 2.35E+03 
+R22 22 33 2.35E+03
+R3 4 5 0
+Cres1 3 4 4.3E-13
+Cres2 22 4 1.4E-13
+*
+Q1 5 33 2 RET1
+Q2 6 5 1 TR1
+D1 1 5 D1
+*
+.MODEL RET1 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+*
+.MODEL TR1 NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 324.4 
++ IKF = 0.109 
++ VAF = 82
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 8.29 
++ IKR = 0.09 
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 0.7014 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.244E-11 
++ VJE = 0.7579 
++ MJE = 0.3656 
++ TF = 4.908E-10 
++ XTF = 9.51 
++ VTF = 2.927 
++ ITF = 0.3131 
++ PTF = 0 
++ CJC = 3.347E-12 
++ VJC = 0.5463 
++ MJC = 0.391 
++ XCJC = 0.6193 
++ TR = 9E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.979
+*
+.MODEL D1 D
++ IS=10.825E-9
++ N=1.9301
++ RS=.49924
++ IKF=1.4135
++ CJO=994.44E-15
++ M=.10001
++ VJ=.69196
++ ISR=1.0704E-9
++ BV=113.15
++ IBV=15.676E-3
++ TT=5.7708E-9
+.ENDS
+**
+.SUBCKT PMD9003D 1 2 3 4 5 6
+*
+R1 3 33 1E+04
+R21 2 22 5E+03 
+R22 22 33 5E+03
+R3 4 5 0
+Cres1 3 4 4.8E-13
+Cres2 22 4 1.3E-13
+*
+Q1 5 33 2 RET1
+Q2 6 5 1 TR1
+D1 1 5 D1
+*
+.MODEL RET1 NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+*
+.MODEL TR1 NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 324.4 
++ IKF = 0.109 
++ VAF = 82
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 8.29 
++ IKR = 0.09 
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 0.7014 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.244E-11 
++ VJE = 0.7579 
++ MJE = 0.3656 
++ TF = 4.908E-10 
++ XTF = 9.51 
++ VTF = 2.927 
++ ITF = 0.3131 
++ PTF = 0 
++ CJC = 3.347E-12 
++ VJC = 0.5463 
++ MJC = 0.391 
++ XCJC = 0.6193 
++ TR = 9E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.979
+*
+.MODEL D1 D
++ IS=10.825E-9
++ N=1.9301
++ RS=.49924
++ IKF=1.4135
++ CJO=994.44E-15
++ M=.10001
++ VJ=.69196
++ ISR=1.0704E-9
++ BV=113.15
++ IBV=15.676E-3
++ TT=5.7708E-9
+.ENDS
+**
+.SUBCKT PMD9010D 1 2 3 4 5 6
+*
+Q1 5 3 2 TR1
+Q2 6 5 1 TR1
+D1 1 5 D1
+R1 4 5 0
+*
+.MODEL TR1M NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 324.4 
++ IKF = 0.109 
++ VAF = 82
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 8.29 
++ IKR = 0.09 
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 0.7014 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.244E-11 
++ VJE = 0.7579 
++ MJE = 0.3656 
++ TF = 4.908E-10 
++ XTF = 9.51 
++ VTF = 2.927 
++ ITF = 0.3131 
++ PTF = 0 
++ CJC = 3.347E-12 
++ VJC = 0.5463 
++ MJC = 0.391 
++ XCJC = 0.6193 
++ TR = 9E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.979
+*
+.MODEL D1 D
++ IS=10.825E-9
++ N=1.9301
++ RS=.49924
++ IKF=1.4135
++ CJO=994.44E-15
++ M=.10001
++ VJ=.69196
++ ISR=1.0704E-9
++ BV=113.15
++ IBV=15.676E-3
++ TT=5.7708E-9
+.ENDS
+**
+.SUBCKT PMD9050D 1 2 3 4 5 6
+*
+Q1 2 1 4 TR1
+Q2 6 5 2 TR2
+Q3 5 6 4 TR1
+D1 3 2 D1
+*
+.MODEL TR1 NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 324.4 
++ IKF = 0.109 
++ VAF = 82
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 8.29 
++ IKR = 0.09 
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 0.7014 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.244E-11 
++ VJE = 0.7579 
++ MJE = 0.3656 
++ TF = 4.908E-10 
++ XTF = 9.51 
++ VTF = 2.927 
++ ITF = 0.3131 
++ PTF = 0 
++ CJC = 3.347E-12 
++ VJC = 0.5463 
++ MJC = 0.391 
++ XCJC = 0.6193 
++ TR = 9E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.979
+*
+.MODEL TR2 PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 315.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.633E-14 
++ NC = 1.15 
++ BR = 8.68 
++ IKR = 0.09 
++ VAR = 9.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.663 
++ RC = 0.718 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.135E-11 
++ VJE = 0.7071 
++ MJE = 0.3808 
++ TF = 6.546E-10 
++ XTF = 5.387 
++ VTF = 6.245 
++ ITF = 0.2108 
++ PTF = 0 
++ CJC = 6.395E-12 
++ VJC = 0.4951 
++ MJC = 0.44 
++ XCJC = 0.6288 
++ TR = 5.5E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333  
++ FC = 0.9059
+*
+.MODEL D1 D
++ IS=10.825E-9
++ N=1.9301
++ RS=.49924
++ IKF=1.4135
++ CJO=994.44E-15
++ M=.10001
++ VJ=.69196
++ ISR=1.0704E-9
++ BV=113.15
++ IBV=15.676E-3
++ TT=5.7708E-9
+.ENDS
+**
+.SUBCKT PMEM1505NG 1 2 3 4 5
+*
+* The resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+R1 1 5 2E+6
+D1 1 5 SBD
+Q1 4 2 3 TR
+*
+.MODEL SBD D
++ IS = 1.686E-6
++ N = 1.015
++ BV = 21
++ IBV = 1E-6
++ RS = 0.1249
++ CJO = 9.086E-11
++ VJ = 0.1939
++ M = 0.4542
++ FC = 1
++ EG = 0.69
++ XTI = 2
+*
+.MODEL TR NPN
++ IS = 5.081E-14
++ NF = 0.9851
++ ISE = 3.304E-14
++ NE = 2.27
++ BF = 435
++ IKF = 0.75
++ VAF = 16.5
++ NR = 0.985
++ ISC = 9.959E-15
++ NC = 1.506
++ BR = 243
++ IKR = 0.188
++ VAR = 15.9
++ RB = 27
++ IRB = 0.00074
++ RBM = 0.05
++ RE = 0.11
++ RC = 0.19
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.863E-11
++ VJE = 0.8
++ MJE = 0.393
++ TF = 4.5E-10
++ XTF = 4
++ VTF = 0.9
++ ITF = 0.8
++ PTF = 0
++ CJC = 1.287E-11
++ VJC = 0.7021
++ MJC = 0.41
++ XCJC = 1
++ TR = 1.8E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.ENDS
+**
+.SUBCKT PMEM1505PG 1 2 3 4 5
+*
+* The resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+R1 1 5 2E+6
+D1 1 5 SBD
+Q1 4 2 3 TR
+*
+.MODEL SBD D
++ IS = 1.686E-6
++ N = 1.015
++ BV = 21
++ IBV = 1E-6
++ RS = 0.1249
++ CJO = 9.086E-11
++ VJ = 0.1939
++ M = 0.4542
++ FC = 1
++ EG = 0.69
++ XTI = 2
+*
+.MODEL TR PNP
++ IS = 6.93E-14
++ NF = 1.002
++ ISE = 1.892E-14
++ NE = 1.457
++ BF = 250
++ IKF = 0.49
++ VAF = 13.72
++ NR = 1.002
++ ISC = 1.738E-14
++ NC = 1.164
++ BR = 90
++ IKR = 0.14
++ VAR = 13.24
++ RB = 27
++ IRB = 0.0005
++ RBM = 0.5
++ RE = 0.12
++ RC = 0.13
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.814E-11
++ VJE = 0.55
++ MJE = 0.3388
++ TF = 5.2E-10
++ XTF = 25
++ VTF = 0.5
++ ITF = 1.5
++ PTF = 0
++ CJC = 1.763E-11
++ VJC = 0.3595
++ MJC = 0.3692
++ XCJC = 1
++ TR = 1E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.ENDS
+**
+.SUBCKT PMEM4020ND 1 2 3 4 5 6
+*
+D1 4 3 DIODE
+R1 4 3 2E+06
+*
+* The resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+Q1 6 5 1 TR1
+*
+.MODEL DIODE D
++ IS = 1.686E-06
++ N = 1.015
++ BV = 21
++ IBV = 1E-06
++ RS = 0.1249
++ CJO = 9.086E-11
++ VJ = 0.1939
++ M = 0.4542
++ FC = 1
++ EG = 0.69
++ XTI = 2
+*
+.MODEL TR1 NPN
++ IS = 1.967E-13
++ NF = 0.9876
++ ISE = 1.999E-13
++ NE = 2.5
++ BF = 480
++ IKF = 1
++ VAF = 85
++ NR = 0.9878
++ ISC = 1E-18
++ NC = 2.563
++ BR = 65
++ IKR = 5.5
++ VAR = 12
++ RB = 80
++ IRB = 3E-05
++ RBM = 0.6
++ RE = 0.051
++ RC = 0.073
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 1.158E-10
++ VJE = 0.5499
++ MJE = 0.3105
++ TF = 4.5E-10
++ XTF = 9
++ VTF = 3
++ ITF = 0.8
++ PTF = 0
++ CJC = 2.146E-11
++ VJC = 0.739
++ MJC = 0.4495
++ XCJC = 1
++ TR = 1.5E-08
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.5
+.ENDS*
+.SUBCKT PMEM4020PD 1 2 3 4 5 6
+*
+D1 4 3 DIODE
+R1 4 3 2E+06
+*
+* The resistor R1 does not reflect
+* a physical device. Instead it
+* improves modeling in the reverse
+* mode of operation.
+*
+Q1 6 5 1 TR1
+*
+.MODEL DIODE D
++ IS = 1.686E-06
++ N = 1.015
++ BV = 21
++ IBV = 1E-06
++ RS = 0.1249
++ CJO = 9.086E-11
++ VJ = 0.1939
++ M = 0.4542
++ FC = 1
++ EG = 0.69
++ XTI = 2
+*
+.MODEL TR1 PNP
++ IS = 2.526E-13
++ NF = 0.9959
++ ISE = 1.056E-13
++ NE = 1.763
++ BF = 480
++ IKF = 0.49
++ VAF = 40
++ NR = 0.994
++ ISC = 5.238E-14
++ NC = 1.128
++ BR = 75
++ IKR = 0.3
++ VAR = 10
++ RB = 21
++ IRB = 0.00019
++ RBM = 0.2
++ RE = 0.048
++ RC = 0.085
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 9.2E-11
++ VJE = 0.8407
++ MJE = 0.4065
++ TF = 5.6E-10
++ XTF = 10
++ VTF = 1
++ ITF = 0.4
++ PTF = 0
++ CJC = 3.212E-11
++ VJC = 0.5149
++ MJC = 0.3901
++ XCJC = 1
++ TR = 6E-09
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.ENDS*
+.SUBCKT PMP4201G 1 2 3 4 5
+*
+* 2 matched NPN Transistors in SC-88A
+*
+Q1 5 1 2 TR1
+Q2 4 3 2 TR1
+*
+.MODEL TR1 NPN
++     IS = 1.822E-14 
++     NF = 0.9932 
++     ISE = 2.894E-16 
++     NE = 1.4 
++     BF = 324.4 
++     IKF = 0.109 
++     VAF = 82 
++     NR = 0.9931 
++     ISC = 9.982E-12 
++     NC = 1.763 
++     BR = 8.29 
++     IKR = 0.09 
++     VAR = 17.9 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5 
++     RE = 0.649 
++     RC = 0.7014 
++     CJE = 1.244E-11 
++     VJE = 0.7579 
++     MJE = 0.3656 
++     TF = 4.908E-10 
++     XTF = 9.51 
++     VTF = 2.927 
++     ITF = 0.3131 
++     PTF = 0 
++     CJC = 3.347E-12 
++     VJC = 0.5463 
++     MJC = 0.391 
++     XCJC = 0.6193 
++     TR = 9E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333 
++     XTB = 0 
++     XTI = 3 
++     EG = 1.11 
++     FC = 0.979
+.ENDS
+**
+.SUBCKT PMP4201V 1 2 3 4 5 6
+*
+* 2 matched NPN Transistors in SOT666
+*
+Q1 6 1 5 TR1
+Q2 3 2 4 TR1
+*
+.MODEL TR1 NPN
++     IS = 1.822E-14 
++     NF = 0.9932 
++     ISE = 2.894E-16 
++     NE = 1.4 
++     BF = 324.4 
++     IKF = 0.109 
++     VAF = 82 
++     NR = 0.9931 
++     ISC = 9.982E-12 
++     NC = 1.763 
++     BR = 8.29 
++     IKR = 0.09 
++     VAR = 17.9 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5 
++     RE = 0.649 
++     RC = 0.7014 
++     CJE = 1.244E-11 
++     VJE = 0.7579 
++     MJE = 0.3656 
++     TF = 4.908E-10 
++     XTF = 9.51 
++     VTF = 2.927 
++     ITF = 0.3131 
++     PTF = 0 
++     CJC = 3.347E-12 
++     VJC = 0.5463 
++     MJC = 0.391 
++     XCJC = 0.6193 
++     TR = 9E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333 
++     XTB = 0 
++     XTI = 3 
++     EG = 1.11 
++     FC = 0.979
+.ENDS
+**
+.SUBCKT PMP4201Y 1 2 3 4 5 6
+*
+* 2 matched NPN Transistors in SC-88
+*
+Q1 6 1 5 TR1
+Q2 3 2 4 TR1
+*
+.MODEL TR1 NPN
++     IS = 1.822E-14 
++     NF = 0.9932 
++     ISE = 2.894E-16 
++     NE = 1.4 
++     BF = 324.4 
++     IKF = 0.109 
++     VAF = 82 
++     NR = 0.9931 
++     ISC = 9.982E-12 
++     NC = 1.763 
++     BR = 8.29 
++     IKR = 0.09 
++     VAR = 17.9 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5 
++     RE = 0.649 
++     RC = 0.7014 
++     CJE = 1.244E-11 
++     VJE = 0.7579 
++     MJE = 0.3656 
++     TF = 4.908E-10 
++     XTF = 9.51 
++     VTF = 2.927 
++     ITF = 0.3131 
++     PTF = 0 
++     CJC = 3.347E-12 
++     VJC = 0.5463 
++     MJC = 0.391 
++     XCJC = 0.6193 
++     TR = 9E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333 
++     XTB = 0 
++     XTI = 3 
++     EG = 1.11 
++     FC = 0.979
+.ENDS
+**
+.SUBCKT PMP4501G 1 2 3 4 5
+*
+* 2 matched NPN Transistors in SC-88A
+*
+Q1 5 1 2 TR1
+Q2 4 3 2 TR1
+*
+.MODEL TR1 NPN
++     IS = 1.822E-14 
++     NF = 0.9932 
++     ISE = 2.894E-16 
++     NE = 1.4 
++     BF = 324.4 
++     IKF = 0.109 
++     VAF = 82 
++     NR = 0.9931 
++     ISC = 9.982E-12 
++     NC = 1.763 
++     BR = 8.29 
++     IKR = 0.09 
++     VAR = 17.9 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5 
++     RE = 0.649 
++     RC = 0.7014 
++     CJE = 1.244E-11 
++     VJE = 0.7579 
++     MJE = 0.3656 
++     TF = 4.908E-10 
++     XTF = 9.51 
++     VTF = 2.927 
++     ITF = 0.3131 
++     PTF = 0 
++     CJC = 3.347E-12 
++     VJC = 0.5463 
++     MJC = 0.391 
++     XCJC = 0.6193 
++     TR = 9E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333 
++     XTB = 0 
++     XTI = 3 
++     EG = 1.11 
++     FC = 0.979
+.ENDS
+**
+.SUBCKT PMP4501V 1 2 3 4 5 6
+*
+* 2 matched NPN Transistors in SOT666
+*
+Q1 6 1 5 TR1
+Q2 3 2 4 TR1
+*
+.MODEL TR1 NPN
++     IS = 1.822E-14 
++     NF = 0.9932 
++     ISE = 2.894E-16 
++     NE = 1.4 
++     BF = 324.4 
++     IKF = 0.109 
++     VAF = 82 
++     NR = 0.9931 
++     ISC = 9.982E-12 
++     NC = 1.763 
++     BR = 8.29 
++     IKR = 0.09 
++     VAR = 17.9 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5 
++     RE = 0.649 
++     RC = 0.7014 
++     CJE = 1.244E-11 
++     VJE = 0.7579 
++     MJE = 0.3656 
++     TF = 4.908E-10 
++     XTF = 9.51 
++     VTF = 2.927 
++     ITF = 0.3131 
++     PTF = 0 
++     CJC = 3.347E-12 
++     VJC = 0.5463 
++     MJC = 0.391 
++     XCJC = 0.6193 
++     TR = 9E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333 
++     XTB = 0 
++     XTI = 3 
++     EG = 1.11 
++     FC = 0.979
+.ENDS
+*
+*
+.SUBCKT PMP4501Y 1 2 3 4 5 6
+*
+* 2 matched NPN Transistors in SC-88
+*
+Q1 6 1 5 TR1
+Q2 3 2 4 TR1
+*
+.MODEL TR1 NPN
++     IS = 1.822E-14 
++     NF = 0.9932 
++     ISE = 2.894E-16 
++     NE = 1.4 
++     BF = 324.4 
++     IKF = 0.109 
++     VAF = 82 
++     NR = 0.9931 
++     ISC = 9.982E-12 
++     NC = 1.763 
++     BR = 8.29 
++     IKR = 0.09 
++     VAR = 17.9 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5 
++     RE = 0.649 
++     RC = 0.7014 
++     CJE = 1.244E-11 
++     VJE = 0.7579 
++     MJE = 0.3656 
++     TF = 4.908E-10 
++     XTF = 9.51 
++     VTF = 2.927 
++     ITF = 0.3131 
++     PTF = 0 
++     CJC = 3.347E-12 
++     VJC = 0.5463 
++     MJC = 0.391 
++     XCJC = 0.6193 
++     TR = 9E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333 
++     XTB = 0 
++     XTI = 3 
++     EG = 1.11 
++     FC = 0.979
+.ENDS
+**
+.SUBCKT PMP5201G 1 2 3 4 5
+*
+* 2 matched PNP transistors in SC-88A
+*
+Q1 5 1 2 TR1
+Q2 4 3 2 TR1
+*
+.MODEL TR1 PNP
++     IS = 2.014E-14 
++     NF = 0.9974 
++     ISE = 6.578E-15 
++     NE = 1.45 
++     BF = 315.3 
++     IKF = 0.079 
++     VAF = 39.15 
++     NR = 0.9952 
++     ISC = 1.633E-14 
++     NC = 1.15 
++     BR = 8.68 
++     IKR = 0.09 
++     VAR = 9.5 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5E-06 
++     RE = 0.663 
++     RC = 0.718 
++     XTB = 0 
++     EG = 1.11 
++     XTI = 3 
++     CJE = 1.135E-11 
++     VJE = 0.7071 
++     MJE = 0.3808 
++     TF = 6.546E-10 
++     XTF = 5.387 
++     VTF = 6.245 
++     ITF = 0.2108 
++     PTF = 0 
++     CJC = 6.395E-12 
++     VJC = 0.4951 
++     MJC = 0.44 
++     XCJC = 0.6288 
++     TR = 5.5E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333  
++     FC = 0.9059 
+.ENDS
+**
+.SUBCKT PMP5201V 1 2 3 4 5 6
+*
+* 2 matched PNP transistors in SOT666
+*
+Q1 6 1 5 TR1
+Q2 3 2 4 TR1
+*
+.MODEL TR1 PNP
++     IS = 2.014E-14 
++     NF = 0.9974 
++     ISE = 6.578E-15 
++     NE = 1.45 
++     BF = 315.3 
++     IKF = 0.079 
++     VAF = 39.15 
++     NR = 0.9952 
++     ISC = 1.633E-14 
++     NC = 1.15 
++     BR = 8.68 
++     IKR = 0.09 
++     VAR = 9.5 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5E-06 
++     RE = 0.663 
++     RC = 0.718 
++     XTB = 0 
++     EG = 1.11 
++     XTI = 3 
++     CJE = 1.135E-11 
++     VJE = 0.7071 
++     MJE = 0.3808 
++     TF = 6.546E-10 
++     XTF = 5.387 
++     VTF = 6.245 
++     ITF = 0.2108 
++     PTF = 0 
++     CJC = 6.395E-12 
++     VJC = 0.4951 
++     MJC = 0.44 
++     XCJC = 0.6288 
++     TR = 5.5E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333  
++     FC = 0.9059 
+.ENDS
+**
+.SUBCKT PMP5201Y 1 2 3 4 5 6
+*
+* 2 matched PNP transistors in SC-88
+*
+Q1 6 1 5 TR1
+Q2 3 2 4 TR1
+*
+.MODEL TR1 PNP
++     IS = 2.014E-14 
++     NF = 0.9974 
++     ISE = 6.578E-15 
++     NE = 1.45 
++     BF = 315.3 
++     IKF = 0.079 
++     VAF = 39.15 
++     NR = 0.9952 
++     ISC = 1.633E-14 
++     NC = 1.15 
++     BR = 8.68 
++     IKR = 0.09 
++     VAR = 9.5 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5E-06 
++     RE = 0.663 
++     RC = 0.718 
++     XTB = 0 
++     EG = 1.11 
++     XTI = 3 
++     CJE = 1.135E-11 
++     VJE = 0.7071 
++     MJE = 0.3808 
++     TF = 6.546E-10 
++     XTF = 5.387 
++     VTF = 6.245 
++     ITF = 0.2108 
++     PTF = 0 
++     CJC = 6.395E-12 
++     VJC = 0.4951 
++     MJC = 0.44 
++     XCJC = 0.6288 
++     TR = 5.5E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333  
++     FC = 0.9059 
+.ENDS
+**
+.SUBCKT PMP5501G 1 2 3 4 5
+*
+* 2 matched PNP transistors in SC-88A
+*
+Q1 5 1 2 TR1
+Q2 4 3 2 TR1
+*
+.MODEL TR1 PNP
++     IS = 2.014E-14 
++     NF = 0.9974 
++     ISE = 6.578E-15 
++     NE = 1.45 
++     BF = 315.3 
++     IKF = 0.079 
++     VAF = 39.15 
++     NR = 0.9952 
++     ISC = 1.633E-14 
++     NC = 1.15 
++     BR = 8.68 
++     IKR = 0.09 
++     VAR = 9.5 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5E-06 
++     RE = 0.663 
++     RC = 0.718 
++     XTB = 0 
++     EG = 1.11 
++     XTI = 3 
++     CJE = 1.135E-11 
++     VJE = 0.7071 
++     MJE = 0.3808 
++     TF = 6.546E-10 
++     XTF = 5.387 
++     VTF = 6.245 
++     ITF = 0.2108 
++     PTF = 0 
++     CJC = 6.395E-12 
++     VJC = 0.4951 
++     MJC = 0.44 
++     XCJC = 0.6288 
++     TR = 5.5E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333  
++     FC = 0.9059 
+.ENDS
+*
+*
+.SUBCKT PMP5501V 1 2 3 4 5 6
+*
+* 2 matched PNP transistors in SOT666
+*
+Q1 6 1 5 TR1
+Q2 3 2 4 TR1
+*
+.MODEL TR1 PNP
++     IS = 2.014E-14 
++     NF = 0.9974 
++     ISE = 6.578E-15 
++     NE = 1.45 
++     BF = 315.3 
++     IKF = 0.079 
++     VAF = 39.15 
++     NR = 0.9952 
++     ISC = 1.633E-14 
++     NC = 1.15 
++     BR = 8.68 
++     IKR = 0.09 
++     VAR = 9.5 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5E-06 
++     RE = 0.663 
++     RC = 0.718 
++     XTB = 0 
++     EG = 1.11 
++     XTI = 3 
++     CJE = 1.135E-11 
++     VJE = 0.7071 
++     MJE = 0.3808 
++     TF = 6.546E-10 
++     XTF = 5.387 
++     VTF = 6.245 
++     ITF = 0.2108 
++     PTF = 0 
++     CJC = 6.395E-12 
++     VJC = 0.4951 
++     MJC = 0.44 
++     XCJC = 0.6288 
++     TR = 5.5E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333  
++     FC = 0.9059 
+.ENDS
+**
+.SUBCKT PMP5501Y 1 2 3 4 5 6
+*
+* 2 matched PNP transistors in SC-88
+*
+Q1 6 1 5 TR1
+Q2 3 2 4 TR1
+*
+.MODEL TR1 PNP
++     IS = 2.014E-14 
++     NF = 0.9974 
++     ISE = 6.578E-15 
++     NE = 1.45 
++     BF = 315.3 
++     IKF = 0.079 
++     VAF = 39.15 
++     NR = 0.9952 
++     ISC = 1.633E-14 
++     NC = 1.15 
++     BR = 8.68 
++     IKR = 0.09 
++     VAR = 9.5 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5E-06 
++     RE = 0.663 
++     RC = 0.718 
++     XTB = 0 
++     EG = 1.11 
++     XTI = 3 
++     CJE = 1.135E-11 
++     VJE = 0.7071 
++     MJE = 0.3808 
++     TF = 6.546E-10 
++     XTF = 5.387 
++     VTF = 6.245 
++     ITF = 0.2108 
++     PTF = 0 
++     CJC = 6.395E-12 
++     VJC = 0.4951 
++     MJC = 0.44 
++     XCJC = 0.6288 
++     TR = 5.5E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333  
++     FC = 0.9059 
+.ENDS
+**
+.SUBCKT PRTR5V0U2X 1 2 3 4
+*
+DZ 444  11111 DZ
+D1 444  222   DO
+D2 222  11111 DU
+D3 444  333   DO
+D4 333  11111 DU
+*
+*********Package********
+*
+C1 222  11111 0.16E-12
+C2 444  11111 0.16E-12
+C3 333  11111 0.16E-12
+C4 444  11111 0.16E-12
+L1 2    22    800E-12
+L2 4    44    440E-12
+L3 111  1111  480E-12
+L4 1    11    800E-12
+L5 3    33    640E-12
+R1 22   222   200m
+R2 44   444   200m
+R3 1111 11111 200m
+R4 11   111   200m
+R5 33   333   200m
+*
+************************
+*
+Model DZ
++ CJO=15.7E-12
++ VJ=.624
++ M=.274
++ BV = 7.3
+*
+Model DO
++ CJO=0.37E-12
++ VJ=.65
++ M=.36
++ BV = 50
+*
+Model DU
++ CJO=0.37E-12
++ VJ=.778
++ M=.36
++ BV = 50
+*
+.ENDS*
+.SUBCKT PSSI2021SAY 1 2 3 4 5 6
+*
+Q1 2 1 4 MAIN
+D1 5 6 DIODE1
+D2 6 1 DIODE2
+RD2 6 1 5E+09
+Rbase 1 3 3.35E+04
+Rint 4 5 5.28E+04
+*
+.MODEL MAIN PNP
++ IS = 4.512E-14
++ NF = 1.004
++ ISE = 1E-25
++ NE = 0.9237
++ BF = 120
++ IKF = 1.1
++ VAF = 104
++ NR = 1.002
++ ISC = 1.465E-11
++ NC = 1.599
++ BR = 16.5
++ IKR = 5E+04
++ VAR = 12.7
++ RB = 27
++ IRB = 0.00074
++ RBM = 1.595
++ RE = 0.1
++ RC = 0.23
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 0
++ VJE = 0.75
++ MJE = 0.333
++ TF = 2E-30
++ XTF = 0
++ VTF = 1000
++ ITF = 0
++ PTF = 0
++ CJC = 0
++ VJC = 0.75
++ MJC = 0.333
++ XCJC = 1
++ TR = 1E-32
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+.MODEL DIODE1 D
++ IS = 1.673E-14
++ N = 1.089
++ BV = 1000
++ IBV = 0.001
++ RS = 0.7739
++ CJO = 0
++ VJ = 1
++ M = 0.5
++ FC = 0
++ TT = 0
++ EG = 1.11
++ XTI = 3
+.MODEL DIODE2 D
++ IS = 1.12E-14
++ N = 1.076
++ BV = 1000
++ IBV = 0.001
++ RS = 0.8848
++ CJO = 0
++ VJ 1
++ M = 0.5
++ FC = 0
++ TT = 0
++ EG = 1.11
++ XTI = 3
+.ENDS*
+.SUBCKT PSSI3120 1 2 3
+*
+* housing parasitics
+LBlead 2 22 3.45E-10
+LE 3 333 1.12E-09
+LC 1 11 1E-10
+LBbond 22 222 9E-10
+CBCG 222 11 6.2E-14
+CBEG 222 333 4.5E-14
+CCEG 11 333 6.2E-14
+*
+*Here comes the die!
+*
+*The first parallel Diode is between 11 222
+*and made of DiodeCT1, DiodeCT2 and R111 parallel
+D1 11 222 DIODECT1
+D11 11 222 DIODECT2
+R111 11 222 2.1E+09
+*The second parallel Diode is between 11 333
+*and made of DiodeCT1, DiodeCT2 and R222 parallel
+D2 11 222 DIODECT1
+D22 11 222 DIODECT2
+R222 11 222 2.1E+09
+R1 222 444 50
+R2 333 444 50
+R3 11 444 46.4
+C2 11 444 1.4E-10
+*
+.MODEL DIODECT1 D
++ IS = 5.217E-14
++ N = 1.318
++ BV = 13.15
++ IBV = 1.225E-06
++ RS = 0.5576
++ CJO = 2.354E-12
++ VJ = 0.287
++ M = 0.1191
++ FC = 493
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.MODEL DIODECT2 D
++ IS = 1.6E-15
++ N = 0.5009
++ BV = 13.15
++ IBV = 1.225E-06
++ RS = 1.6E+06
++ CJO = 0
++ VJ = 1
++ M = 0.5
++ FC = 0
++ TT = 0
++ EG = 0.69
++ XTI = 2
+.ENDS*
+.SUBCKT PUMB10 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (PNP/PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 2.2 kOhm / 47 kOhm
+* 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+***************************************************************
+R1 2 22 2.2E+4 
+Cres1 2 6 4.8E-13 
+R21 22 11 2.35E+04 
+R22 11 1 2.35E+04 
+Cres2 11 6 1.5E-13
+*
+R3 5 55 2.2E+4 
+Cres3 5 3 4.8E-13 
+R41 55 44 2.35E+04 
+R42 44 4 2.35E+04 
+Cres4 44 3 1.5E-13
+*
+Q1 6 22 1 PDTA123J
+Q2 3 55 4 PDTA123J
+*
+.MODEL PDTA123J PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 339.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.948E-12 
++ NC = 1.55 
++ BR = 12.01 
++ IKR = 0.015 
++ VAR = 16.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.673 
++ RC = 0.718 
++ CJE = 1.104E-11 
++ VJE = 0.9 
++ MJE = 0.2748 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 6.4E-12 
++ VJC = 0.499 
++ MJC = 0.4435 
++ XCJC = 1 
++ TR = 1E-32 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ XTB = 0 
++ XTI = 3 
++ EG = 1.11 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PUMB15 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (PNP/PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 4.7 kOhm / 4.7 kOhm
+* 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+***************************************************************
+R1 2 22 4.7E+03 
+Cres1 2 6 4.3E-13 
+R21 22 11 2.35E+03 
+R22 11 1 2.35E+03 
+Cres2 11 6 1.4E-13
+*
+R3 5 55 4.7E+03 
+Cres3 5 3 4.3E-13 
+R41 55 44 2.35E+03 
+R42 44 4 2.35E+03 
+Cres4 44 3 1.4E-13
+*
+Q1 6 22 1 PDTA143E
+Q2 3 55 4 PDTA143E
+*
+.MODEL PDTA143E PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 339.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.948E-12 
++ NC = 1.55 
++ BR = 12.01 
++ IKR = 0.015 
++ VAR = 16.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.673 
++ RC = 0.718 
++ CJE = 1.104E-11 
++ VJE = 0.9 
++ MJE = 0.2748 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 6.4E-12 
++ VJC = 0.499 
++ MJC = 0.4435 
++ XCJC = 1 
++ TR = 1E-32 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ XTB = 0 
++ XTI = 3 
++ EG = 1.11 
++ FC = 0.5 
+.ENDS
+**
+.SUBCKT PUMB16 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (PNP/PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 22 kOhm / 47 kOhm
+*  
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+**************************************************************
+R1 2 22 2.2E+04 
+Cres1 2 6 4.3E-13 
+R21 22 11 2.35E+04 
+R22 11 1 2.35E+04 
+Cres2 11 6 1.5E-13
+*
+R3 5 55 2.2E+04 
+Cres3 5 3 4.3E-13 
+R41 55 44 2.351E+04 
+R42 44 4 2.35E+04 
+Cres4 44 3 1.5E-13
+*
+Q1 6 22 1 PDTA124XM
+Q2 3 55 4 PDTA124XM
+*
+.MODEL PDTA124XM PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 339.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.948E-12 
++ NC = 1.55 
++ BR = 12.01 
++ IKR = 0.09 
++ VAR = 16.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.673 
++ RC = 0.718 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.104E-11 
++ VJE = 0.9 
++ MJE = 0.2748 
++ TF = 1E-32 
++ XTF = 5.387 
++ VTF = 6.245 
++ ITF = 0.2108 
++ PTF = 0 
++ CJC = 6.4E-12 
++ VJC = 0.499 
++ MJC = 0.4434 
++ XCJC = 1 
++ TR = 1E-32 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ XTB = 0 
++ XTI = 3 
++ EG = 1.11 
++ FC = 0.5  
+.ENDS
+**
+.SUBCKT PUMB17 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (PNP/PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 47 kOhm / 22 kOhm
+* 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+**************************************************************
+R1 2 22 4.7E+04 
+Cres1 2 6 4.8E-13 
+R21 22 11 1.1E+04 
+R22 11 1 1.1E+04 
+Cres2 11 6 1.1E-13
+*
+R3 5 55 4.7E+04 
+Cres3 5 3 4.8E-13 
+R41 55 44 1.1E+04 
+R42 44 4 1.1E+04 
+Cres4 44 3 1.1E-13
+*
+Q1 6 22 1 PDTA144W
+Q2 3 55 4 PDTA144W
+*
+.MODEL PDTA144W PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 339.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.948E-12 
++ NC = 1.55 
++ BR = 12.01 
++ IKR = 0.015 
++ VAR = 16.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.673 
++ RC = 0.718 
++ CJE = 1.104E-11 
++ VJE = 0.9 
++ MJE = 0.2748 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 6.4E-12 
++ VJC = 0.499 
++ MJC = 0.4435 
++ XCJC = 1 
++ TR = 1E-32 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ XTB = 0 
++ XTI = 3 
++ EG = 1.11 
++ FC = 0.5 
+.ENDS
+**
+.SUBCKT PUMB18 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (PNP/PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 4.7 kOhm / 10 kOhm
+*  
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+***************************************************************
+R1 2 22 4.7E+03 
+Cres1 2 6 4.3E-13
+R21 22 11 5.00E+03 
+R22 11 1 5.00E+03 
+Cres2 11 6 1.3E-13 
+*
+R3 5 55 4.7E+05 
+Cres3 5 3 4.3E-13 
+R41 55 44 5.00E+03 
+R42 44 4 5.00E+03 
+Cres4 44 3 1.3E-13 
+*
+Q1 6 22 1 PDTA143X
+Q2 3 55 4 PDTA143x
+*
+.MODEL PDTA143X PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 339.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.948E-12 
++ NC = 1.55 
++ BR = 12.01 
++ IKR = 0.015 
++ VAR = 16.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.673 
++ RC = 0.718 
++ CJE = 1.104E-11 
++ VJE = 0.9 
++ MJE = 0.2748 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 6.4E-12 
++ VJC = 0.499 
++ MJC = 0.4435 
++ XCJC = 1 
++ TR = 1E-32 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ XTB = 0 
++ XTI = 3 
++ EG = 1.11 
++ FC = 0.5 
+.ENDS
+**
+.SUBCKT PUMB20 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (PNP/PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 2.2 kOhm / 2.2 kOhm
+*  
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+**************************************************************
+R1 2 22 2.2E+03 
+Cres1 2 6 4.8E-13 
+R21 22 11 1.1E+03 
+R22 11 1 1.1E+03 
+Cres2 11 6 1.5E-13
+*
+R3 5 55 2.2E+03 
+Cres3 5 3 4.8E-13 
+R41 55 44 1.1E+03 
+R42 44 4 1.1E+03 
+Cres4 44 3 1.5E-13
+*
+Q1 6 22 1 PDTA123E
+Q2 3 55 4 PDTA123E
+*
+.MODEL PDTA123E PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 339.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.948E-12 
++ NC = 1.55 
++ BR = 12.01 
++ IKR = 0.015 
++ VAR = 16.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.673 
++ RC = 0.718 
++ CJE = 1.104E-11 
++ VJE = 0.9 
++ MJE = 0.2748 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 6.4E-12 
++ VJC = 0.499 
++ MJC = 0.4435 
++ XCJC = 1 
++ TR = 1E-32 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ XTB = 0 
++ XTI = 3 
++ EG = 1.11 
++ FC = 0.5 
+.ENDS
+**
+.SUBCKT PUMD16 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (NPN/PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 22 kOhm / 47 kOhm
+* 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+***************************************************************
+R1 2 22 2.2E+04 
+Cres1 2 6 4.3E-13 
+R21 22 11 2.35E+04 
+R22 11 1 2.35E+04 
+Cres2 11 6 1.5E-13
+*
+R3 5 55 2.2E+04 
+Cres3 5 3 4.3E-13 
+R41 55 44 2.351E+04 
+R42 44 4 2.35E+04 
+Cres4 44 3 1.5E-13
+*
+Q1 6 22 1 PDTC124XM
+Q2 3 55 4 PDTA124XM
+*
+.MODEL PDTC124XM NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+*
+.MODEL PDTA124XM PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 339.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.948E-12 
++ NC = 1.55 
++ BR = 12.01 
++ IKR = 0.09 
++ VAR = 16.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.673 
++ RC = 0.718 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.104E-11 
++ VJE = 0.9 
++ MJE = 0.2748 
++ TF = 1E-32 
++ XTF = 5.387 
++ VTF = 6.245 
++ ITF = 0.2108 
++ PTF = 0 
++ CJC = 6.4E-12 
++ VJC = 0.499 
++ MJC = 0.4434 
++ XCJC = 1 
++ TR = 1E-32 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ XTB = 0 
++ XTI = 3 
++ EG = 1.11 
++ FC = 0.5  
+.ENDS
+**
+.SUBCKT PUMD17 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (NPN/PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 47 kOhm / 22 kOhm
+*  
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+***************************************************************
+R1 2 22 4.7E+04 
+Cres1 2 6 4.8E-13 
+R21 22 11 1.1E+04 
+R22 11 1 1.1E+04 
+Cres2 11 6 1.1E-13
+*
+R3 5 55 4.7E+04 
+Cres3 5 3 4.8E-13 
+R41 55 44 1.1E+04 
+R42 44 4 1.1E+04 
+Cres4 44 3 1.1E-13
+*
+Q1 6 22 1 PDTC144W
+Q2 3 55 4 PDTA144W
+*
+.MODEL PDTC144W NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+*
+.MODEL PDTA144W PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 339.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.948E-12 
++ NC = 1.55 
++ BR = 12.01 
++ IKR = 0.015 
++ VAR = 16.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.673 
++ RC = 0.718 
++ CJE = 1.104E-11 
++ VJE = 0.9 
++ MJE = 0.2748 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 6.4E-12 
++ VJC = 0.499 
++ MJC = 0.4435 
++ XCJC = 1 
++ TR = 1E-32 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ XTB = 0 
++ XTI = 3 
++ EG = 1.11 
++ FC = 0.5 
+.ENDS
+**
+.SUBCKT PUMD4 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (TR1 NPN/TR2 PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 10 kOhm / open
+*  
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+**************************************************************
+R1 2 22 1E+4 
+Cres1 2 6 4.4E-13
+*
+R3 5 55 1E+4 
+Cres3 5 3 4.4E-13
+*
+Q1 6 22 1 TR1
+Q2 3 55 4 TR2
+*
+.MODEL TR1 NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+*
+.MODEL TR2 PNP 
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 339.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.948E-12 
++ NC = 1.55 
++ BR = 12.01 
++ IKR = 0.015 
++ VAR = 16.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.673 
++ RC = 0.718 
++ CJE = 1.104E-11 
++ VJE = 0.9 
++ MJE = 0.2748 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 6.4E-12 
++ VJC = 0.499 
++ MJC = 0.4435 
++ XCJC = 1 
++ TR = 1E-32 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ XTB = 0 
++ XTI = 3 
++ EG = 1.11 
++ FC = 0.5 
+.ENDS
+**
+.SUBCKT PUMF11 1 2 3 4 5 6
+*
+R1 2 22 2.2E+04 
+Cres1 2 6 4.3E-13 
+R21 22 11 2.35E+04 
+R22 11 1 2.35E+04 
+Cres2 11 6 1.5E-13
+* 
+Q1 6 22 1 PDTC124X
+Q2 3 5 4 BC856BT
+*
+.MODEL PDTC124X NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+*
+.MODEL BC856BT PNP
++ IS = 2.014E-14 
++ NF = 0.9974 
++ ISE = 6.578E-15 
++ NE = 1.45 
++ BF = 315.3 
++ IKF = 0.079 
++ VAF = 39.15 
++ NR = 0.9952 
++ ISC = 1.633E-14 
++ NC = 1.15 
++ BR = 8.68 
++ IKR = 0.09 
++ VAR = 9.5 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5E-06 
++ RE = 0.663 
++ RC = 0.718 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.135E-11 
++ VJE = 0.7071 
++ MJE = 0.3808 
++ TF = 6.546E-10 
++ XTF = 5.387 
++ VTF = 6.245 
++ ITF = 0.2108 
++ PTF = 0 
++ CJC = 6.395E-12 
++ VJC = 0.4951 
++ MJC = 0.44 
++ XCJC = 0.6288 
++ TR = 5.5E-08 
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.9059 
+.ENDS
+**
+.SUBCKT PUMF12 6 2 1 3 5 4
+*
+***********************************************************
+*
+* NXP Semiconductors
+*
+* resistor equipped / general purpose transistor (NPN/PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 22 kOhm / 47 kOhm
+*  
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+***************************************************************
+R1 5 55 2.2E+04 
+Cres1 5 3 4.3E-13 
+R21 55 44 2.35E+04 
+R22 44 3 2.35E+04 
+Cres2 44 3 1.5E-13
+*
+Q1 6 2 1 BC558D
+Q2 3 55 4 TC124XD
+*
+.MODEL BC558D PNP 
++     IS = 2.014E-14 
++     NF = 0.9974 
++     ISE = 6.578E-15 
++     NE = 1.45 
++     BF = 315.3 
++     IKF = 0.079 
++     VAF = 39.15 
++     NR = 0.9952 
++     ISC = 1.633E-14 
++     NC = 1.15 
++     BR = 8.68 
++     IKR = 0.09 
++     VAR = 9.5 
++     RB = 10 
++     IRB = 5E-06 
++     RBM = 5E-06 
++     RE = 0.663 
++     RC = 0.718 
++     XTB = 0 
++     EG = 1.11 
++     XTI = 3 
++     CJE = 1.135E-11 
++     VJE = 0.7071 
++     MJE = 0.3808 
++     TF = 6.546E-10 
++     XTF = 5.387 
++     VTF = 6.245 
++     ITF = 0.2108 
++     PTF = 0 
++     CJC = 6.395E-12 
++     VJC = 0.4951 
++     MJC = 0.44 
++     XCJC = 0.6288 
++     TR = 5.5E-08 
++     CJS = 0 
++     VJS = 0.75 
++     MJS = 0.333  
++     FC = 0.9059
+*
+.MODEL TC124XD NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PUMH14 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (NPN/NPN)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 47 kOhm / open
+* 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+************************************************************
+R1 2 22 4.7E+04 
+Cres1 2 6 4.8E-13 
+*
+R3 5 55 4.7E+04 
+Cres3 5 3 4.8E-13 
+*
+Q1 6 22 1 PDTC144T
+Q2 3 55 4 PDTC144T
+*
+.MODEL PDTC144T NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PUMH15 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (NPN/NPN)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 4.7 kOhm / 4.7 kOhm
+* 
+
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+*************************************************************
+*
+R1 2 22 4.7E+03 
+Cres1 2 6 4.3E-13 
+R21 22 11 2.35E+03 
+R22 11 1 2.35E+03 
+Cres2 11 6 1.4E-13
+*
+R3 5 55 4.7E+03 
+Cres3 5 3 4.3E-13 
+R41 55 44 2.35E+03 
+R42 44 4 2.35E+03 
+Cres4 44 3 1.4E-13
+*
+Q1 6 22 1 PDTC143E
+Q2 3 55 4 PDTC143E
+*
+.MODEL PDTC143E NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PUMH16 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (NPN/NPN)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 22 kOhm / 47 kOhm
+*  
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+**************************************************************
+R1 2 22 2.2E+04 
+Cres1 2 6 4.3E-13 
+R21 22 11 2.35E+04 
+R22 11 1 2.35E+04 
+Cres2 11 6 1.5E-13
+*
+R3 5 55 2.2E+04 
+Cres3 5 3 4.3E-13 
+R41 55 44 2.351E+04 
+R42 44 4 2.35E+04 
+Cres4 44 3 1.5E-13
+*
+Q1 6 22 1 PDTC124XM
+Q2 3 55 4 PDTC124XM
+*
+.MODEL PDTC124XM NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PUMH17 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (NPN/NPN)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 22 kOhm / 22 kOhm
+* 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+**************************************************************
+R1 2 22 2.2E+04 
+Cres1 2 6 4.3E-13 
+R21 22 11 1.1E+04 
+R22 11 1 1.1E+04 
+Cres2 11 6 1.1E-13
+*
+R3 5 55 2.2E+04 
+Cres3 5 3 4.3E-13 
+R41 55 44 1.1E+04 
+R42 44 4 1.1E+04 
+Cres4 44 3 1.1E-13
+* 
+Q1 6 22 1 PDTC124E
+Q2 3 55 4 PDTC124E
+*
+.MODEL PDTC124E NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+** 
+.SUBCKT PUMH18 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (NPN/NPN)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 4.7 kOhm / 10 kOhm
+*  
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+**************************************************************
+R1 2 22 4.7E+03 
+Cres1 2 6 4.3E-13
+R21 22 11 5.00E+03 
+R22 11 1 5.00E+03 
+Cres2 11 6 1.3E-13 
+*
+R3 5 55 4.7E+05 
+Cres3 5 3 4.3E-13 
+R41 55 44 5.00E+03 
+R42 44 4 5.00E+03 
+Cres4 44 3 1.3E-13 
+*
+Q1 6 22 1 PDTC143X
+Q2 3 55 4 PDTC143x
+*
+.MODEL PDTC143X NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PUMH19 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (NPN/PNP)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 22 kOhm / open
+* 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+**************************************************************
+R1 2 22 2.2E+04 
+Cres1 2 6 4.3E-13 
+*
+R3 5 55 2.2E+04 
+Cres3 5 3 4.3E-13 
+*
+Q1 6 22 1 PDTC124T
+Q2 3 55 4 PDTC124T
+
+.MODEL PDTC124TM NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PUMH20 1 2 3 4 5 6
+*
+* mn ********************************************************
+*
+* NXP Semiconductors
+*
+* Two resistor equipped transistors (NPN/NPN)
+* Ic    = 100 mA
+* Vceo  = 50   V 
+* R1/R2 = 2.2 kOhm / 2.2 kOhm
+* 
+* Simulator: Spice 3
+*
+* TOPVIEW: 
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT363
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+**************************************************************
+R1 2 22 2.2E+03 
+Cres1 2 6 4.8E-13 
+R21 22 11 1.1E+03 
+R22 11 1 1.1E+03 
+Cres2 11 6 1.5E-13
+*
+R3 5 55 2.2E+03 
+Cres3 5 3 4.8E-13 
+R41 55 44 1.1E+03 
+R42 44 4 1.1E+03 
+Cres4 44 3 1.5E-13
+*
+Q1 6 22 1 PDTC123E
+Q2 3 55 4 PDTC123E
+*
+.MODEL PDTC123E NPN 
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PUMH24 1 2 3 4 5 6
+*
+R1 2 22 1.0E+05 
+Cres1 2 6 4.7E-13 
+R21 22 11 5.00E+04 
+R22 11 1 5.00E+04 
+Cres2 11 6 1.4E-13 
+*
+R3 5 55 1.0E+05 
+Cres3 5 3 4.7E-13 
+R41 55 44 5.00E+04 
+R42 44 4 5.00E+04 
+Cres4 44 3 1.4E-13 
+*
+Q1 6 22 1 PDTC115E
+Q2 3 55 4 PDTC115E
+*
+.MODEL PDTC115E NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PUML1/DG 1 2 3 4 5 6
+*
+***************************************************************
+*
+* NXP Semiconducters
+*
+* Two Transistors in SOT 363 package
+*
+* TR1 = General Purpose NPN     
+* Ic= 200mA
+* Vceo= 50V
+* hFE  = from 210 to 340 @ VCE = 10 V;IC = 2 mA
+* 
+* TR2 = Resistor Equipped Transistor (RET)
+* R1/R2 = 10kO / 10 kO  NPN
+* Ic= 100mA
+* Vceo= 50V
+* hFE  = min 30 @ VCE = 5 V; IC = 5 mA 
+*
+* Extraction date (week/year): 02/2009 
+* Simulator: Spice 3
+*
+* TOPVIEW:     
+*
+*      C1  B2  E2
+*      |   |   |
+*     _6___5___4_ 
+*    |           |
+*    |           |  SOT457
+*    |           |
+*    |___________|
+*      1   2   3
+*      |   |   |
+*      E1  B1  C2
+*
+* Diode D1 is dedicated to improve modeling in reverse
+* mode of operation and does not reflect a physical device.
+*
+***************************************************************
+*
+R1 5 55 1.0E+04 
+Cres1 4 3 4.4E-13 
+R21 55 33 5.0E+03 
+R22 33 3 5.0E+03 
+Cres2 33 4 1.3E-13
+* 
+Q1 6 2 1 TR1
+Q2 3 5 4 TR2(RET) 
+D1 2 6 DIODE
+*
+*The diode does not reflect a 
+*physical device but improves 
+*only modeling in the reverse 
+*mode of operation.
+*
+.MODEL TR1 NPN
++ IS = 1.217E-14
++ NF = 0.9803
++ ISE = 1.129E-15
++ NE = 1.342
++ BF = 300
++ IKF = 0.16
++ VAF = 130
++ NR = 0.9758
++ ISC = 8.952E-15
++ NC = 1.2
++ BR = 6.2
++ IKR = 0.075
++ VAR = 20
++ RB = 10
++ IRB = 8E-05
++ RBM = 1
++ RE = 0.5
++ RC = 0.75
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 1.362E-11
++ VJE = 0.7287
++ MJE = 0.36
++ TF = 3.8E-10
++ XTF = 1.5
++ VTF = 15
++ ITF = 0.085
++ PTF = 0
++ CJC = 5.522E-12
++ VJC = 0.4075
++ MJC = 0.3704
++ XCJC = 1
++ TR = 1E-07
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.78
+*
+.MODEL DIODE D
++ IS = 4E-17
++ N = 1
++ BV = 1000
++ IBV = 0.001
++ RS = 0.1
++ CJO = 0
++ VJ = 1
++ M = 0.5
++ FC = 0
++ TT = 0
++ XTI = 2
++ EG = 1.11
++ XTI = 2
+*
+.MODEL TR2(RET) NPN
++ IS = 1.822E-14 
++ NF = 0.9932 
++ ISE = 2.894E-16 
++ NE = 1.4 
++ BF = 354.4 
++ IKF = 0.246 
++ VAF = 182 
++ NR = 0.9931 
++ ISC = 9.982E-12 
++ NC = 1.763 
++ BR = 14.99 
++ IKR = 0.05
++ VAR = 17.9 
++ RB = 10 
++ IRB = 5E-06 
++ RBM = 5 
++ RE = 0.649 
++ RC = 1.101 
++ XTB = 0 
++ EG = 1.11 
++ XTI = 3 
++ CJE = 1.32E-11 
++ VJE = 0.8401 
++ MJE = 0.3622 
++ TF = 1E-32 
++ XTF = 0 
++ VTF = 1E+03 
++ ITF = 0 
++ PTF = 0 
++ CJC = 3.821E-12 
++ VJC = 0.5986 
++ MJC = 0.3745 
++ XCJC = 0.6193 
++ TR = 1E-32
++ CJS = 0 
++ VJS = 0.75 
++ MJS = 0.333 
++ FC = 0.5
+*
+.ENDS
+**
+.SUBCKT PVR100AD_B12V 1 2 3 4 5 6
+*
+* Voltage regulator 12.0 Volts in SOT457
+*
+R1 4 5 0
+*
+Q1 4 6 3 Transistor
+D1 1 6 Diode
+*
+.MODEL Transistor NPN
++ IS = 9.198E-14
++ NF = 1.003
++ ISE = 4.468E-16
++ NE = 1.65
++ BF = 338.8 
++ IKF = 0.4913
++ VAF = 107.9
++ NR = 1.002
++ ISC = 5.109E-15
++ NC = 1.071 
++ BR = 29.48
++ IKR = 0.193
++ VAR = 25
++ RB = 1
++ IRB = 1000
++ RBM = 1 
++ RE = 0.2126
++ RC = 0.143
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.825E-11 
++ VJE = 0.7004
++ MJE = 0.364
++ TF = 5.229E-10
++ XTF = 219.7
++ VTF = 3.502 
++ ITF = 7.257
++ PTF = 0
++ CJC = 1.27E-11
++ VJC = 0.4431
++ MJC = 0.3983 
++ XCJC = 0.4555
++ TR = 7E-11
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.905
+*
+.MODEL Diode D
++ IS = 9.794E-15
++ N = 1.101
++ BV = 13
++ IBV = 0.005
++ RS = 0.3363
++ CJO = 4.377E-11
++ VJ = 0.5656
++ M = 0.3289
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PVR100AD_B2V5 1 2 3 4 5 6
+*
+* Voltage regulator 2.5 Volts in SOT457
+*
+R1 4 5 0
+*
+Q1 4 6 3 Transistor
+D1 1 6 Diode
+*
+.MODEL Transistor NPN
++ IS = 9.198E-14
++ NF = 1.003
++ ISE = 4.468E-16
++ NE = 1.65
++ BF = 338.8 
++ IKF = 0.4913
++ VAF = 107.9
++ NR = 1.002
++ ISC = 5.109E-15
++ NC = 1.071 
++ BR = 29.48
++ IKR = 0.193
++ VAR = 25
++ RB = 1
++ IRB = 1000
++ RBM = 1 
++ RE = 0.2126
++ RC = 0.143
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.825E-11 
++ VJE = 0.7004
++ MJE = 0.364
++ TF = 5.229E-10
++ XTF = 219.7
++ VTF = 3.502 
++ ITF = 7.257
++ PTF = 0
++ CJC = 1.27E-11
++ VJC = 0.4431
++ MJC = 0.3983 
++ XCJC = 0.4555
++ TR = 7E-11
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.905
+*
+.MODEL Diode D
++ IS = 7.035E-16
++ N = 0.9809
++ BV = 3.3
++ IBV = 0.005
++ RS = 0.3487
++ CJO = 3.162E-10
++ VJ = 0.6687
++ M = 0.3164
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PVR100AD_B3V0 1 2 3 4 5 6
+*
+* Voltage regulator 3.0 Volts in SOT457
+*
+R1 4 5 0
+*
+Q1 4 6 3 Transistor
+D1 1 6 Diode
+*
+.MODEL Transistor NPN
++ IS = 9.198E-14
++ NF = 1.003
++ ISE = 4.468E-16
++ NE = 1.65
++ BF = 338.8 
++ IKF = 0.4913
++ VAF = 107.9
++ NR = 1.002
++ ISC = 5.109E-15
++ NC = 1.071 
++ BR = 29.48
++ IKR = 0.193
++ VAR = 25
++ RB = 1
++ IRB = 1000
++ RBM = 1 
++ RE = 0.2126
++ RC = 0.143
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.825E-11 
++ VJE = 0.7004
++ MJE = 0.364
++ TF = 5.229E-10
++ XTF = 219.7
++ VTF = 3.502 
++ ITF = 7.257
++ PTF = 0
++ CJC = 1.27E-11
++ VJC = 0.4431
++ MJC = 0.3983 
++ XCJC = 0.4555
++ TR = 7E-11
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.905
+*
+.MODEL Diode D
++ IS = 7.035E-16
++ N = 0.9809
++ BV = 3.6
++ IBV = 0.005
++ RS = 0.3487
++ CJO = 3.062E-10
++ VJ = 0.6643
++ M = 0.3168
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PVR100AD_B3V3 1 2 3 4 5 6
+*
+* Voltage regulator 3.3 Volts in SOT457
+*
+R1 4 5 0
+*
+Q1 4 6 3 Transistor
+D1 1 6 Diode
+*
+.MODEL Transistor NPN
++ IS = 9.198E-14
++ NF = 1.003
++ ISE = 4.468E-16
++ NE = 1.65
++ BF = 338.8 
++ IKF = 0.4913
++ VAF = 107.9
++ NR = 1.002
++ ISC = 5.109E-15
++ NC = 1.071 
++ BR = 29.48
++ IKR = 0.193
++ VAR = 25
++ RB = 1
++ IRB = 1000
++ RBM = 1 
++ RE = 0.2126
++ RC = 0.143
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.825E-11 
++ VJE = 0.7004
++ MJE = 0.364
++ TF = 5.229E-10
++ XTF = 219.7
++ VTF = 3.502 
++ ITF = 7.257
++ PTF = 0
++ CJC = 1.27E-11
++ VJC = 0.4431
++ MJC = 0.3983 
++ XCJC = 0.4555
++ TR = 7E-11
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.905
+*
+.MODEL Diode D
++ IS = 7.035E-16
++ N = 0.9809
++ BV = 3.9
++ IBV = 0.005
++ RS = 0.3487
++ CJO = 2.82E-10
++ VJ = 0.6743
++ M = 0.3219
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PVR100AD_B5V0 1 2 3 4 5 6
+*
+* Voltage regulator 5.0 Volts in SOT457
+*
+R1 4 5 0
+*
+Q1 4 6 3 Transistor
+D1 1 6 Diode
+*
+.MODEL Transistor NPN
++ IS = 9.198E-14
++ NF = 1.003
++ ISE = 4.468E-16
++ NE = 1.65
++ BF = 338.8 
++ IKF = 0.4913
++ VAF = 107.9
++ NR = 1.002
++ ISC = 5.109E-15
++ NC = 1.071 
++ BR = 29.48
++ IKR = 0.193
++ VAR = 25
++ RB = 1
++ IRB = 1000
++ RBM = 1 
++ RE = 0.2126
++ RC = 0.143
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.825E-11 
++ VJE = 0.7004
++ MJE = 0.364
++ TF = 5.229E-10
++ XTF = 219.7
++ VTF = 3.502 
++ ITF = 7.257
++ PTF = 0
++ CJC = 1.27E-11
++ VJC = 0.4431
++ MJC = 0.3983 
++ XCJC = 0.4555
++ TR = 7E-11
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.905
+*
+.MODEL Diode D
++ IS = 7.035E-16
++ N = 0.9809
++ BV = 5.6
++ IBV = 0.005
++ RS = 0.3487
++ CJO = 1.961E-10
++ VJ = 0.9187
++ M = 0.423
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PVR100AZ_B12V 1 2 3 4
+*
+* Voltage regulator 12.0 Volts in SOT223
+*
+Q1 4 1 3 Transistor
+D1 2 1 Diode
+*
+.MODEL Transistor NPN
++ IS = 9.198E-14
++ NF = 1.003
++ ISE = 4.468E-16
++ NE = 1.65
++ BF = 338.8 
++ IKF = 0.4913
++ VAF = 107.9
++ NR = 1.002
++ ISC = 5.109E-15
++ NC = 1.071 
++ BR = 29.48
++ IKR = 0.193
++ VAR = 25
++ RB = 1
++ IRB = 1000
++ RBM = 1 
++ RE = 0.2126
++ RC = 0.143
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.825E-11 
++ VJE = 0.7004
++ MJE = 0.364
++ TF = 5.229E-10
++ XTF = 219.7
++ VTF = 3.502 
++ ITF = 7.257
++ PTF = 0
++ CJC = 1.27E-11
++ VJC = 0.4431
++ MJC = 0.3983 
++ XCJC = 0.4555
++ TR = 7E-11
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.905
+*
+.MODEL Diode D
++ IS = 9.794E-15
++ N = 1.101
++ BV = 13
++ IBV = 0.005
++ RS = 0.3363
++ CJO = 4.377E-11
++ VJ = 0.5656
++ M = 0.3289
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PVR100AZ_B2V5 1 2 3 4
+*
+* Voltage regulator 2.5 Volts in SOT223
+*
+Q1 4 1 3 Transistor
+D1 2 1 Diode
+*
+.MODEL Transistor NPN
++ IS = 9.198E-14
++ NF = 1.003
++ ISE = 4.468E-16
++ NE = 1.65
++ BF = 338.8 
++ IKF = 0.4913
++ VAF = 107.9
++ NR = 1.002
++ ISC = 5.109E-15
++ NC = 1.071 
++ BR = 29.48
++ IKR = 0.193
++ VAR = 25
++ RB = 1
++ IRB = 1000
++ RBM = 1 
++ RE = 0.2126
++ RC = 0.143
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.825E-11 
++ VJE = 0.7004
++ MJE = 0.364
++ TF = 5.229E-10
++ XTF = 219.7
++ VTF = 3.502 
++ ITF = 7.257
++ PTF = 0
++ CJC = 1.27E-11
++ VJC = 0.4431
++ MJC = 0.3983 
++ XCJC = 0.4555
++ TR = 7E-11
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.905
+*
+.MODEL Diode D
++ IS = 7.035E-16
++ N = 0.9809
++ BV = 3.3
++ IBV = 0.005
++ RS = 0.3487
++ CJO = 3.162E-10
++ VJ = 0.6687
++ M = 0.3164
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PVR100AZ_B3V0 1 2 3 4
+*
+* Voltage regulator 3.0 Volts in SOT223
+*
+Q1 4 1 3 Transistor
+D1 2 1 Diode
+*
+.MODEL Transistor NPN
++ IS = 9.198E-14
++ NF = 1.003
++ ISE = 4.468E-16
++ NE = 1.65
++ BF = 338.8 
++ IKF = 0.4913
++ VAF = 107.9
++ NR = 1.002
++ ISC = 5.109E-15
++ NC = 1.071 
++ BR = 29.48
++ IKR = 0.193
++ VAR = 25
++ RB = 1
++ IRB = 1000
++ RBM = 1 
++ RE = 0.2126
++ RC = 0.143
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.825E-11 
++ VJE = 0.7004
++ MJE = 0.364
++ TF = 5.229E-10
++ XTF = 219.7
++ VTF = 3.502 
++ ITF = 7.257
++ PTF = 0
++ CJC = 1.27E-11
++ VJC = 0.4431
++ MJC = 0.3983 
++ XCJC = 0.4555
++ TR = 7E-11
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.905
+*
+.MODEL Diode D
++ IS = 7.035E-16
++ N = 0.9809
++ BV = 3.6
++ IBV = 0.005
++ RS = 0.3487
++ CJO = 3.062E-10
++ VJ = 0.6643
++ M = 0.3168
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PVR100AZ_B3V3 1 2 3 4
+*
+* Voltage regulator 3.3 Volts in SOT223
+*
+Q1 4 1 3 Transistor
+D1 2 1 Diode
+*
+.MODEL Transistor NPN
++ IS = 9.198E-14
++ NF = 1.003
++ ISE = 4.468E-16
++ NE = 1.65
++ BF = 338.8 
++ IKF = 0.4913
++ VAF = 107.9
++ NR = 1.002
++ ISC = 5.109E-15
++ NC = 1.071 
++ BR = 29.48
++ IKR = 0.193
++ VAR = 25
++ RB = 1
++ IRB = 1000
++ RBM = 1 
++ RE = 0.2126
++ RC = 0.143
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.825E-11 
++ VJE = 0.7004
++ MJE = 0.364
++ TF = 5.229E-10
++ XTF = 219.7
++ VTF = 3.502 
++ ITF = 7.257
++ PTF = 0
++ CJC = 1.27E-11
++ VJC = 0.4431
++ MJC = 0.3983 
++ XCJC = 0.4555
++ TR = 7E-11
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.905
+*
+.MODEL Diode D
++ IS = 7.035E-16
++ N = 0.9809
++ BV = 3.9
++ IBV = 0.005
++ RS = 0.3487
++ CJO = 2.82E-10
++ VJ = 0.6743
++ M = 0.3219
++ FC = 0.5
+.ENDS
+**
+.SUBCKT PVR100AZ_B5V0 1 2 3 4
+*
+* Voltage regulator 5.0 Volts in SOT223
+*
+Q1 4 1 3 Transistor
+D1 2 1 Diode
+*
+.MODEL Transistor NPN
++ IS = 9.198E-14
++ NF = 1.003
++ ISE = 4.468E-16
++ NE = 1.65
++ BF = 338.8 
++ IKF = 0.4913
++ VAF = 107.9
++ NR = 1.002
++ ISC = 5.109E-15
++ NC = 1.071 
++ BR = 29.48
++ IKR = 0.193
++ VAR = 25
++ RB = 1
++ IRB = 1000
++ RBM = 1 
++ RE = 0.2126
++ RC = 0.143
++ XTB = 0
++ EG = 1.11
++ XTI = 3
++ CJE = 3.825E-11 
++ VJE = 0.7004
++ MJE = 0.364
++ TF = 5.229E-10
++ XTF = 219.7
++ VTF = 3.502 
++ ITF = 7.257
++ PTF = 0
++ CJC = 1.27E-11
++ VJC = 0.4431
++ MJC = 0.3983 
++ XCJC = 0.4555
++ TR = 7E-11
++ CJS = 0
++ VJS = 0.75
++ MJS = 0.333
++ FC = 0.905
+*
+.MODEL Diode D
++ IS = 7.035E-16
++ N = 0.9809
++ BV = 5.6
++ IBV = 0.005
++ RS = 0.3487
++ CJO = 1.961E-10
++ VJ = 0.9187
++ M = 0.423
++ FC = 0.5
+.ENDS
+*
