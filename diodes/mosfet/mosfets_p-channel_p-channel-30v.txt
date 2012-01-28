@@ -1,0 +1,933 @@
+*---------- DMG4435SSS Spice Model ----------
+.SUBCKT DMG4435SSS 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  PMOS  L = 1E-006  W = 1E-006 
+RD 10 1 0.01231 
+RS 30 3 0.001 
+RG 20 2 6.83 
+CGS 2 3 1.465E-009 
+EGD 12 30 2 1 1 
+VFB 14 30 0 
+FFB 2 1  VFB 1 
+CGD 13 14 1.556E-009 
+R1 13 30 1 
+D1 13 12  DLIM 
+DDG 14 15  DCGD 
+R2 12 15 1 
+D2 30 15  DLIM 
+DSD 10 3  DSUB 
+.MODEL PMOS PMOS  LEVEL = 3  U0 = 164.9  VMAX = 1.945E+005  KP = 39.94 
++ ETA = 0.005129  TOX = 6E-008  NSUB = 1.104E+016  KAPPA = 3.689  VTO = -2.072 
+.MODEL DCGD D  CJO = 7.47E-010  VJ = 0.518  M = 0.3662 
+.MODEL DSUB D  IS = 2.364E-010  N = 1.296  RS = 0.007836  BV = 33  
++CJO = 9.148E-011  VJ = 0.644  M = 0.663 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMG4435SSS Spice Model v1.0 Last Revised 2010/9/14
+
+*---------- DMP3056LDM Spice Model ----------
+.SUBCKT DMP3056LDM 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  PMOS  L = 1E-006  W = 1E-006 
+RD 10 1 0.06218 
+RS 30 3 0.001 
+RG 20 2 13.1 
+CGS 2 3 9.119E-010 
+EGD 12 30 2 1 1 
+VFB 14 30 0 
+FFB 2 1  VFB 1 
+CGD 13 14 9.5E-010 
+R1 13 30 1 
+D1 13 12  DLIM 
+DDG 14 15  DCGD 
+R2 12 15 1 
+D2 30 15  DLIM 
+DSD 10 3  DSUB 
+.MODEL PMOS PMOS  LEVEL = 3  U0 = 400  VMAX = 2.425E+005  KP = 24.51  ETA = 0.0001 
++ TOX = 6E-008  NSUB = 1E+017  KAPPA = 4.31  VTO = -2.04 
+.MODEL DCGD D  CJO = 4.253E-010  VJ = 0.4289  M = 0.3451 
+.MODEL DSUB D  IS = 2.245E-010  N = 1.343  RS = 0.01819  BV = 35  CJO = 1.264E-011  VJ = 0.005363  M = 0.1 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMP3056LDM Spice Model v1.0 Last Revised 2011/5/20
+
+*---------- DMP3130L Spice Model ----------
+.SUBCKT DMP3130L 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  PMOS  L = 1E-006  W = 1E-006 
+RD 10 1 0.04181 
+RS 30 3 0.001 
+RG 20 2 12.29 
+CGS 2 3 3.719E-010 
+EGD 12 30 2 1 1 
+VFB 14 30 0 
+FFB 2 1  VFB 1 
+CGD 13 14 1.46E-009 
+R1 13 30 1 
+D1 13 12  DLIM 
+DDG 14 15  DCGD 
+R2 12 15 1 
+D2 30 15  DLIM 
+DSD 10 3  DSUB 
+.MODEL PMOS PMOS  LEVEL = 3  U0 = 400  VMAX = 1E+006  ETA = 0.001 
++ TOX = 6E-008  NSUB = 1E+016  KP = 9.397  KAPPA = 9.681  VTO = -1.023 
+.MODEL DCGD D  CJO = 3.903E-010  VJ = 0.2566  M = 0.45 
+.MODEL DSUB D  IS = 2.936E-009  N = 1.327  RS = 0.07557  BV = 33  CJO = 1.598E-010  VJ = 0.4699  M = 0.5274 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMP3130L Spice Model v1.0 Last Revised 2011/10/7
+
+*---------- DMP3160L Spice Model ----------
+.SUBCKT DMP3160L 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  PMOS  L = 1E-006  W = 1E-006 
+RD 10 1 0.04307 
+RS 30 3 0.001 
+RG 20 2 17.1 
+CGS 2 3 3.339E-010 
+EGD 12 30 2 1 1 
+VFB 14 30 0 
+FFB 2 1  VFB 1 
+CGD 13 14 3.9E-010 
+R1 13 30 1 
+D1 13 12  DLIM 
+DDG 14 15  DCGD 
+R2 12 15 1 
+D2 30 15  DLIM 
+DSD 10 3  DSUB 
+.MODEL PMOS PMOS  LEVEL = 3  U0 = 400  VMAX = 1E+006  ETA = 0.001 
++ TOX = 6E-008  NSUB = 1E+016  KP = 8.459  KAPPA = 9.123  VTO = -1.527 
+.MODEL DCGD D  CJO = 1.701E-010  VJ = 0.4656  M = 0.372 
+.MODEL DSUB D  IS = 5E-010  N = 1.421  RS = 0.05533  BV = 33  CJO = 2.821E-011  VJ = 0.5166  M = 0.4868 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMP3160L Spice Model v1.0 Last Revised 2011/10/28
+
+*---------- DMP3105LVT Spice Model ----------
+.SUBCKT DMP3105LVT 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  PMOS  L = 1E-006  W = 1E-006 
+RD 10 1 0.04181 
+RS 30 3 0.001 
+RG 20 2 12.29 
+CGS 2 3 3.719E-010 
+EGD 12 30 2 1 1 
+VFB 14 30 0 
+FFB 2 1  VFB 1 
+CGD 13 14 1.46E-009 
+R1 13 30 1 
+D1 13 12  DLIM 
+DDG 14 15  DCGD 
+R2 12 15 1 
+D2 30 15  DLIM 
+DSD 10 3  DSUB 
+.MODEL PMOS PMOS  LEVEL = 3  U0 = 400  VMAX = 1E+006  ETA = 0.001 
++ TOX = 6E-008  NSUB = 1E+016  KP = 9.397  KAPPA = 9.681  VTO = -1.023 
+.MODEL DCGD D  CJO = 3.903E-010  VJ = 0.2566  M = 0.45 
+.MODEL DSUB D  IS = 2.936E-009  N = 1.327  RS = 0.07557  BV = 33  CJO = 1.598E-010  VJ = 0.4699  M = 0.5274 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMP3105LVT Spice Model v1.0 Last Revised 2011/10/7
+
+*SRC=DMP3120L;DI_DMP3120L;MOSFETs P;Enh;30.0V 2.80A 0.120ohms  Diodes Inc MOSFET
+*SYM=POWMOSP
+.SUBCKT DI_DMP3120L   10 20 30
+*     TERMINALS:  D  G  S
+M1   1  2  3  3  DMOS L=1U W=1U
+RD  10  1  56.0m
+RS  40  3  4.00m
+RG  20  2  53.6
+CGS  2  3  245p
+EGD 12  0  2  1  1
+VFB 14  0  0
+FFB  2  1  VFB  1
+CGD 13 14  367p
+R1  13  0  1.00
+D1  12 13  DLIM
+DDG 15 14  DCGD
+R2  12 15  1.00
+D2  15  0  DLIM
+DSD  3 10  DSUB
+LS  30 40  7.50n
+.MODEL DMOS PMOS(LEVEL=3 VMAX=62.5k THETA=80.0m
++ ETA=2.50m VTO=-1.40 KP=17.3
+.MODEL DCGD D (CJO=367p VJ=0.600 M=0.680
+.MODEL DSUB D (IS=11.6n N=1.50 RS=0.125 BV=30.0
++ CJO=98.0p VJ=0.800 M=0.420 TT=205n
+.MODEL DLIM D (IS=100U)
+.ENDS
+
+*---------- DMG2307L Spice Model ----------
+.SUBCKT DMG2307L 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  PMOS  L = 1E-006  W = 1E-006 
+RD 10 1 0.04307 
+RS 30 3 0.001 
+RG 20 2 17.1 
+CGS 2 3 3.339E-010 
+EGD 12 30 2 1 1 
+VFB 14 30 0 
+FFB 2 1  VFB 1 
+CGD 13 14 3.9E-010 
+R1 13 30 1 
+D1 13 12  DLIM 
+DDG 14 15  DCGD 
+R2 12 15 1 
+D2 30 15  DLIM 
+DSD 10 3  DSUB 
+.MODEL PMOS PMOS  LEVEL = 3  U0 = 400  VMAX = 1E+006  ETA = 0.001 
++ TOX = 6E-008  NSUB = 1E+016  KP = 8.459  KAPPA = 9.123  VTO = -1.527 
+.MODEL DCGD D  CJO = 1.701E-010  VJ = 0.4656  M = 0.372 
+.MODEL DSUB D  IS = 5E-010  N = 1.421  RS = 0.05533  BV = 33  CJO = 2.821E-011  VJ = 0.5166  M = 0.4868 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMG2307L Spice Model v1.0 Last Revised 2011/10/28
+
+*---------- DMP3056LSD Spice Model ----------
+.SUBCKT DMP3056LSD 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  PMOS  L = 1E-006  W = 1E-006 
+RD 10 1 0.06218 
+RS 30 3 0.001 
+RG 20 2 13.1 
+CGS 2 3 9.119E-010 
+EGD 12 30 2 1 1 
+VFB 14 30 0 
+FFB 2 1  VFB 1 
+CGD 13 14 9.5E-010 
+R1 13 30 1 
+D1 13 12  DLIM 
+DDG 14 15  DCGD 
+R2 12 15 1 
+D2 30 15  DLIM 
+DSD 10 3  DSUB 
+.MODEL PMOS PMOS  LEVEL = 3  U0 = 400  VMAX = 2.425E+005  KP = 24.51  ETA = 0.0001 
++ TOX = 6E-008  NSUB = 1E+017  KAPPA = 4.31  VTO = -2.04 
+.MODEL DCGD D  CJO = 4.253E-010  VJ = 0.4289  M = 0.3451 
+.MODEL DSUB D  IS = 2.245E-010  N = 1.343  RS = 0.01819  BV = 35  CJO = 1.264E-011  VJ = 0.005363  M = 0.1 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMP3056LSD Spice Model v1.0 Last Revised 2011/5/20
+
+*---------- DMP3056LSS Spice Model ----------
+.SUBCKT DMP3056LSS 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  PMOS  L = 1E-006  W = 1E-006 
+RD 10 1 0.06218 
+RS 30 3 0.001 
+RG 20 2 13.1 
+CGS 2 3 9.119E-010 
+EGD 12 30 2 1 1 
+VFB 14 30 0 
+FFB 2 1  VFB 1 
+CGD 13 14 9.5E-010 
+R1 13 30 1 
+D1 13 12  DLIM 
+DDG 14 15  DCGD 
+R2 12 15 1 
+D2 30 15  DLIM 
+DSD 10 3  DSUB 
+.MODEL PMOS PMOS  LEVEL = 3  U0 = 400  VMAX = 2.425E+005  KP = 24.51  ETA = 0.0001 
++ TOX = 6E-008  NSUB = 1E+017  KAPPA = 4.31  VTO = -2.04 
+.MODEL DCGD D  CJO = 4.253E-010  VJ = 0.4289  M = 0.3451 
+.MODEL DSUB D  IS = 2.245E-010  N = 1.343  RS = 0.01819  BV = 35  CJO = 1.264E-011  VJ = 0.005363  M = 0.1 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMP3056LSS Spice Model v1.0 Last Revised 2011/5/20
+
+*SRC=DMP3098L;DI_DMP3098L;MOSFETs P;Enh;30.0V 3.80A 0.120ohms  Diodes Inc MOSFET
+*SYM=POWMOSP
+.SUBCKT DI_DMP3098L   10 20 30
+*     TERMINALS:  D  G  S
+M1   1  2  3  3  DMOS L=1U W=1U
+RD  10  1  56.0m
+RS  40  3  4.00m
+RG  20  2  39.5
+CGS  2  3  287p
+EGD 12  0  2  1  1
+VFB 14  0  0
+FFB  2  1  VFB  1
+CGD 13 14  629p
+R1  13  0  1.00
+D1  12 13  DLIM
+DDG 15 14  DCGD
+R2  12 15  1.00
+D2  15  0  DLIM
+DSD  3 10  DSUB
+LS  30 40  7.50n
+.MODEL DMOS PMOS(LEVEL=3 VMAX=62.5k THETA=80.0m
++ ETA=1.42m VTO=-2.10 KP=17.5
+.MODEL DCGD D (CJO=629p VJ=0.600 M=0.680
+.MODEL DSUB D (IS=15.8n N=1.50 RS=0.134 BV=30.0
++ CJO=151p VJ=0.800 M=0.420 TT=196n
+.MODEL DLIM D (IS=100U)
+.ENDS
+
+*---------- DMP3098LDM Spice Model ----------
+.SUBCKT DMP3098LDM   10   20   30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  DMOS  L = 1E-006  W = 1E-006 
+RD 10 1 0.05172 
+RS 30 3 0.001 
+RG 20 2 14.77 
+CGS 2 3 4.4E-010 
+EGD 12 30 2 1 1 
+VFB 14 30 0 
+FFB 2 1  VFB 1 
+CGD 13 14 5.2E-010 
+R1 13 30 1 
+D1 13 12  DLIM 
+DDG 14 15  DCGD 
+R2 12 15 1 
+D2 30 15  DLIM 
+DSD 10 3  DSUB 
+.MODEL DMOS PMOS  LEVEL = 3  U0 = 945  VMAX = 1.766E+005  KP = 12.74  ETA = 0.004997  
++ TOX = 6E-008  NSUB = 1E+015  KAPPA = 0.1211 VTO = -2.148 
+.MODEL DCGD D  CJO = 2.532E-010  VJ = 0.4067  M = 0.3826 
+.MODEL DSUB D  IS = 2.231E-010  N = 1.404  RS = 0.03713  BV = 33  CJO = 2.11E-011  VJ = 2.368  M = 0.8 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMP3098LDM Spice Model v2.0 Last Revised 2010/8/23
+
+*---------- DMP3015LSS Spice Model ----------
+.SUBCKT DMP3015LSS 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  PMOS  L = 1E-006  W = 1E-006 
+RD 10 1 0.005144 
+RS 30 3 0.001 
+RG 20 2 2 
+CGS 2 3 2.486E-009 
+EGD 12 0 1 2 1 
+VFB 14 0 0 
+FFB 1 2  VFB 1 
+CGD 13 14 2.95E-009 
+R1 13 0 1 
+D1 12 13  DLIM 
+DDG 15 14  DCGD 
+R2 12 15 1 
+D2 15 0  DLIM 
+DSD 10 3  DSUB 
+.MODEL PMOS PMOS  LEVEL = 3  U0 = 610.4  VMAX = 1E+006  KP = 57.85  ETA = 0.01628 
++ TOX = 6E-008  NSUB = 1E+017  KAPPA = 20.51  VTO = -2.177 
+.MODEL DCGD D  CJO = 1.305E-009  VJ = 0.3167  M = 0.312 
+.MODEL DSUB D  IS = 2.366E-010  N = 1.216  RS = 0.002639  BV = 35  CJO = 8.298E-011  VJ = 0.6  M = 0.0929 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMP3015LSS Spice Model v1.2 Last Revised 2011/4/22
+
+*SRC=DMP3020LSS;DI_DMP3020LSS;MOSFETs P;Enh;30.0V 12.0A 25.0mohms  Diodes Inc MOSFET
+*SYM=POWMOSP
+.SUBCKT DI_DMP3020LSS   10 20 30
+*     TERMINALS:  D  G  S
+M1   1  2  3  3  DMOS L=1U W=1U
+RD  10  1  10.9m
+RS  40  3  1.62m
+RG  20  2  76.7
+CGS  2  3  179p
+EGD 12  0  2  1  1
+VFB 14  0  0
+FFB  2  1  VFB  1
+CGD 13 14  347p
+R1  13  0  1.00
+D1  12 13  DLIM
+DDG 15 14  DCGD
+R2  12 15  1.00
+D2  15  0  DLIM
+DSD  3 10  DSUB
+LS  30 40  7.50n
+.MODEL DMOS PMOS(LEVEL=3 VMAX=62.5k THETA=80.0m
++ ETA=450u VTO=-2.00 KP=23.3
+.MODEL DCGD D (CJO=347p VJ=0.600 M=0.680
+.MODEL DSUB D (IS=49.8n N=1.50 RS=29.2m BV=30.0
++ CJO=92.5p VJ=0.800 M=0.420 TT=196n
+.MODEL DLIM D (IS=100U)
+.ENDS
+
+*SRC=DMP3030SN;DI_DMP3030SN;MOSFETs P;Enh;30.0V 0.700A 0.350ohms  Diodes Inc. MOSFET
+.MODEL DI_DMP3030SN  PMOS( LEVEL=1 VTO=-3.00 KP=2.50u  GAMMA=3.72
++ PHI=.75  LAMBDA=365u RD=49.0m RS=49.0m
++ IS=350f  PB=0.800 MJ=0.460 CBD=232p 
++ CBS=278p  CGSO=600n CGDO=500n CGBO=100n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMP3035LSS;DI_DMP3035LSS;MOSFETs P;Enh;30.0V 12.0A 35.0mohms  Diodes Inc MOSFET
+*SYM=POWMOSP
+.SUBCKT DI_DMP3035LSS   10 20 30
+*     TERMINALS:  D  G  S
+M1   1  2  3  3  DMOS L=1U W=1U
+RD  10  1  15.6m
+RS  40  3  1.87m
+RG  20  2  76.7
+CGS  2  3  179p
+EGD 12  0  2  1  1
+VFB 14  0  0
+FFB  2  1  VFB  1
+CGD 13 14  347p
+R1  13  0  1.00
+D1  12 13  DLIM
+DDG 15 14  DCGD
+R2  12 15  1.00
+D2  15  0  DLIM
+DSD  3 10  DSUB
+LS  30 40  7.50n
+.MODEL DMOS PMOS(LEVEL=3 VMAX=62.5k THETA=80.0m
++ ETA=450u VTO=-2.00 KP=23.3
+.MODEL DCGD D (CJO=347p VJ=0.600 M=0.680
+.MODEL DSUB D (IS=49.8n N=1.50 RS=29.2m BV=30.0
++ CJO=92.5p VJ=0.800 M=0.420 TT=196n
+.MODEL DLIM D (IS=100U)
+.ENDS
+
+*SRC=DMP3098LSD;DI_DMP3098LSD;MOSFETs P;Enh;30.0V 4.40A 0.115ohms  Diodes Inc MOSFET
+*SYM=POWMOSP
+.SUBCKT DI_DMP3098LSD   10 20 30
+*     TERMINALS:  D  G  S
+M1   1  2  3  3  DMOS L=1U W=1U
+RD  10  1  53.6m
+RS  40  3  3.87m
+RG  20  2  34.1
+CGS  2  3  287p
+EGD 12  0  2  1  1
+VFB 14  0  0
+FFB  2  1  VFB  1
+CGD 13 14  629p
+R1  13  0  1.00
+D1  12 13  DLIM
+DDG 15 14  DCGD
+R2  12 15  1.00
+D2  15  0  DLIM
+DSD  3 10  DSUB
+LS  30 40  7.50n
+.MODEL DMOS PMOS(LEVEL=3 VMAX=62.5k THETA=80.0m
++ ETA=1.23m VTO=-2.10 KP=10.5
+.MODEL DCGD D (CJO=629p VJ=0.600 M=0.680
+.MODEL DSUB D (IS=18.3n N=1.50 RS=0.116 BV=30.0
++ CJO=151p VJ=0.800 M=0.420 TT=196n
+.MODEL DLIM D (IS=100U)
+.ENDS
+
+*SRC=DMP3098LSS;DI_DMP3098LSS;MOSFETs P;Enh;30.0V 5.30A 0.115ohms  Diodes Inc MOSFET
+*SYM=POWMOSP
+.SUBCKT DI_DMP3098LSS   10 20 30
+*     TERMINALS:  D  G  S
+M1   1  2  3  3  DMOS L=1U W=1U
+RD  10  1  53.6m
+RS  40  3  3.87m
+RG  20  2  28.3
+CGS  2  3  287p
+EGD 12  0  2  1  1
+VFB 14  0  0
+FFB  2  1  VFB  1
+CGD 13 14  629p
+R1  13  0  1.00
+D1  12 13  DLIM
+DDG 15 14  DCGD
+R2  12 15  1.00
+D2  15  0  DLIM
+DSD  3 10  DSUB
+LS  30 40  7.50n
+.MODEL DMOS PMOS(LEVEL=3 VMAX=62.5k THETA=80.0m
++ ETA=1.02m VTO=-2.10 KP=9.89
+.MODEL DCGD D (CJO=629p VJ=0.600 M=0.680
+.MODEL DSUB D (IS=22.0n N=1.50 RS=84.9m BV=30.0
++ CJO=151p VJ=0.800 M=0.420 TT=196n
+.MODEL DLIM D (IS=100U)
+.ENDS
+
+*
+*Zetex ZXM61P03F Spice Model v1.0 Last Revised 23/2/04
+*
+.SUBCKT ZXM61P03F 3 4 5
+*----connections----D G S
+*
+M1 6 20 8 8 MOSMOD
+M2 6 20 8 8 MOSMODS
+RG 4 2 8
+RIN 2 8 200E6
+RD 3 6 RDSMOD 0.12
+RS 8 5 RDSMOD 0.09 
+RL 3 5 35E6
+C1 2 8 162E-12
+C3 15 14 210E-12 
+C4 16 8 230E-12
+D1 3 5 DMOD1
+D2 3 17 DMOD2
+S1 2 15 13 14 SMOD1a
+S2 13 15 13 14 SMOD1b
+S3 16 13 8 13 SMOD2a
+S4 16 2 8 13 SMOD2b
+Egs1 2 17 2 8 1
+Egs2 13 8 2 8 1
+Eds1 14 8 3 8 1
+Egt1 2 20 21 8 1
+Vgt1 8 22 1
+Igt1 8 21 1
+Rgt 21 22 RMOD2 1
+.MODEL MOSMOD PMOS VTO=-2.1 IS=1E-15 KP=1.4 CBD=102E-12 PB=1 LAMBDA=4.9E-3
+.MODEL MOSMODS PMOS VTO=-1.7 IS=1E-15 KP=0.018 PB=1
+.MODEL DMOD1 D IS=6E-13 RS=0.1 N=1.01 BV=36 TT=1e-8
+.MODEL DMOD2 D CJO=86e-12 IS=1e-30 N=10
+.MODEL SMOD1a VSWITCH RON=1e-2 ROFF=1e4  VON=-1.75 VOFF=2.75
+.MODEL SMOD1b VSWITCH RON=1e-2 ROFF=1e4  VON=2.75 VOFF=-1.75
+.MODEL SMOD2a VSWITCH RON=1e-2 ROFF=1e4  VON=-1.5 VOFF=-3.5
+.MODEL SMOD2b VSWITCH RON=1e-2 ROFF=1e4  VON=-3.5 VOFF=-1.5
+.MODEL RDSMOD RES (TC1=3E-3 TC2=1.5E-5)
+.MODEL RMOD2 RES (TC1=2.2E-3 TC2=3E-6)
+.ENDS ZXM61P03F
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXM66P03N8 Spice Model v1.0 Last Revised 31/10/07
+*
+.SUBCKT ZXM66P03N8 3 4 5
+*----connections----D G S
+*
+M1 6 2 8 8 MOSMOD
+M2 6 41 8 8 MOSMODS
+RG 41 2 5
+RIN 2 8 100E6
+RD 31 6 RMOD1 0.005
+RS 8 51 RMOD1 0.018
+RL 3 5 350E6
+C1 2 8 800E-12
+C2 6 2 900E-12
+C3 15 14 3300E-12 
+C4 16 8 2000E-12
+D1 3 5 DMOD1
+Egt1 42 41 21 8 1
+Vgt1 8 22 1
+Igt1 8 21 1
+Rgt 21 22 RMOD2 1
+S1 2 15 13 14 SMOD1a
+S2 13 15 13 14 SMOD1b
+S3 16 13 8 13 SMOD2a
+S4 16 2 8 13 SMOD2b
+Egs2 13 8 2 8 1
+Eds1 14 8 31 8 1
+LD 3 31 1.3E-9
+LG 4 42 1.2E-9
+LS 5 51 1.2E-9
+.MODEL MOSMOD PMOS VTO=-2.33 IS=1E-15 KP=50 CBD=1E-12 PB=1 LAMBDA=4.9E-3
+.MODEL MOSMODS PMOS VTO=-1.75 IS=1E-15 KP=10 PB=1
+.MODEL DMOD1 D IS=1.2E-12 RS=0.012 TT=2.5e-8 BV=35
+.MODEL SMOD1a VSWITCH RON=1e-2 ROFF=1e4  VON=-1.75 VOFF=1.75
+.MODEL SMOD1b VSWITCH RON=1e-2 ROFF=1e4  VON=1.75 VOFF=-1.75
+.MODEL SMOD2a VSWITCH RON=1e-2 ROFF=1e4  VON=-1.5 VOFF=-3.5
+.MODEL SMOD2b VSWITCH RON=1e-2 ROFF=1e4  VON=-3.5 VOFF=-1.5
+.MODEL RMOD1 RES (TC1=3E-3 TC2=8E-6)
+.MODEL RMOD2 RES (TC1=3E-3 TC2=2E-6)
+.ENDS ZXM66P03N8
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=08DEC2009
+*VERSION=2
+*PIN_ORDER         Sn1, Gn1, Sn2, Gn2, Dn2, Dn2, Dn1, Dn1
+*
+.SUBCKT ZXMD63P03X 1 2 3 4 5 6 7 8
+* Device1
+M11 13 12 11 11 Mmod1
+R11 12 2 18
+R12 13 11 300E6
+R15 11 12 2E9
+C11 12 11 450E-12
+C12 13 12 35E-12
+D11 13 11 Dmod1
+L11 11 1 1E-9
+L12 13 14 1E-9
+R13 14 7 1E-3
+R14 14 8 1E-3
+* Device2
+M21 23 22 21 21 Mmod11
+R21 22 4 18
+R22 23 21 300E6
+R25 21 22 2E9
+C21 22 21 450E-12
+C22 23 22 35E-12
+D21 23 21 Dmod11
+L21 21 3 1E-9
+L22 23 24 1E-9
+R23 24 5 1E-3
+R24 24 6 1E-3
+*
+.MODEL Mmod11 PMOS VTO=-2.32 RS=0.09 RD=0.045 KP=4.2
++CBD=480E-12 LAMBDA=4.9E-3
+.MODEL Dmod11 D IS=4E-13 N=1.04 IKF=295E-3 RS=94E-3
+.ENDS
+*
+*$
+
+*
+*Zetex ZXMP3A13F Spice Model v2.0 Last Revised 25/2/05
+*
+.SUBCKT ZXMP3A13F 30 40 50
+*                D G S
+M1 6 2 5 5 Pmod L=1.2E-6 W=0.33
+M2 5 2 5 6 Nmod L=1.4E-6 W=0.19
+RG 4 2 10
+RIN 2 5 1E9
+RD 3 6 Rdmod 0.05
+RL 3 5 3E9
+C1 2 5 8.5E-12
+C2 3 4 5E-12
+D1 3 5  Dbodymod
+LD 3 30 0.5E-9
+LG 4 40 1.0E-9
+LS 5 50 1.0E-9
+.MODEL Pmod PMOS (LEVEL=3 TOX=5.5E-8 NSUB=1E17 
++VTO=-1.9 KP=2E-5 RS=.05 NFS=2E11 KAPPA=0.06 UO=650 IS=1E-15 N=10)
+.MODEL Nmod NMOS (LEVEL=3 TOX=5.5E-8 NSUB=2E16 
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dbodymod D (IS=6E-13 RS=.025 IKF=0.1 TRS1=1.5e-3
++CJO=65e-12  BV=33)
+.MODEL Rdmod RES (TC1=5.5e-3 TC2=1.5E-5)
+.ENDS   ZXMP3A13F
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=25/02/2009
+*VERSION=3
+*PIN_ORDER         D G S 
+*
+.SUBCKT ZXMP3A16N8 1 2 3
+M11 20 21 22 22 Ppmod1 L=1.2E-6 W=1.67 
+M12 22 21 22 20 Npmod1 L=1.4E-6 W=1.4 
+RG1 21 27 2.0
+RIN1 21 22 1E10
+RD1 20 24 Rpmod1 0.0085
+RS1 22 23 Rpmod1 0.025
+RL1 23 24 3E9
+C11 21 22 600E-12
+C12 20 21 25E-12
+D1 24 23  Dpmod1
+LD1 1 25 1.3E-9
+LG1 2 27 1.2E-9
+LS1 3 23 1.2E-9
+.MODEL Ppmod1 PMOS (LEVEL=3 TOX=7.5E-8 NSUB=1.5E16 VTO=-1.87 
++KP=1.35E-5 NFS=4.5E11 KAPPA=0.06 IS=1E-15 N=10)
+.MODEL Npmod1 NMOS (LEVEL=3 TOX=7.5E-8 NSUB=2E16
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dpmod1 D (IS=2.4E-12 RS=.016 IKF=0.2 TRS1=1.5e-3
++CJO=590e-12  BV=33 TT=16e-9)
+.MODEL Rpmod1 RES (TC1=3.13e-3 TC2=4E-6)
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=04/02/2009
+*VERSION=3
+*PIN_ORDER         Sp1, Gp1, Sp2, Gp2, Dp2, Dp2, Dp1, Dp1
+*
+.SUBCKT ZXMP3A17DN8 1 2 3 4 5 6 7 8
+*Dev1 P-channel
+M11 20 21 22 22 Ppmod1 L=1.2E-6 W=1 
+M12 22 21 22 20 Npmod1 L=1.4E-6 W=0.57
+RG1 27 21 7
+RIN1 21 22 1E9
+RD1 20 24 Rpmod1 0.017
+RS1 22 23 1E-6
+RL1 23 24 3E9
+C11 21 22 25E-12
+C12 20 21 15E-12
+D1 24 23  Dpmod1
+LD1 24 25 1.5E-9
+RP11 7 25 1E-6
+RP12 8 25 1E-6
+LG1 2 27 1.2E-9
+LS1 1 23 1.2E-9
+*Dev2 P-channel
+M21 60 61 62 62 Ppmod1 L=1.2E-6 W=1 
+M22 62 61 62 60 Npmod1 L=1.4E-6 W=0.57
+RG2 67 61 7
+RIN2 61 62 1E9
+RD2 60 64 Rpmod1 0.017
+RS2 62 63 1E-6
+RL2 63 64 3E9
+C21 61 62 25E-12
+C22 60 61 15E-12
+D2 64 63  Dpmod1
+LD2 64 65 1.5E-9
+RP21 5 65 1E-6
+RP22 6 65 1E-6
+LG2 2 67 1.2E-9
+LS2 1 63 1.2E-9
+.MODEL Ppmod1 PMOS (LEVEL=3 TOX=5.5E-8 NSUB=1E17 VTO=-1.75 
++KP=.9E-5 RS=.025 NFS=2E11 KAPPA=0.06 UO=650 IS=1E-15 N=10)
+.MODEL Npmod1 NMOS (LEVEL=3 TOX=5.5E-8 NSUB=2E16 
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dpmod1 D (IS=0.8E-12 RS=.015 IKF=0.1 TRS1=1.5e-3
++CJO=65e-12  BV=33)
+.MODEL Rpmod1 RES (TC1=13e-3 TC2=3.5E-5)
+.ENDS
+*
+*$
+
+*SRC=DMG4413LSS;DI_DMG4413LSS;MOSFETs P;Enh;30.0V 10.5A 7.50mohms  Diodes Inc MOSFET
+*SYM=POWMOSP
+.SUBCKT DI_DMG4413LSS   10 20 30
+*     TERMINALS:  D  G  S
+M1   1  2  3  3  DMOS L=1U W=1U
+RD  10  1  2.56m
+RS  40  3  1.19m
+RG  20  2  14.3
+CGS  2  3  4.25n
+EGD 12  0  2  1  1
+VFB 14  0  0
+FFB  2  1  VFB  1
+CGD 13 14  6.52n
+R1  13  0  1.00
+D1  12 13  DLIM
+DDG 15 14  DCGD
+R2  12 15  1.00
+D2  15  0  DLIM
+DSD  3 10  DSUB
+LS  30 40  7.50n
+.MODEL DMOS PMOS(LEVEL=3 VMAX=62.5k THETA=80.0m
++ ETA=2.00m VTO=-2.10 KP=5.73
+.MODEL DCGD D (CJO=6.52n VJ=0.600 M=0.680
+.MODEL DSUB D (IS=43.6n N=1.50 RS=0.129 BV=30.0
++ CJO=2.73n VJ=0.800 M=0.420 TT=285n
+.MODEL DLIM D (IS=100U)
+.ENDS
+
+*
+*Zetex ZXM64P03X Spice Model v1.1 Last Revised 11/7/05
+*
+.SUBCKT ZXM64P03X 3 4 5
+*----connections----D G S
+*
+M1 6 2 8 8 MOSMOD
+M2 6 2 8 8 MOSMODS
+RG 41 2 9
+RIN 2 8 200E6
+RD 31 6 RDSMOD 0.02
+RS 8 51 RDSMOD 0.015 
+RL 3 5 35E6
+C1 2 8 810E-12
+C3 15 14 1050E-12 
+C4 16 8 1150E-12
+D1 3 5 DMOD1
+D2 3 17 DMOD2
+S1 2 15 13 14 SMOD1a
+S2 13 15 13 14 SMOD1b
+S3 16 13 8 13 SMOD2a
+S4 16 2 8 13 SMOD2b
+Egs1 2 17 2 8 1
+Egs2 13 8 2 8 1
+Eds1 14 8 3 8 1
+LD 3 31 1E-9
+LG 4 41 1E-9
+LS 5 51 1E-9
+.MODEL MOSMOD PMOS VTO=-2.4 IS=1E-15 KP=8 CBD=512E-12 PB=1 LAMBDA=4.9E-3
+.MODEL MOSMODS PMOS VTO=-2 IS=1E-15 KP=0.1 PB=1
+.MODEL DMOD1 D IS=6E-13 RS=0.02 N=1.01 TT=1e-8
+.MODEL DMOD2 D CJO=430e-12 IS=1e-30 N=10
+.MODEL SMOD1a VSWITCH RON=1e-2 ROFF=1e4  VON=-1.75 VOFF=2.75
+.MODEL SMOD1b VSWITCH RON=1e-2 ROFF=1e4  VON=2.75 VOFF=-1.75
+.MODEL SMOD2a VSWITCH RON=1e-2 ROFF=1e4  VON=-1.5 VOFF=-3.5
+.MODEL SMOD2b VSWITCH RON=1e-2 ROFF=1e4  VON=-3.5 VOFF=-1.5
+.MODEL RDSMOD RES (TC1=3E-3 TC2=1.5E-5)
+.ENDS ZXM64P03X
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=25/02/2009
+*VERSION=3
+*PIN_ORDER         D G S
+*
+.SUBCKT ZXMP3A16G 1 2 3
+M11 20 21 22 22 Ppmod1 L=1.2E-6 W=1.67 
+M12 22 21 22 20 Npmod1 L=1.4E-6 W=1.4 
+RG1 21 27 2.0
+RIN1 21 22 1E10
+RD1 20 24 Rpmod1 0.0085
+RS1 22 23 Rpmod1 0.025
+RL1 23 24 3E9
+C11 21 22 600E-12
+C12 20 21 25E-12
+D1 24 23  Dpmod1
+LD1 1 25 1.0E-9
+LG1 2 27 2.3E-9
+LS1 3 23 2.3E-9
+.MODEL Ppmod1 PMOS (LEVEL=3 TOX=7.5E-8 NSUB=1.5E16 VTO=-1.87 
++KP=1.35E-5 NFS=4.5E11 KAPPA=0.06 IS=1E-15 N=10)
+.MODEL Npmod1 NMOS (LEVEL=3 TOX=7.5E-8 NSUB=2E16
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dpmod1 D (IS=2.4E-12 RS=.016 IKF=0.2 TRS1=1.5e-3
++CJO=590e-12  BV=33 TT=16e-9)
+.MODEL Rpmod1 RES (TC1=3.13e-3 TC2=4E-6)
+.ENDS
+*
+*$
+
+*
+*Zetex ZXMP3A17E6 Spice Model v2.0 Last Revised 21/2/05
+*
+.SUBCKT ZXMP3A17E6 30 40 50
+*                D G S
+M1 6 2 5 5 Pmod L=1.2E-6 W=1 
+M2 5 2 5 6 Nmod L=1.4E-6 W=0.57 
+RG 4 2 7
+RIN 2 5 1E9
+RD 3 6 Rdmod 0.017
+RL 3 5 3E9
+C1 2 5 25E-12
+C2 3 4 15E-12
+D1 3 5  Dbodymod
+LD 3 30 0.3E-9
+LG 4 40 1.9E-9
+LS 5 50 1.9E-9
+.MODEL Pmod PMOS (LEVEL=3 TOX=5.5E-8 NSUB=1E17
++VTO=-1.75 KP=.9E-5 RS=.025 NFS=2E11 KAPPA=0.06 UO=650 IS=1E-15 N=10)
+.MODEL Nmod NMOS (LEVEL=3 TOX=5.5E-8 NSUB=2E16
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dbodymod D (IS=0.8E-12 RS=.015 IKF=0.1 TRS1=1.5e-3
++CJO=65e-12  BV=33)
+.MODEL Rdmod RES (TC1=5.5e-3 TC2=1.5E-5)
+.ENDS   ZXMP3A17E6
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=03/02/2009
+*VERSION=3
+*PIN_ORDER         Sp1, Gp1, Sp2, Gp2, Dp2, Dp2, Dp1, Dp1
+*
+.SUBCKT ZXMP3A16DN8 1 2 3 4 5 6 7 8
+*Dev1 P-channel
+M11 20 21 22 22 Ppmod1 L=1.2E-6 W=1.67 
+M12 22 21 22 20 Npmod1 L=1.4E-6 W=1.4 
+RG1 21 27 2.0
+RIN1 21 22 1E10
+RD1 20 24 Rpmod1 0.0085
+RS1 22 23 Rpmod1 0.025
+RL1 23 24 3E9
+C11 21 22 600E-12
+C12 20 21 25E-12
+D1 24 23  Dpmod1
+LD1 24 25 1.5E-9
+RP11 7 25 1E-6
+RP12 8 25 1E-6
+LG1 2 27 1.2E-9
+LS1 1 23 1.2E-9
+*Dev2 P-channel
+M21 60 61 62 62 Ppmod1 L=1.2E-6 W=1.67 
+M22 62 61 62 60 Npmod1 L=1.4E-6 W=1.4 
+RG2 61 67 2.0
+RIN2 61 62 1E10
+RD2 60 64 Rpmod1 0.0085
+RS2 62 63 Rpmod1 0.025
+RL2 63 64 3E9
+C21 61 62 600E-12
+C22 60 61 25E-12
+D2 64 63  Dpmod1
+LD2 64 65 1.5E-9
+RP21 5 65 1E-6
+RP22 6 65 1E-6
+LG2 4 67 1.2E-9
+LS2 3 63 1.2E-9
+.MODEL Ppmod1 PMOS (LEVEL=3 TOX=7.5E-8 NSUB=1.5E16 VTO=-1.87 
++KP=1.35E-5 NFS=4.5E11 KAPPA=0.06 IS=1E-15 N=10)
+.MODEL Npmod1 NMOS (LEVEL=3 TOX=7.5E-8 NSUB=2E16
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dpmod1 D (IS=2.4E-12 RS=.016 IKF=0.2 TRS1=1.5e-3
++CJO=590e-12  BV=33 TT=16e-9)
+.MODEL Rpmod1 RES (TC1=3.13e-3 TC2=4E-6)
+.ENDS
+*
+*$

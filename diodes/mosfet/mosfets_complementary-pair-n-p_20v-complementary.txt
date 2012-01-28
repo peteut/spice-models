@@ -1,0 +1,163 @@
+*SRC=DMP2004VK;???;MOSFETs P;Enh;20.0V 100fA 2.40ohms  Diodes, Inc. 
+.MODEL ???  PMOS( LEVEL=1 VTO=-1.00 KP=1.39  GAMMA=1.24
++ PHI=.75  LAMBDA=7.26e-016 RD=0.336 RS=0.336
++ IS=5.00e-026  PB=0.800 MJ=0.460 CBD=40.6p 
++ CBS=48.7p  CGSO=240n CGDO=200n CGBO=1.31u  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN2004VK;???;MOSFETs N;Enh;20.0V 0.540A 0.700ohms  Diodes, Inc. 
+.MODEL ???  NMOS( LEVEL=1 VTO=1.00 KP=3.04  GAMMA=1.24
++ PHI=.75  LAMBDA=562u RD=98.0m RS=98.0m
++ IS=270f  PB=0.800 MJ=0.460 CBD=32.5p 
++ CBS=38.9p  CGSO=144n CGDO=120n CGBO=586n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMP2004VK;???;MOSFETs P;Enh;20.0V 100fA 2.40ohms  Diodes, Inc. 
+.MODEL ???  PMOS( LEVEL=1 VTO=-1.00 KP=1.39  GAMMA=1.24
++ PHI=.75  LAMBDA=7.26e-016 RD=0.336 RS=0.336
++ IS=5.00e-026  PB=0.800 MJ=0.460 CBD=40.6p 
++ CBS=48.7p  CGSO=240n CGDO=200n CGBO=1.31u  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN2004VK;???;MOSFETs N;Enh;20.0V 0.540A 0.700ohms  Diodes, Inc. 
+.MODEL ???  NMOS( LEVEL=1 VTO=1.00 KP=3.04  GAMMA=1.24
++ PHI=.75  LAMBDA=562u RD=98.0m RS=98.0m
++ IS=270f  PB=0.800 MJ=0.460 CBD=32.5p 
++ CBS=38.9p  CGSO=144n CGDO=120n CGBO=586n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN2004VK;???;MOSFETs N;Enh;20.0V 0.540A 0.700ohms  Diodes, Inc. 
+.MODEL ???  NMOS( LEVEL=1 VTO=1.00 KP=3.04  GAMMA=1.24
++ PHI=.75  LAMBDA=562u RD=98.0m RS=98.0m
++ IS=270f  PB=0.800 MJ=0.460 CBD=32.5p 
++ CBS=38.9p  CGSO=144n CGDO=120n CGBO=586n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMP2004VK;???;MOSFETs P;Enh;20.0V 100fA 2.40ohms  Diodes, Inc. 
+.MODEL ???  PMOS( LEVEL=1 VTO=-1.00 KP=1.39  GAMMA=1.24
++ PHI=.75  LAMBDA=7.26e-016 RD=0.336 RS=0.336
++ IS=5.00e-026  PB=0.800 MJ=0.460 CBD=40.6p 
++ CBS=48.7p  CGSO=240n CGDO=200n CGBO=1.31u  )
+*   -- Assumes default L=100U W=100U --
+
+*N-CH
+.SUBCKT DMG1016VN   D=10 G=20 S=30
+*     TERMINALS:  D  G  S
+M1   1  2  3  3  NMOS L=0.6U W=57.5m
+RD  10  1  240m
+RS  30  3  60m
+RG  20  2  93
+CGS  2  3  57p
+EGD 12  0  2  1  1
+VFB 14  0  0
+FFB  2  1  VFB  1
+CGD 13 14  27p
+R1  13  0  1.00
+D1  12 13  DLIM
+DDG 15 14  DCGD
+R2  12 15  1.00
+D2  15  0  DLIM
+DSD  3 10  DSUB
+*********************************************
+.MODEL NMOS NMOS LEVEL=3 U0=500 VMAX=80k
++ ETA=0.1m VTO=0.93 TOX=16.8n NSUB=1e17
+*********************************************
+.MODEL DCGD D CJO=27p VJ=80m M=0.320
+*********************************************
+.MODEL DSUB D IS=36.1n N=1.50 RS=21.8m BV=20
++ CJO=14p VJ=0.800 M=0.420
+*********************************************
+.MODEL DLIM D IS=100U
+*********************************************
+.ENDS DMG1016VN
+*P-CH
+.SUBCKT DMG1016VP   D=10 G=20 S=30
+*     TERMINALS:  D  G  S
+M1   1  2  3  3  PMOS L=0.6U W=41m
+RD  10  1  300m
+RS  30  3  75m
+RG  20  2  150
+CGS  2  3  54.55p
+EGD 12  30  2  1  1
+VFB 14  30  0
+FFB  2  1  VFB  1
+CGD 13 14  22.2p
+R1  13  30  1.00
+D1  13 12  DLIM
+DDG 14 15  DCGD
+R2  12 15  1.00
+D2  30  15  DLIM
+DSD 10  3  DSUB
+*********************************************
+.MODEL PMOS PMOS LEVEL=3 U0=300 VMAX=40k
++ ETA=0.1m VTO=-0.952 TOX=16.8n NSUB=2e17
+*********************************************
+.MODEL DCGD D CJO=22.2p VJ=0.150 M=0.270
+*********************************************
+.MODEL DSUB D IS=36.1n N=1.50 RS=21.8m BV=20
++ CJO=20p VJ=0.600 M=0.350
+*********************************************
+.MODEL DLIM D IS=100U
+*********************************************
+.ENDS DMG1016VP
+
+*N-CH
+.SUBCKT DMG1016VN   D=10 G=20 S=30
+*     TERMINALS:  D  G  S
+M1   1  2  3  3  NMOS L=0.6U W=57.5m
+RD  10  1  240m
+RS  30  3  60m
+RG  20  2  93
+CGS  2  3  57p
+EGD 12  0  2  1  1
+VFB 14  0  0
+FFB  2  1  VFB  1
+CGD 13 14  27p
+R1  13  0  1.00
+D1  12 13  DLIM
+DDG 15 14  DCGD
+R2  12 15  1.00
+D2  15  0  DLIM
+DSD  3 10  DSUB
+*********************************************
+.MODEL NMOS NMOS LEVEL=3 U0=500 VMAX=80k
++ ETA=0.1m VTO=0.93 TOX=16.8n NSUB=1e17
+*********************************************
+.MODEL DCGD D CJO=27p VJ=80m M=0.320
+*********************************************
+.MODEL DSUB D IS=36.1n N=1.50 RS=21.8m BV=20
++ CJO=14p VJ=0.800 M=0.420
+*********************************************
+.MODEL DLIM D IS=100U
+*********************************************
+.ENDS DMG1016VN
+*P-CH
+.SUBCKT DMG1016VP   D=10 G=20 S=30
+*     TERMINALS:  D  G  S
+M1   1  2  3  3  PMOS L=0.6U W=41m
+RD  10  1  300m
+RS  30  3  75m
+RG  20  2  150
+CGS  2  3  54.55p
+EGD 12  30  2  1  1
+VFB 14  30  0
+FFB  2  1  VFB  1
+CGD 13 14  22.2p
+R1  13  30  1.00
+D1  13 12  DLIM
+DDG 14 15  DCGD
+R2  12 15  1.00
+D2  30  15  DLIM
+DSD 10  3  DSUB
+*********************************************
+.MODEL PMOS PMOS LEVEL=3 U0=300 VMAX=40k
++ ETA=0.1m VTO=-0.952 TOX=16.8n NSUB=2e17
+*********************************************
+.MODEL DCGD D CJO=22.2p VJ=0.150 M=0.270
+*********************************************
+.MODEL DSUB D IS=36.1n N=1.50 RS=21.8m BV=20
++ CJO=20p VJ=0.600 M=0.350
+*********************************************
+.MODEL DLIM D IS=100U
+*********************************************
+.ENDS DMG1016VP

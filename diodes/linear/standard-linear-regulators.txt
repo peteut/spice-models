@@ -1,0 +1,42 @@
+*
+*ZETEX ZMR500 Spice Model v1.0 Last revision 31/01/07
+*
+.SUBCKT ZMR500 1 2 3 
+* Connections  IN_GND_OUT
+Q1 12 5 6 Qmod1
+R1 4 2 Rmod1 1
+R2 6 7 0.04
+R4 10 2 15E3
+R5 6 8 1E6
+R6 5 6 1E6
+D1 1 11 Dmod1
+D2 11 12 Dmod1
+R8 7 2 Rmod3 100E3
+C4 8 10 130E-12
+I1 2 4 5.001
+G1 5 7 8 4 1
+G2 2 4 1 2 5E-4
+VS 3 7 0
+F1 2 4 VS 0.5
+.MODEL Qmod1 NPN (RC=10 RB=10 RE=10 CJC=2p CJE=5p)
+.MODEL Dmod1 D (IS=0.8E-15)
+.MODEL Rmod1 RES (TC1=-3.9E-5 TC2=-6.1E-7)
+.MODEL Rmod3 RES (TC1=-5E-4 TC2=0E-7)
+.ENDS ZMR500
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL

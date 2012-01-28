@@ -1,0 +1,124 @@
+*TITLE=AL8400 MACROMODEL
+*ORIGIN=DZSL_AG_GS
+*SIMULATOR=DIODES, SIMETRIX and PSPICE
+*DATE=3rd March 2011
+*VERSION=1
+*PIN_ORDER   1:E1, 2:GND, 3:VCC, 4:FB, 5:OUT
+*
+.subckt AL8400  E1  GND  VCC  FB  OUT
+* pins-----------1----2----3----4---5      
+*
+*Voltage reference with temperature effect
+E1      REFG  1    value={(0.2+1.56e-5*(TEMP-25)-3e-8*(TEMP-25)**2)*(0.5+0.5*tanh(4*(V(VCCL)-1.5)))}
+I1	VCCL  1    0.48m  ; Supply current	
+R1      REFG  inm  48k
+R2      FB    inp  48k
+C4	REFG  inm  3p
+C5	FB    inp  3p
+C1      inm   inp  0.2p  
+I3	VCCL  inp  45n ; input bias current
+I4  	VCCL  inm  45n
+*
+*First amplifier, limited to internal 2V supply
+E2      E2out 1    value={tanh(11.52*(V(inp)-V(inm)))}
+R7	E2out C3p  1
+C3	C3p   1    250n ;  600kHz first breakpoint
+R3	C3p   int  10k
+I2	VCCL  int  2.5u
+C2	int   1    6p   ;  2MHz second breakpoint
+*Second amplifier: transconductance
+* with sink current output voltage limit of 0
+*source current output voltage limit of 2V
+G1      G1out 1    value={11e-6*(1-tanh(19.3*(v(int)-v(Q2e))))*tanh(10*max((V(G1out)-V(1)),0))}
+G2      VCCL G1out value={11e-6*(1+tanh(19.3*(V(int)-V(Q2e))))*tanh(10*max(2-(V(G1out)-V(1)),0))}
+*
+*Output Stage
+Q1	Q1c  G1out Q2b 1 NPNCT
+R4	VCCL Q1c   250
+R5	Q2b  PGNDL 50k
+Q2	OUTL Q2b   Q2e 1 NPNCT 5
+R6	Q2e  PGNDL 2.56
+*
+L1	VCC  VCCL  2n
+L2	GND  1     2n
+L3	OUT  OUTL  2n
+L4	E1   PGNDL 2n
+*Output transistor model from CT
+.model  NPNCT NPN  
++ is = 2.265f
++ nf = 1.000 
++ ise = 6.055f
++ ne = 1.562 
++ bf = 190.0 
++ ikf = 28.71m
++ vaf = 22.83 
++ nr = 1.008 
++ isc = 1.00000e-24
++ nc = 1.543 
++ br = 34.83 
++ ikr = 1.250m
++ var = 19.13 
++ rb = 267.9 
++ irb = 1.250m
++ rbm = 100.0m
++ re = 802.9m
++ rc = 164.1m
++ cje = 163.1f
++ vje = 1.200 
++ mje = 151.0m
++ tf = 70.00p
++ xtf = 10.00 
++ vtf = 30.00 
++ itf = 200.0m
++ ptf = 34.00 
++ cjc = 380.6f
++ vjc = 410.0m
++ mjc = 360.0m
++ xcjc = 50.00m
++ tr = 6.00n
++ cjs = 525.2f
++ vjs = 401.0m
++ mjs = 179.2m
++ xtb = 200.0m
++ xti = 5.100 
++ eg = 1.110 
++ fc = 950.0m
+.ends AL8400
+*
+*                (c)  2011 Diodes Inc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved.  The models
+*   are believed accurate but no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Zetex Semiconductors Ltd, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+*
+
+*DIODES_INC_SPICE_MODEL
+*SIMULATOR=SIMETRIX
+*ORIGIN=DZSL_DPG_SU
+*DATE=5OCT2011
+*VERSION=1
+
+*PINS ORDER OUT BIAS EN GND FB Rext
+
+.SUBCKT AL5802 1 2 3 4 5 6
+Q1 1 3 6 T2
+Q2 3 5 4 T1
+R1 2 3 10K TC1=-4E-3
+.MODEL T2 NPN IS=2.6E-14 NF=1 BF=300 ISE=4.5E-15 NE=1.5 
++ BR=5 ISC=2E-14 NC=1.3 NR=1 CJC=5.6E-12 MJC=0.24 VJC=0.4
++ CJE=13.49E-12 MJE=0.37 VJE=0.75 
+.MODEL T1 NPN IS=1E-14 NF=1 BF=150 ISE=8E-15 NE=1.5 
++ BR=1.5 ISC=1.2E-13 NC=1.5 NR=1 CJC=5.279E-12 MJC=0.28 VJC=0.5
++ CJE=8.92E-12 MJE=0.36 VJE=0.73 
+.ENDS
+
+.SIMULATOR DEFAULT

@@ -1,0 +1,1821 @@
+*SRC=2N7002;2N7002;MOSFETs N;Enh;60.0V 0.115A 7.50ohms  Diodes Inc. -
+.MODEL 2N7002  NMOS( LEVEL=1 VTO=2.50 KP=32.0m  GAMMA=3.10
++ PHI=.75  LAMBDA=39.9u RD=1.05 RS=1.05
++ IS=57.5f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*DIODES_INC_SPICE_MODEL DMN6068LK3 N-channel MOSFET
+*SIMULATOR=SIMETRIX
+*ORIGIN=DZSL_DPG_SU
+*DATE=21Dec2011
+*VERSION=1
+*PINS 10=D 20=G 30=S
+
+.SUBCKT DMN6068 10 20 30
+M1 1 2 3 3  Nmod1
+RD 10 1 Rmod1 27E-3
+RS 23 3 Rmod1 27E-3
+RG 20 22 1.5
+RIN 20 23 2E11
+RDS 10 23 6E9
+CGS 2 3 380E-12 
+EGD 12 0 2 1 1 
+VFB 14 0 0 
+FFB 2 1  VFB 1 
+CGD 13 14 426E-12 
+R1 13 0 1 
+D1 12 13  DLIM 
+DDG 15 14  DCGD 
+R2 12 15 1 
+D2 15 0  DLIM 
+DSD 23 10  DSUB
+EL 2 22 1 3 0.0015
+LS  30 23 2n
+.MODEL Nmod1 NMOS (LEVEL=3 VTO=3.4 TOX=6E-8 NSUB=2.8E+17 KP=155 NFS=8E+11 IS=1E-15 N=10)
+.MODEL DCGD D (CJO = 244E-12  VJ = 0.5  M = 0.43 T_ABS=25)
+.MODEL DSUB D (IS = .1E-10 N=1.1 RS=0.02 BV=66 CJO=330E-12 VJ=0.42 M=0.5 TT=145E-9 TRS1=2E-3)
+.MODEL DLIM D (IS=100U N=1 T_ABS=25)
+.MODEL Rmod1 RES (TC1=2e-3 TC2=6E-6)
+.ENDS
+
+*DIODES_INC_SPICE_MODEL DMN6066SSD N-channel MOSFET
+*SIMULATOR=SIMETRIX
+*ORIGIN=DZSL_DPG_SU
+*DATE=29Nov2011
+*VERSION=1
+
+.SUBCKT DMN6066 10 20 30
+M1 1 2 3 3  Nmod1
+RD 10 1 Rmod1 27E-3
+RS 23 3 Rmod1 27E-3
+RG 20 22 1.5
+RIN 20 23 2E11
+RDS 10 23 6E9
+CGS 2 3 420E-12 
+EGD 12 0 2 1 1 
+VFB 14 0 0 
+FFB 2 1  VFB 1 
+CGD 13 14 420E-12 
+R1 13 0 1 
+D1 12 13  DLIM 
+DDG 15 14  DCGD 
+R2 12 15 1 
+D2 15 0  DLIM 
+DSD 23 10  DSUB
+EL 2 22 1 3 0.0015
+LS  30 23  3n
+.MODEL Nmod1 NMOS (LEVEL=3 VTO=3.2 TOX=6E-8 NSUB=3E+17 KP=140 NFS=8E+11 IS=1E-15 N=10)
+.MODEL DCGD D (CJO = 220E-12  VJ = 0.5  M = 0.43)
+.MODEL DSUB D (IS = .1E-10 N=1.1 RS=0.02 BV=66 CJO=330E-12 VJ=0.42 M=0.5 TT=11E-9 TRS1=2E-3)
+.MODEL DLIM D (IS=100U N=1)
+.MODEL Rmod1 RES (TC1=2e-3 TC2=6E-6)
+.ENDS
+
+.SIMULATOR DEFAULT
+
+*SRC=2N7002A;DI_2N7002A;MOSFETs N;Enh;60.0V 0.115A 5.00ohms  Diodes Inc. MOSFET
+.MODEL DI_2N7002A  NMOS( LEVEL=1 VTO=2.00 KP=55.7m  GAMMA=2.48
++ PHI=.75  LAMBDA=69.6u RD=0.700 RS=0.700
++ IS=57.5f  PB=0.800 MJ=0.460 CBD=9.88p 
++ CBS=11.9p  CGSO=16.8n CGDO=14.0n CGBO=199n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=2N7002K;DI_2N7002K;MOSFETs N;Enh;60.0V 0.300A 2.00ohms  Diodes Inc. MOSFET
+.MODEL DI_2N7002K  NMOS( LEVEL=1 VTO=2.50 KP=32.0m  GAMMA=3.10
++ PHI=.75  LAMBDA=104u RD=0.280 RS=0.280
++ IS=150f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN601DMK;DI_DMN601DMK;MOSFETs N;Enh;60.0V 0.300A 2.00ohms  Diodes Inc. MOSFET
+.MODEL DI_DMN601DMK  NMOS( LEVEL=1 VTO=2.50 KP=32.0m  GAMMA=3.10
++ PHI=.75  LAMBDA=104u RD=0.280 RS=0.280
++ IS=150f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN601K;DI_DMN601K;MOSFETs N;Enh;60.0V 0.300A 2.00ohms  Diodes Inc. MOSFET
+.MODEL DI_DMN601K  NMOS( LEVEL=1 VTO=2.50 KP=32.0m  GAMMA=3.10
++ PHI=.75  LAMBDA=104u RD=0.280 RS=0.280
++ IS=150f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=BS870;DI_BS870;MOSFETs N;Enh;60.0V 0.250A 3.50ohms  Diodes Inc. MOSFET 
+.MODEL DI_BS870  NMOS( LEVEL=1 VTO=2.00 KP=32.0m  GAMMA=2.48
++ PHI=.75  LAMBDA=86.8u RD=0.490 RS=0.490
++ IS=125f  PB=0.800 MJ=0.460 CBD=29.8p 
++ CBS=35.8p  CGSO=24.0n CGDO=20.0n CGBO=176n  )   *   -- Assumes default L=100U W=100U --
+
+*---------- DMN4031SSD Spice Model ----------
+.SUBCKT DMN4031SSD 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  NMOS  L = 1E-006  W = 1E-006 
+RD 10 1 0.001 
+RS 30 3 0.009995 
+RG 20 2 1.56 
+CGS 2 3 8.311E-010 
+EGD 12 0 2 1 1 
+VFB 14 0 0 
+FFB 2 1  VFB 1 
+CGD 13 14 9.4E-010 
+R1 13 0 1 
+D1 12 13  DLIM 
+DDG 15 14  DCGD 
+R2 12 15 1 
+D2 15 0  DLIM 
+DSD 3 10  DSUB 
+.MODEL NMOS NMOS  LEVEL = 3  VMAX = 1E+006  ETA = 0.001  VTO = 3.195 
++ TOX = 6E-008  NSUB = 1E+016  KP = 26.57  U0 = 400  KAPPA = 32.33 
+.MODEL DCGD D  CJO = 3.144E-010  VJ = 0.09587  M = 0.3239 
+.MODEL DSUB D  IS = 1.133E-011  N = 1.136  RS = 1.044E-015  BV = 40  CJO = 1.281E-010  VJ = 0.3722  M = 0.5383 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMN4031SSD Spice Model v1.0 Last Revised 2011/8/15
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=28/05/2009
+*VERSION=1
+*PIN_ORDER         D, G, S
+*
+.SUBCKT DMN5L06K 3 4 5
+M1 6 2 8 8 Nmod1
+M2 6 2 8 8 Nmod2
+M3 6 2 8 8 Nmod3
+J1 3 5 30 Jmod1
+RG 4 21 135
+RD 30 6 Rmod2 0.02
+RS 8 5 Rmod2 0.72
+RL 3 5 1E9
+D1 5 3 Dmod1
+D2 20 6 Dmod2
+D3 4 40 Dmod3
+D4 5 40 Dmod3
+Egs1 2 20 2 8 1
+Egs2 13 8 2 8 1
+Eds1 14 8 3 8 1
+V1 31 5 1
+I1 32 5 1
+R1 31 32 Rmod1 1
+Etg 2 21 32 5 1
+C1 2 8 55E-12
+C2 2 3  9E-12
+C3 15 14 58E-12
+C4 16 8 35E-12
+S1 2 15 14 13 SMOD1
+S2 13 15 14 13 SMOD2
+S3 16 13 13 8 SMOD3
+S4 16 2 13 8 SMOD4
+.MODEL SMOD1 VSWITCH RON=.001 ROFF=100 VON=-0.5 VOFF=1
+.MODEL SMOD2 VSWITCH RON=.001 ROFF=100 VON=1 VOFF=-0.5
+.MODEL SMOD3 VSWITCH RON=.001 ROFF=100  VON=0 VOFF=-2
+.MODEL SMOD4 VSWITCH RON=.001 ROFF=100  VON=-2 VOFF=0
+.MODEL Nmod1 NMOS LEVEL=1 VTO=0.94 KP=4 LAMBDA=0.15 IS=1E-15 N=10
+.MODEL Nmod2 NMOS LEVEL=1 VTO=0.77 KP=.4  IS=1E-15 N=10
+.MODEL Nmod3 NMOS LEVEL=1 VTO=0.60 KP=.04  IS=1E-15 N=10
+.MODEL Jmod1 NJF VTO=-3.1 BETA=0.5 VTOTC=-0.006 LAMBDA=0.15
+.MODEL Dmod1 D IS=5.516E-13 RS=0.2084 N=1 CJO=18.5E-12 VJ=0.46 M=0.44 TT=20E-9 BV=52
+.MODEL Dmod2 D CJO=33E-12 VJ=0.4 M=0.44 RS=0.1
+.MODEL Dmod3 D RS=1 BV=20
+.MODEL Rmod1 RES (TC1=-1.5e-3 TC2=-1E-6)
+.MODEL Rmod2 RES (TC1=8e-3 TC2=2E-5)
+.ENDS
+*
+*$
+
+*SRC=DMN601TK;DI_DMN601TK;MOSFETs N;Enh;60.0V 0.300A 2.00ohms  Diodes Inc. MOSFET
+.MODEL DI_DMN601TK  NMOS( LEVEL=1 VTO=2.50 KP=32.0m  GAMMA=3.10
++ PHI=.75  LAMBDA=104u RD=0.280 RS=0.280
++ IS=150f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*---------- DMN66D0LT Spice Model ----------
+.SUBCKT DMN66D0LT 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3  NMOS  L = 1E-006  W = 1E-006 
+RD 10 1 1.631 
+RS 30 3 0.001 
+RG 20 2 133 
+CGS 2 3 2.711E-011 
+EGD 12 0 2 1 1 
+VFB 14 0 0 
+FFB 2 1  VFB 1 
+CGD 13 14 2.628E-011 
+R1 13 0 1 
+D1 12 13  DLIM 
+DDG 15 14  DCGD 
+R2 12 15 1 
+D2 15 0  DLIM 
+DSD 3 10  DSUB 
+.MODEL NMOS NMOS  LEVEL = 3  VMAX = 1E+006  ETA = 0  VTO = 1.596 
++ TOX = 6E-008  NSUB = 1.945E+017  KP = 1.196  KAPPA = 1E-015  U0 = 400  THETA = 5.648E-007 
+.MODEL DCGD D  CJO = 2.628E-011  VJ = 0.009081  M = 0.2561 
+.MODEL DSUB D  IS = 2.05E-009  N = 1.698  RS = 0.1282  BV = 65  CJO = 6.226E-012  VJ = 1  M = 0.6474 
+.MODEL DLIM D  IS = 0.0001 
+.ENDS
+*Diodes DMN66D0LT Spice Model v1.0 Last Revised 2011/1/13
+
+*SRC=MMBF170;DI_MMBF170;MOSFETs N;Enh;60.0V 0.500A 2.10ohms  Diodes Inc. MOSFET 
+.MODEL DI_MMBF170  NMOS( LEVEL=1 VTO=2.10 KP=18.8m  GAMMA=2.60 
++ PHI=.75  LAMBDA=1.04m RD=0.294 RS=0.294 
++ IS=250f  PB=0.800 MJ=0.460 CBD=29.8p 
++ CBS=35.8p  CGSO=24.0n CGDO=20.0n CGBO=176n  ) 
+*   -- Assumes default L=100U W=100U --
+
+*
+*Zetex ZVN4106F Spice Model v1.1 Last Revised 3/5/00
+*
+.SUBCKT ZVN4106F 3 4 5
+* Nodes          D G S
+M1 3 2 5 5 MOD1
+RG 4 2 343
+RL 3 5 6E6
+C1 2 5 23.5P
+C2 3 2 4.5P 
+D1 5 3 DIODE1
+*
+.MODEL MOD1 NMOS VTO=2.474 RS=1.68 RD=0.0 IS=1E-15 KP=0.296
++CBD=53.5P PB=1 LAMBDA=267E-6
+.MODEL DIODE1 D IS=1.254E-13 N=1.0207 RS=0.222
+.ENDS ZVN4106F
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZVN4206A Spice Model v2.0 Last Revised 14/07/08
+*
+.SUBCKT ZVN4206A 3 4 5
+*------connections-------D-G-S
+M1 6 2 8 8 MOSMOD
+M2 6 2 8 8 MOSMODS
+RG 4 2 30
+RD 3 6 0.05
+RS 8 5 0.5 
+RL 3 5 6E6
+D1 5 3 DMOD
+Egs2 13 8 2 8 1
+Eds1 14 8 6 8 1
+C1 2 8 80E-12
+C2 2 3 25E-12
+C3 15 14 75E-12 
+C4 16 8 40E-12
+S1 2 15 14 13 SMOD1
+S2 13 15 14 13 SMOD2
+S3 16 13 13 8 SMOD3
+S4 16 2 13 8 SMOD4
+.MODEL SMOD1 VSWITCH RON=.001 ROFF=100 VON=1.5 VOFF=2.5
+.MODEL SMOD2 VSWITCH RON=.001 ROFF=100 VON=2.5 VOFF=1.5
+.MODEL SMOD3 VSWITCH RON=.001 ROFF=100  VON=-4.5 VOFF=-5.5
+.MODEL SMOD4 VSWITCH RON=.001 ROFF=100  VON=-5.5 VOFF=-4.5
+.MODEL MOSMOD NMOS VTO=2.4 IS=1E-15 KP=0.84 CBD=195E-12 PB=1
+.MODEL MOSMODS NMOS VTO=1.8 IS=1E-15 KP=0.084 PB=1
+.MODEL DMOD D IS=6E-13 RS=.13 N=1.01
+.ENDS  ZVN4206A
+*
+*$
+*
+*                (c)  2008 Diodes Incorporated
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Diodes ").  They  are  supplied
+*   free of charge by Diodes for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Incorporated, 1566 N. Dallas Parkway, Suite 850, Dallas, TX 75248, USA
+
+*
+*Zetex ZVN4306A Spice Model v1.1 Last Revised 3/5/00
+*
+.SUBCKT ZVN4306A 3 4 5
+*NODES: DRAIN GATE SOURCE
+M1 3 2 5 5 MOD1
+RG 4 2 108
+RL 3 5 6E6
+C1 2 5 224.5E-12
+C2 3 2 10.5E-12 
+D1 5 3 DIODE1
+*
+.MODEL MOD1 NMOS VTO=2.634 RS=0.2762 RD=0.0 IS=1E-15 KP=9.77
++CBD=405E-12 PB=1 LAMBDA=0
+.MODEL DIODE1 D IS=6.19E-13 N=1.0043 RS=0.065
+.ENDS ZVN4306A
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZVN4306G Spice Model v1.1 Last Revised 3/5/00
+*
+.SUBCKT ZVN4306G 3 4 5
+*NODES: DRAIN GATE SOURCE
+M1 3 2 5 5 MOD1
+RG 4 2 108
+RL 3 5 6E6
+C1 2 5 224.5E-12
+C2 3 2 10.5E-12 
+D1 5 3 DIODE1
+*
+.MODEL MOD1 NMOS VTO=2.634 RS=0.2762 RD=0.0 IS=1E-15 KP=9.77
++CBD=405E-12 PB=1 LAMBDA=0
+.MODEL DIODE1 D IS=6.19E-13 N=1.0043 RS=0.065
+.ENDS ZVN4306G
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*SRC=2N7002DW;DI_2N7002DW;MOSFETs N;Enh;60.0V 0.115A 3.20ohms  Diodes Inc. MOSFET - One element of dual
+.MODEL DI_2N7002DW  NMOS( LEVEL=1 VTO=1.50 KP=32.0m  GAMMA=1.86
++ PHI=.75  LAMBDA=34.2u RD=0.448 RS=0.448
++ IS=57.5f  PB=0.800 MJ=0.460 CBD=44.5p 
++ CBS=53.4p  CGSO=24.0n CGDO=20.0n CGBO=176n  )  *   -- Assumes default L=100U W=100U --
+
+*SRC=2N7002E;DI_2N7002E;MOSFETs N;Enh;60.0V 0.240A 4.00ohms  Diodes Inc. MOSFET .MODEL DI_2N7002E  NMOS( LEVEL=1 VTO=2.50 KP=781u  GAMMA=3.10
++ PHI=.75  LAMBDA=83.2u RD=0.560 RS=0.560
++ IS=120f  PB=0.800 MJ=0.460 CBD=44.5p
++ CBS=53.4p  CGSO=24.0n CGDO=20.0n CGBO=176n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=2N7002T;DI_2N7002T;MOSFETs N;Enh;60.0V 0.115A 2.00ohms  Didoes Inc. MOSFET 
+.MODEL DI_2N7002T  NMOS( LEVEL=1 VTO=1.50 KP=32.0m  GAMMA=1.86
++ PHI=.75  LAMBDA=40.0u RD=0.280 RS=0.280
++ IS=57.5f  PB=0.800 MJ=0.460 CBD=44.5p 
++ CBS=53.4p  CGSO=24.0n CGDO=20.0n CGBO=176n  )   *   -- Assumes default L=100U W=100U --
+
+*SRC=2N7002W;DI_2N7002W;MOSFETs N;Enh;60.0V 0.115A 3.20ohms  Diodes Inc. MOSFET 
+.MODEL DI_2N7002W  NMOS( LEVEL=1 VTO=1.50 KP=32.0m  GAMMA=1.86
++ PHI=.75  LAMBDA=40.0u RD=0.448 RS=0.448
++ IS=57.5f  PB=0.800 MJ=0.460 CBD=44.5p 
++ CBS=53.4p  CGSO=24.0n CGDO=20.0n CGBO=176n  )   *   -- Assumes default L=100U W=100U --
+
+*SRC=DMN55D0UT;DI_DMN55D0UT;MOSFETs N;Enh;50.0V 0.160A 4.00ohms  Diodes Inc MOSFET
+.MODEL DI_DMN55D0UT  NMOS( LEVEL=1 VTO=1.00 KP=0.324  GAMMA=1.24
++ PHI=.75  LAMBDA=133u RD=0.560 RS=0.560
++ IS=80.0f  PB=0.800 MJ=0.460 CBD=9.60p 
++ CBS=11.5p  CGSO=25.2n CGDO=21.0n CGBO=204n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN5L06VK;DI_DMN5L06VK;MOSFETs N;Enh;50.0V 0.280A 2.00ohms  Diodes Inc MOSFET
+.MODEL DI_DMN5L06VK  NMOS( LEVEL=1 VTO=1.00 KP=0.200  GAMMA=1.24
++ PHI=.75  LAMBDA=117u RD=0.280 RS=0.280
++ IS=140f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN5L06VK;DI_DMN5L06VK;MOSFETs N;Enh;50.0V 0.280A 2.00ohms  Diodes Inc MOSFET
+.MODEL DI_DMN5L06VK  NMOS( LEVEL=1 VTO=1.00 KP=0.200  GAMMA=1.24
++ PHI=.75  LAMBDA=117u RD=0.280 RS=0.280
++ IS=140f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN66D0LDW;DI_DMN66D0LDW;MOSFETs N;Enh;60.0V 0.115A 5.00ohms  Diodes Inc MOSFET
+.MODEL DI_DMN66D0LDW  NMOS( LEVEL=1 VTO=2.00 KP=55.7m  GAMMA=2.48
++ PHI=.75  LAMBDA=69.6u RD=0.700 RS=0.700
++ IS=57.5f  PB=0.800 MJ=0.460 CBD=9.88p 
++ CBS=11.9p  CGSO=16.8n CGDO=14.0n CGBO=199n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN66D0LW;DI_DMN66D0LW;MOSFETs N;Enh;60.0V 0.115A 5.00ohms  Diodes Inc MOSFET
+.MODEL DI_DMN66D0LW  NMOS( LEVEL=1 VTO=2.00 KP=55.7m  GAMMA=2.48
++ PHI=.75  LAMBDA=69.6u RD=0.700 RS=0.700
++ IS=57.5f  PB=0.800 MJ=0.460 CBD=9.88p 
++ CBS=11.9p  CGSO=16.8n CGDO=14.0n CGBO=199n  )
+*   -- Assumes default L=100U W=100U --
+
+*
+*Zetex ZVN3306F Spice Model v1.1 Last Revised 3/5/00
+*
+.SUBCKT ZVN3306F 3 4 5
+*                D G S
+M1 3 2 5 5 N3306M
+RG 4 2 270
+RL 3 5 1.2E8
+C1 2 5 28E-12
+C2 3 2 3E-12 
+D1 5 3 N3306D
+*
+.MODEL N3306M NMOS VTO=1.824 RS=1.572 RD=1.436 IS=1E-15 KP=.1233
++CBD=35E-12 PB=1
+.MODEL N3306D D IS=5E-12 RS=.768
+.ENDS ZVN3306F
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZVN4206AV Spice Model v2.0 Last Revised 14/07/08
+*
+.SUBCKT ZVN4206AV 3 4 5
+*------connections-------D-G-S
+M1 6 2 8 8 MOSMOD
+M2 6 2 8 8 MOSMODS
+RG 4 2 30
+RD 3 6 0.05
+RS 8 5 0.5 
+RL 3 5 6E6
+D1 5 3 DMOD
+Egs2 13 8 2 8 1
+Eds1 14 8 6 8 1
+C1 2 8 80E-12
+C2 2 3 25E-12
+C3 15 14 75E-12 
+C4 16 8 40E-12
+S1 2 15 14 13 SMOD1
+S2 13 15 14 13 SMOD2
+S3 16 13 13 8 SMOD3
+S4 16 2 13 8 SMOD4
+.MODEL SMOD1 VSWITCH RON=.001 ROFF=100 VON=1.5 VOFF=2.5
+.MODEL SMOD2 VSWITCH RON=.001 ROFF=100 VON=2.5 VOFF=1.5
+.MODEL SMOD3 VSWITCH RON=.001 ROFF=100  VON=-4.5 VOFF=-5.5
+.MODEL SMOD4 VSWITCH RON=.001 ROFF=100  VON=-5.5 VOFF=-4.5
+.MODEL MOSMOD NMOS VTO=2.4 IS=1E-15 KP=0.84 CBD=195E-12 PB=1
+.MODEL MOSMODS NMOS VTO=1.8 IS=1E-15 KP=0.084 PB=1
+.MODEL DMOD D IS=6E-13 RS=.13 N=1.01
+.ENDS  ZVN4206AV
+*
+*$
+*
+*                (c)  2008 Diodes Incorporated
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Diodes ").  They  are  supplied
+*   free of charge by Diodes for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Incorporated, 1566 N. Dallas Parkway, Suite 850, Dallas, TX 75248, USA
+
+*
+*Zetex ZVN4206G Spice Model v2.0 Last Revised 14/07/08
+*
+.SUBCKT ZVN4206G 3 4 5
+*------connections-------D-G-S
+M1 6 2 8 8 MOSMOD
+M2 6 2 8 8 MOSMODS
+RG 4 2 30
+RD 3 6 0.05
+RS 8 5 0.5 
+RL 3 5 6E6
+D1 5 3 DMOD
+Egs2 13 8 2 8 1
+Eds1 14 8 6 8 1
+C1 2 8 80E-12
+C2 2 3 25E-12
+C3 15 14 75E-12 
+C4 16 8 40E-12
+S1 2 15 14 13 SMOD1
+S2 13 15 14 13 SMOD2
+S3 16 13 13 8 SMOD3
+S4 16 2 13 8 SMOD4
+.MODEL SMOD1 VSWITCH RON=.001 ROFF=100 VON=1.5 VOFF=2.5
+.MODEL SMOD2 VSWITCH RON=.001 ROFF=100 VON=2.5 VOFF=1.5
+.MODEL SMOD3 VSWITCH RON=.001 ROFF=100  VON=-4.5 VOFF=-5.5
+.MODEL SMOD4 VSWITCH RON=.001 ROFF=100  VON=-5.5 VOFF=-4.5
+.MODEL MOSMOD NMOS VTO=2.4 IS=1E-15 KP=0.84 CBD=195E-12 PB=1
+.MODEL MOSMODS NMOS VTO=1.8 IS=1E-15 KP=0.084 PB=1
+.MODEL DMOD D IS=6E-13 RS=.13 N=1.01
+.ENDS  ZVN4206G
+*
+*$
+*
+*                (c)  2008 Diodes Incorporated
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Diodes ").  They  are  supplied
+*   free of charge by Diodes for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Incorporated, 1566 N. Dallas Parkway, Suite 850, Dallas, TX 75248, USA
+
+*
+*Zetex ZVN4206GV Spice Model v2.0 Last Revised 14/07/08
+*
+.SUBCKT ZVN4206GV 3 4 5
+*------connections-------D-G-S
+M1 6 2 8 8 MOSMOD
+M2 6 2 8 8 MOSMODS
+RG 4 2 30
+RD 3 6 0.05
+RS 8 5 0.5 
+RL 3 5 6E6
+D1 5 3 DMOD
+Egs2 13 8 2 8 1
+Eds1 14 8 6 8 1
+C1 2 8 80E-12
+C2 2 3 25E-12
+C3 15 14 75E-12 
+C4 16 8 40E-12
+S1 2 15 14 13 SMOD1
+S2 13 15 14 13 SMOD2
+S3 16 13 13 8 SMOD3
+S4 16 2 13 8 SMOD4
+.MODEL SMOD1 VSWITCH RON=.001 ROFF=100 VON=1.5 VOFF=2.5
+.MODEL SMOD2 VSWITCH RON=.001 ROFF=100 VON=2.5 VOFF=1.5
+.MODEL SMOD3 VSWITCH RON=.001 ROFF=100  VON=-4.5 VOFF=-5.5
+.MODEL SMOD4 VSWITCH RON=.001 ROFF=100  VON=-5.5 VOFF=-4.5
+.MODEL MOSMOD NMOS VTO=2.4 IS=1E-15 KP=0.84 CBD=195E-12 PB=1
+.MODEL MOSMODS NMOS VTO=1.8 IS=1E-15 KP=0.084 PB=1
+.MODEL DMOD D IS=6E-13 RS=.13 N=1.01
+.ENDS  ZVN4206GV
+*
+*$
+*
+*                (c)  2008 Diodes Incorporated
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Diodes ").  They  are  supplied
+*   free of charge by Diodes for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Incorporated, 1566 N. Dallas Parkway, Suite 850, Dallas, TX 75248, USA
+
+*
+*Zetex ZVN4306AV Spice Model v1.0 Last Revised 23/3/06
+*
+.SUBCKT ZVN4306AV 3 4 5
+*NODES: DRAIN GATE SOURCE
+M1 3 2 5 5 MOD1
+RG 4 2 108
+RL 3 5 6E6
+C1 2 5 224.5E-12
+C2 3 2 10.5E-12 
+D1 5 3 DIODE1
+*
+.MODEL MOD1 NMOS VTO=2.634 RS=0.2762 RD=0.0 IS=1E-15 KP=9.77
++CBD=405E-12 PB=1 LAMBDA=0
+.MODEL DIODE1 D IS=6.19E-13 N=1.0043 RS=0.065
+.ENDS ZVN4306AV
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZVN4306GV Spice Model v1.0 Last Revised 23/2/06
+*
+.SUBCKT ZVN4306GV 3 4 5
+*NODES: DRAIN GATE SOURCE
+M1 3 2 5 5 MOD1
+RG 4 2 108
+RL 3 5 6E6
+C1 2 5 224.5E-12
+C2 3 2 10.5E-12 
+D1 5 3 DIODE1
+*
+.MODEL MOD1 NMOS VTO=2.634 RS=0.2762 RD=0.0 IS=1E-15 KP=9.77
++CBD=405E-12 PB=1 LAMBDA=0
+.MODEL DIODE1 D IS=6.19E-13 N=1.0043 RS=0.065
+.ENDS ZVN4306GV
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXM64N035L3 Spice Model v1.1 Last Revised 24/1/03
+*
+.SUBCKT ZXM64N035L3 3 4 5
+*----connections----D-G-S
+*
+M1 6 2 8 8 MOSMOD
+M2 6 2 8 8 MOSMODS
+RG 4 2 5
+RIN 2 8 200E6
+RD 3 6 RDSMOD 0.02
+RS 8 5 RDSMOD 0.004 
+RL 3 5 35E6
+C1 2 8 810E-12
+C2 2 3 100E-12 
+C3 15 14 1050E-12
+C4 16 8 1100E-12
+D1 5 3 DMOD1
+S1 2 15 14 13 SMOD1a
+S2 13 15 14 13 SMOD1b
+S3 16 13 13 8 SMOD2a
+S4 16 2 13 8 SMOD2b
+Egs2 13 8 2 8 1
+Eds1 14 8 3 8 1
+.MODEL MOSMOD NMOS VTO=2.2 IS=1E-15 KP=15 CBD=512E-12 LAMBDA=4.9E-3
+.MODEL MOSMODS NMOS VTO=1.8 IS=1E-15 KP=0.1
+.MODEL DMOD1 D IS=6E-13 RS=0.025 BV=42 IBV=1E-6 TT=21e-9
+.MODEL SMOD1a VSWITCH RON=1e-2 ROFF=1e4  VON=-1.5 VOFF=1.5
+.MODEL SMOD1b VSWITCH RON=1e-2 ROFF=1e4  VON=1.5 VOFF=-1.5
+.MODEL SMOD2a VSWITCH RON=1e2 ROFF=1e4  VON=-1.5 VOFF=-3.5
+.MODEL SMOD2b VSWITCH RON=1e-2 ROFF=1e4  VON=-3.5 VOFF=-1.5
+.MODEL RDSMOD RES (TC1=3E-3 TC2=2E-5)
+.ENDS  ZXM64N035L3
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXMN6A07F Spice Model v1.0 Last Revised 29/6/05
+*              
+.SUBCKT ZXMN6A07F 30 40 50
+*----connections-----D_G_S
+M1 6 2 5 5 Nmod L=.6E-6 W=0.34
+M2 5 2 5 6 Pmod L=.6E-6 W=0.24
+RG 4 2 4
+RIN 2 5 1E12
+RD 3 6 Rmod1 0.12
+RL 6 5 10E9
+C1 2 5 25E-12
+C2 3 4 15E-12
+D1 5 3  Dbodymod
+LD 3 30 0.5E-9
+LG 4 40 1.0E-9
+LS 5 50 1.0E-9
+.MODEL Nmod NMOS (LEVEL=3 TOX=85E-9 NSUB=1E17 VTO=3.35  XJ=1.6E-6
++KP=9.5E-6 RS=.035 NFS=1.2E12 KAPPA=0.06 UO=650 IS=1E-15 N=10)
+.MODEL Pmod PMOS (LEVEL=3 TOX=80E-9 NSUB=1E16 XJ=2.3E-6
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dbodymod D (IS=0.5E-12 RS=.055  TRS1=1.5e-3
++CJO=71e-12  TT=24E-9 BV=66)
+.MODEL Rmod1 RES (TC1=7.3e-3 TC2=1.6E-5)
+.ENDS ZXMN6A07F
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXMN6A08E6 Spice Model v2.0 Last Revised 22/2/05
+*
+.SUBCKT ZXMN6A08E6 30 40 50
+*----connections-----D_G_S
+M1 6 2 5 5 Nmod L=1E-6 W=0.6
+M2 5 2 5 6 Pmod L=1E-6 W=0.45
+RG 4 2 4
+RIN 2 5 1E12
+RD 3 6 Rmod1 0.075
+RL 6 5 10E9
+C1 2 5 100E-12
+C2 3 4 5E-12
+D1 5 3  Dbodymod
+LD 3 30 0.3E-9
+LG 4 40 1.9E-9
+LS 5 50 1.9E-9
+.MODEL Nmod NMOS (LEVEL=3 TOX=5E-8 NSUB=2E17 VTO=2.25
++KP=1.8E-5 RS=.009 NFS=2E12 KAPPA=0.06 UO=650 IS=1E-15 N=10)
+.MODEL Pmod PMOS (LEVEL=3 TOX=8E-8 NSUB=1E16
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dbodymod D (IS=2E-12 RS=.025 IKF=0.06 TRS1=1.5e-3
++CJO=120e-12  BV=61)
+.MODEL Rmod1 RES (TC1=6e-3 TC2=1.2E-5)
+.ENDS ZXMN6A08E6
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=02/11/2009
+*VERSION=1
+*PIN_ORDER         D G S
+*
+.SUBCKT ZXMN6A08K 30 40 50
+M1 6 2 5 5 Nmod L=1E-6 W=0.6
+M2 5 2 5 6 Pmod L=1E-6 W=0.45
+RG 4 2 4
+RIN 2 5 1E12
+RD 3 6 Rmod1 0.075
+RL 6 5 10E9
+C1 2 5 100E-12
+C2 3 4 5E-12
+D1 5 3  Dbodymod
+LD 3 30 1E-9
+LG 4 40 2.3E-9
+LS 5 50 2.3E-9
+.MODEL Nmod NMOS (LEVEL=3 TOX=5E-8 NSUB=2E17 VTO=2.25
++KP=1.8E-5 RS=0.009 NFS=2E12 KAPPA=0.06 UO=650 IS=1E-15 N=10)
+.MODEL Pmod PMOS (LEVEL=3 TOX=8E-8 NSUB=1E16
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dbodymod D (IS=2E-12 RS=0.025 IKF=0.06 TRS1=1.5e-3
++CJO=120e-12  BV=61)
+.MODEL Rmod1 RES (TC1=6e-3 TC2=1.2E-5)
+.ENDS ZXMN6A08K
+*
+*$
+
+*
+*Zetex ZVN2106A Spice Model v2.0 Last Revised 30/6/08
+*
+.SUBCKT ZVN2106A 3 4 5
+*------connections-------D-G-S
+M1 6 2 8 8 N2106AM
+M2 6 2 8 8 N2106AMS
+RG 4 2 15
+RD 3 6 0.25
+RS 8 5 0.94 
+RL 3 5 100E6
+D1 5 3 N2106AD
+Egs2 13 8 2 8 1
+Eds1 14 8 6 8 1
+C1 2 8 72E-12
+C2 2 3  20E-12
+C3 15 14 70E-12 
+C4 16 8 83E-12
+S1 2 15 14 13 SMOD1
+S2 13 15 14 13 SMOD2
+S3 16 13 13 8 SMOD3
+S4 16 2 13 8 SMOD4
+.MODEL SMOD1 VSWITCH RON=.001 ROFF=100 VON=1.5 VOFF=2.5
+.MODEL SMOD2 VSWITCH RON=.001 ROFF=100 VON=2.5 VOFF=1.5
+.MODEL SMOD3 VSWITCH RON=.001 ROFF=100  VON=-4.5 VOFF=-5.5
+.MODEL SMOD4 VSWITCH RON=.001 ROFF=100  VON=-5.5 VOFF=-4.5
+.MODEL N2106AM NMOS VTO=1.6 IS=1E-15 KP=0.67 CBD=50E-12 PB=1
+.MODEL N2106AMS NMOS VTO=.98 IS=1E-15 KP=0.006 PB=1
+.MODEL N2106AD D IS=5.516E-13 RS=.2084 N=1.0078
+.ENDS ZVN2106A
+*
+*$
+*
+*                (c)  2008 Diodes Incorporated
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Diodes ").  They  are  supplied
+*   free of charge by Diodes for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Incorporated, 1566 N. Dallas Parkway, Suite 850, Dallas, TX 75248, USA
+
+*
+*Zetex ZVN2106G Spice Model v2.0 Last Revised 30/6/08
+*
+.SUBCKT ZVN2106G 3 4 5
+*------connections-------D-G-S
+M1 6 2 8 8 N2106AM
+M2 6 2 8 8 N2106AMS
+RG 4 2 15
+RD 3 6 0.25
+RS 8 5 0.94 
+RL 3 5 100E6
+D1 5 3 N2106AD
+Egs2 13 8 2 8 1
+Eds1 14 8 6 8 1
+C1 2 8 72E-12
+C2 2 3  20E-12
+C3 15 14 70E-12 
+C4 16 8 83E-12
+S1 2 15 14 13 SMOD1
+S2 13 15 14 13 SMOD2
+S3 16 13 13 8 SMOD3
+S4 16 2 13 8 SMOD4
+.MODEL SMOD1 VSWITCH RON=.001 ROFF=100 VON=1.5 VOFF=2.5
+.MODEL SMOD2 VSWITCH RON=.001 ROFF=100 VON=2.5 VOFF=1.5
+.MODEL SMOD3 VSWITCH RON=.001 ROFF=100  VON=-4.5 VOFF=-5.5
+.MODEL SMOD4 VSWITCH RON=.001 ROFF=100  VON=-5.5 VOFF=-4.5
+.MODEL N2106AM NMOS VTO=1.6 IS=1E-15 KP=0.67 CBD=50E-12 PB=1
+.MODEL N2106AMS NMOS VTO=.98 IS=1E-15 KP=0.006 PB=1
+.MODEL N2106AD D IS=5.516E-13 RS=.2084 N=1.0078
+.ENDS ZVN2106G
+*
+*$
+*
+*                (c)  2008 Diodes Incorporated
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Diodes ").  They  are  supplied
+*   free of charge by Diodes for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Incorporated, 1566 N. Dallas Parkway, Suite 850, Dallas, TX 75248, USA
+
+*
+*Zetex ZVN3306A Spice Model v1.1 Last Revised 3/5/00
+*
+.SUBCKT ZVN3306A 3 4 5
+*                D G S
+M1 3 2 5 5 N3306M
+RG 4 2 270
+RL 3 5 1.2E8
+C1 2 5 28E-12
+C2 3 2 3E-12 
+D1 5 3 N3306D
+*
+.MODEL N3306M NMOS VTO=1.824 RS=1.572 RD=1.436 IS=1E-15 KP=.1233
++CBD=35E-12 PB=1
+.MODEL N3306D D IS=5E-12 RS=.768
+.ENDS ZVN3306A
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXMN4A06G Spice Model v3.0 Last Revised 4/12/07
+*
+.SUBCKT ZXMN4A06G 30 40 50
+*------connections-------D-G-S
+M1 6 2 5 5 Nmod L=1.16E-6 W=1.7
+M2 5 2 5 6 Pmod L=1.3E-6 W=0.75
+RG 4 2 1.6
+RIN 2 5 1E12
+RD 3 6 Rmod 0.012
+RS 5 55 Rmod 0.012
+RL 3 5 3E12
+C1 2 5 75E-12
+C2 3 4 5E-12
+D1 5 3  Dbodymod
+LD 3 30 1E-9
+LG 4 40 2.3E-9
+LS 55 50 2.3E-9
+.MODEL Nmod NMOS (LEVEL=3 TOX=7.5E-8 NSUB=5E16 VTO= 1.75
++KP=1.5E-5 NFS=2E11 KAPPA=0.06 UO=650 IS=1E-15 N=10)
+.MODEL Pmod PMOS (LEVEL=3 TOX=5.5E-8 NSUB=1E16
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dbodymod D (IS=8E-12 RS=.016 IKF=10 TRS1=1.5e-3
++CJO=250e-12  BV=44 TT=17e-9)
+.MODEL Rmod RES (TC1=3.5e-3 TC2=0.8E-5)
+.ENDS ZXMN4A06G
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXMN4A06K Spice Model v3.0 Last Revised 4/12/07
+*
+.SUBCKT ZXMN4A06K 30 40 50
+*------connections-------D-G-S
+M1 6 2 5 5 Nmod L=1.16E-6 W=1.7
+M2 5 2 5 6 Pmod L=1.3E-6 W=0.75
+RG 4 2 1.6
+RIN 2 5 1E12
+RD 3 6 Rmod 0.012
+RS 5 55 Rmod 0.012
+RL 3 5 3E12
+C1 2 5 75E-12
+C2 3 4 5E-12
+D1 5 3  Dbodymod
+LD 3 30 1E-9
+LG 4 40 2.3E-9
+LS 55 50 2.3E-9
+.MODEL Nmod NMOS (LEVEL=3 TOX=7.5E-8 NSUB=5E16 VTO= 1.75
++KP=1.5E-5 NFS=2E11 KAPPA=0.06 UO=650 IS=1E-15 N=10)
+.MODEL Pmod PMOS (LEVEL=3 TOX=5.5E-8 NSUB=1E16
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dbodymod D (IS=8E-12 RS=.016 IKF=10 TRS1=1.5e-3
++CJO=250e-12  BV=44 TT=17e-9)
+.MODEL Rmod RES (TC1=3.5e-3 TC2=0.8E-5)
+.ENDS ZXMN4A06K
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXMN6A07Z Spice Model v1.0 Last Revised 29/6/05
+*              
+.SUBCKT ZXMN6A07Z 30 40 50
+*----connections-----D_G_S
+M1 6 2 5 5 Nmod L=.6E-6 W=0.34
+M2 5 2 5 6 Pmod L=.6E-6 W=0.24
+RG 4 2 4
+RIN 2 5 1E12
+RD 3 6 Rmod1 0.12
+RL 6 5 10E9
+C1 2 5 25E-12
+C2 3 4 15E-12
+D1 5 3  Dbodymod
+LD 3 30 0.6E-9
+LG 4 40 2.0E-9
+LS 5 50 2.0E-9
+.MODEL Nmod NMOS (LEVEL=3 TOX=85E-9 NSUB=1E17 VTO=3.35  XJ=1.6E-6
++KP=9.5E-6 RS=.035 NFS=1.2E12 KAPPA=0.06 UO=650 IS=1E-15 N=10)
+.MODEL Pmod PMOS (LEVEL=3 TOX=80E-9 NSUB=1E16 XJ=2.3E-6
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dbodymod D (IS=0.5E-12 RS=.055  TRS1=1.5e-3
++CJO=71e-12  TT=24E-9 BV=66)
+.MODEL Rmod1 RES (TC1=7.3e-3 TC2=1.6E-5)
+.ENDS ZXMN6A07Z
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXMN6A08G Spice Model v2.0 Last Revised 24/10/07
+*
+.SUBCKT ZXMN6A08G 30 40 50
+*----connections-----D_G_S
+M1 6 2 5 5 Nmod L=1E-6 W=0.6
+M2 5 2 5 6 Pmod L=1E-6 W=0.45
+RG 4 2 4
+RIN 2 5 1E12
+RD 3 6 Rmod1 0.075
+RL 6 5 10E9
+C1 2 5 100E-12
+C2 3 4 5E-12
+D1 5 3  Dbodymod
+LD 3 30 1E-9
+LG 4 40 2.3E-9
+LS 5 50 2.3E-9
+.MODEL Nmod NMOS (LEVEL=3 TOX=5E-8 NSUB=2E17 VTO=2.25
++KP=1.8E-5 RS=.009 NFS=2E12 KAPPA=0.06 UO=650 IS=1E-15 N=10)
+.MODEL Pmod PMOS (LEVEL=3 TOX=8E-8 NSUB=1E16
++TPG=-1 IS=1E-15 N=10)
+.MODEL Dbodymod D (IS=2E-12 RS=.025 IKF=0.06 TRS1=1.5e-3
++CJO=120e-12  BV=61)
+.MODEL Rmod1 RES (TC1=6e-3 TC2=1.2E-5)
+.ENDS ZXMN6A08G
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=25/02/2009
+*VERSION=3
+*PIN_ORDER         D G S
+*
+.SUBCKT ZXMN6A09K 1 2 3
+M11 20 21 22 22 Nnmod1
+M12 20 21 22 22 Nnmod2
+M13 20 21 22 22 Nnmod3
+RG1 26 27 1.15
+RIN1 21 22 1E12
+RD1 20 24 Rnmod1 0.005
+RS1 22 23 Rnmod1 0.032
+RL1 23 24 60E8
+C11 21 22 1400E-12
+C12 20 21 65E-12
+D1 23 24  Dnmod1
+Egt1 26 21 30 22 1
+Vgt1 22 31 1.0
+Igt1 22 30 1.0
+Rgt1 30 31 Rnmod2 1
+Egs1 33 22 21 22 1
+Eds1 34 22 20 22 1
+C13 35 34 1000E-12 
+C14 36 22 800E-12
+S11 21 35 34 33 Snmod1
+S12 33 35 34 33 Snmod2
+S13 36 33 33 22 Snmod3
+S14 36 21 33 22 Snmod4
+LD1 1 24 1.3E-9
+LG1 2 27 2.4E-9
+LS1 3 23 2.4E-9
+.MODEL Nnmod1 NMOS (VTO=2.7 IS=1E-15 KP=77 CBD=412E-12 PB=1)
+.MODEL Nnmod2 NMOS (VTO=1.92 IS=1E-15 KP=0.7 PB=1)
+.MODEL Nnmod3 NMOS (VTO=1.4 IS=1E-15 KP=0.003 PB=1)
+.MODEL Dnmod1 D (IS=6E-13 RS=.15 N=1.01 TT=5.5e-8 BV=66)
+.MODEL Rnmod1 RES (TC1=50e-4 TC2=12E-6)
+.MODEL Rnmod2 RES (TC1=-6e-3 TC2=-6E-6)
+.MODEL Snmod1 VSWITCH RON=.001 ROFF=100 VON=-0.5 VOFF=1.5
+.MODEL Snmod2 VSWITCH RON=.001 ROFF=100 VON=1.5 VOFF=-0.5
+.MODEL Snmod3 VSWITCH RON=.001 ROFF=100 VON=-5 VOFF=-6
+.MODEL Snmod4 VSWITCH RON=.001 ROFF=100 VON=-6 VOFF=-5
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=30/01/2009
+*VERSION=1
+*PIN_ORDER         Sn1, Gn1, Sn2, Gn2, Dn2, Dn2, Dn1, Dn1
+*
+.SUBCKT ZXMN6A11DN8  1 2 3 4 5 6 7 8
+*Dev1 N-channel
+M11 20 21 22 22 Nnmod1 L=0.8E-6 W=0.5
+M12 22 21 22 20 Pnmod1 L=0.6E-6 W=0.45
+RG1 26 27 4.5
+RIN1 21 22 2E12
+RD1 20 24 Rnmod1 0.08
+RS1 22 23 1E-6
+RL1 23 24 10E9
+C11 21 22 220E-12
+C12 20 21 1E-12
+D1 23 24  Dnmod1
+Egt1 26 21 30 22 1
+Vgt1 22 31 1.0
+Igt1 22 30 1.0
+Rgt1 30 31 Rnmod2 1
+LD1 24 25 1.5E-9
+RP11 7 25 1E-6
+RP12 8 25 1E-6
+LG1 2 27 1.2E-9
+LS1 1 23 1.2E-9
+*Dev2 N-channel
+M21 60 61 62 62 Nnmod1 L=0.8E-6 W=0.5
+M22 62 61 62 60 Pnmod1 L=0.6E-6 W=0.45
+RG21 66 67 4.5
+RIN2 61 62 2E12
+RD2 60 64 Rnmod1 0.08
+RS2 62 63 1E-6
+RL2 63 64 10E9
+C21 61 62 220E-12
+C22 60 61 1E-12
+D2 63 64  Dnmod1
+Egt2 66 61 30 22 1
+Vgt2 62 71 1.0
+Igt2 62 70 1.0
+Rgt2 70 71 Rnmod2 1
+LD2 64 65 1.5E-9
+RP21 5 65 1E-6
+RP22 6 65 1E-6
+LG2 4 67 1.2E-9
+LS2 3 63 1.2E-9
+.MODEL Nnmod1 NMOS (LEVEL=3 TOX=8E-8 NSUB=1E17 VTO=2.45 KP=1.6E-5 
++RS=.007 NFS=2E11 KAPPA=0.06 IS=1E-16 N=10)
+.MODEL Pnmod1 PMOS (LEVEL=3 TOX=8E-8 NSUB=1E16 TPG=-1 IS=1E-16 N=10)
+.MODEL Dnmod1 D (IS=1.8E-13 RS=.023 TT=2.2e-8 CJO=90e-12  BV=63)
+.MODEL Rnmod1 RES (TC1=5.5e-3 TC2=1.4E-5)
+.MODEL Rnmod2 RES (TC1=-1.04e-3 TC2=-2E-6)
+.ENDS
+*
+*$
+
+*
+*Zetex ZXMN6A11G Spice Model v1.0 Last Revised 29/11/07
+*
+.SUBCKT ZXMN6A11G 30 40 50
+*----connections-----D_G_S
+M1 6 2 5 5 Nmod L=0.8E-6 W=0.5
+M2 5 2 5 6 Pmod L=1E-6 W=0.45
+RG 4 22 2
+RIN1 2 5 2E12
+RIN2 22 5 2E12
+RD 3 6 Rmod1 0.08
+RL 6 5 10E9
+C1 2 5 220E-12
+C2 3 4 1E-12
+D1 5 3  Dmod1
+Rt 5 61 Rmod2 1
+Vt 61 62 1
+It 5 62 1
+Et 2 22  62 5 1
+LD 3 30 1E-9
+LG 4 40 2.3E-9
+LS 5 50 2.3E-9
+.MODEL Nmod NMOS (LEVEL=3 TOX=8E-8 NSUB=1E17 VTO=2.45 KP=1.6E-5 
++RS=.007 NFS=2E11 KAPPA=0.06 IS=1E-16 N=10)
+.MODEL Pmod PMOS (LEVEL=3 TOX=8E-8 NSUB=1E16 TPG=-1 IS=1E-16 N=10)
+.MODEL Dmod1 D (IS=1.8E-13 RS=.023 TT=2.2e-8 CJO=90e-12  BV=63)
+.MODEL Rmod1 RES (TC1=5.5e-3 TC2=1.4E-5)
+.MODEL Rmod2 RES (TC1=1e-3 TC2=0E-5)
+.ENDS ZXMN6A11G
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=30/01/2009
+*VERSION=1
+*PIN_ORDER         Sn1, Gn1, Sn2, Gn2, Dn2, Dn2, Dn1, Dn1
+*
+.SUBCKT ZXMN6A25DN8 1 2 3 4 5 6 7 8
+*Dev1 N-channel
+M11 20 21 22 22 Nnmod1 L=1E-6 W=2
+M12 22 21 22 20 Pnmod1 L=1E-6 W=1.5
+RG1 26 27 2
+RIN1 21 22 2E12
+RD1 20 24 Rnmod1 0.04
+RS1 22 23 1e-6
+RL1 23 24 10E9
+C11 21 22 200E-12
+C12 20 21 5E-12
+D1 23 24  Dnmod1
+Egt1 26 21 30 22 1
+Vgt1 22 31 1.0
+Igt1 22 30 1.0
+Rgt1 30 31 Rnmod2 1
+LD1 24 25 1.5E-9
+RP11 7 25 1E-6
+RP12 8 25 1E-6
+LG1 2 27 1.2E-9
+LS1 1 23 1.2E-9
+*Dev2 N-channel
+M21 60 61 62 62 Nnmod1 L=1E-6 W=2
+M22 62 61 62 60 Pnmod1 L=1E-6 W=1.5
+RG2 66 67 2
+RIN2 61 62 2E12
+RD2 60 64 Rnmod1 0.04
+RS2 62 63 1e-6
+RL2 63 64 10E9
+C21 61 62 200E-12
+C22 60 61 5E-12
+D2 63 64  Dnmod1
+Egt2 66 61 30 22 1
+Vgt2 62 71 1.0
+Igt2 62 70 1.0
+Rgt2 70 71 Rnmod2 1
+LD2 64 65 1.5E-9
+RP21 5 65 1E-6
+RP22 6 65 1E-6
+LG2 4 67 1.2E-9
+LS2 3 63 1.2E-9
+.MODEL Nnmod1 NMOS (LEVEL=3 TOX=8E-8 NSUB=6E16 VTO=2.4 KP=1.6E-5
++RS=.006 NFS=5E11 KAPPA=0.06 IS=1E-16 N=10)
+.MODEL Pnmod1 PMOS (LEVEL=3 TOX=8E-8 NSUB=6.6E15 TPG=-1 IS=1E-16 N=10)
+.MODEL Dnmod1 D (IS=3E-12 RS=.02 TT=2.3e-8 CJO=210e-12  BV=66)
+.MODEL Rnmod1 RES (TC1=3.4e-3 TC2=-1.5E-5)
+.MODEL Rnmod2 RES (TC1=1.42E-3e-3 TC2=-1.5E-6)
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=25/02/2009
+*VERSION=2
+*PIN_ORDER         D G S
+*
+.SUBCKT ZXMN6A25G 1 2 3
+*Dev1 N-channel
+M11 20 21 22 22 Nnmod1 L=1E-6 W=2
+M12 22 21 22 20 Pnmod1 L=1E-6 W=1.5
+RG1 26 27 2
+RIN1 21 22 2E12
+RD1 20 24 Rnmod1 0.04
+RS1 22 23 1e-6
+RL1 23 24 10E9
+C11 21 22 200E-12
+C12 20 21 5E-12
+D1 23 24  Dnmod1
+Egt1 26 21 30 22 1
+Vgt1 22 31 1.0
+Igt1 22 30 1.0
+Rgt1 30 31 Rnmod2 1
+LD1 1 24 1.0E-9
+LG1 2 27 2.3E-9
+LS1 3 22 2.3E-9
+.MODEL Nnmod1 NMOS (LEVEL=3 TOX=8E-8 NSUB=6E16 VTO=2.4 KP=1.6E-5
++RS=.006 NFS=5E11 KAPPA=0.06 IS=1E-16 N=10)
+.MODEL Pnmod1 PMOS (LEVEL=3 TOX=8E-8 NSUB=6.6E15 TPG=-1 IS=1E-16 N=10)
+.MODEL Dnmod1 D (IS=3E-12 RS=.02 TT=2.3e-8 CJO=210e-12  BV=66)
+.MODEL Rnmod1 RES (TC1=3.4e-3 TC2=-1.5E-5)
+.MODEL Rnmod2 RES (TC1=1.42E-3e-3 TC2=-1.5E-6)
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=25/02/2009
+*VERSION=2
+*PIN_ORDER         D G S
+*
+.SUBCKT ZXMN6A25K 1 2 3
+*Dev1 N-channel
+M11 20 21 22 22 Nnmod1 L=1E-6 W=2
+M12 22 21 22 20 Pnmod1 L=1E-6 W=1.5
+RG1 26 27 2
+RIN1 21 22 2E12
+RD1 20 24 Rnmod1 0.04
+RS1 22 23 1e-6
+RL1 23 24 10E9
+C11 21 22 200E-12
+C12 20 21 5E-12
+D1 23 24  Dnmod1
+Egt1 26 21 30 22 1
+Vgt1 22 31 1.0
+Igt1 22 30 1.0
+Rgt1 30 31 Rnmod2 1
+LD1 1 24 1.3E-9
+LG1 2 27 2.4E-9
+LS1 3 23 2.4E-9
+.MODEL Nnmod1 NMOS (LEVEL=3 TOX=8E-8 NSUB=6E16 VTO=2.4 KP=1.6E-5
++RS=.006 NFS=5E11 KAPPA=0.06 IS=1E-16 N=10)
+.MODEL Pnmod1 PMOS (LEVEL=3 TOX=8E-8 NSUB=6.6E15 TPG=-1 IS=1E-16 N=10)
+.MODEL Dnmod1 D (IS=3E-12 RS=.02 TT=2.3e-8 CJO=210e-12  BV=66)
+.MODEL Rnmod1 RES (TC1=3.4e-3 TC2=-1.5E-5)
+.MODEL Rnmod2 RES (TC1=1.42E-3e-3 TC2=-1.5E-6)
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=27/10/2008
+*VERSION=1
+*PIN_ORDER         D G S
+*
+.SUBCKT ZXMN6A25N8 1 2 3
+*Dev1 N-channel
+M11 20 21 22 22 Nnmod1 L=1E-6 W=2
+M12 22 21 22 20 Pnmod1 L=1E-6 W=1.5
+RG1 26 27 2
+RIN1 21 22 2E12
+RD1 20 24 Rnmod1 0.04
+RS1 22 23 1e-6
+RL1 23 24 10E9
+C11 21 22 200E-12
+C12 20 21 5E-12
+D1 23 24  Dnmod1
+Egt1 26 21 30 22 1
+Vgt1 22 31 1.0
+Igt1 22 30 1.0
+Rgt1 30 31 Rnmod2 1
+LD1 1 24 1.3E-9
+LG1 2 27 1.2E-9
+LS1 3 23 1.2E-9
+.MODEL Nnmod1 NMOS (LEVEL=3 TOX=8E-8 NSUB=6E16 VTO=2.4 KP=1.6E-5
++RS=.006 NFS=5E11 KAPPA=0.06 IS=1E-16 N=10)
+.MODEL Pnmod1 PMOS (LEVEL=3 TOX=8E-8 NSUB=6.6E15 TPG=-1 IS=1E-16 N=10)
+.MODEL Dnmod1 D (IS=3E-12 RS=.02 TT=2.3e-8 CJO=210e-12  BV=66)
+.MODEL Rnmod1 RES (TC1=3.4e-3 TC2=-1.5E-5)
+.MODEL Rnmod2 RES (TC1=1.42E-3e-3 TC2=-1.5E-6)
+.ENDS
+*
+*$
+
+*
+*Zetex ZXMN7A11G Spice Model v1.0 Last Revised 29/11/07
+*
+.SUBCKT ZXMN7A11G 30 40 50
+*----connections-----D_G_S
+M1 6 2 5 5 Nmod L=0.8E-6 W=0.5
+M2 5 2 5 6 Pmod L=1E-6 W=0.45
+RG 4 22 2.2
+RIN1 2 5 2E12
+RIN2 22 5 2E12
+RD 3 6 Rmod1 0.08
+RL 6 5 10E9
+C1 2 5 220E-12
+C2 3 4 1E-12
+D1 5 3  Dmod1
+Rt 5 61 Rmod2 1
+Vt 61 62 1
+It 5 62 1
+Et 2 22  62 5 1
+LD 3 30 1E-9
+LG 4 40 2.3E-9
+LS 5 50 2.3E-9
+.MODEL Nmod NMOS (LEVEL=3 TOX=8E-8 NSUB=1E17 VTO=1.68 KP=1.6E-5 
++RS=.005 NFS=2E11 KAPPA=0.06 IS=1E-16 N=10)
+.MODEL Pmod PMOS (LEVEL=3 TOX=8E-8 NSUB=1E16 TPG=-1 IS=1E-16 N=10)
+.MODEL Dmod1 D (IS=1.8E-13 RS=.023 TT=2e-8 CJO=90e-12  BV=73)
+.MODEL Rmod1 RES (TC1=4.5e-3 TC2=1.4E-5)
+.MODEL Rmod2 RES (TC1=-2e-3 TC2=0E-5)
+.ENDS ZXMN7A11G
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXMN7A11K Spice Model v1.0 Last Revised 29/11/07
+*
+.SUBCKT ZXMN7A11K 30 40 50
+*----connections-----D_G_S
+M1 6 2 5 5 Nmod L=0.8E-6 W=0.5
+M2 5 2 5 6 Pmod L=1E-6 W=0.45
+RG 4 22 2.2
+RIN1 2 5 2E12
+RIN2 22 5 2E12
+RD 3 6 Rmod1 0.08
+RL 6 5 10E9
+C1 2 5 220E-12
+C2 3 4 1E-12
+D1 5 3  Dmod1
+Rt 5 61 Rmod2 1
+Vt 61 62 1
+It 5 62 1
+Et 2 22  62 5 1
+LD 3 30 1.3E-9
+LG 4 40 2.4E-9
+LS 5 50 2.4E-9
+.MODEL Nmod NMOS (LEVEL=3 TOX=8E-8 NSUB=1E17 VTO=1.68 KP=1.6E-5 
++RS=.005 NFS=2E11 KAPPA=0.06 IS=1E-16 N=10)
+.MODEL Pmod PMOS (LEVEL=3 TOX=8E-8 NSUB=1E16 TPG=-1 IS=1E-16 N=10)
+.MODEL Dmod1 D (IS=1.8E-13 RS=.023 TT=2e-8 CJO=90e-12  BV=73)
+.MODEL Rmod1 RES (TC1=4.5e-3 TC2=1.4E-5)
+.MODEL Rmod2 RES (TC1=-2e-3 TC2=0E-5)
+.ENDS ZXMN7A11K
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*SRC=DMN5010VAK;DI_DMN5010VAK;MOSFETs N;Enh;50.0V 0.280A 2.00ohms  Diodes Inc. N Channel MOSFET
+.MODEL DI_DMN5010VAK  NMOS( LEVEL=1 VTO=1.00 KP=0.200  GAMMA=1.24
++ PHI=.75  LAMBDA=117u RD=0.280 RS=0.280
++ IS=140f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN5L06DMK;DI_DMN5L06DMK;MOSFETs N;Enh;50.0V 0.280A 2.00ohms  Diodes Inc. N Channel MOSFET
+.MODEL DI_DMN5L06DMK  NMOS( LEVEL=1 VTO=1.20 KP=0.200  GAMMA=1.49
++ PHI=.75  LAMBDA=117u RD=0.280 RS=0.280
++ IS=140f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN5L06DWK;DI_DMN5L06DWK;MOSFETs N;Enh;50.0V 0.280A 2.00ohms  Diodes Inc. N Channel MOSFET
+.MODEL DI_DMN5L06DWK  NMOS( LEVEL=1 VTO=1.20 KP=0.200  GAMMA=1.49
++ PHI=.75  LAMBDA=117u RD=0.280 RS=0.280
++ IS=140f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN5L06WK;DI_DMN5L06WK;MOSFETs N;Enh;50.0V 0.280A 2.00ohms  Diodes Inc. N Channel MOSFET
+.MODEL DI_DMN5L06WK  NMOS( LEVEL=1 VTO=1.20 KP=0.200  GAMMA=1.49
++ PHI=.75  LAMBDA=117u RD=0.280 RS=0.280
++ IS=140f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN601DWK;DI_DMN601DWK;MOSFETs N;Enh;60.0V 0.300A 2.00ohms  Diodes Inc. MOSFET
+.MODEL DI_DMN601DWK  NMOS( LEVEL=1 VTO=2.50 KP=32.0m  GAMMA=3.10
++ PHI=.75  LAMBDA=104u RD=0.280 RS=0.280
++ IS=150f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN601VK;DI_DMN601VK;MOSFETs N;Enh;60.0V 0.300A 2.00ohms  Diodes Inc. MOSFET
+.MODEL DI_DMN601VK  NMOS( LEVEL=1 VTO=2.50 KP=32.0m  GAMMA=3.10
++ PHI=.75  LAMBDA=104u RD=0.280 RS=0.280
++ IS=150f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*SRC=DMN601WK;DI_DMN601WK;MOSFETs N;Enh;60.0V 0.300A 2.00ohms  Diodes Inc. MOSFET
+.MODEL DI_DMN601WK  NMOS( LEVEL=1 VTO=2.50 KP=32.0m  GAMMA=3.10
++ PHI=.75  LAMBDA=104u RD=0.280 RS=0.280
++ IS=150f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=30/01/2009
+*VERSION=3
+*PIN_ORDER         Sn1, Gn1, Sn2, Gn2, Dn2, Dn2, Dn1, Dn1
+*
+.SUBCKT ZXMN6A09DN8 1 2 3 4 5 6 7 8
+*Dev1 N-channel
+M11 20 21 22 22 Nnmod1
+M12 20 21 22 22 Nnmod2
+M13 20 21 22 22 Nnmod3
+RG1 26 27 1.15
+RIN1 21 22 1E12
+RD1 20 24 Rnmod1 0.005
+RS1 22 23 Rnmod1 0.032
+RL1 23 24 60E8
+C11 21 22 1400E-12
+C12 20 21 65E-12
+D1 23 24  Dnmod1
+Egt1 26 21 30 22 1
+Vgt1 22 31 1.0
+Igt1 22 30 1.0
+Rgt1 30 31 Rnmod2 1
+Egs1 33 22 21 22 1
+Eds1 34 22 20 22 1
+C13 35 34 1000E-12 
+C14 36 22 800E-12
+S11 21 35 34 33 Snmod1
+S12 33 35 34 33 Snmod2
+S13 36 33 33 22 Snmod3
+S14 36 21 33 22 Snmod4
+LD1 24 25 1.5E-9
+RP11 7 25 1E-6
+RP12 8 25 1E-6
+LG1 2 27 1.2E-9
+LS1 1 23 1.2E-9
+*Dev2 Nchannel
+M21 60 61 62 62 Nnmod1
+M22 60 61 62 62 Nnmod2
+M23 60 61 62 62 Nnmod3
+RG2 66 67 1.15
+RIN2 61 62 1E12
+RD2 60 64 Rnmod1 0.005
+RS2 62 63 Rnmod1 0.032
+RL2 63 64 60E8
+C21 61 62 1400E-12
+C22 60 61 65E-12
+D2 63 64  Dnmod1
+Egt2 66 61 70 62 1
+Vgt2 62 71 1.0
+Igt2 62 70 1.0
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=25/02/2009
+*VERSION=3
+*PIN_ORDER         D G S
+*
+.SUBCKT ZXMN6A09G 1 2 3
+M11 20 21 22 22 Nnmod1
+M12 20 21 22 22 Nnmod2
+M13 20 21 22 22 Nnmod3
+RG1 26 27 1.15
+RIN1 21 22 1E12
+RD1 20 24 Rnmod1 0.005
+RS1 22 23 Rnmod1 0.032
+RL1 23 24 60E8
+C11 21 22 1400E-12
+C12 20 21 65E-12
+D1 23 24  Dnmod1
+Egt1 26 21 30 22 1
+Vgt1 22 31 1.0
+Igt1 22 30 1.0
+Rgt1 30 31 Rnmod2 1
+Egs1 33 22 21 22 1
+Eds1 34 22 20 22 1
+C13 35 34 1000E-12 
+C14 36 22 800E-12
+S11 21 35 34 33 Snmod1
+S12 33 35 34 33 Snmod2
+S13 36 33 33 22 Snmod3
+S14 36 21 33 22 Snmod4
+LD1 1 24 1.0E-9
+LG1 2 27 2.3E-9
+LS1 3 23 2.3E-9
+.MODEL Nnmod1 NMOS (VTO=2.7 IS=1E-15 KP=77 CBD=412E-12 PB=1)
+.MODEL Nnmod2 NMOS (VTO=1.92 IS=1E-15 KP=0.7 PB=1)
+.MODEL Nnmod3 NMOS (VTO=1.4 IS=1E-15 KP=0.003 PB=1)
+.MODEL Dnmod1 D (IS=6E-13 RS=.15 N=1.01 TT=5.5e-8 BV=66)
+.MODEL Rnmod1 RES (TC1=50e-4 TC2=12E-6)
+.MODEL Rnmod2 RES (TC1=-6e-3 TC2=-6E-6)
+.MODEL Snmod1 VSWITCH RON=.001 ROFF=100 VON=-0.5 VOFF=1.5
+.MODEL Snmod2 VSWITCH RON=.001 ROFF=100 VON=1.5 VOFF=-0.5
+.MODEL Snmod3 VSWITCH RON=.001 ROFF=100 VON=-5 VOFF=-6
+.MODEL Snmod4 VSWITCH RON=.001 ROFF=100 VON=-6 VOFF=-5
+.ENDS
+*
+*$
+
+*
+*Zetex ZXMN6A11Z Spice Model v1.0 Last Revised 29/11/07
+*
+.SUBCKT ZXMN6A11Z 30 40 50
+*----connections-----D_G_S
+M1 6 2 5 5 Nmod L=0.8E-6 W=0.5
+M2 5 2 5 6 Pmod L=1E-6 W=0.45
+RG 4 22 2
+RIN1 2 5 2E12
+RIN2 22 5 2E12
+RD 3 6 Rmod1 0.08
+RL 6 5 10E9
+C1 2 5 220E-12
+C2 3 4 1E-12
+D1 5 3  Dmod1
+Rt 5 61 Rmod2 1
+Vt 61 62 1
+It 5 62 1
+Et 2 22  62 5 1
+LD 3 30 1.3E-9
+LG 4 40 2.4E-9
+LS 5 50 2.4E-9
+.MODEL Nmod NMOS (LEVEL=3 TOX=8E-8 NSUB=1E17 VTO=2.45 KP=1.6E-5 
++RS=.007 NFS=2E11 KAPPA=0.06 IS=1E-16 N=10)
+.MODEL Pmod PMOS (LEVEL=3 TOX=8E-8 NSUB=1E16 TPG=-1 IS=1E-16 N=10)
+.MODEL Dmod1 D (IS=1.8E-13 RS=.023 TT=2.2e-8 CJO=90e-12  BV=63)
+.MODEL Rmod1 RES (TC1=5.5e-3 TC2=1.4E-5)
+.MODEL Rmod2 RES (TC1=1e-3 TC2=0E-5)
+.ENDS ZXMN6A11Z
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*SRC=BSS138DW;DI_BSS138DW;MOSFETs N;Enh;50.0V 0.200A 1.60ohms  Diodes Inc. MOSFET - One element of dual 
+.MODEL DI_BSS138DW  NMOS( LEVEL=1 VTO=1.20 KP=50.0m  GAMMA=1.49
++ PHI=.75  LAMBDA=83.2u RD=0.224 RS=0.224
++ IS=100f  PB=0.800 MJ=0.460 CBD=56.3p 
++ CBS=67.5p  CGSO=96.0n CGDO=80.0n CGBO=324n  )   *   -- Assumes default L=100U W=100U --
+
+*SRC=BSS138W;DI_BSS138W;MOSFETs N;Enh;50.0V 0.200A 1.60ohms  Diodes Inc. MOSFET
+.MODEL DI_BSS138W  NMOS( LEVEL=1 VTO=1.20 KP=50.0m  GAMMA=1.49
++ PHI=.75  LAMBDA=83.2u RD=0.224 RS=0.224
++ IS=100f  PB=0.800 MJ=0.460 CBD=56.3p 
++ CBS=67.5p  CGSO=96.0n CGDO=80.0n CGBO=324n  )   *   -- Assumes default L=100U W=100U --
+
+*SRC=DMN5L06TK;DI_DMN5L06TK;MOSFETs N;Enh;50.0V 0.280A 2.00ohms  DIODES INC MOSFET
+.MODEL DI_DMN5L06TK  NMOS( LEVEL=1 VTO=1.20 KP=0.200  GAMMA=1.49
++ PHI=.75  LAMBDA=625u RD=0.280 RS=0.280
++ IS=140f  PB=0.800 MJ=0.460 CBD=98.8p 
++ CBS=119p  CGSO=60.0n CGDO=50.0n CGBO=390n  )
+*   -- Assumes default L=100U W=100U --
+
+*
+*Zetex 2N7002 Spice Model v1.0 Last Revised 3/5/00
+*
+.SUBCKT 2N7002 3 4 5
+* Nodes        D G S
+M1 3 2 5 5 MOD1
+RG 4 2 343
+RL 3 5 6E6
+C1 2 5 23.5P
+C2 3 2 4.5P 
+D1 5 3 DIODE1
+*
+.MODEL MOD1 NMOS VTO=2.474 RS=1.68 RD=0.0 IS=1E-15 KP=0.296
++CBD=53.5P PB=1 LAMBDA=267E-6
+.MODEL DIODE1 D IS=1.254E-13 N=1.0207 RS=0.222
+.ENDS 2N7002
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL

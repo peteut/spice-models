@@ -1,0 +1,131 @@
+*TITLE=ZXCT1030 MACROMODEL
+*ORIGIN=DZSL_AG_GS
+*SIMULATOR=DIODES, SIMETRIX and PSPICE
+*DATE=14th June 2010
+*VERSION=1
+*PIN_ORDER   1:VCC, 2:VS-, 3:VS+, 4:GND, 5:COMPIN, 6:REF, 7:OUT, 8:COMPOUT
+*
+.subckt ZXCT1030 VCC VS- VS+ GND COMPIN REF OUT COMPOUT
+* pins------------1--2----3---4---5------6---7----8      
+*
+*Voltage reference
+R1         REFG REF  34
+V1         REFG  GND 1.24
+*
+* Current sense amplifier limited by supply voltage
+R2         GND VCC  58k        ;quiescent current at 5V
+R3         VS- AIN-  100k         ;input filter
+C1         VS+ AIN- 1p        ;input filter
+G1    VS+ OUT VALUE={ max(V(VS+)-V(AIN-),0)/150*tanh ( 20*max(V(VS+)-1.1-V(OUT),0) ) }
+R4         OUT GND  1.5k       ;output resistance
+*
+*Comparator with VS- undervoltage detection and limited by supply voltage
+E2         DELTA GND VALUE = { V(OUT)-V(COMPIN)+0.015*V(E3OUT) }
+R5         DELTA  COMPINT  1k   ; delay filter
+C2         COMPINT  GND  150p   ; delay filter
+E3      E3OUT GND VALUE={ 0.5*(1+tanh(V(COMPINT)*10000)) }
+E4  S1IN GND VALUE={ ( V(E3OUT)+tanh(20*max(2.1-V(VS-),0)) )*tanh(20*max(V(VCC)-2.1,0)) }
+*
+*Output transistor open collector
+S1         COMPOUT GND S1IN GND _S1
+.MODEL       _S1 VSWITCH Roff=10e6 Ron=300 Voff=0.25 Von=0.75
+*
+.ends ZXCT1030
+*
+*                (c)  2010 Diodes Inc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved.  The models
+*   are believed accurate but no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Zetex Semiconductors Ltd, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+*
+*
+
+*
+*Zetex ZXCT1080 Spice Model v2.0 Last Revised 28/04/08
+*
+.SUBCKT ZXCT1080 1 2 3 4 5
+* 
+*Pins = Gnd, Vcc, S+, S-, Vout
+*
+R1 2 1 1E6
+R2 4 1 1E8
+R3 13 14 1000
+R4 15 5 Rmod1 3.5
+R5 16 12 9
+R6 12 1 Rmod2 1
+R7 3 1 1E6
+R8 21 22 Rmod3 1
+C1 14 1 3E-10
+E1 16 1 value={((V(3)-V(4))*100)+(V(3)/466*(V(3)-V(4))+((V(2)-5)/100)+0.025+(V(21)*10))}
+E2 13 1 value={V(12)-((V(12)-V(2))*(TANH((V(12)-V(2))*110)+1)/2)}
+E3 15 1 value={V(14)*((TANH(V(14)*100)+1)/2)}
+I1 1 21 1
+V1 1 22 1
+.MODEL Rmod1 RES (TC1=6e-3 )
+.MODEL Rmod2 RES (TC1=5e-6 )
+.MODEL Rmod3 RES (TC1=5e-5 )
+.ENDS ZXCT1080
+*
+*$
+*
+*                (c)  2008 Diodes Incorporated
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Diodes ").  They  are  supplied
+*   free of charge by Diodes for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Incorporated, 1566 N. Dallas Parkway, Suite 850, Dallas, TX 75248, USA
+
+*TITLE=ZXCT1010 MACROMODEL
+*ORIGIN=DZSL_AG_GS
+*SIMULATOR=DIODES, SIMETRIX and PSPICE
+*DATE=14th July 2010
+*VERSION=1
+*PIN_ORDER     2:GND, 3:OUT, 4:S+, 5:S-   (Pin 1 is NC)
+*
+.subckt ZXCT1010 GND OUT S+ S-
+* pins------------2---3--4--5
+*      
+R1  S- FILT  100k      ;input filter
+C1  S+ FILT  20p       ;input filter
+R2  S+ GND  1Meg       ;quiescent current at 5V
+*  Output as a voltage: first part of expression limits resonse to zero for negative input
+*  tanh function limits output when supply is less than 1.1V above Vout  
+E1  E1OUT GND VALUE={ max(V(S+)-V(FILT),0)*tanh( 20*max(V(S-)-1.1-V(OUT),0) ) }
+R3  E1OUT GND 1Meg
+*  Transconductance = 1/100 A/V, with temperature dependence
+G1  S+  OUT VALUE={(V(E1OUT) - V(GND))*(1/100)*(1.01-0.0003*TEMP-6e-6*(TEMP**2)-5e-8*(TEMP**3)+2.7e-10*(TEMP**4))}  
+.ends ZXCT1010
+*
+*
+*                (c)  2010 Diodes Inc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved.  The models
+*   are believed accurate but no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Zetex Semiconductors Ltd, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+*
+*

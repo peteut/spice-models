@@ -1,0 +1,572 @@
+*SRC=1N5711W;DI_1N5711W;Diodes;Si;  70.0V  15.0mA  1.00ns   Diodes Inc. -
+.MODEL DI_1N5711W D  ( IS=315n RS=2.80 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=2.03 TT=1.44n )
+
+*
+*Zetex BAT54 Spice Model v1.0 Last Revised 25/04/00
+*
+.MODEL BAT54 D Is=649e-9 N=1.04 RS=2.09 IKF=20e-3
++XTI=2 EG=0.58 
++CJO=12.4e-12 M=0.381 VJ=0.391
++BV=50 IBV=100e-6 ISR=431e-9 NR=4.99
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*SRC=BAT54;DI_BAT54;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky
+.MODEL DI_BAT54 D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54A;DI_BAT54A;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAT54A D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54C;DI_BAT54C;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAT54C D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54S;DI_BAT54S;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAT54S D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=PS3S0230;DI_PD3S0230;Diodes;Si;  30.0V  0.200A  2.00ns   Diodes INC Schottky Diode
+.MODEL DI_PD3S0230 D  ( IS=400n RS=0.378 BV=30.0 IBV=2.00u
++ CJO=14.6p  M=0.333 N=1.31 TT=2.88n )
+
+*******************************************************************************************************************************************
+*SRC=SD101AWS;DI_SD101AWS;Diodes;Si;  60.0V  15.0mA  1.00ns   Diodes Inc. Schottky- SD101AWS/BWS/CWS
+.MODEL DI_SD101AWS D  ( IS=230n RS=2.13 BV=60.0 IBV=200n
++ CJO=2.00p  M=0.333 N=1.96 TT=1.44n )
+*******************************************************************************************************************************************
+
+*SRC=SDM20N40A;DI_SDM20N40A;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes, Inc. Dual Schottky, Model for Single Schottky Only
+.MODEL DI_SDM20N40A D  ( IS=34.0p RS=0.211 BV=40.0 IBV=15.0u
++ CJO=50.0p  M=0.333 N=1.73 TT=7.20n
+
+*
+* This model account for one of the two diodes contained in the 
+* BAS40-4 device. The other one is totally identical.
+*
+.LIB BAS40_04
+*
+.SUBCKT BAS40_04 A K
+*
+D1 A K BAS40_1
+D2 A K1 BAS40_2
+V1 K1 K DC 217e-3
+*
+.MODEL BAS40_1 D (
++LEVEL    = 1              IS       = 2.24014e-09    RS       = 7.23547        
++N        = 1.02505        IKF      = 0.255776                  
++CJO      = 3.0881e-12     VJ       = 119.67e-3      MJ       = 183.18e-3       
++FC       = 0.5            XTI      = 0.60541        EG       = 0.75453        
++TRS1     = 0.00733869     TRS2     = 1.45813e-05    IBV      = 0.01
++BV       = 40             TT       = 6.02e-9        )
+*
+.MODEL BAS40_2 D (
++LEVEL    = 1              IS       = 5.04958e-11    RS       = 0.00692754     
++N        = 1.10729        XTI      = 1.45276        EG       = 1.46766        
++TRS1     = 0.0021771      TRS2     = 0.000729073    IKF      = 0.0102054 
++IBV      = 0.01           BV       = 1e3            TT       = 0 )
+*
+.ENDS BAS40_04
+*                                                                               
+.ENDL BAS40_04
+
+*SRC=BAS40-05;DI_BAS40-05;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two 
+.MODEL DI_BAS40-05 D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40-06;DI_BAS40-06;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two 
+.MODEL DI_BAS40-06 D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40;DI_BAS40;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode 
+.MODEL DI_BAS40 D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n  
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40DW-05;DI_BAS40DW-05;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, Quad, one node of four
+.MODEL DI_BAS40DW-05 D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40T;DI_BAS40T;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode 
+.MODEL DI_BAS40T D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS70-04;DI_BAS70-04;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS70-04 D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70-05;DI_BAS70-05;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS70-05 D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70-06;DI_BAS70-06;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS70-06 D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70;DI_BAS70;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. -
+.MODEL DI_BAS70 D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70BRW;DI_BAS70BRW;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, quad, one node of four
+.MODEL DI_BAS70BRW D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70DW-04;DI_BAS70DW-04;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, quad, one node of four
+.MODEL DI_BAS70DW-04 D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70DW-05;DI_BAS70DW-05;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, quad, one node of four
+.MODEL DI_BAS70DW-05 D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70DW-06;DI_BAS70DW-06;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, quad, one node of four
+.MODEL DI_BAS70DW-06 D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70TW;DI_BAS70TW;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, tripple, one node of three
+.MODEL DI_BAS70TW D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAT40V;DI_BAT40V;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky
+.MODEL DI_BAT40V D  ( IS=82.9n RS=0.373 BV=40.0 IBV=10.0u
++ CJO=11.9p  M=0.333 N=1.14 TT=7.20n )
+
+*SRC=BAT40VC;DI_BAT40VC;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky
+.MODEL DI_BAT40VC D  ( IS=82.9n RS=0.373 BV=40.0 IBV=10.0u
++ CJO=11.9p  M=0.333 N=1.14 TT=7.20n )
+
+*SRC=BAT46W;DI_BAT46W;Diodes;Si;  100V  0.150A  5.00ns   Diodes Inc. Schottky 
+.MODEL DI_BAT46W D  ( IS=603n RS=0.280 BV=100 IBV=5.00u 
++ CJO=7.96p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAT54AT;DI_BAT54AT;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAT54AT D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54AW;DI_BAT54AW;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAT54AW D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54CT;DI_BAT54CT;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAT54CT D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54CW;DI_BAT54CW;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAT54CW D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*******************************************************************************************************************************************
+*SRC=BAT54DW;DI_BAT54DW;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky, dual, one of two nodes
+.MODEL DI_BAT54DW D  ( IS=235n RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=1.28 TT=7.20n )
+*******************************************************************************************************************************************
+
+*SRC=BAT54JW;DI_BAT54JW;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAT54JW D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54LP;DI_BAT54LP;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc Schottky
+.MODEL DI_BAT54LP D  ( IS=138n RS=0.716 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=1.18 TT=7.20n )
+
+*SRC=BAT54LPS;DI_BAT54LPS;Diodes;Si;  30.0V  0.200A  2.00ns   Diodes Inc. SBR/ SKY
+.MODEL DI_BAT54LPS D  ( IS=20.9n RS=0.895 BV=30.0 IBV=2.00u
++ CJO=10.6p  M=0.333 N=1.07 TT=2.88n )
+
+*SRC=BAT54ST;DI_BAT54ST;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAT54ST D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54SW;DI_BAT54SW;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAT54SW D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54T;DI_BAT54T;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode
+.MODEL DI_BAT54T D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54TW;DI_BAT54TW;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, tripple, one node of three
+.MODEL DI_BAT54TW D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54V;DI_BAT54V;Diodes;Si;  29.6V  0.200A  5.00ns   Diodes Inc. One Element of Dual Schottky Diodes
+.MODEL DI_BAT54V D  ( IS=124n RS=0.210 BV=29.6 IBV=2.00
++ CJO=13.3  M=0.333 N=1.19 TT=7.20n )
+
+*SRC=BAT54W;DI_BAT54W;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode
+.MODEL DI_BAT54W D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*******************************************************************************************************************************************
+*SRC=QSBT40;DI_QSBT40;Diodes;Si;  30.0V  0.200A  50.0ns   Diodes Inc. Schottky Bus - Single Device of Multiple
+.MODEL DI_QSBT40 D  ( IS=500n RS=0.211 BV=30.0 IBV=2.00u
++ CJO=10.0p  M=0.333 N=1.70 TT=72.0n )
+*******************************************************************************************************************************************
+
+*SRC=SD101AW;DI_SD101AW;Diodes;Si;  60.0V  15.0mA  1.00ns   Diodes Inc. Schottky 
+.MODEL DI_SD101AW D  ( IS=1.82u RS=2.80 BV=60.0 IBV=200n 
++ CJO=2.65p  M=0.333 N=1.70 TT=1.44n )
+
+*SRC=SD101BW;DI_SD101BW;Diodes;Si;  50.0V  15.0mA  1.00ns   Diodes Inc. Schottky 
+.MODEL DI_SD101BW D  ( IS=1.82u RS=2.80 BV=50.0 IBV=200n 
++ CJO=2.65p  M=0.333 N=1.70 TT=1.44n )
+
+*SRC=SD101BWS;DI_SD101BWS;Diodes;Si;  50.0V  15.0mA  1.00ns   Diodes Inc. Schottky 
+.MODEL DI_SD101BWS D  ( IS=1.82u RS=2.80 BV=50.0 IBV=200n 
++ CJO=2.65p  M=0.333 N=1.70 TT=1.44n )
+
+*SRC=SD101CW;DI_SD101CW;Diodes;Si;  40.0V  15.0mA  1.00ns   Diodes Inc. Schottky 
+.MODEL DI_SD101CW D  ( IS=1.82u RS=2.80 BV=40.0 IBV=200n 
++ CJO=2.65p  M=0.333 N=1.70 TT=1.44n )
+
+*SRC=SD101CWS;DI_SD101CWS;Diodes;Si;  40.0V  15.0mA  1.00ns   Diodes Inc. Schottky 
+.MODEL DI_SD101CWS D  ( IS=1.82u RS=2.80 BV=40.0 IBV=200n 
++ CJO=2.65p  M=0.333 N=1.70 TT=1.44n )
+
+*SRC=SD103ASDM;DI_SD103ASDM;Diodes;Si;  40.0V  0.350A  10.0ns   Diodes Inc. Schottky Barrier Diode, quad, one node of four
+.MODEL DI_SD103ASDM D  ( IS=646n RS=0.120 BV=40.0 IBV=5.00u
++ CJO=29.2  M=0.333 N=1.28 TT=14.4n )
+
+*SRC=SD103ATW;DI_SD103ATW;Diodes;Si;  40.0V  0.350A  10.0ns   Diodes Inc. Schottky Barrier Diode, tripple, one node of three
+.MODEL DI_SD103ATW D  ( IS=646n RS=0.120 BV=40.0 IBV=5.00u
++ CJO=29.2  M=0.333 N=1.28 TT=14.4n )
+
+*SRC=SD103AW;DI_SD103AW;Diodes;Si;  40.0V  0.350A  10.0ns   Diodes Inc. Schottky 
+.MODEL DI_SD103AW D  ( IS=8.65u RS=0.120 BV=40.0 IBV=5.00u 
++ CJO=53.0p  M=0.333 N=1.70 TT=14.4n )
+
+*SRC=SD103AWS;DI_SD103AWS;Diodes;Si;  40.0V  0.350A  10.0ns   Diodes Inc.
+Schottky
+.MODEL DI_SD103AWS D  ( IS=8.65u RS=0.120 BV=40.0 IBV=5.00u
++ CJO=53.0p  M=0.333 N=1.70 TT=14.4n )
+
+*SRC=SD103BW;DI_SD103BW;Diodes;Si;  30.0V  0.350A  10.0ns   Diodes Inc. Schottky 
+.MODEL DI_SD103BW D  ( IS=8.65u RS=0.120 BV=30.0 IBV=5.00u 
++ CJO=53.0p  M=0.333 N=1.70 TT=14.4n )
+
+*SRC=SD103BWS;DI_SD103BWS;Diodes;Si;  30.0V  0.350A  10.0ns   Diodes Inc. Schottky 
+.MODEL DI_SD103BWS D  ( IS=8.65u RS=0.120 BV=30.0 IBV=5.00u 
++ CJO=53.0p  M=0.333 N=1.70 TT=14.4n )
+
+*SRC=SD103CW;DI_SD103CW;Diodes;Si;  20.0V  0.350A  10.0ns   Diodes Inc. Schottky 
+.MODEL DI_SD103CW D  ( IS=8.65u RS=0.120 BV=20.0 IBV=5.00u 
++ CJO=53.0p  M=0.333 N=1.70 TT=14.4n )
+
+*SRC=SD103CWS;DI_SD103CWS;Diodes;Si;  20.0V  0.350A  10.0ns   Diodes Inc. Schottky 
+.MODEL DI_SD103CWS D  ( IS=8.65u RS=0.120 BV=20.0 IBV=5.00u 
++ CJO=53.0p  M=0.333 N=1.70 TT=14.4n )
+
+*SRC=SDM03MT40;DI_SDM03MT40;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky 
+.MODEL DI_SDM03MT40 D  ( IS=309u RS=0.210 BV=40.0 IBV=1.00u 
++ CJO=2.65p  M=0.333 N=6.81 TT=7.20n )
+
+*SRC=SDM03U40;DI_SDM03U40;Diodes;Si;  30.0V  30.0mA  1.00ns   Diodes Inc.
+Schottky
+.MODEL DI_SDM03U40 D  ( IS=16.5u RS=2.20 BV=30.0 IBV=500n
++ CJO=2.59p  M=0.333 N=2.92 TT=1.44n )
+
+*SRC=SDM10M45SD;DI_SDM10M45SD;Diodes;Si;  45.0V  0.100A  5.00ns   Diodes Inc. Schottky 
+.MODEL DI_SDM10M45SD D  ( IS=290n RS=0.420 BV=45.0 IBV=1.00u 
++ CJO=10.6p  M=0.333 N=1.28 TT=7.20n )
+
+*SRC=SDM10P45;DI_SDM10P45;Diodes;Si;  45.0V  0.100A  5.00ns   Diodes Inc. Schottky 
+.MODEL DI_SDM10P45 D  ( IS=745n RS=0.792 BV=45.0 IBV=1.00u 
++ CJO=11.2p  M=0.333 N=1.39 TT=7.20n )
+
+*SRC=SDM10U45;DI_SDM10U45;Diodes;Si;  45.0V  0.100A  2.00ns   Diodes Inc. SBR/ SKY
+.MODEL DI_SDM10U45 D  ( IS=7.68u RS=1.32 BV=45.0 IBV=1.00u
++ CJO=13.3p  M=0.333 N=1.81 TT=2.88n )
+
+*SRC=SDM10U45LP;DI_SDM10U45LP;Diodes;Si;  40.0V  0.300A  5.00ns   Diodes Inc. Schottky
+.MODEL DI_SDM10U45LP D  ( IS=26.8u RS=0.140 BV=40.0 IBV=1.00u
++ CJO=10.6p  M=0.333 N=2.45 TT=7.20n )
+
+*SRC=SDM20E40C;DI_SDM20E40C;Diodes;Si;  40.0V  0.400A  5.00ns   Diodes Inc. Schottky 
+.MODEL DI_SDM20E40C D  ( IS=3.15u RS=0.165 BV=40.0 IBV=70.0u 
++ CJO=39.8p  M=0.333 N=1.16 TT=7.20n )
+
+*SRC=SDM20U30;DI_SDM20U30;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc.
+Schottky
+.MODEL DI_SDM20U30 D  ( IS=59.4n RS=0.210 BV=30.0 IBV=150u
++ CJO=19.9p  M=0.333 N=0.700 TT=7.20n )
+
+*SRC=SDM20U30LP;DI_SDM20U30LP;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky
+.MODEL DI_SDM20U30LP D  ( IS=59.4n RS=0.210 BV=30.0 IBV=150u
++ CJO=19.9p  M=0.333 N=0.700 TT=7.20n )
+
+*SRC=SDM20U40;DI_SDM20U40;Diodes;Si;  40.0V  0.250A  10.0ns   Diodes Inc.
+Schottky
+.MODEL DI_SDM20U40 D  ( IS=4.32u RS=0.168 BV=40.0 IBV=5.00u
++ CJO=39.8p  M=0.333 N=1.70 TT=14.4n )
+
+*SRC=SDM40E20LC;DI_SDM40E20LC;Diodes;Si;  20.0V  0.400A  10.0ns   Diodes INC Schottky Diode
+.MODEL DI_SDM40E20LC D  ( IS=2.83m RS=23.0m BV=20.0 IBV=250u
++ CJO=66.3p  M=0.333 N=2.17 TT=14.4n
+
+*SRC=SDM40E20LS;DI_SDM40E20LS;Diodes;Si;  20.0V  0.400A  5.00ns   Diodes Inc. Schottky 
+.MODEL DI_SDM40E20LS D  ( IS=54.8u RS=0.132 BV=20.0 IBV=250u 
++ CJO=199p  M=0.333 N=1.34 TT=7.20n )
+
+*SRC=SDM6CC;DI_SDM6CC;Diodes;Si;  30.0V  0.200A  1.30ns   Diodes INC Schottky Diode
+.MODEL DI_SDM6CC D  ( IS=2.73u RS=0.653 BV=30.0 IBV=700n
++ CJO=5.30p  M=0.333 N=1.98
+
+*SRC=SDMG0340L;DI_SDMG0340L;Diodes;Si;  40.0V  30.0mA  1.00ns   Diodes Inc. 
+.MODEL DI_SBMG0340L D  ( IS=13.9u RS=2.57 BV=40.0 IBV=10.0u
++ CJO=2.65p  M=0.333 N=2.82 TT=1.44n )
+
+*SRC=SDMG0340LA;DI_SDMG0340LA;Diodes;Si;  40.0V  30.0mA  1.00ns   Diodes Inc. Schottky diode, dual, one node of two 
+.MODEL DI_SBMG0340LA D  ( IS=13.9u RS=2.57 BV=40.0 IBV=10.0u
++ CJO=2.65p  M=0.333 N=2.82 TT=1.44n )
+
+*SRC=SDMG0340LC;DI_SDMG0340LC;Diodes;Si;  40.0V  30.0mA  1.00ns   Diodes Inc. Schottky diode, dual, one node of two 
+.MODEL DI_SBMG0340LC D  ( IS=13.9u RS=2.57 BV=40.0 IBV=10.0u
++ CJO=2.65p  M=0.333 N=2.82 TT=1.44n )
+
+*SRC=SDMK0340L;DI_SDMK0340L;Diodes;Si;  40.0V  30.0mA  3.00us   Diodes Inc. Schottky Barrier Diode
+.MODEL DI_SDMK0340L D  ( IS=11.2u RS=3.64 BV=40.0 IBV=500n
++ CJO=2.65p  M=0.333 N=2.69 TT=4.32u )
+******************************************************************************************************************************
+
+*SRC=SDMP0340LAT;DI_SDMP0340LAT;Diodes;Si;  40.0V  30.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two 
+.MODEL DI_SDMP0340LAT D  ( IS=16.5u RS=2.20 BV=40.0 IBV=1.00u 
++ CJO=2.65p  M=0.333 N=2.92 TT=7.20n )
+**************************************************************************************************************************************************
+
+*SRC=SDMP0340LCT;DI_SDMP0340LCT;Diodes;Si;  40.0V  30.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two 
+.MODEL DI_SDMP0340LCT D  ( IS=16.5u RS=2.20 BV=40.0 IBV=1.00u 
++ CJO=2.65p  M=0.333 N=2.92 TT=7.20n )
+**************************************************************************************************************************************************
+
+*SRC=SDMP0340LST;DI_SDMP0340LST;Diodes;Si;  40.0V  30.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two 
+.MODEL DI_SDMP0340LST D  ( IS=16.5u RS=2.20 BV=40.0 IBV=1.00u 
++ CJO=2.65p  M=0.333 N=2.92 TT=7.20n )
+**************************************************************************************************************************************************
+
+*SRC=SDMP0340LT;DI_SDMP0340LT;Diodes;Si;  40.0V  30.0mA  5.00ns   Diodes Inc. Schottky 
+.MODEL DI_SDMP0340LT D  ( IS=16.5u RS=2.20 BV=40.0 IBV=1.00u 
++ CJO=2.65p  M=0.333 N=2.92 TT=7.20n )
+
+*
+*Zetex ZHCS350 Spice Model v1.0 Last revision 26/04/2005
+*
+.MODEL ZHCS350 D IS=1.35e-7 N=1.06 ISR=6e-7 NR=1.1 RS=0.9
++IKF=0.2 BV=65 TRS1=6.5e-3 XTI=2 EG=0.63 Fc=0.5 CJO=18.84e-12
++M=0.5 VJ=0.33 TT=1.6e-9 
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZHCS400 Spice Model v1.0 Last Revised 22/05/02
+*
+.MODEL ZHCS400 D IS=9.1e-8 N=.59 RS=250e-3 IKF=1.37e-3 XTI=2
++EG=.58 CJO=101p M=.5231 VJ=.3905 Fc=.5 BV=60 IBV=100E-6
++ISR=2.2E-6 NR=1.8 
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZLLS350 Spice Model v2.0 Last revision 24/05/2007
+*
+*This simple model has limitations with respect to temperature
+*best fit of forward characteristitics with temperature EG=0.63
+*best fit of reverse characteristitics with temperature EG=0.85
+*
+.MODEL ZLLS350 D IS=14E-8 N=1.03 ISR=9E-8 NR=2 IKF=0.043 BV=56 IBV=1E-4
++RS=1.2 TT=1e-9 CJO=13.5E-12 VJ=0.6 M=0.33 EG=0.63 XTI=2 TRS1=4E-3
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*SRC=1N5711WS;DI_1N5711WS;Diodes;Si;  70.0V  15.0mA  1.00ns   Diodes Inc. 
+.MODEL DI_1N5711WS D  ( IS=315n RS=2.80 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=2.03 TT=1.44n )
+
+*SRC=1N6263W;DI_1N6263W;Diodes;Si;  60.0V  15.0mA  1.00ns   Diodes Inc. Schottky 
+.MODEL DI_1N6263W D  ( IS=1.82u RS=2.80 BV=60.0 IBV=200n 
++ CJO=2.65p  M=0.333 N=1.70 TT=1.44n )
+
+*SRC=BAS40-04T;DI_BAS40-04T;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two 
+.MODEL DI_BAS40-04T D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40-05T;DI_BAS40-05T;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two 
+.MODEL DI_BAS40-05T D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40-06T;DI_BAS40-06T;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two 
+.MODEL DI_BAS40-06T D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40BRW;DI_BAS40BRW;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, Quad, one node of four
+.MODEL DI_BAS40BRW D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40DW-04;DI_BAS40DW-04;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, Quad, one node of four
+.MODEL DI_BAS40DW-04 D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40DW-06;DI_BAS40DW-06;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, Quad, one node of four
+.MODEL DI_BAS40DW-06 D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40LP;DI_BAS40LP;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc Schottky
+.MODEL DI_BAS40LP D  ( IS=2.93u RS=1.29 BV=40.0 IBV=200n
++ CJO=2.30p  M=0.333 N=2.39 TT=7.20n )
+
+*SRC=BAS40TW;DI_BAS40TW;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, Tripple, one node of three
+.MODEL DI_BAS40TW D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40W;DI_BAS40W;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode
+.MODEL DI_BAS40W D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40W-04;DI_BAS40W-04;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS40W-04 D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40W-05;DI_BAS40W-05;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS40W-05 D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS40W-06;DI_BAS40W-06;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS40W-06 D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n 
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )
+
+*SRC=BAS70-04T;DI_BAS70-04T;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS70-04T D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70-05T;DI_BAS70-05T;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS70-05T D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70-06T;DI_BAS70-06T;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS70-06T D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70JW;DI_BAS70JW;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS70JW D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70T;DI_BAS70T;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode
+.MODEL DI_BAS70T D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70W;DI_BAS70W;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode
+.MODEL DI_BAS70W D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70W-04;DI_BAS70W-04;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS70W-04 D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70W-05;DI_BAS70W-05;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS70W-05 D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAS70W-06;DI_BAS70W-06;Diodes;Si;  70.0V  70.0mA  5.00ns   Diodes Inc. Schottky diode, dual, one node of two
+.MODEL DI_BAS70W-06 D  ( IS=99.5p RS=0.600 BV=70.0 IBV=10.0u
++ CJO=2.00p  M=0.333 N=1.70 TT=7.20n )
+
+*SRC=BAT42W;DI_BAT42W;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc Schottky Diode
+.MODEL DI_BAT42W D  ( IS=87.5u RS=18.1m BV=30.0 IBV=500n
++ CJO=8.88p  M=0.333 N=3.51 TT=7.20n )
+
+*SRC=BAT42WS;DI_BAT42WS;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc
+Schottky Diode
+.MODEL DI_BAT42WS D  ( IS=87.5u RS=18.1m BV=30.0 IBV=500n
++ CJO=8.88p  M=0.333 N=3.51 TT=7.20n )
+
+*SRC=BAT43W;DI_BAT43W;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc Schottky Diode 
+.MODEL DI_BAT43W D  ( IS=87.5u RS=18.1m BV=30.0 IBV=500n 
++ CJO=8.88p  M=0.333 N=3.51 TT=7.20n )
+
+*SRC=BAT43WS;DI_BAT43WS;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc Schottky Diode 
+.MODEL DI_BAT43WS D  ( IS=87.5u RS=18.1m BV=30.0 IBV=500n 
++ CJO=8.88p  M=0.333 N=3.51 TT=7.20n )
+
+*SRC=BAT54ADW;DI_BAT54ADW;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, quad, one node of four
+.MODEL DI_BAT54ADW D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54BRW;DI_BAT54BRW;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, quad, one node of four
+.MODEL DI_BAT54BRW D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54CDW;DI_BAT54CDW;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, quad, one node of four
+.MODEL DI_BAT54CDW D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54SDW;DI_BAT54SDW;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode, quad, one node of four
+.MODEL DI_BAT54SDW D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=BAT54WS;DI_BAT54WS;Diodes;Si;  30.0V  0.200A  5.00ns   Diodes Inc. Schottky diode
+.MODEL DI_BAT54WS D  ( IS=34.9u RS=0.210 BV=30.0 IBV=2.00u
++ CJO=13.3p  M=0.333 N=2.28 TT=7.20n )
+
+*SRC=SDMG0340LS;DI_SDMG0340LS;Diodes;Si;  40.0V  30.0mA  1.00ns   Diodes Inc. Schottky diode, dual, one node of two 
+.MODEL DI_SBMG0340LS D  ( IS=13.9u RS=2.57 BV=40.0 IBV=10.0u
++ CJO=2.65p  M=0.333 N=2.82 TT=1.44n )

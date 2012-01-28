@@ -1,0 +1,150 @@
+*TITLE=AP8803 MACROMODEL
+*ORIGIN=DZSL_AG_GS
+*SIMULATOR=DIODES, SIMETRIX
+*DATE=6th Jan 2012
+*VERSION=1
+*PIN_ORDER   1:SW, 2:GND, 3:CTRL, 4:SET, 5:VIN
+*
+* SIMetrix macromodel for AL8803 Buck LED Driver
+
+* based on work by Tim Wilson
+
+.subckt AL8803_SIMETRIX 10  26  13   20  18
+* pins-------------------1---2---3----4---5 
+*names                  SW  GND CTRL SET VIN
+
+* Vref Generator *
+E2         19 26 18 26 1
+B111       14 26  V=Min(V(19), 1.25)    
+R3         14 19  20k  
+R4         14 13  200k  
+
+* CTRL input filter *
+* Faster (but unrealistic) startup can be
+* achieved by changing initial conditions
+* on C1 to C3 to match the settled value.
+* eg 1.25V if CTRL is floating in the application
+* or equal to the external DC voltage applied to CTRL
+* or equal to the average value of the PWM signal
+* applied to CTRL
+C1         15 26  5p IC=0 
+C2         16 26  5p IC=0 
+C3         17 26  5p IC=0 
+R5         13 15  7.7meg  
+R6         15 16  7.7meg  
+R7         16 17  7.7meg  
+E7         12 26 17 26 1
+
+* CTRL lockout with hysteresis *
+R8         12 adj_lockout  1000  
+I1         12 adj_lockout DC 50uA  
+C7         adj_lockout 12  1p IC=0 
+X_S4       adj_lockout 26 adj_lockout 12 AP_S4 
+X_S5       adj_lockout 26 23 26 AP_S5 
+
+* UV lockout *
+X_S6       18 26 23 26 AP_S6 
+
+* Main Function *
+G2         26 8 18 20 1m
+C4         26 20  20p  
+R9         26 9  3.832k  
+R10        9 8  10.859k  
+X_S7       23 26 9 26 AP_S7 
+G3         21 26 8 12 1000m
+R11        26 21  1meg  
+V3         24 26 700mV
+D8         24 21 Dclamp 
+V4         22 26 6V
+D9         21 22 Dclamp 
+
+* Comp Delay (Asymmetric) *
+E4         25 26 21 26 1
+C6         26 23  25p  
+R13        23 25  2k  
+
+* Output NMOS *
+X_S8       23 26 11 26 AP_S8 
+R12        11 10  0.4  
+C5         26 10  100p  
+
+* Supply Current *
+X_S3       adj_lockout 26 4 7 AP_S3 
+R1         26 7  1.58k 
+R2         26 4  67k  
+X_S2       18 26 6 4 AP_S2 
+V1         5 26 1V
+X_F1       6 5 18 26 AP_F1 
+
+
+* Timestep Control *
+* Only purpose is to force timestep without using a control card *
+V99        99 26 DC 0 AC 0 PULSE 0 0 0 100n 100n 500n 1u
+R99        99 26 100
+
+.model Dzener D Is=1e-8 N=10 bv=1.245 ibv=1e-12 Cjo=.1e-12 Rs=.1 TBV1=4e-5 nbv=.01 
+.model Dclamp  D Is=2.682n N=1.836 Rs=.5664 Ikf=44.17m Cjo=4p M=.3333 Vj=.5
+
+.subckt AP_F1 1 2 3 4  
+F_F1       3 4 VF_F1 1
+VF_F1      1 2 0V
+.ends AP_F1
+
+.subckt AP_S3 1 2 3 4  
+S_S3       3 4 1 2 S3
+RS_S3      1 2 1G
+.MODEL     S3 VSWITCH Roff=1e6 Ron=1.0 Voff=198mV Von=200mV
+.ends AP_S3
+
+.subckt AP_S2 1 2 3 4  
+S_S2       3 4 1 2 S2
+RS_S2      1 2 1G
+.MODEL     S2 VSWITCH Roff=1e6 Ron=1.0 Voff=1.248V Von=1.25V
+.ends AP_S2
+
+.subckt AP_S6 1 2 3 4  
+S_S6       3 4 1 2 S6
+RS_S6      1 2 1G
+.MODEL     S6 VSWITCH Roff=10e6 Ron=1.0 Voff=6.505V Von=6.495V
+.ends AP_S6
+
+.subckt AP_S7 1 2 3 4  
+S_S7       3 4 1 2 S7
+RS_S7      1 2 1G
+.MODEL     S7 VSWITCH Roff=10e6 Ron=1.0 Voff=2750mV Von=2755mV
+.ends AP_S7
+
+.subckt AP_S8 1 2 3 4  
+S_S8       3 4 1 2 S8
+RS_S8      1 2 1G
+.MODEL     S8 VSWITCH Roff=10e6 Ron=1.0 Voff=2750mV Von=2755mV
+.ends AP_S8
+
+.subckt AP_S4 1 2 3 4  
+S_S4       3 4 1 2 S4
+RS_S4      1 2 1G
+.MODEL     S4 VSWITCH Roff=10e6 Ron=1 Voff=255mV Von=245mV
+.ends AP_S4
+
+.subckt AP_S5 1 2 3 4  
+S_S5       3 4 1 2 S5
+RS_S5      1 2 1G
+.MODEL     S5 VSWITCH Roff=10e6 Ron=1.0 Voff=251mV Von=249mV
+.ends AP_S5
+
+.ends AP8803_SIMETRIX
+*
+*                (c)  2012 Diodes Inc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved.  The models
+*   are believed accurate but no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Zetex Semiconductors Ltd, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL

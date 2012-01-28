@@ -1,0 +1,440 @@
+*SRC=BAW101S;BAW101S;Diodes;Si;  300V  0.250A  50.0ns   DIODES Switching Diode
+.MODEL BAW101S D  ( IS=74.8n RS=0.288 BV=300 IBV=150n
++ CJO=700f  M=0.333 N=2.41 TT=72.0n )
+
+*SRC=BAW101V;BAW101V;Diodes;Si;  325V  0.250A  50.0ns   DIODES Switching Diode
+.MODEL BAW101V D  ( IS=74.8n RS=0.288 BV=325 IBV=150n
++ CJO=700f  M=0.333 N=2.41 TT=72.0n )
+
+*SRC=BAS521;BAS521;Diodes;Si;  300V  0.250A  50.0ns   DIODES Switching Diode
+.MODEL BAS521 D  ( IS=74.8n RS=0.288 BV=300 IBV=150n
++ CJO=810f  M=0.333 N=2.41 TT=72.0n )
+
+*SRC=BAS521LP;BAS521LP;Diodes;Si;  325V  0.250A  50.0ns   DIODES Switching Diode
+.MODEL BAS521LP D  ( IS=74.8n RS=0.288 BV=325 IBV=150n
++ CJO=810f  M=0.333 N=2.41 TT=72.0n )
+
+*SRC=MMBD5004BRM;MMBD5004BRM;Diodes;Si;  400V  1.25A  50.0ns   DIODES Switching diodes
+.MODEL MMBD5004BRM D  ( IS=128n RS=33.6m BV=400 IBV=5.00u
++ CJO=2.00p  M=0.333 N=2.62 TT=72.0n )
+
+*SRC=MMBD4148;DI_MMBD4148;Diodes;Si;  75.0V  0.250A  4.00ns   Diodes Inc. Switching Diode 
+.MODEL DI_MMBD4148 D  ( IS=300n RS=0.422 BV=75.0 IBV=2.50u 
++ CJO=1.99p  M=0.333 N=2.77 TT=5.76n )
+
+*SRC=MMBD7000HC;MMBD7000HC;Diodes;Si;  100V  0.300A  4.00ns   DIODES Switching Diode
+.MODEL MMBD7000HC D  ( IS=412p RS=0.140 BV=100 IBV=3.00u
++ CJO=2.00p  M=0.333 N=1.70 TT=5.76n )
+
+*SRC=1N4148W;1N4148W;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. 
+.MODEL 1N4148W D  ( IS=10.4n RS=51.5m BV=75.0 IBV=1.00u
++ CJO=2.00p  M=0.333 N=2.07 TT=5.76n )
+
+*SRC=1N4148WS;1N4148WS;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Switching Diode
+.MODEL 1N4148WS D  ( IS=10.4n RS=51.5m BV=75.0 IBV=1.00u
++ CJO=2.00p  M=0.333 N=2.07 TT=5.76n )
+
+*SRC=1N4448HLP;DI_1N4448HLP;Diodes;Si;  80.0V  0.250A  4.00ns   Diodes Inc. Switching Diode
+.MODEL DI_1N4448HLP D  ( IS=5.31n RS=0.761 BV=80.0 IBV=100n
++ CJO=3.56p  M=0.333 N=1.90 TT=5.76n )
+
+*SRC=1N4448W;DI_1N4448W;Diodes;Si;  75.0V  0.250A  4.00ns   Diodes Inc. 
+.MODEL DI_1N4448W D  ( IS=355p RS=0.168 BV=75.0 IBV=2.50u
++ CJO=4.00p  M=0.333 N=1.70 TT=5.76n )
+
+*SRC=1N4448WS;DI_1N4448WS;Diodes;Si;  75.0V  0.500A  4.00ns   Diodes Inc. Switching Diode
+.MODEL DI_1N4448WS D  ( IS=24.7n RS=84.4m BV=75.0 IBV=2.50u
++ CJO=4.00p  M=0.333 N=2.12 TT=5.76n )
+
+*SRC=MMBD4148;DI_MMBD4148;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. Switching 
+.MODEL DI_MMBD4148 D  ( IS=126n RS=0.140 BV=75.0 IBV=1.00u 
++ CJO=2.65p  M=0.333 N=2.60 TT=5.76n )
+
+*SRC=BAV23A;DI_BAV23A;Diodes;Si;  200V  0.400A  50.0ns   Diodes Inc. Switching Diode 
+.MODEL DI_BAV23A D  ( IS=237n RS=0.260 BV=200 IBV=100n 
++ CJO=3.05p  M=0.333 N=2.69 TT=72.0n )
+
+*SRC=BAV23C;DI_BAV23C;Diodes;Si;  200V  0.400A  50.0ns   Diodes Inc. Switching Diode 
+.MODEL DI_BAV23C D  ( IS=237n RS=0.260 BV=200 IBV=100n 
++ CJO=3.05p  M=0.333 N=2.69 TT=72.0n )
+
+*SRC=BAV23S;DI_BAV23S;Diodes;Si;  200V  0.400A  50.0ns   Diodes Inc. Switching Diode 
+.MODEL DI_BAV23S D  ( IS=237n RS=0.260 BV=200 IBV=100n 
++ CJO=3.05p  M=0.333 N=2.69 TT=72.0n )
+
+*SRC=BAV70W;DI_BAV70W;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAV70W D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )
+
+*SRC=BAV99;DI_BAV99;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+switching
+.MODEL DI_BAV99 D  ( IS=261p RS=0.140 BV=75.0 IBV=2.50u
++ CJO=1.19p  M=0.333 N=1.70 TT=5.76n )
+
+*SRC=BAW156;DI_BAW156;Diodes;Si;  85.0V  0.160A  3.00us   Diodes, Inc. diode
+.MODEL DI_BAW156 D  ( IS=59.0p RS=0.262 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.78 TT=4.32u )
+
+*SRC=DLPA004;DLPA004;Diodes;Si;  85.0V  0.300A  3.00us   DIODES Switching Diodes
+.MODEL DLPA004 D  ( IS=42.4p RS=0.140 BV=85.0 IBV=2.50u
++ CJO=2.00p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=MMBD7000HS;MMBD7000HS;Diodes;Si;  100V  0.300A  4.00ns   DIODES Switching Diode
+.MODEL MMBD7000HS D  ( IS=412p RS=0.140 BV=100 IBV=3.00u
++ CJO=2.00p  M=0.333 N=1.70 TT=5.76n )
+
+*SRC=1N4148WT;DI_1N4148WT;Diodes;Si;  80.0V  0.125A  4.00ns   Diodes Inc.
+Switching
+.MODEL DI_1N4148WT D  ( IS=111n RS=0.628 BV=80.0 IBV=1.00u
++ CJO=2.00p  M=0.333 N=1.70 TT=5.76n )
+
+*SRC=1N4448HWS;DI_1N4448HWS;Diodes;Si;  80.0V  0.500A  4.00ns   Diodes Inc. Switching Diode
+.MODEL DI_1N4448HWS D  ( IS=24.7n RS=84.4m BV=80.0 IBV=100n
++ CJO=3.50p  M=0.333 N=2.12 TT=5.76n )
+
+*SRC=1N4448HWT;DI_1N4448HWT;Diodes;Si;  80.0V  0.250A  4.00ns   Diodes Inc.
+Switching
+.MODEL DI_1N4448HWT D  ( IS=137f RS=0.168 BV=80.0 IBV=100n
++ CJO=3.56p  M=0.333 N=1.11 TT=5.76n )
+
+*SRC=BAL99;DI_BAL99;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAL99 D  ( IS=31.2n RS=0.360 BV=75.0 IBV=2.50u
++ CJO=1.72p  M=0.333 N=2.35 TT=5.76n )
+
+*SRC=BAS116;DI_BAS116;Diodes;Si;  60.0V  0.215A  3.00us   Diodes Inc.
+Switching Diode
+.MODEL DI_BAS116 D  ( IS=4.53u RS=0.383 BV=60.0 IBV=5.00n
++ CJO=1.72p  M=0.333 N=4.07 TT=4.32u )
+
+*SRC=BAS116T;DI_BAS116T;Diodes;Si;  85.0V  0.215A  3.00us   Diodes Inc. Switching Diode
+.MODEL DI_BAS116T D  ( IS=10.5p RS=0.196 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.61 TT=4.32u )
+
+*SRC=1N4448HLP;DI_1N4448HLP;Diodes;Si;  80.0V  0.250A  4.00ns   Diodes Inc. Switching Diode
+.MODEL DI_1N4448HLP D  ( IS=5.31n RS=0.761 BV=80.0 IBV=100n
++ CJO=3.56p  M=0.333 N=1.90 TT=5.76n )
+
+*SRC=BAS16LP;DI_BAS16LP;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. Switching Diode
+.MODEL DI_BAS16LP D  ( IS=74.3n RS=0.699 BV=75.0 IBV=1.00u
++ CJO=2.00p  M=0.333 N=2.35 TT=5.76n )
+
+*SRC=BAS16T;DI_BAS16T;Diodes;Si;  85.0V  0.155A  4.00ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAS16T D  ( IS=2.69n RS=0.271 BV=85.0 IBV=2.00u
++ CJO=1.99p  M=0.333 N=1.95 TT=5.76n
+************************************************************************************************************************
+
+*SRC=BAS16TW;DI_BAS16TW;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAS16TW D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )
+
+*SRC=BAS16V;DI_BAS16V;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. Switching diode - one element of device
+.MODEL DI_BAS16V D  ( IS=412p RS=0.140 BV=75.0 IBV=1.00u
++ CJO=1.72p  M=0.333 N=1.70 TT=5.76n )
+
+*SRC=BAS16W;DI_BAS16W;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAS16W D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )
+
+*SRC=BAS19;DI_BAS19;Diodes;Si;  100V  0.400A  50.0ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAS19 D  ( IS=41.7n RS=0.270 BV=100 IBV=100n
++ CJO=2.98p  M=0.333 N=2.35 TT=72.0n )
+
+*SRC=BAS19W;DI_BAS19W;Diodes;Si;  100V  0.400A  50.0ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAS19W D  ( IS=114n RS=0.172 BV=100 IBV=100n
++ CJO=2.98p  M=0.333 N=2.58 TT=72.0n )
+
+*SRC=BAS20;DI_BAS20;Diodes;Si;  150V  0.400A  50.0ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAS20 D  ( IS=41.7n RS=0.270 BV=150 IBV=100n
++ CJO=2.98p  M=0.333 N=2.35 TT=72.0n )
+
+*SRC=BAS20DW;DI_BAS20DW;Diodes;Si;  200V  0.300A  50.0ns   Diodes Inc. Single Element of Dual BAS20DW
+.MODEL DI_BAS20DW D  ( IS=2.86n RS=0.141 BV=200 IBV=100n
++ CJO=2.98p  M=0.333 N=1.95 TT=72.0n )
+
+*SRC=BAS20W;DI_BAS20W;Diodes;Si;  150V  0.400A  50.0ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAS20W D  ( IS=114n RS=0.172 BV=150 IBV=100n
++ CJO=2.98p  M=0.333 N=2.58 TT=72.0n )
+
+*SRC=BAS21;DI_BAS21;Diodes;Si;  200V  0.400A  50.0ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAS21 D  ( IS=41.7n RS=0.270 BV=200 IBV=100n
++ CJO=2.98p  M=0.333 N=2.35 TT=72.0n )
+
+*SRC=BAS21DW;DI_BAS21DW;Diodes;Si;  250V  0.300A  50.0ns   Diodes Inc. Single Element of Dual BAS21DW
+.MODEL DI_BAS21DW D  ( IS=2.86n RS=0.141 BV=250 IBV=100n
++ CJO=2.98p  M=0.333 N=1.95 TT=72.0n )
+
+*SRC=BAS21T;DI_BAS21T;Diodes;Si;  200V  0.400A  50.0ns   Diodes Inc. Switching Diode
+.MODEL DI_BAS21T D  ( IS=401n RS=0.105 BV=200 IBV=100n
++ CJO=5.00p  M=0.333 N=2.87 TT=72.0n )
+
+*SRC=BAS21W;DI_BAS21W;Diodes;Si;  200V  0.400A  50.0ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAS21W D  ( IS=114n RS=0.172 BV=200 IBV=100n
++ CJO=2.98p  M=0.333 N=2.58 TT=72.0n )
+
+*SRC=BAV116W;DI_BAV116W;Diodes;Si;  130V  0.215A  3.00us   Diodes Inc. Low leakage diode
+.MODEL DI_BAV116W D  ( IS=22.5p RS=0.282 BV=130 IBV=5.00n
++ CJO=2.40p  M=0.333 N=1.67 TT=4.32u )
+
+*SRC=BAV16W;BAV16W;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. -
+.MODEL BAV16W D  ( IS=10.4n RS=51.5m BV=75.0 IBV=1.00u
++ CJO=2.00p  M=0.333 N=2.07 TT=5.76n )
+
+*SRC=BAV16WS;BAV16WS;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Switching Diode
+.MODEL BAV16WS D  ( IS=10.4n RS=51.5m BV=75.0 IBV=1.00u
++ CJO=2.00p  M=0.333 N=2.07 TT=5.76n )
+
+*SRC=BAV170;DI_BAV170;Diodes;Si;  85.0V  0.215A  3.00us   Diodes, Inc. diode
+.MODEL DI_BAV170 D  ( IS=31.5p RS=0.195 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.70 TT=4.32u
+
+*SRC=BAV170T;DI_BAV170T;Diodes;Si;  85.0V  0.125A  3.00us   Diodes Inc. Switching Diode, dual, model for one element
+.MODEL DI_BAV170T D  ( IS=10.5p RS=0.196 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.61 TT=4.32u )
+
+*SRC=BAV199;DI_BAV199;Diodes;Si;  85.0V  0.160A  3.00us   Diodes, Inc. diode
+.MODEL DI_BAV199 D  ( IS=59.0p RS=0.262 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.78 TT=4.32u )
+
+*SRC=BAV199DW;DI_BAV199DW;Diodes;Si;  85.0V  0.160A  3.00us   Diodes, Inc.
+Switching - one element of BAV199DW array
+.MODEL DI_BAV199DW D  ( IS=59.0p RS=0.262 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.78 TT=4.32u )
+
+*SRC=BAV199T;DI_BAV199T;Diodes;Si;  85.0V  0.125A  3.00us   Diodes Inc. Switching Diode, dual, model for one element
+.MODEL DI_BAV199T D  ( IS=10.5p RS=0.196 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.61 TT=4.32u )
+
+*SRC=BAV199W;DI_BAV199W;Diodes;Si;  85.0V  0.160A  3.00us   Diodes Inc. Switching Diode
+.MODEL DI_BAV199W D  ( IS=22.5p RS=0.264 BV=85.0 IBV=10.0u
++ CJO=2.00  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=BAV19W;BAV19W;Diodes;Si;  100V  0.400A  50.0ns   Diodes Inc. -
+.MODEL BAV19W D  ( IS=1.09u RS=0.105 BV=100 IBV=100n
++ CJO=5.00p  M=0.333 N=3.29 TT=72.0n )
+
+*SRC=BAV19WS;BAV19WS;Diodes;Si;  100V  0.400A  50.0ns   Diodes Inc.
+Switching Diode
+.MODEL BAV19WS D  ( IS=1.09u RS=0.105 BV=100 IBV=100n
++ CJO=5.00p  M=0.333 N=3.29 TT=72.0n )
+
+*SRC=BAV20WS;DI_BAV20WS;Diodes;Si;  150V  0.400A  50.0ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAV20WS D  ( IS=1.09u RS=0.105 BV=150 IBV=100n
++ CJO=5.00p  M=0.333 N=3.29 TT=72.0n )
+
+*SRC=BAV21W;DI_BAV21W;Diodes;Si;  200V  0.400A  50.0ns   Diodes Inc. -
+.MODEL DI_BAV21W D  ( IS=1.09u RS=0.105 BV=200 IBV=100n
++ CJO=5.00p  M=0.333 N=3.29 TT=72.0n )
+
+*SRC=BAV21WS;DI_BAV21WS;Diodes;Si;  200V  0.400A  50.0ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAV21WS D  ( IS=1.09u RS=0.105 BV=200 IBV=100n
++ CJO=5.00p  M=0.333 N=3.29 TT=72.0n )
+
+*SRC=BAV3004W;DI_BAV3004W;Diodes;Si;  350V  0.225A  50.0ns   Diodes, Inc. switching
+.MODEL DI_BAV3004W D  ( IS=58.9n RS=0.412 BV=350 IBV=100n
++ CJO=1.17p  M=0.333 N=2.37 TT=72.0n )
+
+*SRC=BAV3004WS;DI_BAV3004WS;Diodes;Si;  350V  0.225A  50.0ns   Diodes, Inc. switching
+.MODEL DI_BAV3004W D  ( IS=58.9n RS=0.412 BV=350 IBV=100n
++ CJO=1.17p  M=0.333 N=2.37 TT=72.0n )
+
+*SRC=BAV70;DI_BAV70;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes, Inc. switching
+.MODEL DI_BAV70 D  ( IS=308p RS=0.329 BV=75.0 IBV=2.50u
++ CJO=2.65p  M=0.333 N=1.70 TT=5.76n )
+
+*SRC=BAV70;DI_BAV70;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes, Inc. switching
+.MODEL DI_BAV70 D  ( IS=308p RS=0.329 BV=75.0 IBV=2.50u
++ CJO=2.65p  M=0.333 N=1.70 TT=5.76n )
+
+*SRC=BAV70T;DI_BAV70T;Diodes;Si;  85.0V  0.155A  4.00ns   Diodes Inc.
+Switching Diode - one element of device
+.MODEL DI_BAV70T D  ( IS=2.69n RS=0.271 BV=85.0 IBV=2.00u
++ CJO=1.99p  M=0.333 N=1.95 TT=5.76n )
+
+*SRC=BAV756DW;DI_BAV756DW;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. Switching - one element of device 
+.MODEL DI_BAV756DW D  ( IS=49.2n RS=0.141 BV=75.0 IBV=2.50u 
++ CJO=2.65p  M=0.333 N=2.45 TT=5.76n )
+
+*SRC=BAV99BRW;DI_BAV99BRW;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. Switching Diode, Quad, Model for one element
+.MODEL DI_BAV99BRW D  ( IS=412p RS=0.140 BV=75.0 IBV=2.50u
++ CJO=2.00p  M=0.333 N=1.70 TT=5.76n )
+
+*SRC=BAV99DW;DI_BAV99DW;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. Switching Diode, Quad, Model for one element
+.MODEL DI_BAV99DW D  ( IS=412p RS=0.140 BV=75.0 IBV=2.50u
++ CJO=2.00p  M=0.333 N=1.70 TT=5.76n )
+
+*SRC=BAV99T;DI_BAV99T;Diodes;Si;  85.0V  0.155A  4.00ns   Diodes Inc.
+Switching Diode - one element of device
+.MODEL DI_BAV99T D  ( IS=2.69n RS=0.271 BV=85.0 IBV=2.00u
++ CJO=1.99p  M=0.333 N=1.95 TT=5.76n )
+
+*SRC=BAV99W;DI_BAV99W;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAV99W D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )
+
+*SRC=BAW156T;DI_BAW156T;Diodes;Si;  85.0V  0.125A  3.00us   Diodes Inc. Switching Diode, dual, model for one element
+.MODEL DI_BAW156T D  ( IS=10.5p RS=0.196 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.61 TT=4.32u )
+
+*SRC=BAW56;DI_BAW56;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. Switching Diode 
+.MODEL DI_BAW56 D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u 
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )
+
+*SRC=BAW567DW;DI_BAW567DW;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. Switching Diode 
+.MODEL DI_BAW567DW D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u 
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )
+
+*SRC=BAW56DW;DI_BAW56DW;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. Switching Diode 
+.MODEL DI_BAW56DW D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u 
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )
+
+*SRC=BAW56T;DI_BAW56T;Diodes;Si;  85.0V  0.155A  4.00ns   Diodes Inc.
+Switching Diode - one element of device
+.MODEL DI_BAW56T D  ( IS=2.69n RS=0.271 BV=85.0 IBV=2.00u
++ CJO=1.99p  M=0.333 N=1.95 TT=5.76n )
+
+*SRC=BAW56W;DI_BAW56W;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Switching Diode
+.MODEL DI_BAW56W D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )
+
+*SRC=DLPA006;DI_DLPA006;Diodes;Si;  85.0V  0.160A  3.00us   Diodes, Inc.
+Switching - one element of DLPA006 array
+.MODEL DI_DLPA006 D  ( IS=59.0p RS=0.262 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.78 TT=4.32u )
+
+*SRC=MMBD2004S;DI_MMBD2004S;Diodes;Si;  240V  0.225A  50.0ns   Diodes Inc. Switching 
+.MODEL DI_MMBD2004S D  ( IS=1.76u RS=0.187 BV=240 IBV=100n 
++ CJO=6.63p  M=0.333 N=1.70 TT=72.0n )
+
+*SRC=MMBD2004SW;DI_MMBD2004SW;Diodes;Si;  240V  0.225A  50.0ns   Diodes Inc. Switching - one element of device
+.MODEL DI_MMBD2004SW D  ( IS=1.76u RS=0.187 BV=240 IBV=100n
++ CJO=6.63p  M=0.333 N=1.70 TT=72.0n )
+
+*SRC=MMBD3004BRM;DI_MMBD3004BRM;Diodes;Si;  300V  0.225A  50.0ns   Diodes
+Inc. Switching - one element of MMBD3004BRM
+.MODEL DI_MMBD3004BRM D  ( IS=2.76u RS=0.187 BV=300 IBV=100n
++ CJO=1.17p  M=0.333 N=1.70 TT=72.0n )
+
+*SRC=MMBD3004S;DI_MMBD3004S;Diodes;Si;  300V  0.225A  50.0ns   Diodes Inc. Switching 
+.MODEL DI_MMBD3004S D  ( IS=2.76u RS=0.187 BV=300 IBV=100n 
++ CJO=1.17p  M=0.333 N=1.70 TT=72.0n )
+
+*SRC=MMBD4148PLM;MMBD4148PLM;Diodes;Si;  75.0V  0.300A  4.00ns   DIODES Inc 
+.MODEL MMBD4148PLM D  ( IS=13.0u RS=0.140 BV=75.0 IBV=1.00u
++ CJO=2.00  M=0.333 N=4.97 TT=5.76n )
+
+*SRC=MMBD4148W;DI_MMBD4148W;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Switching Diode
+.MODEL DI_MMBD4148W D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )
+
+*SRC=MMBD4448;DI_MMBD4448;Diodes;Si;  75.0V  0.250A  4.00ns   Diodes Inc. Switching Diode
+.MODEL DI_MMBD4448 D  ( IS=300n RS=0.422 BV=75.0 IBV=2.50u
++ CJO=1.99p  M=0.333 N=2.77 TT=5.76n )
+
+*SRC=MMBD4448H;DI_MMBD4448H;Diodes;Si;  80.0V  0.250A  4.00ns   Diodes Inc. Switching Diode 
+.MODEL DI_MMBD4448H D  ( IS=300n RS=0.422 BV=80.0 IBV=100n 
++ CJO=1.99p  M=0.333 N=2.77 TT=5.76n )
+
+*SRC=MMBD4448HADW;DI_MMBD4448HADW;Diodes;Si;  80.0V  0.500A  1.50ns
+Diodes Inc. Switching - model for one node of four
+.MODEL DI_MMBD4448HADW D  ( IS=1.12n RS=84.0m BV=80.0 IBV=100n
++ CJO=2.92p  M=0.333 N=1.70 TT=2.16n )
+
+*SRC=MMBD4448HAQW;DI_MMBD4448HAQW;Diodes;Si;  80.0V  0.500A  1.50ns
+Diodes Inc. Switching - model for one node of four
+.MODEL DI_MMBD4448HAQW D  ( IS=1.12n RS=84.0m BV=80.0 IBV=100n
++ CJO=2.92p  M=0.333 N=1.70 TT=2.16n )
+
+*SRC=MMBD4448HCQW;DI_MMBD4448HCQW;Diodes;Si;  80.0V  0.500A  1.50ns
+Diodes Inc. Switching - model for one node of four
+.MODEL DI_MMBD4448HCQW D  ( IS=1.12n RS=84.0m BV=80.0 IBV=100n
++ CJO=2.92p  M=0.333 N=1.70 TT=2.16n )
+
+*SRC=MMBD4448HSDW;DI_MMBD4448HSDW;Diodes;Si;  80.0V  0.500A  1.50ns
+Diodes Inc. Switching - model for one node of four
+.MODEL DI_MMBD4448HSDW D  ( IS=1.12n RS=84.0m BV=80.0 IBV=100n
++ CJO=2.92p  M=0.333 N=1.70 TT=2.16n )
+
+**********************************************************************************************************************************************
+*SRC=MMBD4448HT;DI_MMBD4448HT;Diodes;Si;  80.0V  0.500A  1.50ns
+Diodes Inc. Switching
+.MODEL DI_MMBD4448HT D  ( IS=1.12n RS=84.0m BV=80.0 IBV=100n
++ CJO=2.92p  M=0.333 N=1.70 TT=2.16n )
+********************************************************************************************************************************************
+
+**********************************************************************************************************************************************
+*SRC=MMBD4448HTA;DI_MMBD4448HTA;Diodes;Si;  80.0V  0.500A  1.50ns
+Diodes Inc. Switching - One node of two
+.MODEL DI_MMBD4448HTA D  ( IS=1.12n RS=84.0m BV=80.0 IBV=100n
++ CJO=2.92p  M=0.333 N=1.70 TT=2.16n )
+**********************************************************************************************************************************************
+
+**********************************************************************************************************************************************
+*SRC=MMBD4448HTC;DI_MMBD4448HTC;Diodes;Si;  80.0V  0.500A  1.50ns
+Diodes Inc. Switching - One node of two
+.MODEL DI_MMBD4448HTC D  ( IS=1.12n RS=84.0m BV=80.0 IBV=100n
++ CJO=2.92p  M=0.333 N=1.70 TT=2.16n )
+**********************************************************************************************************************************************
+
+**********************************************************************************************************************************************
+*SRC=MMBD4448HTS;DI_MMBD4448HTS;Diodes;Si;  80.0V  0.500A  1.50ns
+Diodes Inc. Switching - One node of two
+.MODEL DI_MMBD4448HTS D  ( IS=1.12n RS=84.0m BV=80.0 IBV=100n
++ CJO=2.92p  M=0.333 N=1.70 TT=2.16n )
+**********************************************************************************************************************************************
+
+*SRC=MMBD4448HTW;DI_MMBD4448HTW;Diodes;Si;  80.0V  0.500A  1.50ns
+Diodes Inc. Switching - model for one node of three
+.MODEL DI_MMBD4448HTW D  ( IS=1.12n RS=84.0m BV=80.0 IBV=100n
++ CJO=2.92p  M=0.333 N=1.70 TT=2.16n )
+
+*SRC=MMBD4448HW;DI_MMBD4448HW;Diodes;Si;  80.0V  0.500A  4.00ns   Diodes Inc. Switching Diode
+.MODEL DI_MMBD4448HW D  ( IS=77.0n RS=84.0m BV=80.0 IBV=100n
++ CJO=1.99p  M=0.333 N=2.37 TT=5.76n )
+
+*SRC=MMBD4448V;DI_MMBD4448V;Diodes;Si;  80.0V  0.500A  4.00ns   Diodes Inc. Switching - one element of device
+.MODEL DI_MMBD4448V D  ( IS=4.77n RS=84.4m BV=80.0 IBV=100n
++ CJO=1.99p  M=0.333 N=1.95 TT=5.76n )
+
+*SRC=MMBD4448W;DI_MMBD4448W;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Switching Diode
+.MODEL DI_MMBD4448W D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )
+
+*SRC=MMBD7000;DI_MMBD7000;Diodes;Si;  75.0V  0.300A  4.00us   Diodes Inc. 
+.MODEL DI_MMBD7000 D  ( IS=5.08n RS=0.140 BV=75.0 IBV=2.00u
++ CJO=2.00p  M=0.333 N=2.03 TT=5.76u )
+
+*SRC=MMBD914;DI_MMBD914;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc. Switching 
+.MODEL DI_MMBD914 D  ( IS=126n RS=0.140 BV=75.0 IBV=1.00u 
++ CJO=2.65p  M=0.333 N=2.60 TT=5.76n )
+
+*SRC=PD3SD2580;PD3SD2580;Diodes;Si;  80.0V  0.150A  1.38ns   DIODES Switching diode
+.MODEL PD3SD2580 D  ( IS=4.61n RS=0.706 BV=80.0 IBV=100n
++ CJO=2.30p  M=0.333 N=1.85 TT=1.99n )
+
+*SRC=SDA006;DI_SDA006;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Databus Transient Suppressor - Model is for one Diode Element
+.MODEL DI_SDA006 D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )
+
+*SRC=BAV20W;DI_BAV20W;Diodes;Si;  150V  0.400A  50.0ns   Diodes Inc. -
+.MODEL DI_BAV20W D  ( IS=1.09u RS=0.105 BV=150 IBV=100n
++ CJO=5.00p  M=0.333 N=3.29 TT=72.0n )

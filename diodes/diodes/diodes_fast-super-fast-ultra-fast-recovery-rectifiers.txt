@@ -1,0 +1,571 @@
+*SRC=ES1B;DI_ES1B;Diodes;Si;  100V  1.00A  20.0ns   Diodes Inc. 
+.MODEL DI_ES1B D  ( IS=123n RS=42.0m BV=100 IBV=5.00u
++ CJO=18.5p  M=0.333 N=2.12 TT=28.8n )
+
+*SRC=ES1C;DI_ES1C;Diodes;Si;  150V  1.00A  20.0ns   Diodes Inc. 
+.MODEL DI_ES1C D  ( IS=123n RS=42.0m BV=150 IBV=5.00u
++ CJO=18.5p  M=0.333 N=2.12 TT=28.8n )
+
+*SRC=ES1D;DI_ES1D;Diodes;Si;  200V  1.00A  20.0ns   Diodes Inc. 
+.MODEL DI_ES1D D  ( IS=123n RS=42.0m BV=200 IBV=5.00u
++ CJO=18.5p  M=0.333 N=2.12 TT=28.8n )
+
+*SRC=ES1A;DI_ES1A;Diodes;Si;  50.0V  1.00A  20.0ns   Diodes Inc. 
+.MODEL DI_ES1A D  ( IS=123n RS=42.0m BV=50.0 IBV=5.00u
++ CJO=18.5p  M=0.333 N=2.12 TT=28.8n )
+
+*SRC=ES1G;DI_ES1G;Diodes;Si;  400V  1.00A  20.0ns   Diodes Inc. 
+.MODEL DI_ES1G D  ( IS=373n RS=64.3m BV=400 IBV=5.00u
++ CJO=18.5p  M=0.333 N=2.84 TT=28.8n )
+
+*SRC=RS3G;DI_RS3G;Diodes;Si;  400V  3.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3G D  ( IS=200n RS=25.4m BV=400 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=216n )
+**********************************************************************************************************
+
+*SRC=ES2A;DI_ES2A;Diodes;Si;  50.0V  2.00A  25.0ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_ES2A D  ( IS=267n RS=21.0m BV=50.0 IBV=5.00u
++ CJO=83.5p  M=0.333 N=1.70 TT=36.0n )
+
+*****************************************************************************************
+*SRC=ES2AA;DI_ES2AA;Diodes;Si;  50.0V  2.00A  25.0ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_ES2AA D  ( IS=267n RS=21.0m BV=50.0 IBV=5.00u
++ CJO=83.5p  M=0.333 N=1.70 TT=36.0n )
+****************************************************************************************
+
+*SRC=ES2B;DI_ES2B;Diodes;Si;  100V  2.00A  25.0ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_ES2B D  ( IS=267n RS=21.0m BV=100 IBV=5.00u
++ CJO=83.5p  M=0.333 N=1.70 TT=36.0n )
+
+****************************************************************************************
+SRC=ES2BA;DI_ES2BA;Diodes;Si;  100V  2.00A  25.0ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_ES2BA D  ( IS=267n RS=21.0m BV=100 IBV=5.00u
++ CJO=83.5p  M=0.333 N=1.70 TT=36.0n )
+***************************************************************************************
+
+*SRC=ES2C;DI_ES2C;Diodes;Si;  150V  2.00A  25.0ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_ES2C D  ( IS=267n RS=21.0m BV=150 IBV=5.00u
++ CJO=83.5p  M=0.333 N=1.70 TT=36.0n )
+
+***************************************************************************************
+*SRC=ES2CA;DI_ES2CA;Diodes;Si;  150V  2.00A  25.0ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_ES2CA D  ( IS=267n RS=21.0m BV=150 IBV=5.00u
++ CJO=83.5p  M=0.333 N=1.70 TT=36.0n )
+*****************************************************************************************
+
+*SRC=ES2D;DI_ES2D;Diodes;Si;  200V  2.00A  25.0ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_ES2D D  ( IS=267n RS=21.0m BV=200 IBV=5.00u
++ CJO=83.5p  M=0.333 N=1.70 TT=36.0n )
+
+*****************************************************************************************
+*SRC=ES2DA;DI_ES2DA;Diodes;Si;  200V  2.00A  25.0ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_ES2DA D  ( IS=267n RS=21.0m BV=200 IBV=5.00u
++ CJO=83.5p  M=0.333 N=1.70 TT=36.0n )
+*****************************************************************************************
+
+*SRC=ES2G;DI_ES2G;Diodes;Si;  400V  2.00A  25.0ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_ES2G D  ( IS=3.92n RS=21.0m BV=400 IBV=5.00u
++ CJO=83.5p  M=0.333 N=1.95 TT=36.0n )
+
+*SRC=ES3A;DI_ES3A;Diodes;Si;  50.0V  3.00A  25.0ns   Diodes Inc. 
+.MODEL DI_ES3A D  ( IS=7.27p RS=22.4m BV=50.0 IBV=10.0u
++ CJO=83.2p  M=0.333 N=0.700 TT=36.0n )
+
+*SRC=ES3AB;DI_ES3AB;Diodes;Si;  50.0V  3.00A  25.0ns   Diodes Inc. 
+.MODEL DI_ES3AB D  ( IS=7.27p RS=22.4m BV=50.0 IBV=10.0u
++ CJO=83.2p  M=0.333 N=0.700 TT=36.0n )
+
+*SRC=ES3B;DI_ES3B;Diodes;Si;  100V  3.00A  25.0ns   Diodes Inc. 
+.MODEL DI_ES3B D  ( IS=7.27p RS=22.4m BV=100 IBV=10.0u
++ CJO=83.2p  M=0.333 N=0.700 TT=36.0n )
+
+*SRC=ES3BB;DI_ES3BB;Diodes;Si;  100V  3.00A  25.0ns   Diodes Inc. 
+.MODEL DI_ES3BB D  ( IS=7.27p RS=22.4m BV=100 IBV=10.0u
++ CJO=83.2p  M=0.333 N=0.700 TT=36.0n )
+
+*SRC=ES3C;DI_ES3C;Diodes;Si;  150V  3.00A  25.0ns   Diodes Inc. 
+.MODEL DI_ES3C D  ( IS=7.27p RS=22.4m BV=150 IBV=10.0u
++ CJO=83.2p  M=0.333 N=0.700 TT=36.0n )
+
+*SRC=ES3CB;DI_ES3CB;Diodes;Si;  150V  3.00A  25.0ns   Diodes Inc. 
+.MODEL DI_ES3CB D  ( IS=7.27p RS=22.4m BV=150 IBV=10.0u
++ CJO=83.2p  M=0.333 N=0.700 TT=36.0n )
+
+*SRC=ES3D;DI_ES3D;Diodes;Si;  200V  3.00A  25.0ns   Diodes Inc. 
+.MODEL DI_ES3D D  ( IS=7.27p RS=22.4m BV=200 IBV=10.0u
++ CJO=83.2p  M=0.333 N=0.700 TT=36.0n )
+
+*SRC=ES3DB;DI_ES3DB;Diodes;Si;  200V  3.00A  25.0ns   Diodes Inc. 
+.MODEL DI_ES3DB D  ( IS=7.27p RS=22.4m BV=200 IBV=10.0u
++ CJO=83.2p  M=0.333 N=0.700 TT=36.0n )
+
+*SRC=MURS120;DI_MURS120;Diodes;Si;  200V  1.00A  25.0ns   Diodes Inc. Super Fast Rectifier
+.MODEL DI_MURS120 D  ( IS=17.1n RS=20.6m BV=200 IBV=2.00u
++ CJO=60.0p  M=0.333 N=1.73 TT=36.0n )
+************************************************************************************************************************************
+
+*SRC=MURS140;DI_MURS140;Diodes;Si;  400V  1.00A  50.0ns   Diodes Inc. Super Fast Rectifier
+.MODEL DI_MURS140 D  ( IS=17.1n RS=20.6m BV=400 IBV=2.00u
++ CJO=45.0p  M=0.333 N=1.73 TT=72.0n )
+***********************************************************************************************************************************
+
+*SRC=MURS160;DI_MURS160;Diodes;Si;  600V  1.00A  50.0ns   Diodes Inc. Super Fast Rectifier
+.MODEL DI_MURS160 D  ( IS=17.1n RS=20.6m BV=600 IBV=2.00u
++ CJO=45.0p  M=0.333 N=1.73 TT=72.0n )
+***********************************************************************************************************************************
+
+*SRC=MURS320;DI_MURS320;Diodes;Si;  200V  3.00A  25.0ns   Diodes Inc. Super Fast Rectifier
+.MODEL DI_MURS320 D  ( IS=11.8n RS=7.89m BV=200 IBV=5.00u
++ CJO=45.0p  M=0.333 N=1.56 TT=36.0n )
+***********************************************************************************************************************************
+
+*SRC=RS1A;DI_RS1A;Diodes;Si;  50.0V  1.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1A D  ( IS=948n RS=81.3m BV=50.0 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=216n )
+*************************************************************************************************************************************
+
+*SRC=RS1AB;DI_RS1AB;Diodes;Si;  50.0V  1.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1AB D  ( IS=948n RS=81.3m BV=50.0 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=216n )
+*************************************************************************************************************************************
+
+*SRC=RS1B;DI_RS1B;Diodes;Si;  100V  1.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1B D  ( IS=948n RS=81.3m BV=100 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=216n )
+**************************************************************************************************************************************
+
+*SRC=RS1BB;DI_RS1BB;Diodes;Si;  100V  1.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1BB D  ( IS=948n RS=81.3m BV=100 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=216n )
+**************************************************************************************************************************************
+
+*SRC=RS1D;DI_RS1D;Diodes;Si;  200V  1.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1D D  ( IS=948n RS=81.3m BV=200 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=216n )
+**************************************************************************************************************************************
+
+*SRC=RS1DB;DI_RS1DB;Diodes;Si;  200V  1.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1DB D  ( IS=948n RS=81.3m BV=200 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=216n )
+**************************************************************************************************************************************
+
+*SRC=RS1G;DI_RS1G;Diodes;Si;  400V  1.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1G D  ( IS=948n RS=81.3m BV=400 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=216n )
+**************************************************************************************************************************************
+
+*SRC=RS1GB;DI_RS1GB;Diodes;Si;  400V  1.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1GB D  ( IS=948n RS=81.3m BV=400 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=216n )
+**************************************************************************************************************************************
+
+*SRC=RS1J;DI_RS1J;Diodes;Si;  600V  1.00A  250ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1J D  ( IS=948n RS=81.3m BV=600 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=360n )
+**************************************************************************************************************************************
+
+*SRC=RS1JB;DI_RS1JB;Diodes;Si;  600V  1.00A  250ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1JB D  ( IS=948n RS=81.3m BV=600 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=360n )
+**************************************************************************************************************************************
+
+*SRC=RS1K;DI_RS1K;Diodes;Si;  800V  1.00A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1K D  ( IS=948n RS=81.3m BV=800 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=720n )
+**************************************************************************************************************************************
+
+*SRC=RS1KB;DI_RS1KB;Diodes;Si;  800V  1.00A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1KB D  ( IS=948n RS=81.3m BV=800 IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=720n )
+**************************************************************************************************************************************
+
+*SRC=RS1M;DI_RS1M;Diodes;Si;  1.00kV  1.00A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1M D  ( IS=948n RS=81.3m BV=1.00k IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=720n )
+**************************************************************************************************************************************
+
+*SRC=RS1MB;DI_RS1MB;Diodes;Si;  1.00kV  1.00A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS1MB D  ( IS=948n RS=81.3m BV=1.00k IBV=5.00u
++ CJO=27.7p  M=0.333 N=2.48 TT=720n )
+**************************************************************************************************************************************
+
+*SRC=RS2A;DI_RS2A;Diodes;Si;  50.0V  1.50A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2A D  ( IS=169u RS=4.81m BV=50.0 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=216n )
+******************************************************************************************************
+
+*SRC=RS2AA;DI_RS2AA;Diodes;Si;  50.0V  1.50A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2AA D  ( IS=169u RS=4.81m BV=50.0 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=216n )
+******************************************************************************************************
+
+*SRC=RS2B;DI_RS2B;Diodes;Si;  100V  1.50A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2B D  ( IS=169u RS=4.81m BV=100 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=216n )
+******************************************************************************************************
+
+*SRC=RS2BA;DI_RS2BA;Diodes;Si;  100V  1.50A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2BA D  ( IS=169u RS=4.81m BV=100 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=216n )
+******************************************************************************************************
+
+*SRC=RS2D;DI_RS2D;Diodes;Si;  200V  1.50A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2D D  ( IS=169u RS=4.81m BV=200 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=216n )
+******************************************************************************************************
+
+*SRC=RS2DA;DI_RS2DA;Diodes;Si;  200V  1.50A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2DA D  ( IS=169u RS=4.81m BV=200 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=216n )
+******************************************************************************************************
+
+*SRC=RS2G;DI_RS2G;Diodes;Si;  400V  1.50A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2G D  ( IS=169u RS=4.81m BV=400 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=216n )
+******************************************************************************************************
+
+*SRC=RS2GA;DI_RS2GA;Diodes;Si;  400V  1.50A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2GA D  ( IS=169u RS=4.81m BV=400 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=216n )
+******************************************************************************************************
+
+*SRC=RS2J;DI_RS2J;Diodes;Si;  600V  1.50A  250ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2J D  ( IS=169u RS=4.81m BV=600 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=360n )
+******************************************************************************************************
+
+*SRC=RS2JA;DI_RS2JA;Diodes;Si;  600V  1.50A  250ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2JA D  ( IS=169u RS=4.81m BV=600 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=360n )
+******************************************************************************************************
+
+*SRC=RS2K;DI_RS2K;Diodes;Si;  800V  1.50A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2K D  ( IS=169u RS=4.81m BV=800 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=720n )
+******************************************************************************************************
+
+*SRC=RS2KA;DI_RS2KA;Diodes;Si;  800V  1.50A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2KA D  ( IS=169u RS=4.81m BV=800 IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=720n )
+******************************************************************************************************
+
+*SRC=RS2M;DI_RS2M;Diodes;Si;  1.00kV  1.50A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2M D  ( IS=169u RS=4.81m BV=1.00k IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=720n )
+******************************************************************************************************
+
+*SRC=RS2MA;DI_RS2MA;Diodes;Si;  1.00kV  1.50A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS2MA D  ( IS=169u RS=4.81m BV=1.00k IBV=5.00u
++ CJO=55.5p  M=0.333 N=6.02 TT=720n )
+******************************************************************************************************
+
+*SRC=RS3A;DI_RS3A;Diodes;Si;  50.0V  3.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3A D  ( IS=200n RS=25.4m BV=50.0 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=216n )
+**********************************************************************************************************
+
+*SRC=RS3AB;DI_RS3AB;Diodes;Si;  50.0V  3.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3AB D  ( IS=200n RS=25.4m BV=50.0 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=216n )
+**********************************************************************************************************
+
+*SRC=RS3B;DI_RS3B;Diodes;Si;  100V  3.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3B D  ( IS=200n RS=25.4m BV=100 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=216n )
+**********************************************************************************************************
+
+*SRC=RS3BB;DI_RS3BB;Diodes;Si;  100V  3.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3BB D  ( IS=200n RS=25.4m BV=100 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=216n )
+**********************************************************************************************************
+
+*SRC=RS3D;DI_RS3D;Diodes;Si;  200V  3.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3D D  ( IS=200n RS=25.4m BV=200 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=216n )
+**********************************************************************************************************
+
+*SRC=RS3DB;DI_RS3DB;Diodes;Si;  200V  3.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3DB D  ( IS=200n RS=25.4m BV=200 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=216n )
+**********************************************************************************************************
+
+*SRC=RS3GB;DI_RS3GB;Diodes;Si;  400V  3.00A  150ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3GB D  ( IS=200n RS=25.4m BV=400 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=216n )
+**********************************************************************************************************
+
+*SRC=RS3J;DI_RS3J;Diodes;Si;  600V  3.00A  250ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3J D  ( IS=200n RS=25.4m BV=600 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=360n )
+**********************************************************************************************************
+
+*SRC=RS3JB;DI_RS3JB;Diodes;Si;  600V  3.00A  250ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3JB D  ( IS=200n RS=25.4m BV=600 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=360n )
+**********************************************************************************************************
+
+*SRC=RS3KB;DI_RS3KB;Diodes;Si;  800V  3.00A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3KB D  ( IS=200n RS=25.4m BV=800 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=720n )
+***********************************************************************************************************
+
+*SRC=RS3M;DI_RS3M;Diodes;Si;  1.00kV  3.00A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3M D  ( IS=200n RS=25.4m BV=1.00k IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=720n )
+***********************************************************************************************************
+
+*SRC=RS3MB;DI_RS3MB;Diodes;Si;  1.00kV  3.00A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3MB D  ( IS=200n RS=25.4m BV=1.00k IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=720n )
+***********************************************************************************************************
+
+*SRC=1N4933;DI_1N4933;Diodes;Si;  50.0V  1.00A  200ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_1N4933 D  ( IS=830n RS=34.0m BV=50.0 IBV=5.00u
++ CJO=26.5p  M=0.333 N=2.46 TT=288n )
+
+*SRC=1N4934;DI_1N4934;Diodes;Si;  100V  1.00A  200ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_1N4934 D  ( IS=830n RS=34.0m BV=100 IBV=5.00u
++ CJO=26.5p  M=0.333 N=2.46 TT=288n )
+
+*SRC=1N4935;DI_1N4935;Diodes;Si;  200V  1.00A  200ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_1N4935 D  ( IS=830n RS=34.0m BV=200 IBV=5.00u
++ CJO=26.5p  M=0.333 N=2.46 TT=288n )
+
+*SRC=1N4936;DI_1N4936;Diodes;Si;  400V  1.00A  200ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_1N4936 D  ( IS=830n RS=34.0m BV=400 IBV=5.00u
++ CJO=26.5p  M=0.333 N=2.46 TT=288n )
+
+*SRC=1N4937;DI_1N4937;Diodes;Si;  600V  1.00A  200ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_1N4937 D  ( IS=830n RS=34.0m BV=600 IBV=5.00u
++ CJO=26.5p  M=0.333 N=2.46 TT=288n )
+
+* DFLU1400 SPICE model
+*
+* THIS MODEL IS A SPICE SUBCIRCUIT.
+* ANY NETLIST USING IT MUST INCLUDE
+* A STATEMENT WITH THE FOLLOWING SYNTAX
+*
+* X1 DFLU1400 A C
+*
+* SUBCIRCUIT NODE 1 -> ANODE
+* SUBCIRCUIT NODE 2 -> CATHODE
+*
+.SUBCKT DFLU1400 1 2
+D1 1 2 DFLU1400_1
+D2 1 2 DFLU1400_2
+*
+.MODEL DFLU1400_1 D (
++LEVEL    = 1              IS       = 8.97113e-10    RS       = 0.218519       
++N        = 1.00753        BV       = 400            IBV      = 5e-06          
++CJO      = 1.7785e-11     VJ       = 0.468489       MJ       = 0.395956       
++FC       = 0.5            XTI      = 2.98187        EG       = 1.19064        
++TT       = 33e-9          IKF      = 6.06945e-06    TRS1     = -0.00446639    
++TRS2     = 9.32759e-06     )
+*
+.MODEL DFLU1400_2 D (
++LEVEL    = 1              IS       = 1.05089e-12    RS       = 0.146586       
++N        = 1.16507        BV       = 1E5            IBV      = 1e-06 
++CJO      = 1.7785e-11     VJ       = 0.468489       MJ       = 0.395956
++FC       = 0.5            XTI      = 3.14412        EG       = 1.05458
++TRS1     = 0.000149447    TRS2     = 2.90699e-05    IKF      = 9.9308e-06
++TT       = 33e-9 )
+*
+.ENDS DFLU1400
+
+*SRC=MUR120;DI_MUR120;Diodes;Si;  200V  1.00A  25.0ns   Diodes Inc. Super Fast Rectifier
+.MODEL DI_MUR120 D  ( IS=7.06e-017 RS=73.4m BV=200 IBV=2.00u
++ CJO=49.9p  M=0.333 N=0.700 TT=36.0n )
+
+*SRC=PDU340;DI_PDU340;Diodes;Si;  400V  3.00A  50.0ns   Diodes Inc. Ultrafast Rectifier
+.MODEL DI_PDU340 D  ( IS=3.74u RS=25.9m BV=400 IBV=10.0u
++ CJO=86.2p  M=0.333 N=2.58 TT=72.0n )
+
+*SRC=PDU420;DI_PDU420;Diodes;Si;  400V  4.00A  25.0ns   Diodes Inc. ultrafast rectifier
+.MODEL DI_PDU420 D  ( IS=189n RS=10.5m BV=400 IBV=5.00u
++ CJO=276p  M=0.333 N=1.73 TT=36.0n )
+
+*SRC=PDU620;DI_PDU620;Diodes;Si;  200V  6.00A  25.0ns   Diodes Inc. Ultrafast Rectifier
+.MODEL DI_PDU620 D  ( IS=190n RS=9.91m BV=200 IBV=5.00u
++ CJO=402p  M=0.333 N=1.69 TT=36.0n )
+
+*SRC=PDU620CT;DI_PDU620CT;Diodes;Si;  200V  3.00A  25.0ns   Diodes Inc. Ultrafast Rectifier
+.MODEL DI_PDU620CT D  ( IS=7.48n RS=19.5m BV=200 IBV=5.00u
++ CJO=223p  M=0.333 N=1.42 TT=36.0n )
+
+*SRC=PR1001G;DI_PR1001G;Diodes;Si;  50.0V  1.00A  150ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_PR1001G D  ( IS=5.00n RS=29.8m BV=50.0 IBV=5.00u
++ CJO=27.8p  M=0.333 N=1.72 TT=216n )
+
+*SRC=PR1002G;DI_PR1002G;Diodes;Si;  100V  1.00A  150ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_PR1002G D  ( IS=5.00n RS=29.8m BV=100 IBV=5.00u
++ CJO=27.8p  M=0.333 N=1.72 TT=216n )
+
+*SRC=PR1003G;DI_PR1003G;Diodes;Si;  200V  1.00A  150ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_PR1003G D  ( IS=5.00n RS=29.8m BV=200 IBV=5.00u
++ CJO=27.8p  M=0.333 N=1.72 TT=216n )
+
+*SRC=PR1004G;DI_PR1004G;Diodes;Si;  400V  1.00A  150ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_PR1004G D  ( IS=5.00n RS=29.8m BV=400 IBV=5.00u
++ CJO=27.8p  M=0.333 N=1.72 TT=216n )
+
+*SRC=PR1005G;DI_PR1005G;Diodes;Si;  600V  1.00A  250ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_PR1005G D  ( IS=5.00n RS=29.8m BV=600 IBV=5.00u
++ CJO=19.9p  M=0.333 N=1.72 TT=360n )
+
+*SRC=PR1006G;DI_PR1006G;Diodes;Si;  800V  1.00A  500ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_PR1006G D  ( IS=5.00n RS=29.8m BV=800 IBV=5.00u
++ CJO=19.9p  M=0.333 N=1.72 TT=720n )
+
+*SRC=PR1007G;DI_PR1007G;Diodes;Si;  1.00kV  1.00A  500ns   Diodes Inc. Fast
+Rectifier
+.MODEL DI_PR1007G D  ( IS=5.00n RS=29.8m BV=1.00k IBV=5.00u
++ CJO=19.9p  M=0.333 N=1.72 TT=720n )
+
+*SRC=PR6001;DI_PR6001;Diodes;Si;  50.0V  6.00A  150ns   Diodes Inc. Fast Rectifier 
+.MODEL DI_PR6001 D  ( IS=863n RS=12.6m BV=50.0 IBV=10.0u 
++ CJO=663p  M=0.333 N=1.70 TT=216n )
+
+*SRC=RS3K;DI_RS3K;Diodes;Si;  800V  3.00A  500ns   Diodes Inc. Fast Rectifier
+.MODEL DI_RS3K D  ( IS=200n RS=25.4m BV=800 IBV=5.00u
++ CJO=92.5p  M=0.333 N=2.23 TT=720n )
+***********************************************************************************************************
+
+*SRC=SF10AG;DI_SF10AG;Diodes;Si;  50.0V  1.00A  35.0ns   Diodes Inc. 
+.MODEL DI_SF10AG D  ( IS=1.42n RS=42.0m BV=50.0 IBV=10.0u
++ CJO=139p  M=0.333 N=1.70 TT=50.4n )
+
+*SRC=SF10BG;DI_SF10BG;Diodes;Si;  100V  1.00A  35.0ns   Diodes Inc. 
+.MODEL DI_SF10BG D  ( IS=1.42n RS=42.0m BV=100 IBV=10.0u
++ CJO=139p  M=0.333 N=1.70 TT=50.4n )
+
+*SRC=SF10CG;DI_SF10CG;Diodes;Si;  150V  1.00A  35.0ns   Diodes Inc. 
+.MODEL DI_SF10CG D  ( IS=1.42n RS=42.0m BV=150 IBV=10.0u
++ CJO=139p  M=0.333 N=1.70 TT=50.4n )
+
+*SRC=SF10DG;DI_SF10DG;Diodes;Si;  200V  1.00A  35.0ns   Diodes Inc. 
+.MODEL DI_SF10DG D  ( IS=1.42n RS=42.0m BV=200 IBV=10.0u
++ CJO=139p  M=0.333 N=1.70 TT=50.4n )
+
+*SRC=SF10FG;DI_SF10FG;Diodes;Si; 300V 1.00A 40.0ns Diodes Inc. -
+.MODEL DI_SF10FG D ( IS=50.9p RS=75.5m BV=300 IBV=10.0u
++ CJO=139p M=0.333 N=1.70 TT=57.6n )
+
+*SRC=SF10GG;DI_SF10GG;Diodes;Si; 400V 1.00A 40.0ns Diodes Inc. -
+.MODEL DI_SF10GG D ( IS=50.9p RS=75.5m BV=400 IBV=10.0u
++ CJO=139p M=0.333 N=1.70 TT=57.6n )
+
+*SRC=SF10HG;DI_SF10HG;Diodes;Si; 500V 1.00A 50.0ns Diodes Inc. -
+.MODEL DI_SF10HG D ( IS=13.5u RS=30.9m BV=500 IBV=10.0u
++ CJO=92.5p M=0.333 N=5.40 TT=72.0n )
+
+*SRC=SF10JG;DI_SF10JG;Diodes;Si;  600V  1.00A  50.0ns   Diodes Inc. -
+.MODEL DI_SF10JG D  ( IS=13.5u RS=30.9m BV=600 IBV=10.0u
++ CJO=92.5p  M=0.333 N=5.40 TT=72.0n )
+
+*SRC=UF1001;DI_UF1001;Diodes;Si;  50.0V  1.00A  50.0ns   Diodes Inc. 1.0A Ultra-Fast Rectifier
+.MODEL DI_UF1001 D  ( IS=125u RS=17.5m BV=50.0 IBV=5.00u
++ CJO=79.6p  M=0.333 N=3.75 TT=72.0n )
+
+*SRC=UF1002;DI_UF1002;Diodes;Si;  100V  1.00A  50.0ns   Diodes Inc. 1.0A Ultra-Fast Rectifier
+.MODEL DI_UF1002 D  ( IS=125u RS=17.5m BV=100 IBV=5.00u
++ CJO=79.6p  M=0.333 N=3.75 TT=72.0n )
+
+*SRC=UF1003;DI_UF1003;Diodes;Si;  200V  1.00A  50.0ns   Diodes Inc. 1.0A Ultra-Fast Rectifier
+.MODEL DI_UF1003 D  ( IS=125u RS=17.5m BV=200 IBV=5.00u
++ CJO=79.6p  M=0.333 N=3.75 TT=72.0n )
+
+*SRC=UF1004;DI_UF1004;Diodes;Si;  400V  1.00A  50.0ns   Diodes Inc. 1.0A Ultra-Fast Rectifier
+.MODEL DI_UF1004 D  ( IS=38.7u RS=15.4m BV=400 IBV=5.00u
++ CJO=79.6p  M=0.333 N=4.17 TT=72.0n )
+
+*SRC=UF1005;DI_UF1005;Diodes;Si;  600V  1.00A  50.0ns   Diodes Inc. 1.0A Ultra-Fast Rectifier
+.MODEL DI_UF1005 D  ( IS=13.9u RS=56.6m BV=600 IBV=5.00u
++ CJO=46.4p  M=0.333 N=4.11 TT=72.0n )
+
+*SRC=UF1006;DI_UF1006;Diodes;Si;  800V  1.00A  50.0ns   Diodes Inc. 1.0A Ultra-Fast Rectifier
+.MODEL DI_UF1006 D  ( IS=13.9u RS=56.6m BV=800 IBV=5.00u
++ CJO=46.4p  M=0.333 N=4.11 TT=72.0n )
+
+*SRC=UF1007;DI_UF1007;Diodes;Si;  1.00kV  1.00A  50.0ns   Diodes Inc. 1.0A Ultra-Fast Rectifier
+.MODEL DI_UF1007 D  ( IS=13.9u RS=56.6m BV=1.00k IBV=5.00u
++ CJO=46.4p  M=0.333 N=4.11 TT=72.0n )
+
+*SRC=UF3001;DI_UF3001;Diodes;Si;  50.0V  3.00A  50.0ns   Diodes Inc. Ultra-Fast Rectifier
+.MODEL DI_UF3001 D  ( IS=70.7u RS=43.0u BV=50.0 IBV=10.0u
++ CJO=139p  M=0.333 N=4.27 TT=72.0n )
+
+*SRC=UF3002;DI_UF3002;Diodes;Si;  100V  3.00A  50.0ns   Diodes Inc. Ultra-Fast Rectifier
+.MODEL DI_UF3002 D  ( IS=70.7u RS=43.0u BV=100 IBV=5.00u
++ CJO=139p  M=0.333 N=4.27 TT=72.0n )
+
+*SRC=UF3003;DI_UF3003;Diodes;Si;  200V  3.00A  50.0ns   Diodes Inc. Ultra-Fast Rectifier
+.MODEL DI_UF3003 D  ( IS=70.7u RS=43.0u BV=200 IBV=5.00u
++ CJO=139p  M=0.333 N=4.27 TT=72.0n )
+
+*SRC=UF3004;DI_UF3004;Diodes;Si;  400V  3.00A  50.0ns   Diodes Inc. Ultra-Fast Rectifier
+.MODEL DI_UF3004 D  ( IS=9.58u RS=15.4m BV=400 IBV=5.00u
++ CJO=139p  M=0.333 N=3.45 TT=72.0n )
+
+*SRC=UF3005;DI_UF3005;Diodes;Si;  600V  3.00A  75.0ns   Diodes Inc. Ultra-Fast Rectifier
+.MODEL Di_UF3005 D  ( IS=4.50u RS=14.1m BV=600 IBV=10.0u
++ CJO=92.5p  M=0.333 N=4.29 TT=108n )
+
+*SRC=UF3006;DI_UF3006;Diodes;Si;  800V  3.00A  75.0ns   Diodes Inc. Ultra-Fast Rectifier
+.MODEL Di_UF3006 D  ( IS=4.50u RS=14.1m BV=800 IBV=10.0u
++ CJO=92.5p  M=0.333 N=4.29 TT=108n )
+
+*SRC=UF3007;Di_UF3007;Diodes;Si;  1.00kV  3.00A  75.0ns   Diodes Inc. Ultra-Fast Rectifier
+.MODEL Di_UF3007 D  ( IS=4.50u RS=14.1m BV=1.00k IBV=10.0u
++ CJO=92.5p  M=0.333 N=4.29 TT=108n )
+
+*SRC=US1A;DI_US1A;Diodes;Si;  50.0V  1.00A  50.0ns   Diodes Inc. -
+.MODEL DI_US1A D  ( IS=667n RS=72.0m BV=50.0 IBV=5.00u
++ CJO=37.0p  M=0.333 N=2.41 TT=72.0n )
+
+*SRC=US1B;DI_US1B;Diodes;Si;  100V  1.00A  50.0ns   Diodes Inc. -
+.MODEL DI_US1B D  ( IS=667n RS=72.0m BV=100 IBV=5.00u
++ CJO=37.0p  M=0.333 N=2.41 TT=72.0n )
+
+*SRC=US1D;DI_US1D;Diodes;Si;  200V  1.00A  50.0ns   Diodes Inc. -
+.MODEL DI_US1D D  ( IS=667n RS=72.0m BV=200 IBV=5.00u
++ CJO=37.0p  M=0.333 N=2.41 TT=72.0n )
+
+*SRC=US1G;DI_US1G;Diodes;Si;  400V  1.00A  50.0ns   Diodes Inc. 
+.MODEL DI_US1G D  ( IS=540p RS=0.116 BV=400 IBV=5.00u
++ CJO=37.0p  M=0.333 N=1.70 TT=72.0n )
+
+*SRC=US1J;DI_US1J;Diodes;Si;  600V  1.00A  75.0ns   Diodes Inc. -
+.MODEL DI_US1J D  ( IS=709n RS=82.3m BV=600 IBV=5.00u
++ CJO=18.5p  M=0.333 N=3.23 TT=108n )
+
+*SRC=US1K;DI_US1K;Diodes;Si;  800V  1.00A  75.0ns   Diodes Inc. -
+.MODEL DI_US1K D  ( IS=709n RS=82.3m BV=800 IBV=5.00u
++ CJO=18.5p  M=0.333 N=3.23 TT=108n )
+
+*SRC=US1M;DI_US1M;Diodes;Si;  1.00kV  1.00A  75.0ns   Diodes Inc. -
+.MODEL DI_US1M D  ( IS=709n RS=82.3m BV=1.00k IBV=5.00u
++ CJO=18.5p  M=0.333 N=3.23 TT=108n )
+
+*SRC=PDU540;DI_PDU540;Diodes;Si;  400V  5.00A  35.0ns   Diodes Inc. Ultrafast Rectifier
+.MODEL DI_PDU540 D  ( IS=2.68u RS=8.33m BV=400 IBV=10.0u
++ CJO=196p  M=0.333 N=2.27 TT=50.4n )

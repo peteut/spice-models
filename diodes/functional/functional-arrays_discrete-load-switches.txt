@@ -1,0 +1,31 @@
+*******************************************************************************************************************************
+*SRC=CTA2N1P;DI_CTA2N1P_BJT;BJTs NPN; Si;  40.0V  0.600A  275MHz   Diodes Inc. BJTs
+.MODEL DI_CTA2N1P_BJT  NPN (IS=1.27p NF=1.00 BF=410 VAF=114
++ IKF=60.7m ISE=47.7p NE=2.00 BR=4.00 NR=1.00
++ VAR=24.0 IKR=0.150 RE=0.261 RB=1.04 RC=0.104
++ XTB=1.5 CJE=27.7p VJE=1.10 MJE=0.500 CJC=14.2p VJC=0.300
++ MJC=0.300 TF=533p TR=84.1n EG=1.12 )
+
+*SRC=CTA2N1P;DI_CTA2N1P_MOSFET;MOSFETs P;Enh;50.0V 0.130A 6.00ohms  Diodes Inc. MOSFET
+.MODEL DI_CTA2N1P_MOSFET  PMOS( LEVEL=1 VTO=-1.60 KP=25.0m  GAMMA=1.98
++ PHI=.75  LAMBDA=108u RD=0.840 RS=0.840
++ IS=65.0f  PB=0.800 MJ=0.460 CBD=64.2p 
++ CBS=77.1p  CGSO=144n CGDO=120n CGBO=341n  )
+*   -- Assumes default L=100U W=100U --
+*******************************************************************************************************************************
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+*SRC=CTA2P1N;DI_CTA2P1N_BJT;BJTs PNP; Si;  40.0V  0.600A  200MHz   Diodes Inc. BJTs
+.MODEL DI_CTA2P1N_BJT  PNP (IS=60.4f NF=1.00 BF=410 VAF=114
++ IKF=0.304 ISE=23.2p NE=2.00 BR=4.00 NR=1.00
++ VAR=20.0 IKR=0.750 RE=0.261 RB=1.04 RC=0.104
++ XTB=1.5 CJE=27.7p VJE=1.10 MJE=0.500 CJC=18.5p VJC=0.300
++ MJC=0.300 TF=667p TR=84.1n EG=1.12 )
+
+*SRC=CTA2P1N;DI_CTA2P1N_MOSFET;MOSFETs N;Enh;60.0V 0.115A 2.00ohms  Didoes Inc. MOSFET 
+.MODEL DI_CTA2P1N_MOSFET  NMOS( LEVEL=1 VTO=1.50 KP=32.0m  GAMMA=1.86
++ PHI=.75  LAMBDA=40.0u RD=0.280 RS=0.280
++ IS=57.5f  PB=0.800 MJ=0.460 CBD=44.5p 
++ CBS=53.4p  CGSO=24.0n CGDO=20.0n CGBO=176n  )
+*   -- Assumes default L=100U W=100U --
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------

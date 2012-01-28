@@ -1,0 +1,205 @@
+*TITLE=ZXCT1082 MACROMODEL
+*ORIGIN=DZSL_AG_GS
+*SIMULATOR=DIODES, SIMETRIX and PSPICE
+*DATE=1st Sept 2011
+*VERSION=2
+*PIN_ORDER   1:OUT  2:GND, 3:S+, 4:S-, 5:VCC
+
+*Does not include temperature dependence of offset error, gain or input current.
+*Includes roughly approximated temperature effect of low voltage operating knee of VS- and VCC. 
+
+.subckt ZXCT1082 OUT GND  S+  S- VCC
+* pins------------1---2---3---4---5
+      
+.PARAM VTH1 = {1-0.004*(TEMP-25)}
+.PARAM KG ={1e-4/(2-VTH1)**2} ; rnom/(VON-VTH1)^2
+D1  S+ 1 DHM
+D2  1  S- DHM
+D3  S- 2 DHM
+D4  2  S+ DHM
+D7  GND VCC DHM
+D8  GND S- DHM
+D9  GND S+ DHM
+
+*input current typ 1.7uA at Vcc=VS+=12V
+G1  S+ GND value={(1.4u+((V(VCC)-V(GND)-4)/42e6)+((V(S+)-V(GND))/6e8))
++ *0.25*(1+tanh(10*(V(VCC)-V(GND)-3.5)))*(1+tanh(20*(V(S+)-V(GND)-1)))}
+G2  S- GND value={(1.4u+((V(VCC)-V(GND)-4)/42e6)+((V(S+)-V(GND))/6e8))
++ *0.25*(1+tanh(10*(V(VCC)-V(GND)-3.5)))*(1+tanh(20*(V(S+)-V(GND)-1)))}
+R1  S+ FILT 10k      ;input filter
+C1  FILT S- 1pf       ;input filter 
+R2  VCC GND  3.75Meg   ;Vcc quiescent current, typ 16uA at 60V
+G3  S- SIN VALUE={0.1*((1+tanh(10*(V(S-)-V(FILT))))*tanh(50*max(V(S-)-V(SIN),0))
++ +(-1+tanh(10*(V(S-)-V(FILT))))*tanh(50*max(V(SIN)-V(GND),0)))
++ *tanh(20*max(V(VCC)-VTH1,0))}
+C5  S- GND 3p
+C6  S+ GND 2p
+C4  SIN FILT 100f
+R3  S+ SIN 1G
+C2  SIN S+ 500f
+R6  S+ S+A 1k
+G4  S+A OUT VALUE={KG*(max(V(S+A)-V(SIN)-VTH1,0)**2)*(V(S+A)-V(OUT))}
+R4  S+ OUT 8G
+C3  SIN OUT 80f
+C7  OUT GND 1.25p
+* zener diode
+D5  SIN S+ DHM
+D6  S+  Z1 DHM
+I1  SIN Z1 0.192
+RZ  Z1 SIN 100
+
+.model DHM D IS=6.3E-16 BV=65
+.ends ZXCT1082
+*
+*                (c)  2011 Diodes Incorporated
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Diodes ").  They  are  supplied
+*   free of charge by Diodes for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved.  The models
+*   are believed accurate but no condition or warranty as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Incorporated, 4949 Hedgcoxe Road, Suite 200, Plano, TX 75024, USA
+
+*TITLE=ZXCT1010 MACROMODEL
+*ORIGIN=DZSL_AG_GS
+*SIMULATOR=DIODES, SIMETRIX and PSPICE
+*DATE=14th July 2010
+*VERSION=1
+*PIN_ORDER     2:GND, 3:OUT, 4:S+, 5:S-   (Pin 1 is NC)
+*
+.subckt ZXCT1010 GND OUT S+ S-
+* pins------------2---3--4--5
+*      
+R1  S- FILT  100k      ;input filter
+C1  S+ FILT  20p       ;input filter
+R2  S+ GND  1Meg       ;quiescent current at 5V
+*  Output as a voltage: first part of expression limits resonse to zero for negative input
+*  tanh function limits output when supply is less than 1.1V above Vout  
+E1  E1OUT GND VALUE={ max(V(S+)-V(FILT),0)*tanh( 20*max(V(S-)-1.1-V(OUT),0) ) }
+R3  E1OUT GND 1Meg
+*  Transconductance = 1/100 A/V, with temperature dependence
+G1  S+  OUT VALUE={(V(E1OUT) - V(GND))*(1/100)*(1.01-0.0003*TEMP-6e-6*(TEMP**2)-5e-8*(TEMP**3)+2.7e-10*(TEMP**4))}  
+.ends ZXCT1010
+*
+*
+*                (c)  2010 Diodes Inc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved.  The models
+*   are believed accurate but no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Zetex Semiconductors Ltd, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+*
+*
+
+*
+*ZETEX ZXCT1008F Spice Model v1.0 Last revision 15/08/07
+*
+*
+.SUBCKT ZXCT1008F 1 2 3
+*
+*Pins 1.Load 2.Vin 3.Iout
+*
+I1 4 3 4uA
+R6 4 3 20E6
+R1 2 4 Rmod1 1
+Q1 4 5 3 LargeN
+C1 5 11 3E-9
+R5 11 3 10
+R2 5 6 10E3
+D1 6 8 Dmod
+R3 7 6 1
+V2 8 3 10
+E1 7 3 4 9 1000
+V1 10 1 100e-3
+I2 9 10 100E-3
+R4 9 10 Rmod2 1
+.MODEL Dmod D IS=1E-15 BV=20 IBV=1E-3 
+.MODEL LargeN NPN IS=3.8E-16 LOT/1/UNIFORM=50% DEV/GAUSS=1%
++ BF=220 LOT/1/UNIFORM=50% DEV/GAUSS=1% NK=.75 IKF=17e-3 VAF=60
++ ISE=1.8E-16 NE=1.4 BR=.7 IKR=3e-2 VAR=7 ISC=5E-12 NC=1.321 RB=300
++ RE=19.7 RC=63.4 CJC=51E-12 MJC=.42 VJC=.595 CJE=.21E-12 MJE=.33
++ VJE=.7 TF=1.5E-10 TR=6E-9 XTF=0.3 VTF=6 ITF=5E-5 XTB=1.17 XTI=5.4
++ KF=2E-13 AF=1.4
+.MODEL Rmod1 RES (R=99.5 TC1=1E-3 TC2=1E-5 LOT/1/UNIFORM=1% DEV/GAUSS=0.5%)
+.MODEL Rmod2 RES (R=1 LOT/1/UNIFORM=1% DEV/GAUSS=0.5%)
+.ENDS 
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*ZETEX ZXCT1009F Spice Model v2.1 Last revision 02/02/07
+*
+*
+.SUBCKT ZXCT1009F 1 2 3
+*
+*Pins 1.Load 2.Vin 3.Iout
+*
+I1 4 3 4uA
+R6 4 3 20E6
+R1 2 4 Rmod1 1
+Q1 4 5 3 LargeN
+C1 5 11 3E-9
+R5 11 3 10
+R2 5 6 10E3
+D1 6 8 Dmod
+R3 7 6 1
+V2 8 3 10
+E1 7 3 4 9 1000
+V1 10 1 100e-3
+I2 9 10 100E-3
+R4 9 10 Rmod2 1
+.MODEL Dmod D IS=1E-15 BV=20 IBV=1E-3 
+.MODEL LargeN NPN IS=3.8E-16 LOT/1/UNIFORM=50% DEV/GAUSS=1%
++ BF=220 LOT/1/UNIFORM=50% DEV/GAUSS=1% NK=.75 IKF=17e-3 VAF=60
++ ISE=1.8E-16 NE=1.4 BR=.7 IKR=3e-2 VAR=7 ISC=5E-12 NC=1.321 RB=300
++ RE=19.7 RC=63.4 CJC=51E-12 MJC=.42 VJC=.595 CJE=.21E-12 MJE=.33
++ VJE=.7 TF=1.5E-10 TR=6E-9 XTF=0.3 VTF=6 ITF=5E-5 XTB=1.17 XTI=5.4
++ KF=2E-13 AF=1.4
+.MODEL Rmod1 RES (R=99.5 TC1=1E-3 TC2=1E-5 LOT/1/UNIFORM=1% DEV/GAUSS=0.5%)
+.MODEL Rmod2 RES (R=1 LOT/1/UNIFORM=1% DEV/GAUSS=0.5%)
+.ENDS 
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL

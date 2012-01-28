@@ -1,0 +1,1601 @@
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=10FEB2011
+*VERSION=1
+*PIN_ORDER         
+* 1=C1    6=E1
+* 2=B1    5=B2
+* 3=C2    4=E2
+*
+.SUBCKT ZXTC2061E6 1 2 3 4 5 6
+Q1 1 2 6 Nmod
+Q2 3 5 4 Pmod
+*
+.MODEL Nmod NPN IS=9E-13 BF=990 NF=1 VAF=25 IKF=3.8 ISE=8E-14 NE=1.35
++ BR=410 NR=1 VAR=8 IKR=1.25 ISC=8e-14 NC=1.35 RE=0.0117 RB=0.1 RC=0.0081
++ CJE=168E-12 VJE=0.7 MJE=0.38 CJC=61E-12 VJC=0.52 MJC=0.31 TF=0.5E-9 TR=1.7e-9
++ XTB=1.4
+.MODEL Pmod PNP IS=5.5E-13 NF=1 BF=650 VAF=20 ISE=1.9E-13
++ IKF=2.5 NE=1.53 BR=72 VAR=4.1 ISC=7E-14 NC=1.2 IKR=0.25 RC=0.010
++ RB=0.15 RE=0.006 QUASIMOD=1 RCO=0.7 GAMMA=1.7E-9 CJC=57E-12 MJC=0.35
++ VJC=0.53 CJE=168E-12 MJE=0.54 VJE=0.95 TF=0.42E-9 TR=8.4E-9 TRC1=0.005
++ TRB1=0.005 TRE1=0.005 XTB=1.4 
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=24JAN2011
+*VERSION=2
+*PIN_ORDER         
+*1=B1
+*2=E1
+*3=B2
+*4=E2
+*5=C2
+*6=C2
+*7=C1
+*8=C1
+*
+.SUBCKT ZXTC6717MC 1 2 3 4 5 6 7 8
+Q1 10 1 2 Nmod
+Q2 20 3 4 Pmod
+RP1 10 7 0.001
+RP2 10 8 0.001
+RP3 20 5 0.001
+RP4 20 6 0.001
+*
+.MODEL Nmod NPN IS=5.92E-13 BF=500 IKF=5 VAF=34.6
++ ISE=1.27E-13 NE=1.425 NR=1 BR=280 IKR=2 VAR=12.25 
++ ISC=6.138E-13 NC=1.46 RB=0.1 RE=0.025 RC=0.017 
++ CJC=76E-12 MJC=0.2981 VJC=0.4414 CJE=230E-12 
++ MJE=0.3569 VJE=0.7042 TF=1.12E-9 TR=2.15E-9
+.MODEL Pmod PNP IS=5.5E-13  BF=500 IKF=3 VAF=14.93 
++ ISE=1.75E-13 NE=1.5 NR=1.00 BR=280 IKR=0.3 
++ VAR=5.64 ISC=6.01E-13 NC=1.34 RB=0.3 RE=0.03
++ RC=0.025 CJC=116.9E-12 MJC=0.3456 VJC=0.4576 
++ CJE=223.6E-12 MJE=0.4803 VJE=0.9091 TF=1.2E-9 
++ TR=2E-9
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=10FEB2011
+*VERSION=1
+*PIN_ORDER         
+* 1=C1    6=E1
+* 2=B1    5=B2
+* 3=C2    4=E2
+*
+.SUBCKT ZXTC2062E6 1 2 3 4 5 6
+Q1 1 2 6 Nmod
+Q2 3 5 4 Pmod
+*
+.MODEL Nmod NPN IS=4E-13 BF=550 NF=1 VAF=25 IKF=4.5 ISE=1E-13 NE=1.4
++ BR=120 NR=1 VAR=8 IKR=1.7 ISC=4e-13 NC=1.4 RE=0.010 RB=0.1 RC=0.0085
++ CJE=190E-12 VJE=0.67 MJE=0.345 CJC=47E-12 VJC=0.525 MJC=0.34 TF=0.53E-9 TR=8.6e-9 
++ RCO=0.29 GAMMA=0.8E-9 QUASIMOD=1 XTB=1.4
+.MODEL Pmod PNP IS=4E-13 NF=1 BF=510 IKF=3.5 VAF=23 ISE=10E-14 NE=1.49
++ NR=1 BR=97 IKR=1 VAR=4.5 ISC=7.5e-14 NC=1.2 RE=0.0136 RB=0.12 RC=0.0094 RCO=0.9
++ GAMMA=2.5E-9 CJC=60E-12 MJC=0.33 VJC=0.51 CJE=183E-12 MJE=0.5 VJE=0.9 TF=3.4E-10
++ TR=4.5e-9 XTB=1.5 TRE1=.002 TRB1=.002 TRC1=.002 QUASIMOD=1 
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=24JAN2011
+*VERSION=1
+*PIN_ORDER         
+*1=B1
+*2=E1
+*3=B2
+*4=E2
+*5=C2
+*6=C2
+*7=C1
+*8=C1
+*
+.SUBCKT ZXTC6718MC 1 2 3 4 5 6 7 8
+Q1 10 1 2 Nmod
+Q2 20 3 4 Pmod
+RP1 10 7 0.001
+RP2 10 8 0.001
+RP3 20 5 0.001
+RP4 20 6 0.001
+*
+.MODEL Nmod NPN IS=5.611E-13 NF=1.0022 BF=480 IKF=4.6 VAF=51
++ ISE=1.73E-13 NE=1.4 NR=1.0002 BR=200 IKR=3 VAR=25 
++ ISC=7.3152E-13 NC=1.47 RB=0.032 RE=0.027 RC=0.025 
++ CJC=59E-12 MJC=0.2651 VJC=0.3051 CJE=216E-12 
++ TF=0.95E-9 TR=2.25E-9
+.MODEL Pmod PNP IS=6.8E-13  BF=480 IKF=2 VAF=23 
++ ISE=0.8E-13 NE=1.5567 NR=1.00 BR=70 IKR=0.4 
++ VAR=7 ISC=7.5E-14 NC=1.19 RB=0.085 RE=0.04
++ RC=0.045 CJC=70.02E-12 MJC=0.4685 VJC=0.7714 
++ CJE=203.6E-12 MJE=0.5029 VJE=0.9403 TF=0.71E-9 
++ TR=23.7E-9
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=27/04/2010
+*VERSION=1
+*PIN_ORDER         C1, B1, C2, E2, B2, E1.
+*
+.SUBCKT ZXTD6717E6 1 2 3 4 5 6
+*
+Q1 1 2 6 Nmod1
+Q2 3 5 4 Pmod1
+*
+.MODEL Nmod1 NPN IS=5.92E-13 BF=500 IKF=5 VAF=34.6
++ ISE=1.27E-13 NE=1.425 NR=1 BR=280 IKR=2 VAR=12.25 
++ ISC=6.138E-13 NC=1.46 RB=0.1 RE=0.025 RC=0.017 
++ CJC=76E-12 MJC=0.2981 VJC=0.4414 CJE=230E-12 
++ MJE=0.3569 VJE=0.7042 TF=1.12E-9 TR=2.15E-9
+*
+.MODEL Pmod1 PNP IS=5.5E-13  BF=500 IKF=3 VAF=14.93 
++ ISE=1.75E-13 NE=1.5 NR=1.00 BR=280 IKR=0.3 
++ VAR=5.64 ISC=6.01E-13 NC=1.34 RB=0.3 RE=0.03
++ RC=0.025 CJC=116.9E-12 MJC=0.3456 VJC=0.4576 
++ CJE=223.6E-12 MJE=0.4803 VJE=0.9091 TF=1.2E-9 
++ TR=2E-9
+*
+.ENDS
+*
+*$
+
+*
+*ZETEX ZX5T2E6 Spice Model v1.0 Last revision 07/06/07
+*
+.MODEL ZX5T2E6 PNP IS=11E-13 BF=610 NF=1 VAF=20.1 IKF=2.5 ISE=1.1E-13
++NE=1.49 BR=75 NR=1 VAR=4.3 IKR=1 ISC=1.1e-13 NC=1.31 RE=0.0072 RB=0.3
++RC=0.012 CJE=460E-12 VJE=1.0 MJE=0.54 CJC=170E-12 VJC=0.62 MJC=0.42
++TF=9E-10 TR=8.5e-9 RCO=0.5 GAMMA=25E-10 QUASIMOD=1 XTB=1.5 TRE1=.003
++TRB1=.003  TRC1=.003
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXT13P20DE6 Spice Model v1.0 Last Revised 17/1/05
+*
+.MODEL ZXT13P20DE6 PNP IS=1.3E-12 NF=1 BF=450 IKF=6 VAF=15 
++ISE=0.8E-13 NE=1.4 NR=1 BR=210 VAR=5 ISC=4e-14 NC=1.18 RB=1 
++RE=.0075 RC=.07 CJC=235E-12 MJC=0.38 VJC=0.51 CJE=674E-12 
++MJE=0.52 VJE=0.95 TF=1.1E-9 TR=3.6e-9 XTB=1.5 
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=21/01/2011
+*VERSION=1
+*
+.MODEL ZXTP26020DMF PNP IS=5.5e-13 NF=1.005 ISE=1.2e-13 NE=1.55 BF=590
++ VAF=21 IKF=2 ISC=1.8e-13 NC=1.39 BR=52 VAR=5.7 IKR=0.6 RE=0.067
++ RB=0.33 RC=0.012 CJE=147e-12 VJE=0.88 MJE=0.48 CJC=51e-12 VJC=0.51
++ MJC=0.33 TF=4.5e-10 TR=5.6e-9 QUASIMOD=1 RCO=0.66 GAMMA=1.3e-9
++ XTB=1.5 TRE1=0.004 TRB1=0.003 TRC1=0.004
+*
+*$
+
+*
+*Zetex FMMT718 Spice Model v1.0 Last Revised 15/12/93
+*
+.MODEL FMMT718 PNP IS =6.8E-13  BF =480 IKF =2 VAF =23 
++              ISE=0.8E-13 NE =1.5567 NR =1.00 BR =70 IKR=0.4 
++              VAR=7 ISC=7.5E-14 NC =1.19 RB =0.085 RE =0.04
++              RC =0.045 CJC=70.02E-12 MJC=0.4685 VJC=0.7714 
++              CJE=203.6E-12 MJE=0.5029 VJE=0.9403 TF =0.71E-9 
++              TR =23.7E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXT10P12DE6 Spice Model v1.0 Last Revised 25/11/02
+*
+.MODEL ZXT10P12DE6 PNP IS =5.5E-13  BF =500 IKF =3 VAF =14.93 
++              ISE=1.75E-13 NE =1.5 NR =1.00 BR =280 IKR=0.3 
++              VAR=5.64 ISC=6.01E-13 NC =1.34 RB =0.3 RE =0.03
++              RC =0.025 CJC=116.9E-12 MJC=0.3456 VJC=0.4576 
++              CJE=223.6E-12 MJE=0.4803 VJE=0.9091 TF =1.2E-9 
++              TR =2E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXT10P20DE6 Spice Model v1.0 Last Revised 11/03/02
+*
+.MODEL  ZXT10P20DE6 PNP IS =6.8E-13  BF =480 IKF =2 VAF =23 
++              ISE=0.8E-13 NE =1.5567 NR =1.00 BR =70 IKR=0.4 
++              VAR=7 ISC=7.5E-14 NC =1.19 RB =0.085 RE =0.04
++              RC =0.045 CJC=70.02E-12 MJC=0.4685 VJC=0.7714 
++              CJE=203.6E-12 MJE=0.5029 VJE=0.9403 TF =0.71E-9 
++              TR =23.7E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXT13P12DE6 Spice Model v1.0 Last Revised 1/3/02
+*This single transistor model is one half of a pair in package.
+*
+.MODEL ZXT13P12DE6 PNP IS=1.7E-12 NF=1 BF=530 IKF=1 NK=0.43
++VAF=15 ISE=1E-13 NE=1.5 NR=1 BR=200 VAR=5 ISC=1e-13
++NC=1.5 IKR=0.13 RB=1.1 RE=.013 RC=.013 CJC=257E-12
++MJC=0.34 VJC=0.54 CJE=645E-12 MJE=0.62 VJE=1.3
++TF=2E-9 TR=5e-9 XTB=1.5
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=24JAN2011
+*VERSION=1
+*PIN_ORDER         
+*1=B1
+*2=E1
+*3=B2
+*4=E2
+*5=C2
+*6=C2
+*7=C1
+*8=C1
+*
+.SUBCKT ZXTD717MC 1 2 3 4 5 6 7 8
+Q1 10 1 2 Pmod
+Q2 20 3 4 Pmod
+RP1 10 7 0.001
+RP2 10 8 0.001
+RP3 20 5 0.001
+RP4 20 6 0.001
+*
+.MODEL Pmod PNP IS=5.5E-13  BF=500 IKF=3 VAF=14.93 
++ ISE=1.75E-13 NE=1.5 NR=1.00 BR=280 IKR=0.3 
++ VAR=5.64 ISC=6.01E-13 NC=1.34 RB=0.3 RE=0.03
++ RC=0.025 CJC=116.9E-12 MJC=0.3456 VJC=0.4576 
++ CJE=223.6E-12 MJE=0.4803 VJE=0.9091 TF=1.2E-9 
++ TR=2E-9
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=24JAN2011
+*VERSION=1
+*PIN_ORDER         
+*1=B1
+*2=E1
+*3=B2
+*4=E2
+*5=C2
+*6=C2
+*7=C1
+*8=C1
+*
+.SUBCKT ZXTD718MC 1 2 3 4 5 6 7 8
+Q1 10 1 2 Pmod
+Q2 20 3 4 Pmod
+RP1 10 7 0.001
+RP2 10 8 0.001
+RP3 20 5 0.001
+RP4 20 6 0.001
+*
+.MODEL Pmod PNP IS=6.8E-13  BF=480 IKF=2 VAF=23 
++ ISE=0.8E-13 NE=1.5567 NR=1.00 BR=70 IKR=0.4 
++ VAR=7 ISC=7.5E-14 NC=1.19 RB=0.085 RE=0.04
++ RC=0.045 CJC=70.02E-12 MJC=0.4685 VJC=0.7714 
++ CJE=203.6E-12 MJE=0.5029 VJE=0.9403 TF=0.71E-9 
++ TR=23.7E-9
+.ENDS
+*
+*$
+
+*
+*Zetex ZDT1048 Spice Model v1.0 Last Revised  12/09/08
+*
+.SUBCKT ZDT1048 1 2 3 4 5 6 7 8
+*            E2 B2 E1 B1 C1 C1 C2 C2
+Q1 9 4 3 Mod1
+Q2 10 2 1 Mod1
+R1 5 9 0.001
+R2 6 9 0.001
+R3 7 10 0.001
+R4 8 10 0.001
+*
+.MODEL Mod1 NPN IS=13.73E-13 NF=1.0 BF=550 IKF=8.0 VAF=120 
++ ISE=2.6E-13 NE=1.38 NR=1.0 BR=300 IKR=6 VAR=15
++ ISC=1.6E-12 NC=1.4 RB=0.1 RE=0.022 RC=0.010
++ CJC=136E-12 CJE=559.1E-12 MJC=0.267 MJE=0.299 
++ VJC=0.420 VJE=0.533 TF=600E-12 TR=3E-9
+*
+.ENDS ZDT1048
+*
+*$
+*
+*                (c)  2008 Diodes Incorporated
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Diodes ").  They  are  supplied
+*   free of charge by Diodes for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Incorporated, 1566 N. Dallas Parkway, Suite 850, Dallas, TX 75248, USA
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=24JAN2011
+*VERSION=1
+*PIN_ORDER         
+*1=B1
+*2=E1
+*3=B2
+*4=E2
+*5=C2
+*6=C2
+*7=C1
+*8=C1
+*
+.SUBCKT ZXTD618MC 1 2 3 4 5 6 7 8
+Q1 10 1 2 Nmod
+Q2 20 3 4 Nmod
+RP1 10 7 0.001
+RP2 10 8 0.001
+RP3 20 5 0.001
+RP4 20 6 0.001
+*
+.MODEL Nmod NPN IS=5.611E-13 NF=1.0022 BF=480 IKF=4.6 VAF=51
++ ISE=1.73E-13 NE=1.4 NR=1.0002 BR=200 IKR=3 VAR=25 
++ ISC=7.3152E-13 NC=1.47 RB=0.032 RE=0.027 RC=0.025 
++ CJC=59E-12 MJC=0.2651 VJC=0.3051 CJE=216E-12 
++ TF=0.95E-9 TR=2.25E-9
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=08/01/2009
+*VERSION=1
+*
+.MODEL 2DD2678  NPN IS=5.92E-13 BF=500 IKF=5 VAF=34.6
++ ISE=1.27E-13 NE=1.425 NR=1 BR=280 IKR=2 VAR=12.25 
++ ISC=6.138E-13 NC=1.46 RB=0.1 RE=0.025 RC=0.017 
++ CJC=76E-12 MJC=0.2981 VJC=0.4414 CJE=230E-12 
++ MJE=0.3569 VJE=0.7042 TF=1.12E-9 TR=2.15E-9
+*
+*$
+
+*
+*Zetex FZT717 Spice Model v1.0 Last Revised 25/11/02
+*
+.MODEL FZT717 PNP IS =5.5E-13  BF =500 IKF =3 VAF =14.93 
++              ISE=1.75E-13 NE =1.5 NR =1.00 BR =280 IKR=0.3 
++              VAR=5.64 ISC=6.01E-13 NC =1.34 RB =0.3 RE =0.03
++              RC =0.025 CJC=116.9E-12 MJC=0.3456 VJC=0.4576 
++              CJE=223.6E-12 MJE=0.4803 VJE=0.9091 TF =1.2E-9 
++              TR =2E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXT10N15DE6 Spice Model v1.0 Last Revised 25/11/02
+*
+.MODEL ZXT10N15DE6  NPN IS =5.92E-13 BF =500 IKF=5 VAF=34.6
++               ISE=1.27E-13 NE =1.425 NR =1 BR =280 IKR=2 VAR=12.25 
++               ISC=6.138E-13 NC =1.46 RB =0.1 RE =0.025 RC =0.017 
++               CJC=76E-12 MJC=0.2981 VJC=0.4414 CJE=230E-12 
++               MJE=0.3569 VJE=0.7042 TF =1.12E-9 TR =2.15E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=24JAN2011
+*VERSION=1
+*PIN_ORDER         
+*1=B1
+*2=E1
+*3=B2
+*4=E2
+*5=C2
+*6=C2
+*7=C1
+*8=C1
+*
+.SUBCKT ZXTD617MC 1 2 3 4 5 6 7 8
+Q1 10 1 2 Nmod
+Q2 20 3 4 Nmod
+RP1 10 7 0.001
+RP2 10 8 0.001
+RP3 20 5 0.001
+RP4 20 6 0.001
+*
+.MODEL Nmod NPN IS=5.92E-13 BF=500 IKF=5 VAF=34.6
++ ISE=1.27E-13 NE=1.425 NR=1 BR=280 IKR=2 VAR=12.25 
++ ISC=6.138E-13 NC=1.46 RB=0.1 RE=0.025 RC=0.017 
++ CJC=76E-12 MJC=0.2981 VJC=0.4414 CJE=230E-12 
++ MJE=0.3569 VJE=0.7042 TF=1.12E-9 TR=2.15E-9
+.ENDS
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=27JAN2011
+*VERSION=1
+*
+.MODEL ZXTP717MA PNP IS=5.5E-13  BF=500 IKF=3 VAF=14.93 
++ ISE=1.75E-13 NE=1.5 NR=1.00 BR=280 IKR=0.3 
++ VAR=5.64 ISC=6.01E-13 NC=1.34 RB=0.3 RE=0.03
++ RC=0.025 CJC=116.9E-12 MJC=0.3456 VJC=0.4576 
++ CJE=223.6E-12 MJE=0.4803 VJE=0.9091 TF=1.2E-9 
++ TR=2E-9
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=27JAN2011
+*VERSION=1
+*
+.MODEL ZXTP718MA PNP IS=6.8E-13  BF=480 IKF=2 VAF=23 
++ ISE=0.8E-13 NE=1.5567 NR=1.00 BR=70 IKR=0.4 
++ VAR=7 ISC=7.5E-14 NC=1.19 RB=0.085 RE=0.04
++ RC=0.045 CJC=70.02E-12 MJC=0.4685 VJC=0.7714 
++ CJE=203.6E-12 MJE=0.5029 VJE=0.9403 TF=0.71E-9 
++ TR=23.7E-9
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=09/01/2009
+*VERSION=1
+*
+.MODEL 2DD2652  NPN IS=2.66E-13 BF=550 IKF=2.25 VAF=34.6
++ ISE=5.7E-14 NE=1.425 BR=280 IKR=0.9 VAR=12.25 
++ ISC=2.76E-13 NC=1.46 RB=0.22 RE=0.055 RC=0.038 
++ CJC=34.2E-12 MJC=0.298 VJC=0.441 CJE=103.5E-12 
++ MJE=0.357 VJE=0.7042 TF=1.12E-9 TR=2.15E-9
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG
+*SIMULATOR=PSPICE
+*DATE=08/01/2009
+*VERSION=1
+*
+.MODEL 2DD2661  NPN IS=5.92E-13 BF=500 IKF=5 VAF=34.6
++ ISE=1.27E-13 NE=1.425 NR=1 BR=280 IKR=2 VAR=12.25 
++ ISC=6.138E-13 NC=1.46 RB=0.1 RE=0.025 RC=0.017 
++ CJC=76E-12 MJC=0.2981 VJC=0.4414 CJE=230E-12 
++ MJE=0.3569 VJE=0.7042 TF=1.12E-9 TR=2.15E-9
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=16/9/2009
+*VERSION=1
+*
+.MODEL DSS4220V NPN IS=7.5E-13 BF=700 NF=1.005 VAF=61 IKF=3.3
++ ISE=8.5E-14 NE=1.35 BR=130 NR=1 VAR=11.3 IKR=1.4 ISC=6E-13 NC=1.38
++ RE=0.061 RB=0.5 RC=0.010 CJE=143E-12 VJE=0.80 MJE=0.39 CJC=39E-12
++ VJC=0.40 MJC=0.26 TF=0.48E-9 TR=2.7E-9 RCO=0.42 GAMMA=2E-9
++ QUASIMOD=1 XTB=1.35 TRE1=0.004 TRB1=0.004 TRC1=0.004
+*
+*$
+
+*
+*Zetex ZXTN07012EFF Spice Model v1.0 Last Revised 12/10/07
+*
+.MODEL ZXTN07012EFF NPN IS=1.7E-12 NF=1 BF=1100 IKF=5 VAF=25 ISE=3E-13
++ NE=1.43 NR=1 BR=470 IKR=1 VAR=6.5 ISC=1.2e-12 NC=1.5 RB=0.1 RE=0.03
++ RC=0.0097 RCO=0.2 GAMMA=10E-10 CJC=106E-12 MJC=0.33 VJC=0.55 CJE=285E-12
++ MJE=0.41 VJE=0.80 TF=0.4E-9 TR=1.3e-9 XTB=1.4 TRC1=0.003 TRB1=0.003
++ TRE1=0.003 QUASIMOD=1
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXTN23015CFH Spice Model v1.0 Last Revised 05/10/07
+*
+.MODEL ZXTN23015CFH NPN IS=8E-13 NF=1 BF=410 IKF=9 VAF=90 ISE=3.3E-13
++ NE=1.42 NR=1 BR=180 IKR=1 VAR=12.5 ISC=1.2E-12 NC=1.52 RB=0.2 RE=0.0012
++ RC=0.005 CJC=153E-12 MJC=0.35 VJC=0.55 CJE=550E-12 MJE=0.37 VJE=0.75
++ TF=6E-10 TR=0.35E-8 XTB=1.4 TRC1=.005 TRB1=.005 TRE1=.005 QUASIMOD=1
++ RCO=0.12 GAMMA=5E-10
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*ZETEX ZXTN25012EFH Spice model v1.0 Last revision 01/03/07
+*
+.MODEL ZXTN25012EFH NPN IS =9E-13 NF =1 BF =990 IKF=3.8 VAF=25 ISE=8E-14
++NE =1.35 NR =1 BR =410 IKR=1.25 VAR=8 ISC=8e-14 NC =1.35 RB =0.1
++RE =0.0117 RC =0.0081 CJC=61E-12 MJC=0.31 VJC=0.52 CJE=168E-12 MJE=0.38
++VJE=0.70 TF =0.5E-9 TR =1.7e-9 XTB=1.4
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*ZETEX ZXTN25012EFL Spice model v1.0 Last revision 01/03/07
+*
+.MODEL ZXTN25012EFL NPN IS =9E-13 NF =1 BF =990 IKF=3.8 VAF=25 ISE=8E-14
++NE =1.35 NR =1 BR =410 IKR=1.25 VAR=8 ISC=8e-14 NC =1.35 RB =0.1
++RE =0.0117 RC =0.0081 CJC=61E-12 MJC=0.31 VJC=0.52 CJE=168E-12 MJE=0.38
++VJE=0.70 TF =0.5E-9 TR =1.7e-9 XTB=1.4
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZXTN25015DFH Spice Model v1.0 Last Revised 11/10/07
+*
+.MODEL ZXTN25015DFH NPN IS=5E-13 NF=1 BF=500 IKF=5.5 VAF=57 ISE=2.3E-13
++ NE=1.55 NR=1 BR=160 IKR=1 VAR=12.3 ISC=6e-13 NC=1.47 RB=0.15 RE=.009
++ RC=.006 RCO=0.2 GAMMA=1.8E-10 CJC=60E-12 MJC=0.33 VJC=0.55 CJE=200E-12
++ MJE=0.38 VJE=0.75 TF=0.6E-9 TR=2.6e-9 XTB=1.4 TRC1=.005 TRB1=.005
++ TRE1=.005 QUASIMOD=1
+*
+*$
+*
+*                (c)  2007 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=27JAN2011
+*VERSION=1
+*
+.MODEL ZXTN617MA NPN IS=5.92E-13 BF=500 IKF=5 VAF=34.6
++ ISE=1.27E-13 NE=1.425 NR=1 BR=280 IKR=2 VAR=12.25 
++ ISC=6.138E-13 NC=1.46 RB=0.1 RE=0.025 RC=0.017 
++ CJC=76E-12 MJC=0.2981 VJC=0.4414 CJE=230E-12 
++ MJE=0.3569 VJE=0.7042 TF=1.12E-9 TR=2.15E-9
+*
+*$
+
+Packaged in the SOT89 outline this new low saturation NPN transistor
+offers extremely low on state losses making it ideal for use in DC-DC
+circuits and various driving and power management functions.
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=27OCT2010
+*VERSION=2
+*
+.MODEL ZXTN2005G NPN IS =1.9E-12 BF =730 XTB=1.4 IKF=5.5 VAF=30
++ISE=8E-13 NE =1.4 NR =1 BR =280 IKR=2.5 VAR=15 ISC=1.2E-12
++NC =1.4 RB =1 RBM =0.012 IRB =1 RE = 0.022 RC =0.004 CJC=125E-12
++MJC=0.3917 VJC=0.5871 CJE=528E-12 MJE=0.3826 VJE=0.7686
++TF =0.8E-9 TR =3.2E-9 
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=27OCT2010
+*VERSION=2
+*
+.MODEL ZXTN2005Z NPN IS =1.9E-12 BF =730 XTB=1.4 IKF=5.5 VAF=30
++ISE=8E-13 NE =1.4 NR =1 BR =280 IKR=2.5 VAR=15 ISC=1.2E-12
++NC =1.4 RB =1 RBM =0.012 IRB =1 RE = 0.022 RC =0.004 CJC=125E-12
++MJC=0.3917 VJC=0.5871 CJE=528E-12 MJE=0.3826 VJE=0.7686
++TF =0.8E-9 TR =3.2E-9 
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=19/01/2011
+*VERSION=1
+*
+.MODEL ZXTN26020DMF NPN IS=7.5E-13 BF=700 NF=1.005 VAF=61 IKF=3.3
++ ISE=8.5E-14 NE=1.35 BR=130 NR=1 VAR=11.3 IKR=1.4 ISC=6E-13 NC=1.38
++ RE=0.061 RB=0.5 RC=0.010 CJE=143E-12 VJE=0.80 MJE=0.39 CJC=39E-12
++ VJC=0.40 MJC=0.26 TF=0.48E-9 TR=2.7E-9 RCO=0.42 GAMMA=2E-9
++ QUASIMOD=1 XTB=1.35 TRE1=0.004 TRB1=0.004 TRC1=0.004
+*
+*$
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=27JAN2011
+*VERSION=1
+*
+.MODEL ZXTN618MA NPN IS=5.611E-13 NF=1.0022 BF=480 IKF=4.6 VAF=51
++ ISE=1.73E-13 NE=1.4 NR=1.0002 BR=200 IKR=3 VAR=25 
++ ISC=7.3152E-13 NC=1.47 RB=0.032 RE=0.027 RC=0.025 
++ CJC=59E-12 MJC=0.2651 VJC=0.3051 CJE=216E-12 
++ TF=0.95E-9 TR=2.25E-9
+*
+*$
+
+*
+*Zetex FCX1047A Spice Model v1.0 Last Revised 3/1/03
+*
+.MODEL FCX1047A  NPN IS=9.73E-13  NF=1.0  BF=550  IKF=8.0  VAF=120
++               ISE=2.6E-13  NE=1.38  NR=1.0  BR=400  IKR=5  VAR=15
++               ISC=8E-13  NC=1.4  RB=0.1  RE=0.017  RC=0.010 
++               CJC=195.4E-12  CJE=540.4E-12  MJC=0.257  MJE=0.359
++               VJC=0.390  VJE=0.753  TF=450E-12  TR=1.2E-9 
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FCX617 Spice Model v1.0 Last Revised 25/11/02
+*
+.MODEL FCX617  NPN IS =5.92E-13 BF =500 IKF=5 VAF=34.6
++               ISE=1.27E-13 NE =1.425 NR =1 BR =280 IKR=2 VAR=12.25 
++               ISC=6.138E-13 NC =1.46 RB =0.1 RE =0.025 RC =0.017 
++               CJC=76E-12 MJC=0.2981 VJC=0.4414 CJE=230E-12 
++               MJE=0.3569 VJE=0.7042 TF =1.12E-9 TR =2.15E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FCX717 Spice Model v1.0 Last Revised 25/11/02
+*
+.MODEL FCX717 PNP IS =5.5E-13  BF =500 IKF =3 VAF =14.93 
++              ISE=1.75E-13 NE =1.5 NR =1.00 BR =280 IKR=0.3 
++              VAR=5.64 ISC=6.01E-13 NC =1.34 RB =0.3 RE =0.03
++              RC =0.025 CJC=116.9E-12 MJC=0.3456 VJC=0.4576 
++              CJE=223.6E-12 MJE=0.4803 VJE=0.9091 TF =1.2E-9 
++              TR =2E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FCX718 Spice Model v1.0 Last Revised 11/03/02
+*
+.MODEL FCX718 PNP IS =6.8E-13  BF =480 IKF =2 VAF =23 
++              ISE=0.8E-13 NE =1.5567 NR =1.00 BR =70 IKR=0.4 
++              VAR=7 ISC=7.5E-14 NC =1.19 RB =0.085 RE =0.04
++              RC =0.045 CJC=70.02E-12 MJC=0.4685 VJC=0.7714 
++              CJE=203.6E-12 MJE=0.5029 VJE=0.9403 TF =0.71E-9 
++              TR =23.7E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FCX789A Spice Model v1.0 Last Revised 2/1/03
+*
+.MODEL FCX789A PNP IS=8.5083E-13 NF=1.007 BF=540 IKF=3.4 VAF=15.5
++ISE=1.60716E-13 NE=1.5059 NR=1.0025 BR=180 IKR=0.3 VAR=9 ISC=7.382E-14
++NC=1.2275 RB=0.05 RE=0.32 RC=0.052 CJC=140E-12 MJC=0.335 VJC=0.26
++CJE=300E-12 TF=0.73E-9 TR=4.2E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FMMT617 Spice Model v1.0 Last Revised 19/4/94
+*
+.MODEL FMMT617  NPN IS =5.92E-13 BF =500 IKF=5 VAF=34.6
++               ISE=1.27E-13 NE =1.425 NR =1 BR =280 IKR=2 VAR=12.25 
++               ISC=6.138E-13 NC =1.46 RB =0.1 RE =0.025 RC =0.017 
++               CJC=76E-12 MJC=0.2981 VJC=0.4414 CJE=230E-12 
++               MJE=0.3569 VJE=0.7042 TF =1.12E-9 TR =2.15E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FMMT717 Spice Model v1.0 Last Revised 25/3/94
+*
+.MODEL FMMT717 PNP IS =5.5E-13  BF =500 IKF =3 VAF =14.93 
++              ISE=1.75E-13 NE =1.5 NR =1.00 BR =280 IKR=0.3 
++              VAR=5.64 ISC=6.01E-13 NC =1.34 RB =0.3 RE =0.03
++              RC =0.025 CJC=116.9E-12 MJC=0.3456 VJC=0.4576 
++              CJE=223.6E-12 MJE=0.4803 VJE=0.9091 TF =1.2E-9 
++              TR =2E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FMMTL717 Spice Model v1.0 Last Revised 28/6/00
+*
+.MODEL FMMTL717 PNP IS=3E-13 NF=1 BF=450 IKF=1 VAF=17
++ISE=5E-14 NE=1.6 NR=1 BR=80 VAR=7 ISC=5e-14 NC=1.45
++RB=1.2 RE=0.076 RC=0.076 
++CJC=62.5E-12 MJC=0.51 VJC=0.559 CJE=102E-12
++TF =0.68E-9 TR =2e-9 
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FMMTL718 Spice Model v1.0 Last Revised 7/8/00
+*
+.MODEL FMMTL718 PNP IS=2e-13 BF=550 XTB=1.4
++NF=1 VAF=21 IKF=0.25 ISE=1e-13 NE=1.38 BR=55
++NR=1 VAR=9.9 IKR=0.25 ISC=1e-13 NC=1.18
++RE=0.06 RB=0.7 RC=0.06 
++CJE=95.9e-12 VJE=0.897 MJE=0.468 CJC=43.4e-12
++VJC=1.816 MJC=0.85 TF=495e-12 TR=25e-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FZT1047A Spice Model v1.0 Last Revised 18/3/97
+*
+.MODEL FZT1047A  NPN IS=9.73E-13  NF=1.0  BF=550  IKF=8.0  VAF=120
++               ISE=2.6E-13  NE=1.38  NR=1.0  BR=400  IKR=5  VAR=15
++               ISC=8E-13  NC=1.4  RB=0.1  RE=0.017  RC=0.010 
++               CJC=195.4E-12  CJE=540.4E-12  MJC=0.257  MJE=0.359
++               VJC=0.390  VJE=0.753  TF=450E-12  TR=1.2E-9 
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FZT688B Spice Model v1.0 Last Revised 8/11/90
+*
+.MODEL FZT688B NPN IS =1.09E-12 NF =0.9935 BF =1180 IKF=5.2 VAF=25
++ISE=1.3E-13 NE =1.35 NR =0.992 BR =790 IKR=.5 VAR=5 ISC=0.174E-12
++NC =1.399 RB =.3 RE =.036 RC =.034 CJC=104E-12 MJC=.29 VJC=.46
++CJE=280E-12 TF =.93E-9 TR =1.05E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FZT749 Spice Model v1.0 Last Revised 17/7/90
+*
+.MODEL FZT749 PNP IS =2.6E-13 BF =210 VAF=27 IKF=7 ISE=1.2E-13 NE =1.43 BR =70
++VAR=14 IKR=.6 ISC=12.04E-13 NC =1.4474 NF =.999 NR =.982 RB =.3 RE =.065
++RC =.04 CJE=410E-12 TF =.65E-9 CJC=140E-12 TR =12E-9 MJC=.35 VJC=.305
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FZT788B Spice Model v1.0 Last Revised 2/1/92
+*
+.MODEL FZT788B PNP IS=1.252E-12 NF=1.0119 BF=770 IKF=2.6 VAF=11
++ISE=1.3185E-13 NE=1.4832 NR=1.0047 BR=350 IKR=0.32 VAR=10.5
++ISC=5.2648E-14 NC=1.186 RB=0.053 RE=0.031 RC=0.044 CJC=137E-12
++MJC=0.34 VJC=0.275 CJE=280E-12 TF=0.75E-9 TR=2.3E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FZT789A Spice Model v1.0 Last Revised 3/1/92
+*
+.MODEL FZT789A PNP IS=8.5083E-13 NF=1.007 BF=540 IKF=3.4 VAF=15.5
++ISE=1.60716E-13 NE=1.5059 NR=1.0025 BR=180 IKR=0.3 VAR=9 ISC=7.382E-14
++NC=1.2275 RB=0.05 RE=0.32 RC=0.052 CJC=140E-12 MJC=0.335 VJC=0.26
++CJE=300E-12 TF=0.73E-9 TR=4.2E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FZT948 Spice Model v1.0 Last Revised 14/3/97
+*
+.MODEL FZT948  PNP IS=1.5554E-12 NF=1.013 BF=208 IKF=14.7 VAF=22.4
++ISE=1.48E-13 NE=1.485 NR=1.004 BR=140 IKR=1.34 VAR=15.4 
++ISC=1.3946E-11 NC=1.702 RB=0.020 RE=0.0177 RC=0.015 CJC=440E-12  
++MJC=0.3604 VJC=0.685 CJE=1.23E-9 TF=1.38E-9 TR=4.8E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex FZT968 Spice Model v1.0 Last Revised 14/3/97
+*
+.MODEL FZT968  PNP IS=3.58E-12 NF=1.015 BF=500 IKF=11 VAF=11.4
++ISE=1.576E-13 NE=1.42 NR=1.01 BR=245 IKR=1.4 VAR=8.4 ISC=1.48E-11
++NC=1.637 RB=0.024 RE=0.0164 RC=0.0235 CJC=438E-12 MJC=0.361 
++VJC=0.673 CJE=1.05E-9 TF=1.38E-9 TR=2.3E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZDT1049 Spice Model v1.0 Last Revised  12/09/08
+*
+.SUBCKT ZDT1049 1 2 3 4 5 6 7 8
+*            E2 B2 E1 B1 C1 C1 C2 C2
+Q1 9 4 3 Mod1
+Q2 10 2 1 Mod1
+R1 5 9 0.001
+R2 6 9 0.001
+R3 7 10 0.001
+R4 8 10 0.001
+*
+.MODEL Mod1 NPN IS=1.5E-12 NF=1.0 BF=600 IKF=7.5 VAF=100 
++ ISE=0.9E-13 NE=1.25 NR=1.0 BR=150 IKR=3 VAR=15
++ ISC=5.0E-13 NC=1.76 RB=0.1 RE=0.018 RC=0.007 
++ CJC=136E-12 CJE=550E-12 MJC=0.352 MJE=0.36
++ VJC=0.554 VJE=0.726 TF=400E-12 TR=6.9E-9
+*
+.ENDS ZDT1049
+*
+*$
+*
+*                (c)  2008 Diodes Incorporated
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Diodes ").  They  are  supplied
+*   free of charge by Diodes for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Incorporated, 1566 N. Dallas Parkway, Suite 850, Dallas, TX 75248, USA
+
+*
+*DIODES_INC_SPICE_MODEL
+*ORIGIN=DZSL_DPG_GM
+*SIMULATOR=PSPICE
+*DATE=10FEB2011
+*VERSION=1
+*PIN_ORDER         
+* 1=E2    8=C2
+* 2=B2    7=C2
+* 3=E1    6=C1
+* 4=B1    5=C1
+*
+.SUBCKT ZDT6718 1 2 3 4 5 6 7 8
+Q1 11 4 3 Nmod
+Q2 12 2 1 Pmod
+RP1 11 5 0.001
+RP2 11 6 0.001
+RP3 12 7 0.001
+RP4 12 8 0.001
+*
+.MODEL Nmod NPN IS=5.611E-13 NF=1.0022 BF=480 IKF=4.6 VAF=51
++ ISE=1.73E-13 NE=1.4 NR=1.0002 BR=200 IKR=3 VAR=25 
++ ISC=7.3152E-13 NC=1.47 RB=0.032 RE=0.027 RC=0.025 
++ CJC=59E-12 MJC=0.2651 VJC=0.3051 CJE=216E-12 
++ TF=0.95E-9 TR=2.25E-9
+.MODEL Pmod PNP IS=6.8E-13  BF=480 IKF=2 VAF=23 
++ ISE=0.8E-13 NE=1.5567 NR=1.00 BR=70 IKR=0.4 
++ VAR=7 ISC=7.5E-14 NC=1.19 RB=0.085 RE=0.04
++ RC=0.045 CJC=70.02E-12 MJC=0.4685 VJC=0.7714 
++ CJE=203.6E-12 MJE=0.5029 VJE=0.9403 TF=0.71E-9 
++ TR=23.7E-9
+.ENDS
+*
+*$
+
+*
+*Zetex ZDT749 Spice Model v1.0 Last Revised  12/09/08
+*
+.SUBCKT ZDT749 1 2 3 4 5 6 7 8
+*            E2 B2 E1 B1 C1 C1 C2 C2
+Q1 9 4 3 Mod1
+Q2 10 2 1 Mod1
+R1 5 9 0.001
+R2 6 9 0.001
+R3 7 10 0.001
+R4 8 10 0.001
+*
+.MODEL Mod1 PNP IS=2.6E-13 BF=210 VAF=27 IKF=7 ISE=1.2E-13 NE=1.43 BR=70
++ VAR=14 IKR=.6 ISC=12.04E-13 NC=1.4474 NF=.999 NR=.982 RB=.3 RE=.065
++ RC=.04 CJE=410E-12 TF=.65E-9 CJC=140E-12 TR=12E-9 MJC=.35 VJC=.305
+*
+.ENDS ZDT749
+*
+*$
+*
+*                (c)  2008 Diodes Incorporated
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Diodes Incorporated (" Diodes ").  They  are  supplied
+*   free of charge by Diodes for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Diodes Incorporated, its distributors
+*   or agents.
+*
+*   Diodes Incorporated, 1566 N. Dallas Parkway, Suite 850, Dallas, TX 75248, USA
+
+*
+*Zetex ZTX688B Spice Model v1.0 Last Revised 8/11/90
+*
+.MODEL ZTX688B NPN IS =1.09E-12 NF =0.9935 BF =1180 IKF=5.2 VAF=25
++ISE=1.3E-13 NE =1.35 NR =0.992 BR =790 IKR=.5 VAR=5 ISC=0.174E-12
++NC =1.399 RB =.3 RE =.036 RC =.034 CJC=104E-12 MJC=.29 VJC=.46
++CJE=280E-12 TF =.93E-9 TR =1.05E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZTX749 Spice Model v1.0 Last Revised 17/7/90
+*
+.MODEL ZTX749 PNP IS =2.6E-13 BF =210 VAF=27 IKF=7 ISE=1.2E-13 NE =1.43 BR =70
++VAR=14 IKR=.6 ISC=12.04E-13 NC =1.4474 NF =.999 NR =.982 RB =.3 RE =.065
++RC =.04 CJE=410E-12 TF =.65E-9 CJC=140E-12 TR =12E-9 MJC=.35 VJC=.305
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZTX788A Spice Model v1.0 Last Revised 3/6/92
+*
+.MODEL ZTX788A PNP IS=1.2016E-12 NF=1.0186 BF=490 IKF=3.8 VAF=10.8
++ISE=2.2E-13 NE=1.57 NR=1.011 BR=190 IKR=0.35 VAR=13.6 
++ISC=2.38E-12 NC=1.693 RB=0.050 RE=0.028 RC=0.042 CJC=156E-12  
++MJC=0.4266 VJC=0.9718 CJE=335E-12 TF=0.78E-9 TR=4.6E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZTX788B Spice Model v1.0 Last Revised 2/1/92
+*
+.MODEL ZTX788B PNP IS=1.252E-12 NF=1.0119 BF=770 IKF=2.6 VAF=11
++ISE=1.3185E-13 NE=1.4832 NR=1.0047 BR=350 IKR=0.32 VAR=10.5
++ISC=5.2648E-14 NC=1.186 RB=0.053 RE=0.031 RC=0.044 CJC=137E-12
++MJC=0.34 VJC=0.275 CJE=280E-12 TF=0.75E-9 TR=2.3E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZTX789A Spice Model v1.0 Last Revised 3/1/92
+*
+.MODEL ZTX789A PNP IS=8.5083E-13 NF=1.007 BF=540 IKF=3.4 VAF=15.5
++ISE=1.60716E-13 NE=1.5059 NR=1.0025 BR=180 IKR=0.3 VAR=9 ISC=7.382E-14
++NC=1.2275 RB=0.05 RE=0.32 RC=0.052 CJC=140E-12 MJC=0.335 VJC=0.26
++CJE=300E-12 TF=0.73E-9 TR=4.2E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZTX968 Spice Model v1.0 Last Revised 25/5/92
+*
+.MODEL ZTX968  PNP IS=3.58E-12 NF=1.015 BF=500 IKF=11 VAF=11.4
++ISE=1.576E-13 NE=1.42 NR=1.01 BR=245 IKR=1.4 VAR=8.4 ISC=1.48E-11
++NC=1.637 RB=0.024 RE=0.0164 RC=0.0235 CJC=438E-12 MJC=0.361 
++VJC=0.673 CJE=1.05E-9 TF=1.38E-9 TR=2.3E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZUMT618 Spice Model v1.0 Last Revised 24/1/03
+*
+.MODEL ZUMT618  NPN IS =2.52E-13 BF =550 IKF=2.1 VAF=51 
++ISE=7.8E-14 NE =1.4 BR =200 IKR=1.35 VAR=25 ISC=3.29E-13 
++NC =1.47 RB =0.071 RE =0.06 RC =0.055 CJC=26.6E-12 MJC=0.265 
++VJC=0.305 CJE=97.2E-12 TF =0.95E-9 TR =2.25E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZUMT717 Spice Model v1.0 Last Revised 14/12/00
+*
+.MODEL ZUMT717 PNP IS =1.57E-13 BF =500 IKF =0.86
++VAF =14.93 ISE=0.5E-13 NE =1.5 NR =1.00 BR =280
++IKR=0.086 VAR=5.64 ISC=1.72E-13 NC =1.34 RB =1.05 
++RE =0.105 RC =0.088 CJC=48.7E-12 MJC=0.3456
++VJC=0.4576 CJE=93.2E-12 MJE=0.4803 VJE=0.9091
++TF =1.2E-9 TR =2E-9 
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZUMT718 Spice Model v1.0 Last Revised 24/1/03
+*
+.MODEL ZUMT718 PNP IS =3.1E-13  BF =550 IKF =0.45 VAF =23 
++ISE=3.6E-14 NE =1.557 BR =70 IKR=0.18 VAR=7 ISC=3.4E-14 NC =1.19 
++RB =.188 RE =0.089 RC =0.1 CJC=31.5E-12 MJC=0.469 VJC=0.771 
++CJE=91.6E-12 MJE=0.503 VJE=0.94 TF =0.71E-9 TR =23.7E-9
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL

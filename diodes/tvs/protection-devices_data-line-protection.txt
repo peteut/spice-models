@@ -1,0 +1,15 @@
+*******************************************************************************************************************************************
+*SRC=QSBT40;DI_QSBT40;Diodes;Si;  30.0V  0.200A  50.0ns   Diodes Inc. Schottky Bus - Single Device of Multiple
+.MODEL DI_QSBT40 D  ( IS=500n RS=0.211 BV=30.0 IBV=2.00u
++ CJO=10.0p  M=0.333 N=1.70 TT=72.0n )
+*******************************************************************************************************************************************
+
+*SRC=DLPA006;DI_DLPA006;Diodes;Si;  85.0V  0.160A  3.00us   Diodes, Inc.
+Switching - one element of DLPA006 array
+.MODEL DI_DLPA006 D  ( IS=59.0p RS=0.262 BV=85.0 IBV=5.00n
++ CJO=2.00p  M=0.333 N=1.78 TT=4.32u )
+
+*SRC=SDA006;DI_SDA006;Diodes;Si;  75.0V  0.300A  4.00ns   Diodes Inc.
+Databus Transient Suppressor - Model is for one Diode Element
+.MODEL DI_SDA006 D  ( IS=68.6n RS=0.377 BV=75.0 IBV=1.00u
++ CJO=1.72p  M=0.333 N=2.34 TT=5.76n )

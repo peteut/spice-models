@@ -1,0 +1,415 @@
+*SRC=HD04;DI_HD04;Diodes;Si;  400V  0.800A  3.00us   Diodes Inc. Bridge
+Rectifier -- for one element
+.MODEL DI_HD04 D  ( IS=3.47n RS=42.6m BV=400 IBV=5.00u
++ CJO=25.2p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=HD01;DI_HD01;Diodes;Si;  100V  0.800A  3.00us   Diodes Inc. Bridge
+Rectifier -- for one element
+.MODEL DI_HD01 D  ( IS=3.47n RS=42.6m BV=100 IBV=5.00u
++ CJO=25.2p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=HD02;DI_HD02;Diodes;Si;  200V  0.800A  3.00us   Diodes Inc. Bridge
+Rectifier -- for one element
+.MODEL DI_HD02 D  ( IS=3.47n RS=42.6m BV=200 IBV=5.00u
++ CJO=25.2p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=HD06;DI_HD06;Diodes;Si;  600V  0.800A  3.00us   Diodes Inc. Bridge
+Rectifier -- for one element
+.MODEL DI_HD06 D  ( IS=3.47n RS=42.6m BV=600 IBV=5.00u
++ CJO=25.2p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF08M;DI_DF08M;Diodes;Si;  800V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF08M D  ( IS=4.42n RS=42.0m BV=800 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=GBJ15005;DI_GBJ15005;Diodes;Si;  50.0V  15.0A  3.00us   Diodes Inc.
+Bridge Rectifier -- for one element
+.MODEL DI_GBJ15005 D  ( IS=5.11u RS=3.43m BV=50.0 IBV=10.0u
++ CJO=106p  M=0.333 N=2.44 TT=4.32u )
+
+*SRC=GBJ1501;DI_GBJ1501;Diodes;Si;  100V  15.0A  3.00us   Diodes Inc.
+Bridge Rectifier -- for one element
+.MODEL DI_GBJ1501 D  ( IS=5.11u RS=3.43m BV=100 IBV=10.0u
++ CJO=106p  M=0.333 N=2.44 TT=4.32u )
+
+*SRC=GBJ1502;DI_GBJ1502;Diodes;Si;  200V  15.0A  3.00us   Diodes Inc.
+Bridge Rectifier -- for one element
+.MODEL DI_GBJ1502 D  ( IS=5.11u RS=3.43m BV=200 IBV=10.0u
++ CJO=106p  M=0.333 N=2.44 TT=4.32u )
+
+*SRC=DF005M;DI_DF005M;Diodes;Si;  50.0V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF005M D  ( IS=4.42n RS=42.0m BV=50.0 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF005S;DI_DF005S;Diodes;Si;  50.0V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF005S D  ( IS=4.42n RS=42.0m BV=50.0 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF01M;DI_DF01M;Diodes;Si;  100V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF01M D  ( IS=4.42n RS=42.0m BV=100 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF01S;DI_DF01S;Diodes;Si;  100V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF01S D  ( IS=4.42n RS=42.0m BV=100 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF02M;DI_DF02M;Diodes;Si;  200V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF02M D  ( IS=4.42n RS=42.0m BV=200 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF02S;DI_DF02S;Diodes;Si;  200V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF02S D  ( IS=4.42n RS=42.0m BV=200 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF04M;DI_DF04M;Diodes;Si;  400V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF04M D  ( IS=4.42n RS=42.0m BV=400 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF04S;DI_DF04S;Diodes;Si;  400V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF04S D  ( IS=4.42n RS=42.0m BV=400 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF06M;DI_DF06M;Diodes;Si;  600V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF06M D  ( IS=4.42n RS=42.0m BV=600 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF06S;DI_DF06S;Diodes;Si;  600V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF06S D  ( IS=4.42n RS=42.0m BV=600 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF08S;DI_DF08S;Diodes;Si;  800V  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF08S D  ( IS=4.42n RS=42.0m BV=800 IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF10M;DI_DF10M;Diodes;Si;  1.00kV  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF10M D  ( IS=4.42n RS=42.0m BV=1.00k IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF10S;DI_DF10S;Diodes;Si;  1.00kV  1.00A  3.00us   Diodes Inc. Bridge -- for one element 
+.MODEL DI_DF10S D  ( IS=4.42n RS=42.0m BV=1.00k IBV=10.0u 
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF15005S;DI_DF15005S;Diodes;Si;  50.0V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_DF15005S D  ( IS=2.06n RS=28.1m BV=50.0 IBV=10.0u
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF1501S;DI_DF1501S;Diodes;Si;  100V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_DF1501S D  ( IS=2.06n RS=28.1m BV=100 IBV=10.0u
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF1502S;DI_DF1502S;Diodes;Si;  200V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_DF1502S D  ( IS=2.06n RS=28.1m BV=200 IBV=10.0u
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF1504S;DI_DF1504S;Diodes;Si;  400V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_DF1504S D  ( IS=2.06n RS=28.1m BV=400 IBV=10.0u
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF1506S;DI_DF1506S;Diodes;Si;  600V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_DF1506S D  ( IS=2.06n RS=28.1m BV=600 IBV=10.0u
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF1508S;DI_DF1508S;Diodes;Si;  800V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_DF1508S D  ( IS=2.06n RS=28.1m BV=800 IBV=10.0u
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=DF1510S;DI_DF1510S;Diodes;Si;  1.00kV  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_DF1510S D  ( IS=2.06n RS=28.1m BV=1.00k IBV=10.0u
++ CJO=65.0p  M=0.333 N=1.70 TT=4.32u )
+
+*SRC=GBJ1504;DI_GBJ1504;Diodes;Si;  400V  15.0A  3.00us   Diodes Inc.
+Bridge Rectifier -- for one element
+.MODEL DI_GBJ1504 D  ( IS=5.11u RS=3.43m BV=400 IBV=10.0u
++ CJO=106p  M=0.333 N=2.44 TT=4.32u )
+
+*SRC=GBJ1506;DI_GBJ1506;Diodes;Si;  600V  15.0A  3.00us   Diodes Inc.
+Bridge Rectifier -- for one element
+.MODEL DI_GBJ1506 D  ( IS=5.11u RS=3.43m BV=600 IBV=10.0u
++ CJO=106p  M=0.333 N=2.44 TT=4.32u )
+
+*SRC=GBJ1508;DI_GBJ1508;Diodes;Si;  800V  15.0A  3.00us   Diodes Inc.
+Bridge Rectifier -- for one element
+.MODEL DI_GBJ1508 D  ( IS=5.11u RS=3.43m BV=800 IBV=10.0u
++ CJO=106p  M=0.333 N=2.44 TT=4.32u )
+
+*SRC=GBJ1510;DI_GBJ1510;Diodes;Si;  1.00kV  15.0A  3.00us   Diodes Inc.
+Bridge Rectifier -- for one element
+.MODEL DI_GBJ1510 D  ( IS=5.11u RS=3.43m BV=1.00k IBV=10.0u
++ CJO=106p  M=0.333 N=2.44 TT=4.32u )
+
+*SRC=GBJ2001;DI_GBJ2001;Diodes;Si;  100V  20.0A  3.00us   Diodes Inc.
+Bridge Rect. This model covers only one element.  There are four elements per pkg. .MODEL DI_GBJ2001 D  ( IS=15.1u RS=2.96m BV=100 IBV=10.0u
++ CJO=111p  M=0.333 N=2.84 TT=4.32u )
+
+*SRC=GBJ2002;DI_GBJ2002;Diodes;Si;  200V  20.0A  3.00us   Diodes Inc.
+Bridge Rect. This model covers only one element.  There are four elements per pkg. .MODEL DI_GBJ2002 D  ( IS=15.1u RS=2.96m BV=200 IBV=10.0u
++ CJO=111p  M=0.333 N=2.84 TT=4.32u )
+
+*SRC=GBJ2004;DI_GBJ2004;Diodes;Si;  400V  20.0A  3.00us   Diodes Inc.
+Bridge Rect. This model covers only one element.  There are four elements per pkg. .MODEL DI_GBJ2004 D  ( IS=15.1u RS=2.96m BV=400 IBV=10.0u
++ CJO=111p  M=0.333 N=2.84 TT=4.32u )
+
+*SRC=GBJ2006;DI_GBJ2006;Diodes;Si;  600V  20.0A  3.00us   Diodes Inc.
+Bridge Rect. This model covers only one element.  There are four elements per pkg. .MODEL DI_GBJ2006 D  ( IS=15.1u RS=2.96m BV=600 IBV=10.0u
++ CJO=111p  M=0.333 N=2.84 TT=4.32u )
+
+*SRC=GBJ2008;DI_GBJ2008;Diodes;Si;  800V  20.0A  3.00us   Diodes Inc.
+Bridge Rect. This model covers only one element.  There are four elements per pkg. .MODEL DI_GBJ2008 D  ( IS=15.1u RS=2.96m BV=800 IBV=10.0u
++ CJO=111p  M=0.333 N=2.84 TT=4.32u )
+
+*SRC=GBJ2010;DI_GBJ2010;Diodes;Si;  1.00kV  20.0A  3.00us   Diodes Inc.
+Bridge Rect. This model covers only one element.  There are four elements per pkg. .MODEL DI_GBJ2010 D  ( IS=15.1u RS=2.96m BV=1.00k IBV=10.0u
++ CJO=111p  M=0.333 N=2.84 TT=4.32u )
+
+*SRC=GBJ2510;DI_GBJ2510;Diodes;Si;  1.00kV  25.0A  3.00us   Diodes Inc. Bridge Rectifier--Per Element
+.MODEL DI_GBJ2510 D  ( IS=379n RS=2.84m BV=1.00k IBV=10.0u
++ CJO=146p  M=0.333 N=2.07 TT=4.32u )
+
+*SRC=GBPC3506;DI_GBPC3506;Diodes;Si;  600V  35.0A  3.00us   Diodes Inc Rectifier
+.MODEL DI_GBPC3506 D  ( IS=162u RS=3.32m BV=600 IBV=5.00u
++ CJO=477p  M=0.333 N=3.01 TT=4.32u )
+
+*SRC=GBU1002;DI_GBU1002;Diodes;Si;  200V  10.0A  3.00us   Diodes Inc.
+Bridge Rectifier -- Per Element
+.MODEL DI_GBU1002 D  ( IS=1.71f RS=7.00m BV=200 IBV=5.00u
++ CJO=133p  M=0.333 N=0.900 TT=4.32u )
+
+*SRC=GBU4005;DI_GBU4005;Diodes;Si;  50.0V  4.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU4005 D  ( IS=23.3n RS=7.20m BV=50.0 IBV=5.00u
++ CJO=148p  M=0.333 N=1.80 TT=4.32u )
+
+*SRC=GBU401;DI_GBU401;Diodes;Si;  100V  4.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU401 D  ( IS=23.3n RS=7.20m BV=100 IBV=5.00u
++ CJO=148p  M=0.333 N=1.80 TT=4.32u )
+
+*SRC=GBU402;DI_GBU402;Diodes;Si;  200V  4.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU402 D  ( IS=23.3n RS=7.20m BV=200 IBV=5.00u
++ CJO=148p  M=0.333 N=1.80 TT=4.32u )
+
+*SRC=GBU404;DI_GBU404;Diodes;Si;  400V  4.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU404 D  ( IS=23.3n RS=7.20m BV=400 IBV=5.00u
++ CJO=148p  M=0.333 N=1.80 TT=4.32u )
+
+*SRC=GBU406;DI_GBU406;Diodes;Si;  600V  4.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU406 D  ( IS=23.3n RS=7.20m BV=600 IBV=5.00u
++ CJO=148p  M=0.333 N=1.80 TT=4.32u )
+
+*SRC=GBU408;DI_GBU408;Diodes;Si;  800V  4.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU408 D  ( IS=23.3n RS=7.20m BV=800 IBV=5.00u
++ CJO=148p  M=0.333 N=1.80 TT=4.32u )
+
+*SRC=GBU410;DI_GBU410;Diodes;Si;  1.00kV  4.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU410 D  ( IS=23.3n RS=7.20m BV=1.00k IBV=5.00u
++ CJO=148p  M=0.333 N=1.80 TT=4.32u )
+
+*SRC=GBU8005;DI_GBU8005;Diodes;Si;  50.0V  8.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU8005 D  ( IS=17.8p RS=7.59m BV=50.0 IBV=5.00u
++ CJO=240p  M=0.333 N=1.25 TT=4.32u )
+
+*SRC=GBU802;DI_GBU802;Diodes;Si;  200V  8.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU802 D  ( IS=17.8p RS=7.59m BV=200 IBV=5.00u
++ CJO=240p  M=0.333 N=1.25 TT=4.32u )
+
+*SRC=GBU804;DI_GBU804;Diodes;Si;  400V  8.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU804 D  ( IS=17.8p RS=7.59m BV=400 IBV=5.00u
++ CJO=240p  M=0.333 N=1.25 TT=4.32u )
+
+*SRC=GBU806;DI_GBU806;Diodes;Si;  600V  8.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU806 D  ( IS=17.8p RS=7.59m BV=600 IBV=5.00u
++ CJO=240p  M=0.333 N=1.25 TT=4.32u )
+
+*SRC=GBU808;DI_GBU808;Diodes;Si;  800V  8.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU808 D  ( IS=17.8p RS=7.59m BV=800 IBV=5.00u
++ CJO=240p  M=0.333 N=1.25 TT=4.32u )
+
+*SRC=GBU810;DI_GBU810;Diodes;Si;  1.00kV  8.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU810 D  ( IS=17.8p RS=7.59m BV=1.00k IBV=5.00u
++ CJO=240p  M=0.333 N=1.25 TT=4.32u )
+
+*SRC=KBJ4005G;DI_KBJ4005G;Diodes;Si;  50.0V  4.00A  3.00us   Diodes Inc. Bridge Rectifier - Per Diode
+.MODEL DI_KBJ4005G D  ( IS=656n RS=10.5m BV=50.0 IBV=10.0u
++ CJO=79.6p  M=0.333 N=2.45 TT=4.32u )
+
+*SRC=KBJ401G;DI_KBJ401G;Diodes;Si;  100V  4.00A  3.00us   Diodes Inc. Bridge Rectifier - Per Diode
+.MODEL DI_KBJ401G D  ( IS=656n RS=10.5m BV=100 IBV=10.0u
++ CJO=79.6p  M=0.333 N=2.45 TT=4.32u )
+
+*SRC=KBJ402G;DI_KBJ402G;Diodes;Si;  200V  4.00A  3.00us   Diodes Inc. Bridge Rectifier - Per Diode
+.MODEL DI_KBJ402G D  ( IS=656n RS=10.5m BV=200 IBV=10.0u
++ CJO=79.6p  M=0.333 N=2.45 TT=4.32u )
+
+*SRC=KBJ404G;DI_KBJ404G;Diodes;Si;  400V  4.00A  3.00us   Diodes Inc. Bridge Rectifier - Per Diode
+.MODEL DI_KBJ404G D  ( IS=656n RS=10.5m BV=400 IBV=10.0u
++ CJO=79.6p  M=0.333 N=2.45 TT=4.32u )
+
+*SRC=KBJ406G;DI_KBJ406G;Diodes;Si;  600V  4.00A  3.00us   Diodes Inc. Bridge Rectifier - Per Diode
+.MODEL DI_KBJ406G D  ( IS=656n RS=10.5m BV=600 IBV=10.0u
++ CJO=79.6p  M=0.333 N=2.45 TT=4.32u )
+
+*SRC=KBJ408G;DI_KBJ408G;Diodes;Si;  800V  4.00A  3.00us   Diodes Inc. Bridge Rectifier - Per Diode
+.MODEL DI_KBJ408G D  ( IS=656n RS=10.5m BV=800 IBV=10.0u
++ CJO=79.6p  M=0.333 N=2.45 TT=4.32u )
+
+*SRC=KBJ410G;DI_KBJ410G;Diodes;Si;  1.00kV  4.00A  3.00us   Diodes Inc. Bridge Rectifier - Per Diode
+.MODEL DI_KBJ410G D  ( IS=656n RS=10.5m BV=1.00k IBV=10.0u
++ CJO=79.6p  M=0.333 N=2.45 TT=4.32u )
+
+*SRC=KBP01G;DI_KBP01G;Diodes;Si;  100V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP01G D  ( IS=39.2u RS=28.1m BV=100 IBV=5.00u
++ CJO=26.5p  M=0.333 N=4.38 TT=4.32u )
+
+*SRC=KBP02G;DI_KBP02G;Diodes;Si;  200V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP02G D  ( IS=39.2u RS=28.1m BV=200 IBV=5.00u
++ CJO=26.5p  M=0.333 N=4.38 TT=4.32u )
+
+*SRC=KBP04G;DI_KBP04G;Diodes;Si;  400V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP04G D  ( IS=39.2u RS=28.1m BV=400 IBV=5.00u
++ CJO=26.5p  M=0.333 N=4.38 TT=4.32u )
+
+*SRC=KBP06G;DI_KBP06G;Diodes;Si;  600V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP06G D  ( IS=39.2u RS=28.1m BV=600 IBV=5.00u
++ CJO=26.5p  M=0.333 N=4.38 TT=4.32u )
+
+*SRC=KBP10G;DI_KBP10G;Diodes;Si;  1.00kV  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP10G D  ( IS=39.2u RS=28.1m BV=1.00k IBV=5.00u
++ CJO=26.5p  M=0.333 N=4.38 TT=4.32u )
+
+*SRC=KBP2005G;DI_KBP2005G;Diodes;Si;  50.0V  2.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP2005G D  ( IS=143n RS=21.1m BV=50.0 IBV=5.00u
++ CJO=46.2p  M=0.333 N=2.12 TT=4.32u )
+
+*SRC=KBP201G;DI_KBP201G;Diodes;Si;  100V  2.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP201G D  ( IS=143n RS=21.1m BV=100 IBV=5.00u
++ CJO=46.2p  M=0.333 N=2.12 TT=4.32u )
+
+*SRC=KBP202G;DI_KBP202G;Diodes;Si;  200V  2.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP202G D  ( IS=143n RS=21.1m BV=200 IBV=5.00u
++ CJO=46.2p  M=0.333 N=2.12 TT=4.32u )
+
+*SRC=KBP204G;DI_KBP204G;Diodes;Si;  400V  2.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP204G D  ( IS=143n RS=21.1m BV=400 IBV=5.00u
++ CJO=46.2p  M=0.333 N=2.12 TT=4.32u )
+
+*SRC=KBP206G;DI_KBP206G;Diodes;Si;  600V  2.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP206G D  ( IS=143n RS=21.1m BV=600 IBV=5.00u
++ CJO=46.2p  M=0.333 N=2.12 TT=4.32u )
+
+*SRC=KBP208G;DI_KBP208G;Diodes;Si;  800V  2.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP208G D  ( IS=143n RS=21.1m BV=800 IBV=5.00u
++ CJO=46.2p  M=0.333 N=2.12 TT=4.32u )
+
+*SRC=KBP210G;DI_KBP210G;Diodes;Si;  1.00kV  2.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP210G D  ( IS=143n RS=21.1m BV=1.00k IBV=5.00u
++ CJO=46.2p  M=0.333 N=2.12 TT=4.32u )
+
+*SRC=PBPC301;DI_PBPC301;Diodes;Si;  50.0V  3.00A  3.00us   Diodes Inc. Bridge Rectifier, per element
+.MODEL DI_PBPC301 D  ( IS=492n RS=14.1m BV=50.0 IBV=10.0u
++ CJO=102p  M=0.333 N=2.45 TT=4.32u ) )
+
+*SRC=PBPC302;DI_PBPC302;Diodes;Si;  100V  3.00A  3.00us   Diodes Inc. Bridge Rectifier, per element
+.MODEL DI_PBPC302 D  ( IS=492n RS=14.1m BV=100 IBV=10.0u
++ CJO=102p  M=0.333 N=2.45 TT=4.32u ) )
+
+*SRC=PBPC303;DI_PBPC303;Diodes;Si;  200V  3.00A  3.00us   Diodes Inc. Bridge Rectifier, per element
+.MODEL DI_PBPC303 D  ( IS=492n RS=14.1m BV=200 IBV=10.0u
++ CJO=102p  M=0.333 N=2.45 TT=4.32u ) )
+
+*SRC=PBPC304;DI_PBPC304;Diodes;Si;  400V  3.00A  3.00us   Diodes Inc. Bridge Rectifier, per element
+.MODEL DI_PBPC304 D  ( IS=492n RS=14.1m BV=400 IBV=10.0u
++ CJO=102p  M=0.333 N=2.45 TT=4.32u ) )
+
+*SRC=PBPC305;DI_PBPC305;Diodes;Si;  600V  3.00A  3.00us   Diodes Inc. Bridge Rectifier, per element
+.MODEL DI_PBPC305 D  ( IS=492n RS=14.1m BV=600 IBV=10.0u
++ CJO=102p  M=0.333 N=2.45 TT=4.32u ) )
+
+*SRC=PBPC306;DI_PBPC306;Diodes;Si;  800V  3.00A  3.00us   Diodes Inc. Bridge Rectifier, per element
+.MODEL DI_PBPC306 D  ( IS=492n RS=14.1m BV=800 IBV=10.0u
++ CJO=102p  M=0.333 N=2.45 TT=4.32u ) )
+
+*SRC=PBPC307;DI_PBPC307;Diodes;Si;  1.00kV  3.00A  3.00us   Diodes Inc. Bridge Rectifier, per element
+.MODEL DI_PBPC307 D  ( IS=492n RS=14.1m BV=1.00k IBV=10.0u
++ CJO=102p  M=0.333 N=2.45 TT=4.32u ) )
+
+*SRC=PBPC601;DI_PBPC601;Diodes;Si;  50.0V  6.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_PBPC601 D  ( IS=2.37n RS=5.14m BV=50.0 IBV=10.0u
++ CJO=102p  M=0.333 N=1.63 TT=4.32u )
+
+*SRC=PBPC602;DI_PBPC602;Diodes;Si;  100V  6.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_PBPC601 D  ( IS=2.37n RS=5.14m BV=100 IBV=10.0u
++ CJO=102p  M=0.333 N=1.63 TT=4.32u )
+
+*SRC=PBPC603;DI_PBPC603;Diodes;Si;  200V  6.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_PBPC603 D  ( IS=2.37n RS=5.14m BV=200 IBV=10.0u
++ CJO=102p  M=0.333 N=1.63 TT=4.32u )
+
+*SRC=PBPC604;DI_PBPC604;Diodes;Si;  400V  6.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_PBPC604 D  ( IS=2.37n RS=5.14m BV=400 IBV=10.0u
++ CJO=102p  M=0.333 N=1.63 TT=4.32u )
+
+*SRC=PBPC605;DI_PBPC605;Diodes;Si;  600V  6.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_PBPC605 D  ( IS=2.37n RS=5.14m BV=600 IBV=10.0u
++ CJO=102p  M=0.333 N=1.63 TT=4.32u )
+
+*SRC=PBPC606;DI_PBPC606;Diodes;Si;  800V  6.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_PBPC606 D  ( IS=2.37n RS=5.14m BV=800 IBV=10.0u
++ CJO=102p  M=0.333 N=1.63 TT=4.32u )
+
+*SRC=PBPC607;DI_PBPC607;Diodes;Si;  1.00kV  6.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_PBPC607 D  ( IS=2.37n RS=5.14m BV=1.00k IBV=10.0u
++ CJO=102p  M=0.333 N=1.63 TT=4.32u )
+
+*SRC=RH02;DI_RH02;Diodes;Si;  200V  0.500A  150ns   Diodes Inc. Fast Recovery Bridge Rectifier, per node
+.MODEL DI_RH02 D  ( IS=2.25n RS=0.100 BV=200 IBV=5.00u
++ CJO=24.0p  M=0.333 N=1.70 TT=216n )
+
+*SRC=RH04;DI_RH04;Diodes;Si;  400V  0.500A  150ns   Diodes Inc. Fast Recovery Bridge Rectifier, per node
+.MODEL DI_RH04 D  ( IS=2.25n RS=0.100 BV=400 IBV=5.00u
++ CJO=24.0p  M=0.333 N=1.70 TT=216n )
+
+*SRC=RH06;DI_RH06;Diodes;Si;  600V  0.500A  250ns   Diodes Inc. Fast Recovery Bridge Rectifier, per node
+.MODEL DI_RH06 D  ( IS=2.25n RS=0.100 BV=600 IBV=5.00u
++ CJO=24.0p  M=0.333 N=1.70 TT=360n )
+
+*SRC=W005G;DI_W005G;Diodes;Si;  50.0V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_W005G D  ( IS=8.63u RS=28.0m BV=50.0 IBV=5.00u
++ CJO=22.5p  M=0.333 N=3.21 TT=4.32u )
+
+*SRC=W01G;DI_W01G;Diodes;Si;  100V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_W01G D  ( IS=8.63u RS=28.0m BV=100 IBV=5.00u
++ CJO=22.5p  M=0.333 N=3.21 TT=4.32u )
+
+*SRC=W02G;DI_W02G;Diodes;Si;  200V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_W02G D  ( IS=8.63u RS=28.0m BV=200 IBV=5.00u
++ CJO=22.5p  M=0.333 N=3.21 TT=4.32u )
+
+*SRC=W04G;DI_W04G;Diodes;Si;  400V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_W04G D  ( IS=8.63u RS=28.0m BV=400 IBV=5.00u
++ CJO=22.5p  M=0.333 N=3.21 TT=4.32u )
+
+*SRC=W06G;DI_W06G;Diodes;Si;  600V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_W06G D  ( IS=8.63u RS=28.0m BV=600 IBV=5.00u
++ CJO=22.5p  M=0.333 N=3.21 TT=4.32u )
+
+*SRC=W08G;DI_W08G;Diodes;Si;  800V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_W08G D  ( IS=8.63u RS=28.0m BV=800 IBV=5.00u
++ CJO=22.5p  M=0.333 N=3.21 TT=4.32u )
+
+*SRC=W10G;DI_W10G;Diodes;Si;  1.00kV  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_W10G D  ( IS=8.63u RS=28.0m BV=1.00k IBV=5.00u
++ CJO=22.5p  M=0.333 N=3.21 TT=4.32u )
+
+*SRC=GBJ20005;DI_GBJ20005;Diodes;Si;  50.0V  20.0A  3.00us   Diodes Inc.
+Bridge Rect. This model covers only one element.  There are four elements per pkg. .MODEL DI_GBJ20005 D  ( IS=15.1u RS=2.96m BV=50.0 IBV=10.0u
++ CJO=111p  M=0.333 N=2.84 TT=4.32u )
+
+*SRC=GBU801;DI_GBU801;Diodes;Si;  100V  8.00A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_GBU801 D  ( IS=17.8p RS=7.59m BV=100 IBV=5.00u
++ CJO=240p  M=0.333 N=1.25 TT=4.32u )
+
+*SRC=KBP005G;DI_KBP005G;Diodes;Si;  50.0V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP005G D  ( IS=39.2u RS=28.1m BV=50.0 IBV=5.00u
++ CJO=26.5p  M=0.333 N=4.38 TT=4.32u )
+
+*SRC=KBP08G;DI_KBP08G;Diodes;Si;  800V  1.50A  3.00us   Diodes Inc. Bridge -- for one element
+.MODEL DI_KBP08G D  ( IS=39.2u RS=28.1m BV=800 IBV=5.00u
++ CJO=26.5p  M=0.333 N=4.38 TT=4.32u )

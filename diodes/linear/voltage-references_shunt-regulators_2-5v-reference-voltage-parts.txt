@@ -1,0 +1,125 @@
+*
+*Zetex ZHT431 Spice Model v1.0 Last Revised 22/7/2005
+*              
+*NOTE: This is a simplified model.  Do not rely on this model for 
+*validation of circuit stability.  It does not accurately replicate 
+*stability boundary conditions with additional load capacitance.  
+*Check stability by normal breadboarding techniques.
+*
+.SUBCKT ZHT431 1 2 3
+*Connections  Vz Vref Gnd
+*Input current
+L2 2 12 2E-9
+Rin 12 13 Rmod1 20E6
+Cin 12 13 1E-12
+D1 13 12 Dmod
+D2 12 11 Dmod
+*Reference voltage, Voltage dependence
+Iref 13 21 2.4985E-3
+Rref 21 13 Rmod2 1000
+G1 21 13 11 13 1.43E-6
+*Gain, time constant & clamp voltage
+G2 13 31 12 21 0.004
+Rt1 31 13 1E8
+Ct1 31 32  800E-12
+Rt2 32 13 2000
+Ct2 31 33  50E-12
+Rt3 33 13 5
+D3 31 13 Dmod
+D4 13 31 Dmod
+*Buffer,Output
+G3 13 41 13 31 0.22
+L1 1 11 2E-9
+Rz 11 42 10
+D5 42 41 Dmod
+D6 13 41 Dmod
+D7 13 11 Dmod
+Rx 13 23 0.5
+L3 3 23 2E-9
+Rq 11 13  Rmod3 74E3
+*
+.MODEL Rmod1 RES (TC1=2.95E-3 TC2=-5E-7)
+.MODEL Rmod2 RES (TC1=8.5E-6 TC2=-3.3E-7)
+.MODEL Rmod3 RES (TC1=-2.5E-3 TC2=2E-5)
+.MODEL Dmod D IS=1E-14 RS=0.1 BV=22 CJO=0.1E-12
+.ENDS  ZHT431
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
+
+*
+*Zetex ZR431 Spice Model v1.0 Last revision 31/3/2005
+*              
+*NOTE: This is a simplified model.  Do not rely on this model for 
+*validation of circuit stability.  It does not accurately replicate 
+*stability boundary conditions with additional load capacitance.  
+*Check stability by normal breadboarding techniques.
+*
+.SUBCKT ZR431 1 2 3
+*Connections  Vz Vref Gnd
+*Input current
+L2 2 12 2E-9
+Rin 12 13 Rmod1 20E6
+Cin 12 13 1E-12
+D1 13 12 Dmod
+D2 12 11 Dmod
+*Reference voltage, Voltage dependence
+Iref 13 21 2.4985E-3
+Rref 21 13 Rmod2 1000
+G1 21 13 11 13 1.43E-6
+*Gain, time constant & clamp voltage
+G2 13 31 12 21 0.004
+Rt1 31 13 1E8
+Ct1 31 32  800E-12
+Rt2 32 13 2000
+Ct2 31 33  50E-12
+Rt3 33 13 5
+D3 31 13 Dmod
+D4 13 31 Dmod
+*Buffer,Output
+G3 13 41 13 31 0.22
+L1 1 11 2E-9
+Rz 11 42 10
+D5 42 41 Dmod
+D6 13 41 Dmod
+D7 13 11 Dmod
+Rx 13 23 0.5
+L3 3 23 2E-9
+Rq 11 13  Rmod3 74E3
+*
+.MODEL Rmod1 RES (TC1=2.95E-3 TC2=-5E-7)
+.MODEL Rmod2 RES (TC1=8.5E-6 TC2=-3.3E-7)
+.MODEL Rmod3 RES (TC1=-2.5E-3 TC2=2E-5)
+.MODEL Dmod D IS=1E-14 RS=0.1 BV=22 CJO=0.1E-12
+.ENDS  ZR431
+*
+*$
+*
+*                (c)  2005 Zetex Semiconductors plc
+*
+*   The copyright in these models  and  the designs embodied belong
+*   to Zetex Semiconductors plc (" Zetex ").  They  are  supplied
+*   free of charge by Zetex for the purpose of research and design
+*   and may be used or copied intact  (including this notice)  for
+*   that purpose only.  All other rights are reserved. The models
+*   are believed accurate but  no condition  or warranty  as to their
+*   merchantability or fitness for purpose is given and no liability
+*   in respect of any use is accepted by Zetex PLC, its distributors
+*   or agents.
+*
+*   Zetex Semiconductors plc, Zetex Technology Park, Chadderton,
+*   Oldham, United Kingdom, OL9 9LL
